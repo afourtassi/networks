@@ -1,0 +1,2137 @@
+"age","item","definition","uni_lemma","learned","IPA","length","freq","PAC_assoc","PAT_assoc","PAC_phono_t1","PAT_phono_t1","PAC_phono_t2","PAT_phono_t2","PAC_phono_nt","PAT_phono_nt"
+16,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,NA
+16,15,"vaca","cow",0,"baka",4,6.49677499,4,NA,1,NA,13,NA,1164,NA
+16,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,NA,0,NA,2,NA,1563,NA
+16,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,NA,0,NA,1,NA,1347,NA
+16,18,"ratón","mouse",0,"ratɔn",5,6.086774727,4,NA,0,NA,5,NA,1291,NA
+16,19,"rana","frog",0,"rana",4,5.590986981,0,NA,0,NA,13,NA,1168,NA
+16,20,"puerco","pig",0,"pwɛɾko",6,6.003887067,3,NA,0,NA,1,NA,1436,NA
+16,21,"pollito","chick",0,"pɔʎito",6,2.63905733,1,NA,0,NA,1,NA,1400,NA
+16,23,"pescado","fish (animal)",0,"peskaðo",7,6.705639095,3,NA,4,NA,4,NA,2986,NA
+16,24,"perro","dog",0,"pɛro",4,7.332369206,9,NA,0,NA,6,NA,1280,NA
+16,25,"pato","duck",0,"pato",4,6.411818268,1,NA,5,NA,15,NA,1147,NA
+16,26,"pájaro","bird",0,"paxaɾɔ",6,6.593044534,9,NA,0,NA,0,NA,1367,NA
+16,27,"oso","bear",0,"oso",3,6.257667588,3,NA,0,NA,7,NA,1292,NA
+16,28,"mosco",NA,0,"mɔsko",5,NA,NA,NA,1,NA,1,NA,1346,NA
+16,29,"mosca","fly (animal)",0,"mɔska",5,5.720311777,8,NA,1,NA,2,NA,1304,NA
+16,30,"mono","monkey",0,"mono",4,5.940171253,3,NA,2,NA,4,NA,1269,NA
+16,31,"mariposa","butterfly",0,"maɾiposa",8,4.605170186,0,NA,0,NA,0,NA,1626,NA
+16,32,"lobo","wolf",0,"loβo",4,4.672828834,1,NA,1,NA,6,NA,1278,NA
+16,33,"león","lion",0,"leɔn",4,6.001414878,3,NA,0,NA,1,NA,1284,NA
+16,35,"hormiga","ant",0,"ɔɾmiɣa",6,3.526360525,0,NA,0,NA,0,NA,1422,NA
+16,38,"gato","cat",0,"ɡato",4,6.933423026,9,NA,1,NA,10,NA,1188,NA
+16,40,"gallina","hen",0,"ɡaʎina",6,3.912023005,3,NA,0,NA,1,NA,1332,NA
+16,41,"foca",NA,0,"foka",4,NA,NA,NA,1,NA,6,NA,1247,NA
+16,42,"elefante","elephant",0,"elefante",8,5.918893854,0,NA,0,NA,0,NA,1715,NA
+16,43,"conejo","bunny",0,"konexo",6,6.376726948,0,NA,0,NA,0,NA,1411,NA
+16,46,"caballo","horse",0,"kaβaʎo",6,6.843749949,4,NA,0,NA,0,NA,1332,NA
+16,47,"burro","donkey",0,"buro",4,5.017279837,1,NA,0,NA,4,NA,1306,NA
+16,50,"borrego","lamb",0,"bɔreɣo",6,4.941642423,0,NA,0,NA,0,NA,1455,NA
+16,53,"araña","spider",0,"aɾaɲa",5,4.49980967,1,NA,0,NA,0,NA,1250,NA
+16,54,"animal","animal",0,"animal",6,5.648974238,18,NA,0,NA,0,NA,1415,NA
+16,57,"triciclo (vehicles)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,NA
+16,58,"tren","train",0,"tɾɛn",4,6.80682936,3,NA,0,NA,1,NA,1296,NA
+16,60,"moto","motorcycle",0,"moto",4,4.094344562,1,NA,1,NA,7,NA,1247,NA
+16,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,NA,0,NA,0,NA,2188,NA
+16,62,"carro/coche","car",0,"karo",4,7.744569809,8,NA,0,NA,13,NA,1209,NA
+16,64,"camión/troca","truck",0,"kamjɔn",6,6.812345094,2,NA,0,NA,4,NA,1410,NA
+16,66,"bicicleta","bicycle",0,"biθikleta",9,4.553876892,1,NA,0,NA,0,NA,1895,NA
+16,67,"barco","boat",0,"baɾko",5,6.194405391,3,NA,1,NA,4,NA,1252,NA
+16,68,"avión","airplane",0,"aβjɔn",5,5.945420609,2,NA,0,NA,2,NA,1357,NA
+16,70,"agua","water (beverage)",1,"aɣwa",4,7.301147806,22,NA,0,NA,0,NA,1236,NA
+16,71,"arroz","rice",0,"arɔθ",4,5.093750201,1,NA,0,NA,0,NA,1308,NA
+16,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,NA
+16,73,"atún",NA,0,"atun",4,NA,NA,NA,0,NA,1,NA,1259,NA
+16,74,"azúcar",NA,0,"aθukaɾ",6,NA,NA,NA,0,NA,0,NA,1426,NA
+16,75,"café","coffee",0,"kafɛ",4,6.326149473,1,NA,0,NA,4,NA,1268,NA
+16,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,NA
+16,77,"carne","meat",0,"kaɾne",5,5.755742214,4,NA,0,NA,1,NA,1272,NA
+16,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,NA
+16,80,"chicle",NA,0,"tʃikle",6,NA,NA,NA,1,NA,1,NA,1465,NA
+16,81,"chile","chili",0,"tʃile",5,2.63905733,1,NA,1,NA,1,NA,1350,NA
+16,82,"chocolate",NA,0,"tʃokolate",9,NA,NA,NA,0,NA,0,NA,1888,NA
+16,83,"comida","food",0,"komiða",6,6.418364936,21,NA,0,NA,3,NA,1386,NA
+16,84,"dulce","candy",0,"dulθe",5,5.521460918,3,NA,0,NA,0,NA,1388,NA
+16,87,"elote",NA,0,"elote",5,NA,NA,NA,0,NA,1,NA,1309,NA
+16,89,"fresa",NA,0,"fɾesa",5,NA,NA,NA,0,NA,1,NA,1290,NA
+16,90,"frijoles","beans",0,"fɾixoles",8,5.068904202,2,NA,0,NA,0,NA,1780,NA
+16,91,"galleta","cookie",0,"ɡaʎeta",6,5.966146739,2,NA,0,NA,3,NA,1326,NA
+16,92,"gelatina",NA,0,"xelatina",8,NA,NA,NA,0,NA,0,NA,1618,NA
+16,94,"helado/nieve","ice cream",0,"elaðo",5,0,2,NA,0,NA,1,NA,1277,NA
+16,95,"hielo",NA,0,"jelo",4,NA,NA,NA,2,NA,7,NA,1256,NA
+16,97,"huevo","egg",0,"weβo",4,5.926926026,2,NA,0,NA,5,NA,1287,NA
+16,98,"jamón","ham",0,"xamɔn",5,4.025351691,3,NA,1,NA,4,NA,1315,NA
+16,99,"jugo","juice",0,"xuɣo",4,6.986566459,2,NA,0,NA,1,NA,1321,NA
+16,100,"leche","milk",1,"letʃe",5,7.21964204,8,NA,0,NA,0,NA,1349,NA
+16,103,"cacahuete/maní",NA,0,"kakawete",8,NA,NA,NA,0,NA,0,NA,1709,NA
+16,105,"manzana","apple",0,"manθana",7,6.070737728,5,NA,0,NA,0,NA,1489,NA
+16,106,"melón",NA,0,"melɔn",5,NA,NA,NA,0,NA,2,NA,1344,NA
+16,108,"naranja","orange (food)",0,"naɾaŋxa",7,6.411818268,4,NA,0,NA,0,NA,1538,NA
+16,109,"paleta","lollipop",0,"paleta",6,3.828641396,0,NA,0,NA,3,NA,1253,NA
+16,110,"palomitas",NA,0,"palomitas",9,NA,NA,NA,0,NA,0,NA,1760,NA
+16,111,"pan","bread",1,"pan",3,5.96870756,2,NA,0,NA,7,NA,1204,NA
+16,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,NA
+16,113,"papas",NA,0,"papas",5,NA,NA,NA,1,NA,4,NA,1248,NA
+16,114,"papitas",NA,0,"papitas",7,NA,NA,NA,0,NA,1,NA,1434,NA
+16,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,NA,4,NA,1237,NA
+16,116,"pastel","cake",0,"pastel",6,6.584791392,2,NA,0,NA,2,NA,1359,NA
+16,118,"pescado (food_drink)",NA,0,"peskaðo",7,NA,NA,NA,4,NA,4,NA,2986,NA
+16,119,"plátano/banana","banana",0,"platano",7,5.023880521,2,NA,0,NA,1,NA,1427,NA
+16,120,"pollo","chicken (food)",0,"pɔʎo",4,6.380122537,8,NA,0,NA,6,NA,1275,NA
+16,121,"quesadilla","quesadilla",0,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,NA
+16,122,"queso","cheese",0,"keso",4,6.208590026,4,NA,0,NA,7,NA,1245,NA
+16,123,"sal",NA,0,"sal",3,NA,NA,NA,2,NA,4,NA,1234,NA
+16,124,"salchicha","hot dog",0,"saltʃitʃa",9,0,NA,NA,0,NA,0,NA,1853,NA
+16,126,"sandía",NA,0,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,NA
+16,127,"soda/refresco","soda",0,"soða",4,4.543294782,1,NA,1,NA,7,NA,1235,NA
+16,128,"sopa","soup",0,"sopa",4,5.455321115,8,NA,2,NA,7,NA,1241,NA
+16,129,"taco",NA,0,"tako",4,NA,NA,NA,0,NA,11,NA,1192,NA
+16,130,"té (food)",NA,0,"tɛ",2,NA,NA,NA,0,NA,1,NA,1313,NA
+16,131,"torta/lonche",NA,0,"tɔɾta",5,NA,NA,NA,0,NA,3,NA,1253,NA
+16,132,"tortilla","tortilla",0,"tɔɾtiʎa",7,2.944438979,0,NA,0,NA,2,NA,1532,NA
+16,133,"uvas","grapes",0,"uβas",4,4.094344562,NA,NA,0,NA,1,NA,1297,NA
+16,136,"yoghurt",NA,0,"ʝoɣuɾt",6,NA,NA,NA,0,NA,0,NA,1519,NA
+16,137,"zanahoria",NA,0,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,NA
+16,138,"botón","button",0,"botɔn",5,5.805134969,0,NA,0,NA,2,NA,1335,NA
+16,140,"calcetín","sock",0,"kalθetin",8,4.394449155,1,NA,0,NA,0,NA,1688,NA
+16,141,"calzón","underpants",0,"kalθɔn",6,2.302585093,NA,NA,0,NA,2,NA,1382,NA
+16,142,"camisa",NA,0,"kamisa",6,NA,NA,NA,0,NA,2,NA,1307,NA
+16,143,"chancla",NA,0,"tʃankla",7,NA,NA,NA,0,NA,0,NA,1491,NA
+16,146,"falda","skirt",0,"falða",5,3.583518938,3,NA,0,NA,1,NA,1241,NA
+16,147,"gorra",NA,0,"ɡɔra",4,NA,NA,NA,0,NA,1,NA,1285,NA
+16,148,"guantes",NA,0,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,NA
+16,149,"lentes","glasses",0,"lɛntes",6,5.176149733,1,NA,0,NA,1,NA,1436,NA
+16,151,"pañal","diaper",0,"paɲal",5,5.087596335,0,NA,0,NA,3,NA,1273,NA
+16,152,"pantalón","pants",0,"pantalɔn",8,5.993961427,5,NA,0,NA,0,NA,1641,NA
+16,153,"pijama","pajamas",0,"pixama",6,4.736198448,0,NA,0,NA,0,NA,1368,NA
+16,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,NA
+16,155,"ropa",NA,0,"ropa",4,NA,NA,NA,1,NA,6,NA,1256,NA
+16,156,"shorts","shorts",0,"ʃɔɾts",5,3.583518938,2,NA,0,NA,1,NA,1353,NA
+16,157,"sombrero","hat",0,"sɔmbɾɛɾɔ",8,6.874198495,2,NA,0,NA,0,NA,1852,NA
+16,158,"suéter","sweater",0,"swɛtɛɾ",6,4.836281907,0,NA,0,NA,0,NA,1503,NA
+16,159,"vestido","dress (object)",0,"bestiðo",7,5.823045895,4,NA,0,NA,0,NA,1543,NA
+16,160,"zapato","shoe",0,"θapato",6,5.843544417,4,NA,0,NA,1,NA,1330,NA
+16,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,NA
+16,163,"boca","mouth",0,"boka",4,6.985641818,5,NA,2,NA,8,NA,1226,NA
+16,164,"brazo","arm",0,"bɾaθo",5,5.590986981,4,NA,0,NA,2,NA,1288,NA
+16,165,"cabeza","head",0,"kaβeθa",6,7.156176637,6,NA,0,NA,1,NA,1322,NA
+16,166,"cachete","cheek",0,"katʃete",7,3.784189634,1,NA,0,NA,0,NA,1527,NA
+16,167,"cara","face",0,"kaɾa",4,6.52649486,7,NA,2,NA,10,NA,1134,NA
+16,168,"chichi/pecho","breast",0,"tʃitʃi",6,2.995732274,1,NA,0,NA,0,NA,1491,NA
+16,169,"dedo","finger",0,"deðo",4,6.22059017,2,NA,0,NA,4,NA,1285,NA
+16,170,"dientes","tooth",0,"djɛntes",7,4.418840608,1,NA,0,NA,1,NA,1612,NA
+16,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,NA
+16,172,"hombro",NA,0,"ɔmbɾo",5,NA,NA,NA,0,NA,0,NA,1365,NA
+16,173,"labios",NA,0,"laβjos",6,NA,NA,NA,0,NA,0,NA,1387,NA
+16,174,"lengua","tongue",0,"lɛŋɡwa",6,5.33753808,2,NA,0,NA,0,NA,1474,NA
+16,175,"mano","hand",0,"mano",4,7.163172391,4,NA,1,NA,11,NA,1192,NA
+16,176,"nalgas",NA,0,"nalɣas",6,NA,NA,NA,0,NA,0,NA,1368,NA
+16,177,"nariz","nose",0,"naɾiθ",5,6.799055862,6,NA,0,NA,1,NA,1311,NA
+16,178,"ojos","eye",0,"oxos",4,5.690359454,4,NA,1,NA,4,NA,1346,NA
+16,179,"ombligo","belly button",0,"ɔmbliɣo",7,0,NA,NA,0,NA,0,NA,1617,NA
+16,180,"oreja","ear",0,"ɔɾɛxa",5,5.416100402,3,NA,0,NA,0,NA,1313,NA
+16,181,"panza","tummy",0,"panθa",5,5.153291594,0,NA,0,NA,4,NA,1201,NA
+16,182,"pelo","hair",0,"pelo",4,7.17395832,6,NA,2,NA,12,NA,1220,NA
+16,183,"pene","penis",0,"pene",4,2.302585093,0,NA,1,NA,3,NA,1260,NA
+16,184,"piernas","leg",0,"pjɛɾnas",7,5.620400866,6,NA,0,NA,0,NA,1538,NA
+16,185,"pies","foot",0,"pjes",4,6.304448802,5,NA,0,NA,0,NA,1293,NA
+16,186,"rodilla","knee",0,"roðiʎa",6,5.147494477,1,NA,0,NA,0,NA,1415,NA
+16,190,"colores",NA,0,"kolɔɾɛs",7,NA,NA,NA,0,NA,0,NA,1589,NA
+16,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,NA
+16,192,"globo/bomba","balloon",0,"ɡloβo",5,5.726847748,0,NA,1,NA,1,NA,1357,NA
+16,193,"hoja/papel",NA,0,"oxa",3,NA,NA,NA,1,NA,10,NA,1247,NA
+16,194,"juguete","toy (object)",0,"xuɣete",6,6.261491684,3,NA,0,NA,0,NA,1479,NA
+16,195,"lápiz","pen/pencil",0,"lapiθ",5,0,NA,NA,0,NA,1,NA,1315,NA
+16,196,"libro","book",0,"liβɾo",5,7.722677516,2,NA,0,NA,1,NA,1321,NA
+16,197,"muñeca","doll",0,"muɲeka",6,5.796057751,1,NA,0,NA,0,NA,1426,NA
+16,198,"osito","teddybear",0,"osito",5,1.098612289,NA,NA,0,NA,1,NA,1298,NA
+16,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,NA
+16,200,"pelota","ball",1,"pelota",6,7.02464903,4,NA,0,NA,3,NA,1307,NA
+16,201,"pinturas",NA,0,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,NA
+16,203,"pluma/plumones",NA,0,"pluma",5,NA,NA,NA,0,NA,1,NA,1286,NA
+16,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,NA
+16,205,"triciclo (toys)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,NA
+16,206,"botas","boots",0,"botas",5,5.375278408,0,NA,0,NA,4,NA,1280,NA
+16,207,"bolsa (clothing)","purse",0,"bɔlsa",5,4.304065093,0,NA,4,NA,6,NA,2580,NA
+16,208,"babero","bib",0,"baβɛɾɔ",6,3.970291914,NA,NA,0,NA,0,NA,1414,NA
+16,209,"aretes","earrings",0,"aɾɛtes",6,3.737669618,0,NA,0,NA,0,NA,1424,NA
+16,211,"almohada","pillow",0,"almoaða",7,4.787491743,2,NA,0,NA,0,NA,1510,NA
+16,213,"basura","trash",0,"basuɾa",6,4.343805422,0,NA,0,NA,0,NA,1326,NA
+16,214,"bolsa (household)",NA,0,"bɔlsa",5,NA,NA,NA,4,NA,6,NA,2580,NA
+16,215,"botella/mamila","bottle",0,"boteʎa",6,5.953243334,2,NA,0,NA,0,NA,1367,NA
+16,216,"caja","box",0,"kaxa",4,7.201916318,3,NA,2,NA,11,NA,1167,NA
+16,219,"cassette",NA,0,"kassette",8,NA,NA,NA,0,NA,0,NA,1730,NA
+16,220,"cepillo de dientes","toothbrush",0,"θepiʎoðeðjɛntes",15,2.944438979,0,NA,0,NA,0,NA,3238,NA
+16,221,"cepillo","brush (object)",0,"θepiʎo",6,5.916202063,5,NA,0,NA,0,NA,1434,NA
+16,222,"cerillos",NA,0,"θɛɾiʎos",7,NA,NA,NA,0,NA,0,NA,1607,NA
+16,223,"chupón/chupete","pacifier",0,"tʃupɔn",6,1.791759469,0,NA,0,NA,0,NA,1491,NA
+16,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,NA,0,NA,0,NA,1569,NA
+16,226,"cobija","blanket",0,"koβixa",6,4.941642423,2,NA,0,NA,2,NA,1383,NA
+16,228,"cubeta",NA,0,"kuβeta",6,NA,NA,NA,0,NA,1,NA,1369,NA
+16,229,"cuchara","spoon",0,"kutʃaɾa",7,5.942799375,5,NA,0,NA,0,NA,1520,NA
+16,230,"cuchillo","knife",0,"kutʃiʎo",7,4.941642423,4,NA,0,NA,0,NA,1584,NA
+16,231,"dinero","money",0,"dinɛɾɔ",6,6.442540166,5,NA,0,NA,0,NA,1494,NA
+16,232,"escoba","broom",0,"eskoβa",6,4.762173935,0,NA,0,NA,0,NA,1391,NA
+16,233,"espejo","mirror",0,"espexo",6,5.099866428,4,NA,0,NA,0,NA,1440,NA
+16,234,"fotos","photos",0,"fotos",5,2.397895273,0,NA,0,NA,3,NA,1341,NA
+16,235,"jabón","soap",0,"xaβɔn",5,4.779123493,4,NA,1,NA,4,NA,1312,NA
+16,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,NA
+16,237,"llave","keys",0,"ʎaβe",4,5.075173815,0,NA,0,NA,1,NA,1258,NA
+16,238,"luz","light",0,"luθ",3,6.343880434,4,NA,0,NA,1,NA,1335,NA
+16,240,"medicina","medicine",0,"meðiθina",8,4.852030264,1,NA,0,NA,0,NA,1739,NA
+16,241,"olla",NA,0,"ɔʎa",3,NA,NA,NA,0,NA,4,NA,1259,NA
+16,243,"papel","paper",0,"papel",5,6.970730078,7,NA,0,NA,3,NA,1288,NA
+16,244,"pasta de dientes",NA,0,"pastaðeðjɛntes",14,NA,NA,NA,0,NA,0,NA,2904,NA
+16,245,"peine","comb (object)",0,"peɪne",5,5.068904202,2,NA,1,NA,1,NA,1348,NA
+16,247,"plancha",NA,0,"plantʃa",7,NA,NA,NA,1,NA,1,NA,1444,NA
+16,248,"plato","plate",0,"plato",5,5.85220248,0,NA,1,NA,8,NA,1226,NA
+16,249,"radio","radio",0,"raðjo",5,4.976733742,0,NA,0,NA,1,NA,1297,NA
+16,250,"reloj","watch (object)",0,"relɔx",5,7.413367336,0,NA,0,NA,1,NA,1382,NA
+16,251,"servilleta",NA,0,"sɛɾβiʎeta",9,NA,NA,NA,0,NA,0,NA,1934,NA
+16,253,"taza","cup",0,"taθa",4,6.746412129,3,NA,0,NA,10,NA,1159,NA
+16,254,"teléfono","telephone",0,"telɛfono",8,5.693732139,0,NA,0,NA,0,NA,1737,NA
+16,255,"tenedor","fork",0,"teneðɔɾ",7,5.081404365,3,NA,0,NA,0,NA,1618,NA
+16,256,"tijeras","scissors",0,"tixɛɾas",7,5.257495372,0,NA,0,NA,0,NA,1546,NA
+16,257,"toalla","towel",0,"toaʎa",5,4.927253685,2,NA,0,NA,1,NA,1248,NA
+16,258,"trapo","cloth",0,"tɾapo",5,4.025351691,4,NA,0,NA,2,NA,1287,NA
+16,259,"vasos","glass",0,"basos",5,5.676753802,5,NA,0,NA,2,NA,1279,NA
+16,260,"vela","candle",0,"bela",4,4.043051268,0,NA,0,NA,10,NA,1192,NA
+16,262,"árbol","tree",0,"aɾβɔl",5,6.768493212,11,NA,0,NA,0,NA,1348,NA
+16,263,"bandera",NA,0,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,NA
+16,264,"cielo","sky",0,"θjelo",5,5.147494477,6,NA,1,NA,2,NA,1342,NA
+16,266,"columpio","swing (object)",0,"kolumpjo",8,4.564348191,1,NA,0,NA,0,NA,1773,NA
+16,267,"estrella","star",0,"estɾeʎa",7,5.164785974,4,NA,0,NA,0,NA,1538,NA
+16,268,"flor","flower",0,"flɔɾ",4,5.214935758,3,NA,0,NA,0,NA,1322,NA
+16,270,"hojas",NA,0,"oxas",4,NA,NA,NA,2,NA,4,NA,1292,NA
+16,272,"lluvia","rain",0,"ʎuβja",5,5.214935758,3,NA,0,NA,0,NA,1337,NA
+16,273,"luna","moon",0,"luna",4,5.117993812,3,NA,1,NA,5,NA,1217,NA
+16,274,"maceta",NA,0,"maθeta",6,NA,NA,NA,0,NA,2,NA,1312,NA
+16,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,NA
+16,278,"nube","cloud",0,"nuβe",4,3.17805383,2,NA,0,NA,1,NA,1331,NA
+16,280,"palo",NA,0,"palo",4,NA,NA,NA,2,NA,16,NA,1164,NA
+16,281,"pasto",NA,0,"pasto",5,NA,NA,NA,1,NA,7,NA,1215,NA
+16,282,"piedra","rock (object)",0,"pjeðɾa",6,5.049856007,1,NA,0,NA,0,NA,1396,NA
+16,283,"planta","plant",0,"planta",6,4.770684624,1,NA,1,NA,3,NA,1290,NA
+16,285,"resbaladilla","slide (object)",0,"resβalaðiʎa",11,5.902633333,1,NA,0,NA,0,NA,2283,NA
+16,286,"sol","sun",0,"sɔl",3,5.59471138,9,NA,1,NA,2,NA,1312,NA
+16,289,"tierra",NA,0,"tjɛra",5,NA,NA,NA,0,NA,0,NA,1309,NA
+16,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,NA
+16,291,"viento/aire",NA,0,"bjɛnto",6,NA,NA,NA,0,NA,0,NA,1420,NA
+16,292,"bacinica","potty",0,"baθinika",8,5.111987788,0,NA,0,NA,0,NA,1666,NA
+16,293,"banco (outside)",NA,0,"banko",5,NA,NA,NA,1,NA,5,NA,1246,NA
+16,294,"baño","bathroom",0,"baɲo",4,5.828945618,3,NA,0,NA,12,NA,1224,NA
+16,295,"cajón","drawer",0,"kaxɔn",5,4.718498871,0,NA,0,NA,6,NA,1297,NA
+16,296,"cama","bed",0,"kama",4,7.477038472,6,NA,2,NA,10,NA,1164,NA
+16,297,"champú",NA,0,"tʃampu",6,NA,NA,NA,0,NA,0,NA,1476,NA
+16,299,"cocina","kitchen",0,"koθina",6,6.173786104,2,NA,0,NA,2,NA,1364,NA
+16,301,"cuarto","room",0,"kwaɾto",6,7.306531399,3,NA,0,NA,0,NA,1366,NA
+16,302,"cuna","crib",0,"kuna",4,4.060443011,0,NA,1,NA,6,NA,1221,NA
+16,303,"escaleras","stairs",0,"eskalɛɾas",9,5.429345629,0,NA,0,NA,0,NA,1826,NA
+16,304,"estufa","stove",0,"estufa",6,4.770684624,2,NA,0,NA,0,NA,1413,NA
+16,309,"mesa","table",0,"mesa",4,7.249215057,5,NA,0,NA,4,NA,1205,NA
+16,311,"patio (outside)",NA,0,"patjo",5,NA,NA,NA,1,NA,6,NA,1235,NA
+16,312,"puerta","door",0,"pwɛɾta",6,7.207118856,6,NA,0,NA,1,NA,1375,NA
+16,314,"refrigerador","refrigerator",0,"refɾixɛɾaðɔɾ",12,5.117993812,0,NA,0,NA,0,NA,2572,NA
+16,315,"regadera/ducha","shower",0,"reɣaðɛɾa",8,4.442651256,5,NA,0,NA,0,NA,1688,NA
+16,317,"sala","living room",0,"sala",4,0,1,NA,1,NA,14,NA,1151,NA
+16,319,"silla","chair",0,"siʎa",4,7.177018766,6,NA,0,NA,6,NA,1225,NA
+16,320,"sillón",NA,0,"siʎɔn",5,NA,NA,NA,0,NA,1,NA,1363,NA
+16,322,"televisión","tv",0,"teleβisjɔn",10,6.146329258,0,NA,0,NA,0,NA,2174,NA
+16,323,"tina","bathtub",0,"tina",4,4.882801923,1,NA,0,NA,5,NA,1177,NA
+16,324,"ventana","window",0,"bɛntana",7,6.249975242,2,NA,0,NA,0,NA,1508,NA
+17,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,14.5
+17,15,"vaca","cow",0,"baka",4,6.49677499,4,0,1,NA,13,NA,1164,14.5
+17,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,NA,0,NA,2,NA,1563,14.5
+17,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,NA,0,NA,1,NA,1347,14.5
+17,18,"ratón","mouse",0,"ratɔn",5,6.086774727,4,NA,0,NA,5,NA,1291,14.5
+17,19,"rana","frog",0,"rana",4,5.590986981,0,2,0,NA,13,0,1168,14.5
+17,20,"puerco","pig",0,"pwɛɾko",6,6.003887067,3,2,0,NA,1,NA,1436,14.5
+17,21,"pollito","chick",0,"pɔʎito",6,2.63905733,1,NA,0,NA,1,NA,1400,14.5
+17,23,"pescado","fish (animal)",0,"peskaðo",7,6.705639095,3,2,4,NA,4,NA,2986,14.5
+17,24,"perro","dog",1,"pɛro",4,7.332369206,9,NA,0,NA,6,NA,1280,14.5
+17,25,"pato","duck",0,"pato",4,6.411818268,1,2,5,NA,15,0,1147,14.5
+17,26,"pájaro","bird",0,"paxaɾɔ",6,6.593044534,9,NA,0,NA,0,NA,1367,14.5
+17,27,"oso","bear",0,"oso",3,6.257667588,3,NA,0,NA,7,NA,1292,14.5
+17,28,"mosco",NA,0,"mɔsko",5,NA,NA,NA,1,NA,1,NA,1346,14.5
+17,29,"mosca","fly (animal)",0,"mɔska",5,5.720311777,8,NA,1,NA,2,NA,1304,14.5
+17,30,"mono","monkey",0,"mono",4,5.940171253,3,NA,2,NA,4,NA,1269,14.5
+17,31,"mariposa","butterfly",0,"maɾiposa",8,4.605170186,0,NA,0,NA,0,NA,1626,14.5
+17,32,"lobo","wolf",0,"loβo",4,4.672828834,1,NA,1,NA,6,NA,1278,14.5
+17,33,"león","lion",0,"leɔn",4,6.001414878,3,NA,0,NA,1,NA,1284,14.5
+17,35,"hormiga","ant",0,"ɔɾmiɣa",6,3.526360525,0,NA,0,NA,0,NA,1422,14.5
+17,38,"gato","cat",0,"ɡato",4,6.933423026,9,NA,1,NA,10,NA,1188,14.5
+17,40,"gallina","hen",0,"ɡaʎina",6,3.912023005,3,NA,0,NA,1,NA,1332,14.5
+17,41,"foca",NA,0,"foka",4,NA,NA,NA,1,NA,6,NA,1247,14.5
+17,42,"elefante","elephant",0,"elefante",8,5.918893854,0,NA,0,NA,0,NA,1715,14.5
+17,43,"conejo","bunny",0,"konexo",6,6.376726948,0,NA,0,NA,0,NA,1411,14.5
+17,46,"caballo","horse",0,"kaβaʎo",6,6.843749949,4,NA,0,NA,0,NA,1332,14.5
+17,47,"burro","donkey",0,"buro",4,5.017279837,1,NA,0,NA,4,NA,1306,14.5
+17,50,"borrego","lamb",0,"bɔreɣo",6,4.941642423,0,NA,0,NA,0,NA,1455,14.5
+17,53,"araña","spider",0,"aɾaɲa",5,4.49980967,1,NA,0,NA,0,NA,1250,14.5
+17,54,"animal","animal",0,"animal",6,5.648974238,18,NA,0,NA,0,NA,1415,14.5
+17,57,"triciclo (vehicles)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,14.5
+17,58,"tren","train",0,"tɾɛn",4,6.80682936,3,NA,0,NA,1,NA,1296,14.5
+17,60,"moto","motorcycle",0,"moto",4,4.094344562,1,NA,1,NA,7,NA,1247,14.5
+17,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,NA,0,NA,0,NA,2188,14.5
+17,62,"carro/coche","car",0,"karo",4,7.744569809,8,NA,0,NA,13,NA,1209,14.5
+17,64,"camión/troca","truck",0,"kamjɔn",6,6.812345094,2,NA,0,NA,4,NA,1410,14.5
+17,66,"bicicleta","bicycle",0,"biθikleta",9,4.553876892,1,NA,0,NA,0,NA,1895,14.5
+17,67,"barco","boat",0,"baɾko",5,6.194405391,3,2,1,NA,4,NA,1252,14.5
+17,68,"avión","airplane",0,"aβjɔn",5,5.945420609,2,NA,0,NA,2,NA,1357,14.5
+17,71,"arroz","rice",0,"arɔθ",4,5.093750201,1,NA,0,NA,0,NA,1308,14.5
+17,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,14.5
+17,73,"atún",NA,0,"atun",4,NA,NA,NA,0,NA,1,NA,1259,14.5
+17,74,"azúcar",NA,0,"aθukaɾ",6,NA,NA,NA,0,NA,0,NA,1426,14.5
+17,75,"café","coffee",0,"kafɛ",4,6.326149473,1,0,0,NA,4,NA,1268,14.5
+17,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,14.5
+17,77,"carne","meat",0,"kaɾne",5,5.755742214,4,NA,0,NA,1,NA,1272,14.5
+17,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,14.5
+17,80,"chicle",NA,0,"tʃikle",6,NA,NA,NA,1,NA,1,NA,1465,14.5
+17,81,"chile","chili",0,"tʃile",5,2.63905733,1,NA,1,NA,1,NA,1350,14.5
+17,82,"chocolate",NA,0,"tʃokolate",9,NA,NA,NA,0,NA,0,NA,1888,14.5
+17,83,"comida","food",0,"komiða",6,6.418364936,21,2,0,NA,3,NA,1386,14.5
+17,84,"dulce","candy",0,"dulθe",5,5.521460918,3,NA,0,NA,0,NA,1388,14.5
+17,87,"elote",NA,0,"elote",5,NA,NA,NA,0,NA,1,0,1309,14.5
+17,89,"fresa",NA,0,"fɾesa",5,NA,NA,NA,0,NA,1,NA,1290,14.5
+17,90,"frijoles","beans",0,"fɾixoles",8,5.068904202,2,NA,0,NA,0,NA,1780,14.5
+17,91,"galleta","cookie",0,"ɡaʎeta",6,5.966146739,2,0,0,NA,3,NA,1326,14.5
+17,92,"gelatina",NA,0,"xelatina",8,NA,NA,NA,0,NA,0,NA,1618,14.5
+17,94,"helado/nieve","ice cream",0,"elaðo",5,0,2,0,0,NA,1,NA,1277,14.5
+17,95,"hielo",NA,0,"jelo",4,NA,NA,NA,2,NA,7,NA,1256,14.5
+17,97,"huevo","egg",0,"weβo",4,5.926926026,2,0,0,NA,5,NA,1287,14.5
+17,98,"jamón","ham",0,"xamɔn",5,4.025351691,3,NA,1,NA,4,NA,1315,14.5
+17,99,"jugo","juice",0,"xuɣo",4,6.986566459,2,0,0,NA,1,NA,1321,14.5
+17,103,"cacahuete/maní",NA,0,"kakawete",8,NA,NA,NA,0,NA,0,NA,1709,14.5
+17,105,"manzana","apple",0,"manθana",7,6.070737728,5,NA,0,NA,0,NA,1489,14.5
+17,106,"melón",NA,0,"melɔn",5,NA,NA,NA,0,NA,2,NA,1344,14.5
+17,108,"naranja","orange (food)",0,"naɾaŋxa",7,6.411818268,4,NA,0,NA,0,NA,1538,14.5
+17,109,"paleta","lollipop",0,"paleta",6,3.828641396,0,NA,0,NA,3,0,1253,14.5
+17,110,"palomitas",NA,0,"palomitas",9,NA,NA,NA,0,NA,0,NA,1760,14.5
+17,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,14.5
+17,113,"papas",NA,1,"papas",5,NA,NA,NA,1,NA,4,NA,1248,14.5
+17,114,"papitas",NA,0,"papitas",7,NA,NA,NA,0,NA,1,NA,1434,14.5
+17,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,NA,4,NA,1237,14.5
+17,116,"pastel","cake",0,"pastel",6,6.584791392,2,NA,0,NA,2,NA,1359,14.5
+17,118,"pescado (food_drink)",NA,0,"peskaðo",7,NA,NA,NA,4,NA,4,NA,2986,14.5
+17,119,"plátano/banana","banana",0,"platano",7,5.023880521,2,NA,0,NA,1,NA,1427,14.5
+17,120,"pollo","chicken (food)",0,"pɔʎo",4,6.380122537,8,NA,0,NA,6,NA,1275,14.5
+17,121,"quesadilla","quesadilla",0,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,14.5
+17,122,"queso","cheese",0,"keso",4,6.208590026,4,0.5,0,NA,7,NA,1245,14.5
+17,123,"sal",NA,0,"sal",3,NA,NA,NA,2,NA,4,0,1234,14.5
+17,124,"salchicha","hot dog",0,"saltʃitʃa",9,0,NA,NA,0,NA,0,NA,1853,14.5
+17,126,"sandía",NA,0,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,14.5
+17,127,"soda/refresco","soda",0,"soða",4,4.543294782,1,NA,1,NA,7,NA,1235,14.5
+17,128,"sopa","soup",0,"sopa",4,5.455321115,8,2,2,NA,7,NA,1241,14.5
+17,129,"taco",NA,0,"tako",4,NA,NA,NA,0,NA,11,NA,1192,14.5
+17,130,"té (food)",NA,0,"tɛ",2,NA,NA,NA,0,NA,1,NA,1313,14.5
+17,131,"torta/lonche",NA,0,"tɔɾta",5,NA,NA,NA,0,NA,3,NA,1253,14.5
+17,132,"tortilla","tortilla",0,"tɔɾtiʎa",7,2.944438979,0,NA,0,NA,2,NA,1532,14.5
+17,133,"uvas","grapes",0,"uβas",4,4.094344562,NA,NA,0,NA,1,NA,1297,14.5
+17,136,"yoghurt",NA,0,"ʝoɣuɾt",6,NA,NA,NA,0,NA,0,NA,1519,14.5
+17,137,"zanahoria",NA,0,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,14.5
+17,138,"botón","button",0,"botɔn",5,5.805134969,0,NA,0,NA,2,NA,1335,14.5
+17,140,"calcetín","sock",0,"kalθetin",8,4.394449155,1,NA,0,NA,0,NA,1688,14.5
+17,141,"calzón","underpants",0,"kalθɔn",6,2.302585093,NA,NA,0,NA,2,NA,1382,14.5
+17,142,"camisa",NA,0,"kamisa",6,NA,NA,NA,0,NA,2,NA,1307,14.5
+17,143,"chancla",NA,0,"tʃankla",7,NA,NA,NA,0,NA,0,NA,1491,14.5
+17,146,"falda","skirt",0,"falða",5,3.583518938,3,NA,0,NA,1,NA,1241,14.5
+17,147,"gorra",NA,0,"ɡɔra",4,NA,NA,NA,0,NA,1,NA,1285,14.5
+17,148,"guantes",NA,0,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,14.5
+17,149,"lentes","glasses",0,"lɛntes",6,5.176149733,1,2,0,NA,1,NA,1436,14.5
+17,151,"pañal","diaper",0,"paɲal",5,5.087596335,0,NA,0,NA,3,NA,1273,14.5
+17,152,"pantalón","pants",0,"pantalɔn",8,5.993961427,5,NA,0,NA,0,NA,1641,14.5
+17,153,"pijama","pajamas",0,"pixama",6,4.736198448,0,NA,0,NA,0,NA,1368,14.5
+17,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,14.5
+17,155,"ropa",NA,0,"ropa",4,NA,NA,NA,1,NA,6,NA,1256,14.5
+17,156,"shorts","shorts",0,"ʃɔɾts",5,3.583518938,2,NA,0,NA,1,NA,1353,14.5
+17,157,"sombrero","hat",0,"sɔmbɾɛɾɔ",8,6.874198495,2,NA,0,NA,0,NA,1852,14.5
+17,158,"suéter","sweater",0,"swɛtɛɾ",6,4.836281907,0,NA,0,NA,0,NA,1503,14.5
+17,159,"vestido","dress (object)",0,"bestiðo",7,5.823045895,4,NA,0,NA,0,NA,1543,14.5
+17,160,"zapato","shoe",1,"θapato",6,5.843544417,4,NA,0,NA,1,NA,1330,14.5
+17,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,14.5
+17,163,"boca","mouth",0,"boka",4,6.985641818,5,2,2,NA,8,NA,1226,14.5
+17,164,"brazo","arm",0,"bɾaθo",5,5.590986981,4,NA,0,NA,2,NA,1288,14.5
+17,165,"cabeza","head",0,"kaβeθa",6,7.156176637,6,NA,0,NA,1,NA,1322,14.5
+17,166,"cachete","cheek",0,"katʃete",7,3.784189634,1,NA,0,NA,0,NA,1527,14.5
+17,167,"cara","face",0,"kaɾa",4,6.52649486,7,NA,2,NA,10,NA,1134,14.5
+17,168,"chichi/pecho","breast",0,"tʃitʃi",6,2.995732274,1,0,0,NA,0,NA,1491,14.5
+17,169,"dedo","finger",0,"deðo",4,6.22059017,2,NA,0,NA,4,NA,1285,14.5
+17,170,"dientes","tooth",0,"djɛntes",7,4.418840608,1,NA,0,NA,1,NA,1612,14.5
+17,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,14.5
+17,172,"hombro",NA,0,"ɔmbɾo",5,NA,NA,NA,0,NA,0,NA,1365,14.5
+17,173,"labios",NA,0,"laβjos",6,NA,NA,NA,0,NA,0,NA,1387,14.5
+17,174,"lengua","tongue",0,"lɛŋɡwa",6,5.33753808,2,NA,0,NA,0,NA,1474,14.5
+17,175,"mano","hand",0,"mano",4,7.163172391,4,0,1,NA,11,0,1192,14.5
+17,176,"nalgas",NA,0,"nalɣas",6,NA,NA,NA,0,NA,0,NA,1368,14.5
+17,177,"nariz","nose",0,"naɾiθ",5,6.799055862,6,NA,0,NA,1,NA,1311,14.5
+17,178,"ojos","eye",0,"oxos",4,5.690359454,4,NA,1,NA,4,NA,1346,14.5
+17,179,"ombligo","belly button",0,"ɔmbliɣo",7,0,NA,NA,0,NA,0,NA,1617,14.5
+17,180,"oreja","ear",0,"ɔɾɛxa",5,5.416100402,3,NA,0,NA,0,NA,1313,14.5
+17,181,"panza","tummy",0,"panθa",5,5.153291594,0,NA,0,NA,4,0,1201,14.5
+17,182,"pelo","hair",0,"pelo",4,7.17395832,6,NA,2,NA,12,0,1220,14.5
+17,183,"pene","penis",0,"pene",4,2.302585093,0,NA,1,NA,3,0,1260,14.5
+17,184,"piernas","leg",0,"pjɛɾnas",7,5.620400866,6,NA,0,NA,0,NA,1538,14.5
+17,185,"pies","foot",0,"pjes",4,6.304448802,5,0,0,NA,0,NA,1293,14.5
+17,186,"rodilla","knee",0,"roðiʎa",6,5.147494477,1,NA,0,NA,0,NA,1415,14.5
+17,190,"colores",NA,0,"kolɔɾɛs",7,NA,NA,NA,0,NA,0,NA,1589,14.5
+17,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,14.5
+17,192,"globo/bomba","balloon",1,"ɡloβo",5,5.726847748,0,0,1,NA,1,NA,1357,14.5
+17,193,"hoja/papel",NA,0,"oxa",3,NA,NA,NA,1,NA,10,NA,1247,14.5
+17,194,"juguete","toy (object)",0,"xuɣete",6,6.261491684,3,0,0,NA,0,NA,1479,14.5
+17,195,"lápiz","pen/pencil",0,"lapiθ",5,0,NA,NA,0,NA,1,NA,1315,14.5
+17,196,"libro","book",0,"liβɾo",5,7.722677516,2,NA,0,NA,1,NA,1321,14.5
+17,197,"muñeca","doll",0,"muɲeka",6,5.796057751,1,NA,0,NA,0,NA,1426,14.5
+17,198,"osito","teddybear",0,"osito",5,1.098612289,NA,NA,0,NA,1,NA,1298,14.5
+17,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,14.5
+17,201,"pinturas",NA,0,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,14.5
+17,203,"pluma/plumones",NA,0,"pluma",5,NA,NA,NA,0,NA,1,NA,1286,14.5
+17,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,14.5
+17,205,"triciclo (toys)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,14.5
+17,206,"botas","boots",0,"botas",5,5.375278408,0,NA,0,NA,4,NA,1280,14.5
+17,207,"bolsa (clothing)","purse",0,"bɔlsa",5,4.304065093,0,NA,4,NA,6,NA,2580,14.5
+17,208,"babero","bib",0,"baβɛɾɔ",6,3.970291914,NA,NA,0,NA,0,NA,1414,14.5
+17,209,"aretes","earrings",0,"aɾɛtes",6,3.737669618,0,NA,0,NA,0,NA,1424,14.5
+17,211,"almohada","pillow",0,"almoaða",7,4.787491743,2,NA,0,NA,0,NA,1510,14.5
+17,213,"basura","trash",0,"basuɾa",6,4.343805422,0,NA,0,NA,0,NA,1326,14.5
+17,214,"bolsa (household)",NA,0,"bɔlsa",5,NA,NA,NA,4,NA,6,NA,2580,14.5
+17,215,"botella/mamila","bottle",0,"boteʎa",6,5.953243334,2,2,0,NA,0,NA,1367,14.5
+17,216,"caja","box",0,"kaxa",4,7.201916318,3,NA,2,NA,11,NA,1167,14.5
+17,219,"cassette",NA,0,"kassette",8,NA,NA,NA,0,NA,0,NA,1730,14.5
+17,220,"cepillo de dientes","toothbrush",0,"θepiʎoðeðjɛntes",15,2.944438979,0,NA,0,NA,0,NA,3238,14.5
+17,221,"cepillo","brush (object)",0,"θepiʎo",6,5.916202063,5,NA,0,NA,0,NA,1434,14.5
+17,222,"cerillos",NA,0,"θɛɾiʎos",7,NA,NA,NA,0,NA,0,NA,1607,14.5
+17,223,"chupón/chupete","pacifier",0,"tʃupɔn",6,1.791759469,0,NA,0,NA,0,NA,1491,14.5
+17,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,NA,0,NA,0,NA,1569,14.5
+17,226,"cobija","blanket",0,"koβixa",6,4.941642423,2,NA,0,NA,2,NA,1383,14.5
+17,228,"cubeta",NA,0,"kuβeta",6,NA,NA,NA,0,NA,1,NA,1369,14.5
+17,229,"cuchara","spoon",0,"kutʃaɾa",7,5.942799375,5,NA,0,NA,0,NA,1520,14.5
+17,230,"cuchillo","knife",0,"kutʃiʎo",7,4.941642423,4,NA,0,NA,0,NA,1584,14.5
+17,231,"dinero","money",0,"dinɛɾɔ",6,6.442540166,5,NA,0,NA,0,NA,1494,14.5
+17,232,"escoba","broom",0,"eskoβa",6,4.762173935,0,NA,0,NA,0,NA,1391,14.5
+17,233,"espejo","mirror",0,"espexo",6,5.099866428,4,NA,0,NA,0,NA,1440,14.5
+17,234,"fotos","photos",0,"fotos",5,2.397895273,0,NA,0,NA,3,NA,1341,14.5
+17,235,"jabón","soap",0,"xaβɔn",5,4.779123493,4,2,1,NA,4,NA,1312,14.5
+17,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,14.5
+17,237,"llave","keys",0,"ʎaβe",4,5.075173815,0,NA,0,NA,1,NA,1258,14.5
+17,238,"luz","light",0,"luθ",3,6.343880434,4,NA,0,NA,1,NA,1335,14.5
+17,240,"medicina","medicine",0,"meðiθina",8,4.852030264,1,2,0,NA,0,NA,1739,14.5
+17,241,"olla",NA,0,"ɔʎa",3,NA,NA,NA,0,NA,4,NA,1259,14.5
+17,243,"papel","paper",0,"papel",5,6.970730078,7,NA,0,NA,3,NA,1288,14.5
+17,244,"pasta de dientes",NA,0,"pastaðeðjɛntes",14,NA,NA,NA,0,NA,0,NA,2904,14.5
+17,245,"peine","comb (object)",0,"peɪne",5,5.068904202,2,NA,1,NA,1,NA,1348,14.5
+17,247,"plancha",NA,0,"plantʃa",7,NA,NA,NA,1,NA,1,NA,1444,14.5
+17,248,"plato","plate",0,"plato",5,5.85220248,0,NA,1,NA,8,NA,1226,14.5
+17,249,"radio","radio",0,"raðjo",5,4.976733742,0,NA,0,NA,1,NA,1297,14.5
+17,250,"reloj","watch (object)",0,"relɔx",5,7.413367336,0,NA,0,NA,1,NA,1382,14.5
+17,251,"servilleta",NA,0,"sɛɾβiʎeta",9,NA,NA,NA,0,NA,0,NA,1934,14.5
+17,253,"taza","cup",0,"taθa",4,6.746412129,3,2,0,NA,10,NA,1159,14.5
+17,254,"teléfono","telephone",0,"telɛfono",8,5.693732139,0,NA,0,NA,0,NA,1737,14.5
+17,255,"tenedor","fork",0,"teneðɔɾ",7,5.081404365,3,NA,0,NA,0,NA,1618,14.5
+17,256,"tijeras","scissors",0,"tixɛɾas",7,5.257495372,0,NA,0,NA,0,NA,1546,14.5
+17,257,"toalla","towel",0,"toaʎa",5,4.927253685,2,2,0,NA,1,NA,1248,14.5
+17,258,"trapo","cloth",0,"tɾapo",5,4.025351691,4,NA,0,NA,2,NA,1287,14.5
+17,259,"vasos","glass",0,"basos",5,5.676753802,5,2,0,NA,2,NA,1279,14.5
+17,260,"vela","candle",0,"bela",4,4.043051268,0,NA,0,NA,10,NA,1192,14.5
+17,262,"árbol","tree",0,"aɾβɔl",5,6.768493212,11,NA,0,NA,0,NA,1348,14.5
+17,263,"bandera",NA,0,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,14.5
+17,264,"cielo","sky",0,"θjelo",5,5.147494477,6,NA,1,NA,2,NA,1342,14.5
+17,266,"columpio","swing (object)",0,"kolumpjo",8,4.564348191,1,NA,0,NA,0,NA,1773,14.5
+17,267,"estrella","star",0,"estɾeʎa",7,5.164785974,4,NA,0,NA,0,NA,1538,14.5
+17,268,"flor","flower",0,"flɔɾ",4,5.214935758,3,NA,0,NA,0,NA,1322,14.5
+17,270,"hojas",NA,0,"oxas",4,NA,NA,NA,2,NA,4,NA,1292,14.5
+17,272,"lluvia","rain",0,"ʎuβja",5,5.214935758,3,2,0,NA,0,NA,1337,14.5
+17,273,"luna","moon",0,"luna",4,5.117993812,3,NA,1,NA,5,NA,1217,14.5
+17,274,"maceta",NA,0,"maθeta",6,NA,NA,NA,0,NA,2,NA,1312,14.5
+17,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,14.5
+17,278,"nube","cloud",0,"nuβe",4,3.17805383,2,NA,0,NA,1,NA,1331,14.5
+17,280,"palo",NA,0,"palo",4,NA,NA,NA,2,NA,16,0,1164,14.5
+17,281,"pasto",NA,0,"pasto",5,NA,NA,NA,1,NA,7,NA,1215,14.5
+17,282,"piedra","rock (object)",0,"pjeðɾa",6,5.049856007,1,NA,0,NA,0,NA,1396,14.5
+17,283,"planta","plant",0,"planta",6,4.770684624,1,2,1,NA,3,NA,1290,14.5
+17,285,"resbaladilla","slide (object)",0,"resβalaðiʎa",11,5.902633333,1,2,0,NA,0,NA,2283,14.5
+17,286,"sol","sun",0,"sɔl",3,5.59471138,9,NA,1,NA,2,NA,1312,14.5
+17,289,"tierra",NA,0,"tjɛra",5,NA,NA,NA,0,NA,0,NA,1309,14.5
+17,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,14.5
+17,291,"viento/aire",NA,0,"bjɛnto",6,NA,NA,NA,0,NA,0,NA,1420,14.5
+17,292,"bacinica","potty",0,"baθinika",8,5.111987788,0,NA,0,NA,0,NA,1666,14.5
+17,293,"banco (outside)",NA,0,"banko",5,NA,NA,NA,1,NA,5,NA,1246,14.5
+17,294,"baño","bathroom",0,"baɲo",4,5.828945618,3,NA,0,NA,12,NA,1224,14.5
+17,295,"cajón","drawer",0,"kaxɔn",5,4.718498871,0,NA,0,NA,6,NA,1297,14.5
+17,296,"cama","bed",0,"kama",4,7.477038472,6,NA,2,NA,10,NA,1164,14.5
+17,297,"champú",NA,0,"tʃampu",6,NA,NA,NA,0,NA,0,NA,1476,14.5
+17,299,"cocina","kitchen",0,"koθina",6,6.173786104,2,NA,0,NA,2,NA,1364,14.5
+17,301,"cuarto","room",0,"kwaɾto",6,7.306531399,3,NA,0,NA,0,NA,1366,14.5
+17,302,"cuna","crib",0,"kuna",4,4.060443011,0,NA,1,NA,6,NA,1221,14.5
+17,303,"escaleras","stairs",0,"eskalɛɾas",9,5.429345629,0,NA,0,NA,0,NA,1826,14.5
+17,304,"estufa","stove",0,"estufa",6,4.770684624,2,NA,0,NA,0,NA,1413,14.5
+17,309,"mesa","table",0,"mesa",4,7.249215057,5,NA,0,NA,4,NA,1205,14.5
+17,311,"patio (outside)",NA,0,"patjo",5,NA,NA,NA,1,NA,6,NA,1235,14.5
+17,312,"puerta","door",0,"pwɛɾta",6,7.207118856,6,NA,0,NA,1,NA,1375,14.5
+17,314,"refrigerador","refrigerator",0,"refɾixɛɾaðɔɾ",12,5.117993812,0,NA,0,NA,0,NA,2572,14.5
+17,315,"regadera/ducha","shower",0,"reɣaðɛɾa",8,4.442651256,5,2,0,NA,0,NA,1688,14.5
+17,317,"sala","living room",0,"sala",4,0,1,NA,1,NA,14,NA,1151,14.5
+17,319,"silla","chair",0,"siʎa",4,7.177018766,6,NA,0,NA,6,NA,1225,14.5
+17,320,"sillón",NA,0,"siʎɔn",5,NA,NA,NA,0,NA,1,NA,1363,14.5
+17,322,"televisión","tv",0,"teleβisjɔn",10,6.146329258,0,NA,0,NA,0,NA,2174,14.5
+17,323,"tina","bathtub",0,"tina",4,4.882801923,1,2,0,NA,5,NA,1177,14.5
+17,324,"ventana","window",0,"bɛntana",7,6.249975242,2,NA,0,NA,0,NA,1508,14.5
+18,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,31.5
+18,15,"vaca","cow",0,"baka",4,6.49677499,4,0,1,NA,13,NA,1164,31.5
+18,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,NA,0,NA,2,NA,1563,31.5
+18,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,NA,0,NA,1,NA,1347,31.5
+18,18,"ratón","mouse",0,"ratɔn",5,6.086774727,4,NA,0,NA,5,NA,1291,31.5
+18,19,"rana","frog",0,"rana",4,5.590986981,0,2,0,NA,13,0,1168,31.5
+18,20,"puerco","pig",0,"pwɛɾko",6,6.003887067,3,2,0,NA,1,NA,1436,31.5
+18,21,"pollito","chick",0,"pɔʎito",6,2.63905733,1,NA,0,NA,1,NA,1400,31.5
+18,23,"pescado","fish (animal)",0,"peskaðo",7,6.705639095,3,2,4,NA,4,NA,2986,31.5
+18,25,"pato","duck",0,"pato",4,6.411818268,1,2,5,NA,15,0,1147,31.5
+18,26,"pájaro","bird",0,"paxaɾɔ",6,6.593044534,9,0,0,NA,0,NA,1367,31.5
+18,27,"oso","bear",0,"oso",3,6.257667588,3,0,0,NA,7,NA,1292,31.5
+18,28,"mosco",NA,0,"mɔsko",5,NA,NA,NA,1,NA,1,NA,1346,31.5
+18,29,"mosca","fly (animal)",0,"mɔska",5,5.720311777,8,NA,1,NA,2,NA,1304,31.5
+18,30,"mono","monkey",0,"mono",4,5.940171253,3,NA,2,NA,4,NA,1269,31.5
+18,31,"mariposa","butterfly",0,"maɾiposa",8,4.605170186,0,0,0,NA,0,NA,1626,31.5
+18,32,"lobo","wolf",0,"loβo",4,4.672828834,1,0,1,0,6,0,1278,31.5
+18,33,"león","lion",0,"leɔn",4,6.001414878,3,NA,0,NA,1,NA,1284,31.5
+18,35,"hormiga","ant",0,"ɔɾmiɣa",6,3.526360525,0,NA,0,NA,0,NA,1422,31.5
+18,38,"gato","cat",0,"ɡato",4,6.933423026,9,0,1,NA,10,NA,1188,31.5
+18,40,"gallina","hen",0,"ɡaʎina",6,3.912023005,3,NA,0,NA,1,NA,1332,31.5
+18,41,"foca",NA,0,"foka",4,NA,NA,NA,1,NA,6,NA,1247,31.5
+18,42,"elefante","elephant",0,"elefante",8,5.918893854,0,NA,0,NA,0,NA,1715,31.5
+18,43,"conejo","bunny",0,"konexo",6,6.376726948,0,NA,0,NA,0,NA,1411,31.5
+18,46,"caballo","horse",0,"kaβaʎo",6,6.843749949,4,0,0,NA,0,NA,1332,31.5
+18,47,"burro","donkey",0,"buro",4,5.017279837,1,NA,0,NA,4,0,1306,31.5
+18,50,"borrego","lamb",0,"bɔreɣo",6,4.941642423,0,NA,0,NA,0,NA,1455,31.5
+18,53,"araña","spider",0,"aɾaɲa",5,4.49980967,1,NA,0,NA,0,NA,1250,31.5
+18,54,"animal","animal",0,"animal",6,5.648974238,18,0,0,NA,0,NA,1415,31.5
+18,57,"triciclo (vehicles)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,31.5
+18,58,"tren","train",0,"tɾɛn",4,6.80682936,3,NA,0,NA,1,NA,1296,31.5
+18,60,"moto","motorcycle",0,"moto",4,4.094344562,1,NA,1,NA,7,NA,1247,31.5
+18,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,NA,0,NA,0,NA,2188,31.5
+18,62,"carro/coche","car",1,"karo",4,7.744569809,8,NA,0,NA,13,0,1209,31.5
+18,64,"camión/troca","truck",0,"kamjɔn",6,6.812345094,2,NA,0,NA,4,NA,1410,31.5
+18,66,"bicicleta","bicycle",0,"biθikleta",9,4.553876892,1,NA,0,NA,0,NA,1895,31.5
+18,67,"barco","boat",0,"baɾko",5,6.194405391,3,2,1,NA,4,NA,1252,31.5
+18,68,"avión","airplane",0,"aβjɔn",5,5.945420609,2,NA,0,NA,2,NA,1357,31.5
+18,71,"arroz","rice",0,"arɔθ",4,5.093750201,1,NA,0,NA,0,NA,1308,31.5
+18,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,31.5
+18,73,"atún",NA,0,"atun",4,NA,NA,NA,0,NA,1,NA,1259,31.5
+18,74,"azúcar",NA,0,"aθukaɾ",6,NA,NA,NA,0,NA,0,NA,1426,31.5
+18,75,"café","coffee",0,"kafɛ",4,6.326149473,1,0,0,NA,4,NA,1268,31.5
+18,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,31.5
+18,77,"carne","meat",0,"kaɾne",5,5.755742214,4,NA,0,NA,1,NA,1272,31.5
+18,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,31.5
+18,80,"chicle",NA,0,"tʃikle",6,NA,NA,NA,1,NA,1,NA,1465,31.5
+18,81,"chile","chili",0,"tʃile",5,2.63905733,1,NA,1,NA,1,NA,1350,31.5
+18,82,"chocolate",NA,0,"tʃokolate",9,NA,NA,NA,0,NA,0,NA,1888,31.5
+18,83,"comida","food",0,"komiða",6,6.418364936,21,2,0,NA,3,NA,1386,31.5
+18,84,"dulce","candy",0,"dulθe",5,5.521460918,3,NA,0,NA,0,NA,1388,31.5
+18,87,"elote",NA,0,"elote",5,NA,NA,NA,0,NA,1,0,1309,31.5
+18,89,"fresa",NA,0,"fɾesa",5,NA,NA,NA,0,NA,1,NA,1290,31.5
+18,90,"frijoles","beans",0,"fɾixoles",8,5.068904202,2,NA,0,NA,0,NA,1780,31.5
+18,91,"galleta","cookie",0,"ɡaʎeta",6,5.966146739,2,0,0,NA,3,NA,1326,31.5
+18,92,"gelatina",NA,0,"xelatina",8,NA,NA,NA,0,NA,0,NA,1618,31.5
+18,94,"helado/nieve","ice cream",0,"elaðo",5,0,2,0,0,NA,1,NA,1277,31.5
+18,95,"hielo",NA,0,"jelo",4,NA,NA,NA,2,NA,7,NA,1256,31.5
+18,97,"huevo","egg",0,"weβo",4,5.926926026,2,0,0,NA,5,NA,1287,31.5
+18,98,"jamón","ham",0,"xamɔn",5,4.025351691,3,NA,1,NA,4,NA,1315,31.5
+18,99,"jugo","juice",0,"xuɣo",4,6.986566459,2,0,0,NA,1,NA,1321,31.5
+18,103,"cacahuete/maní",NA,0,"kakawete",8,NA,NA,NA,0,NA,0,NA,1709,31.5
+18,105,"manzana","apple",0,"manθana",7,6.070737728,5,NA,0,NA,0,NA,1489,31.5
+18,106,"melón",NA,0,"melɔn",5,NA,NA,NA,0,NA,2,NA,1344,31.5
+18,108,"naranja","orange (food)",0,"naɾaŋxa",7,6.411818268,4,NA,0,NA,0,NA,1538,31.5
+18,109,"paleta","lollipop",0,"paleta",6,3.828641396,0,NA,0,NA,3,0,1253,31.5
+18,110,"palomitas",NA,0,"palomitas",9,NA,NA,NA,0,NA,0,NA,1760,31.5
+18,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,31.5
+18,114,"papitas",NA,0,"papitas",7,NA,NA,NA,0,NA,1,0,1434,31.5
+18,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,0,4,0,1237,31.5
+18,116,"pastel","cake",0,"pastel",6,6.584791392,2,NA,0,NA,2,NA,1359,31.5
+18,118,"pescado (food_drink)",NA,0,"peskaðo",7,NA,NA,NA,4,NA,4,NA,2986,31.5
+18,119,"plátano/banana","banana",0,"platano",7,5.023880521,2,NA,0,NA,1,NA,1427,31.5
+18,120,"pollo","chicken (food)",0,"pɔʎo",4,6.380122537,8,NA,0,NA,6,0,1275,31.5
+18,121,"quesadilla","quesadilla",0,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,31.5
+18,122,"queso","cheese",0,"keso",4,6.208590026,4,0.5,0,NA,7,NA,1245,31.5
+18,123,"sal",NA,0,"sal",3,NA,NA,NA,2,NA,4,0,1234,31.5
+18,124,"salchicha","hot dog",0,"saltʃitʃa",9,0,NA,NA,0,NA,0,NA,1853,31.5
+18,126,"sandía",NA,0,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,31.5
+18,127,"soda/refresco","soda",0,"soða",4,4.543294782,1,NA,1,NA,7,NA,1235,31.5
+18,128,"sopa","soup",1,"sopa",4,5.455321115,8,2,2,NA,7,NA,1241,31.5
+18,129,"taco",NA,0,"tako",4,NA,NA,NA,0,NA,11,NA,1192,31.5
+18,130,"té (food)",NA,0,"tɛ",2,NA,NA,NA,0,NA,1,NA,1313,31.5
+18,131,"torta/lonche",NA,0,"tɔɾta",5,NA,NA,NA,0,NA,3,NA,1253,31.5
+18,132,"tortilla","tortilla",0,"tɔɾtiʎa",7,2.944438979,0,NA,0,NA,2,NA,1532,31.5
+18,133,"uvas","grapes",0,"uβas",4,4.094344562,NA,NA,0,NA,1,NA,1297,31.5
+18,136,"yoghurt",NA,0,"ʝoɣuɾt",6,NA,NA,NA,0,NA,0,NA,1519,31.5
+18,137,"zanahoria",NA,0,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,31.5
+18,138,"botón","button",0,"botɔn",5,5.805134969,0,NA,0,NA,2,NA,1335,31.5
+18,140,"calcetín","sock",0,"kalθetin",8,4.394449155,1,0,0,NA,0,NA,1688,31.5
+18,141,"calzón","underpants",0,"kalθɔn",6,2.302585093,NA,NA,0,NA,2,NA,1382,31.5
+18,142,"camisa",NA,0,"kamisa",6,NA,NA,NA,0,NA,2,NA,1307,31.5
+18,143,"chancla",NA,0,"tʃankla",7,NA,NA,NA,0,NA,0,NA,1491,31.5
+18,146,"falda","skirt",0,"falða",5,3.583518938,3,NA,0,NA,1,NA,1241,31.5
+18,147,"gorra",NA,0,"ɡɔra",4,NA,NA,NA,0,NA,1,NA,1285,31.5
+18,148,"guantes",NA,0,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,31.5
+18,149,"lentes","glasses",0,"lɛntes",6,5.176149733,1,2,0,NA,1,NA,1436,31.5
+18,151,"pañal","diaper",0,"paɲal",5,5.087596335,0,NA,0,NA,3,0,1273,31.5
+18,152,"pantalón","pants",0,"pantalɔn",8,5.993961427,5,NA,0,NA,0,NA,1641,31.5
+18,153,"pijama","pajamas",0,"pixama",6,4.736198448,0,NA,0,NA,0,NA,1368,31.5
+18,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,31.5
+18,155,"ropa",NA,0,"ropa",4,NA,NA,NA,1,NA,6,NA,1256,31.5
+18,156,"shorts","shorts",0,"ʃɔɾts",5,3.583518938,2,NA,0,NA,1,NA,1353,31.5
+18,157,"sombrero","hat",0,"sɔmbɾɛɾɔ",8,6.874198495,2,NA,0,NA,0,NA,1852,31.5
+18,158,"suéter","sweater",0,"swɛtɛɾ",6,4.836281907,0,NA,0,NA,0,NA,1503,31.5
+18,159,"vestido","dress (object)",0,"bestiðo",7,5.823045895,4,NA,0,NA,0,NA,1543,31.5
+18,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,31.5
+18,163,"boca","mouth",0,"boka",4,6.985641818,5,2,2,NA,8,NA,1226,31.5
+18,164,"brazo","arm",0,"bɾaθo",5,5.590986981,4,NA,0,NA,2,NA,1288,31.5
+18,165,"cabeza","head",0,"kaβeθa",6,7.156176637,6,NA,0,NA,1,NA,1322,31.5
+18,166,"cachete","cheek",0,"katʃete",7,3.784189634,1,NA,0,NA,0,NA,1527,31.5
+18,167,"cara","face",0,"kaɾa",4,6.52649486,7,NA,2,NA,10,NA,1134,31.5
+18,168,"chichi/pecho","breast",0,"tʃitʃi",6,2.995732274,1,0,0,NA,0,NA,1491,31.5
+18,169,"dedo","finger",0,"deðo",4,6.22059017,2,NA,0,NA,4,NA,1285,31.5
+18,170,"dientes","tooth",0,"djɛntes",7,4.418840608,1,NA,0,NA,1,NA,1612,31.5
+18,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,31.5
+18,172,"hombro",NA,0,"ɔmbɾo",5,NA,NA,NA,0,NA,0,NA,1365,31.5
+18,173,"labios",NA,0,"laβjos",6,NA,NA,NA,0,NA,0,NA,1387,31.5
+18,174,"lengua","tongue",0,"lɛŋɡwa",6,5.33753808,2,NA,0,NA,0,NA,1474,31.5
+18,175,"mano","hand",1,"mano",4,7.163172391,4,1,1,NA,11,0,1192,31.5
+18,176,"nalgas",NA,0,"nalɣas",6,NA,NA,NA,0,NA,0,NA,1368,31.5
+18,177,"nariz","nose",0,"naɾiθ",5,6.799055862,6,NA,0,NA,1,NA,1311,31.5
+18,178,"ojos","eye",0,"oxos",4,5.690359454,4,NA,1,NA,4,NA,1346,31.5
+18,179,"ombligo","belly button",0,"ɔmbliɣo",7,0,NA,NA,0,NA,0,NA,1617,31.5
+18,180,"oreja","ear",0,"ɔɾɛxa",5,5.416100402,3,NA,0,NA,0,NA,1313,31.5
+18,181,"panza","tummy",0,"panθa",5,5.153291594,0,NA,0,NA,4,0,1201,31.5
+18,182,"pelo","hair",0,"pelo",4,7.17395832,6,NA,2,NA,12,0,1220,31.5
+18,183,"pene","penis",0,"pene",4,2.302585093,0,NA,1,NA,3,0,1260,31.5
+18,184,"piernas","leg",0,"pjɛɾnas",7,5.620400866,6,NA,0,NA,0,NA,1538,31.5
+18,185,"pies","foot",0,"pjes",4,6.304448802,5,0.5,0,NA,0,NA,1293,31.5
+18,186,"rodilla","knee",0,"roðiʎa",6,5.147494477,1,NA,0,NA,0,NA,1415,31.5
+18,190,"colores",NA,0,"kolɔɾɛs",7,NA,NA,NA,0,NA,0,NA,1589,31.5
+18,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,31.5
+18,193,"hoja/papel",NA,0,"oxa",3,NA,NA,NA,1,NA,10,NA,1247,31.5
+18,194,"juguete","toy (object)",0,"xuɣete",6,6.261491684,3,0.5,0,NA,0,NA,1479,31.5
+18,195,"lápiz","pen/pencil",0,"lapiθ",5,0,NA,NA,0,NA,1,NA,1315,31.5
+18,196,"libro","book",0,"liβɾo",5,7.722677516,2,NA,0,NA,1,NA,1321,31.5
+18,197,"muñeca","doll",0,"muɲeka",6,5.796057751,1,NA,0,NA,0,NA,1426,31.5
+18,198,"osito","teddybear",0,"osito",5,1.098612289,NA,NA,0,NA,1,NA,1298,31.5
+18,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,31.5
+18,201,"pinturas",NA,0,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,31.5
+18,203,"pluma/plumones",NA,0,"pluma",5,NA,NA,NA,0,NA,1,NA,1286,31.5
+18,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,31.5
+18,205,"triciclo (toys)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,31.5
+18,206,"botas","boots",0,"botas",5,5.375278408,0,NA,0,NA,4,NA,1280,31.5
+18,207,"bolsa (clothing)","purse",0,"bɔlsa",5,4.304065093,0,NA,4,NA,6,NA,2580,31.5
+18,208,"babero","bib",0,"baβɛɾɔ",6,3.970291914,NA,NA,0,NA,0,NA,1414,31.5
+18,209,"aretes","earrings",0,"aɾɛtes",6,3.737669618,0,NA,0,NA,0,NA,1424,31.5
+18,211,"almohada","pillow",0,"almoaða",7,4.787491743,2,NA,0,NA,0,NA,1510,31.5
+18,213,"basura","trash",0,"basuɾa",6,4.343805422,0,NA,0,NA,0,NA,1326,31.5
+18,214,"bolsa (household)",NA,0,"bɔlsa",5,NA,NA,NA,4,NA,6,NA,2580,31.5
+18,215,"botella/mamila","bottle",0,"boteʎa",6,5.953243334,2,2,0,NA,0,NA,1367,31.5
+18,216,"caja","box",0,"kaxa",4,7.201916318,3,0,2,NA,11,NA,1167,31.5
+18,219,"cassette",NA,0,"kassette",8,NA,NA,NA,0,NA,0,NA,1730,31.5
+18,220,"cepillo de dientes","toothbrush",0,"θepiʎoðeðjɛntes",15,2.944438979,0,NA,0,NA,0,NA,3238,31.5
+18,221,"cepillo","brush (object)",0,"θepiʎo",6,5.916202063,5,NA,0,NA,0,NA,1434,31.5
+18,222,"cerillos",NA,0,"θɛɾiʎos",7,NA,NA,NA,0,NA,0,NA,1607,31.5
+18,223,"chupón/chupete","pacifier",0,"tʃupɔn",6,1.791759469,0,NA,0,NA,0,NA,1491,31.5
+18,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,NA,0,NA,0,NA,1569,31.5
+18,226,"cobija","blanket",0,"koβixa",6,4.941642423,2,NA,0,NA,2,NA,1383,31.5
+18,228,"cubeta",NA,0,"kuβeta",6,NA,NA,NA,0,NA,1,NA,1369,31.5
+18,229,"cuchara","spoon",0,"kutʃaɾa",7,5.942799375,5,NA,0,NA,0,NA,1520,31.5
+18,230,"cuchillo","knife",0,"kutʃiʎo",7,4.941642423,4,NA,0,NA,0,NA,1584,31.5
+18,231,"dinero","money",0,"dinɛɾɔ",6,6.442540166,5,NA,0,NA,0,NA,1494,31.5
+18,232,"escoba","broom",0,"eskoβa",6,4.762173935,0,NA,0,NA,0,NA,1391,31.5
+18,233,"espejo","mirror",0,"espexo",6,5.099866428,4,NA,0,NA,0,NA,1440,31.5
+18,234,"fotos","photos",0,"fotos",5,2.397895273,0,NA,0,NA,3,NA,1341,31.5
+18,235,"jabón","soap",0,"xaβɔn",5,4.779123493,4,2,1,NA,4,NA,1312,31.5
+18,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,31.5
+18,237,"llave","keys",0,"ʎaβe",4,5.075173815,0,NA,0,NA,1,NA,1258,31.5
+18,238,"luz","light",0,"luθ",3,6.343880434,4,NA,0,NA,1,NA,1335,31.5
+18,240,"medicina","medicine",0,"meðiθina",8,4.852030264,1,2,0,NA,0,NA,1739,31.5
+18,241,"olla",NA,0,"ɔʎa",3,NA,NA,NA,0,NA,4,NA,1259,31.5
+18,243,"papel","paper",0,"papel",5,6.970730078,7,NA,0,NA,3,0,1288,31.5
+18,244,"pasta de dientes",NA,0,"pastaðeðjɛntes",14,NA,NA,NA,0,NA,0,NA,2904,31.5
+18,245,"peine","comb (object)",0,"peɪne",5,5.068904202,2,NA,1,NA,1,NA,1348,31.5
+18,247,"plancha",NA,0,"plantʃa",7,NA,NA,NA,1,NA,1,NA,1444,31.5
+18,248,"plato","plate",0,"plato",5,5.85220248,0,NA,1,NA,8,NA,1226,31.5
+18,249,"radio","radio",0,"raðjo",5,4.976733742,0,NA,0,NA,1,NA,1297,31.5
+18,250,"reloj","watch (object)",0,"relɔx",5,7.413367336,0,0,0,NA,1,NA,1382,31.5
+18,251,"servilleta",NA,0,"sɛɾβiʎeta",9,NA,NA,NA,0,NA,0,NA,1934,31.5
+18,253,"taza","cup",0,"taθa",4,6.746412129,3,2,0,NA,10,NA,1159,31.5
+18,254,"teléfono","telephone",0,"telɛfono",8,5.693732139,0,NA,0,NA,0,NA,1737,31.5
+18,255,"tenedor","fork",0,"teneðɔɾ",7,5.081404365,3,NA,0,NA,0,NA,1618,31.5
+18,256,"tijeras","scissors",0,"tixɛɾas",7,5.257495372,0,NA,0,NA,0,NA,1546,31.5
+18,257,"toalla","towel",0,"toaʎa",5,4.927253685,2,2,0,NA,1,NA,1248,31.5
+18,258,"trapo","cloth",0,"tɾapo",5,4.025351691,4,NA,0,NA,2,NA,1287,31.5
+18,259,"vasos","glass",0,"basos",5,5.676753802,5,2,0,NA,2,NA,1279,31.5
+18,260,"vela","candle",0,"bela",4,4.043051268,0,NA,0,NA,10,NA,1192,31.5
+18,262,"árbol","tree",0,"aɾβɔl",5,6.768493212,11,NA,0,NA,0,NA,1348,31.5
+18,263,"bandera",NA,0,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,31.5
+18,264,"cielo","sky",0,"θjelo",5,5.147494477,6,NA,1,NA,2,NA,1342,31.5
+18,266,"columpio","swing (object)",0,"kolumpjo",8,4.564348191,1,NA,0,NA,0,NA,1773,31.5
+18,267,"estrella","star",0,"estɾeʎa",7,5.164785974,4,NA,0,NA,0,NA,1538,31.5
+18,268,"flor","flower",0,"flɔɾ",4,5.214935758,3,NA,0,NA,0,NA,1322,31.5
+18,270,"hojas",NA,0,"oxas",4,NA,NA,NA,2,NA,4,NA,1292,31.5
+18,272,"lluvia","rain",0,"ʎuβja",5,5.214935758,3,2,0,NA,0,NA,1337,31.5
+18,273,"luna","moon",0,"luna",4,5.117993812,3,NA,1,NA,5,NA,1217,31.5
+18,274,"maceta",NA,0,"maθeta",6,NA,NA,NA,0,NA,2,NA,1312,31.5
+18,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,31.5
+18,278,"nube","cloud",0,"nuβe",4,3.17805383,2,NA,0,NA,1,NA,1331,31.5
+18,280,"palo",NA,0,"palo",4,NA,NA,NA,2,NA,16,0,1164,31.5
+18,281,"pasto",NA,0,"pasto",5,NA,NA,NA,1,NA,7,NA,1215,31.5
+18,282,"piedra","rock (object)",0,"pjeðɾa",6,5.049856007,1,NA,0,NA,0,NA,1396,31.5
+18,283,"planta","plant",0,"planta",6,4.770684624,1,2,1,NA,3,NA,1290,31.5
+18,285,"resbaladilla","slide (object)",0,"resβalaðiʎa",11,5.902633333,1,2,0,NA,0,NA,2283,31.5
+18,286,"sol","sun",0,"sɔl",3,5.59471138,9,NA,1,NA,2,NA,1312,31.5
+18,289,"tierra",NA,0,"tjɛra",5,NA,NA,NA,0,NA,0,NA,1309,31.5
+18,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,31.5
+18,291,"viento/aire",NA,0,"bjɛnto",6,NA,NA,NA,0,NA,0,NA,1420,31.5
+18,292,"bacinica","potty",0,"baθinika",8,5.111987788,0,NA,0,NA,0,NA,1666,31.5
+18,293,"banco (outside)",NA,0,"banko",5,NA,NA,NA,1,NA,5,NA,1246,31.5
+18,294,"baño","bathroom",0,"baɲo",4,5.828945618,3,NA,0,NA,12,NA,1224,31.5
+18,295,"cajón","drawer",0,"kaxɔn",5,4.718498871,0,NA,0,NA,6,NA,1297,31.5
+18,296,"cama","bed",0,"kama",4,7.477038472,6,NA,2,NA,10,NA,1164,31.5
+18,297,"champú",NA,0,"tʃampu",6,NA,NA,NA,0,NA,0,NA,1476,31.5
+18,299,"cocina","kitchen",0,"koθina",6,6.173786104,2,NA,0,NA,2,NA,1364,31.5
+18,301,"cuarto","room",0,"kwaɾto",6,7.306531399,3,NA,0,NA,0,NA,1366,31.5
+18,302,"cuna","crib",0,"kuna",4,4.060443011,0,NA,1,NA,6,NA,1221,31.5
+18,303,"escaleras","stairs",0,"eskalɛɾas",9,5.429345629,0,NA,0,NA,0,NA,1826,31.5
+18,304,"estufa","stove",0,"estufa",6,4.770684624,2,NA,0,NA,0,NA,1413,31.5
+18,309,"mesa","table",0,"mesa",4,7.249215057,5,NA,0,NA,4,NA,1205,31.5
+18,311,"patio (outside)",NA,0,"patjo",5,NA,NA,NA,1,NA,6,NA,1235,31.5
+18,312,"puerta","door",0,"pwɛɾta",6,7.207118856,6,NA,0,NA,1,NA,1375,31.5
+18,314,"refrigerador","refrigerator",0,"refɾixɛɾaðɔɾ",12,5.117993812,0,NA,0,NA,0,NA,2572,31.5
+18,315,"regadera/ducha","shower",0,"reɣaðɛɾa",8,4.442651256,5,2,0,NA,0,NA,1688,31.5
+18,317,"sala","living room",0,"sala",4,0,1,NA,1,NA,14,NA,1151,31.5
+18,319,"silla","chair",0,"siʎa",4,7.177018766,6,NA,0,NA,6,NA,1225,31.5
+18,320,"sillón",NA,0,"siʎɔn",5,NA,NA,NA,0,NA,1,NA,1363,31.5
+18,322,"televisión","tv",0,"teleβisjɔn",10,6.146329258,0,NA,0,NA,0,NA,2174,31.5
+18,323,"tina","bathtub",0,"tina",4,4.882801923,1,2,0,NA,5,NA,1177,31.5
+18,324,"ventana","window",0,"bɛntana",7,6.249975242,2,NA,0,NA,0,NA,1508,31.5
+19,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,41.4545454545455
+19,15,"vaca","cow",0,"baka",4,6.49677499,4,0,1,NA,13,NA,1164,41.4545454545455
+19,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,0,0,NA,2,NA,1563,41.4545454545455
+19,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,NA,0,NA,1,NA,1347,41.4545454545455
+19,18,"ratón","mouse",0,"ratɔn",5,6.086774727,4,NA,0,NA,5,NA,1291,41.4545454545455
+19,19,"rana","frog",0,"rana",4,5.590986981,0,3,0,NA,13,1.5,1168,41.4545454545455
+19,20,"puerco","pig",0,"pwɛɾko",6,6.003887067,3,3,0,NA,1,NA,1436,41.4545454545455
+19,21,"pollito","chick",0,"pɔʎito",6,2.63905733,1,NA,0,NA,1,NA,1400,41.4545454545455
+19,23,"pescado","fish (animal)",0,"peskaðo",7,6.705639095,3,3,4,NA,4,NA,2986,41.4545454545455
+19,25,"pato","duck",1,"pato",4,6.411818268,1,1.5,5,NA,15,1.2,1147,41.4545454545455
+19,26,"pájaro","bird",0,"paxaɾɔ",6,6.593044534,9,0,0,NA,0,NA,1367,41.4545454545455
+19,27,"oso","bear",0,"oso",3,6.257667588,3,0,0,NA,7,NA,1292,41.4545454545455
+19,28,"mosco",NA,0,"mɔsko",5,NA,NA,NA,1,NA,1,NA,1346,41.4545454545455
+19,29,"mosca","fly (animal)",0,"mɔska",5,5.720311777,8,0,1,NA,2,NA,1304,41.4545454545455
+19,30,"mono","monkey",0,"mono",4,5.940171253,3,NA,2,0,4,2,1269,41.4545454545455
+19,31,"mariposa","butterfly",0,"maɾiposa",8,4.605170186,0,0,0,NA,0,NA,1626,41.4545454545455
+19,32,"lobo","wolf",0,"loβo",4,4.672828834,1,0,1,0,6,0,1278,41.4545454545455
+19,33,"león","lion",0,"leɔn",4,6.001414878,3,NA,0,NA,1,NA,1284,41.4545454545455
+19,35,"hormiga","ant",0,"ɔɾmiɣa",6,3.526360525,0,NA,0,NA,0,NA,1422,41.4545454545455
+19,38,"gato","cat",1,"ɡato",4,6.933423026,9,0,1,NA,10,2,1188,41.4545454545455
+19,40,"gallina","hen",0,"ɡaʎina",6,3.912023005,3,NA,0,NA,1,NA,1332,41.4545454545455
+19,41,"foca",NA,0,"foka",4,NA,NA,NA,1,NA,6,0,1247,41.4545454545455
+19,42,"elefante","elephant",0,"elefante",8,5.918893854,0,NA,0,NA,0,NA,1715,41.4545454545455
+19,43,"conejo","bunny",0,"konexo",6,6.376726948,0,NA,0,NA,0,NA,1411,41.4545454545455
+19,46,"caballo","horse",1,"kaβaʎo",6,6.843749949,4,0,0,NA,0,NA,1332,41.4545454545455
+19,47,"burro","donkey",0,"buro",4,5.017279837,1,NA,0,NA,4,1.5,1306,41.4545454545455
+19,50,"borrego","lamb",0,"bɔreɣo",6,4.941642423,0,NA,0,NA,0,NA,1455,41.4545454545455
+19,53,"araña","spider",0,"aɾaɲa",5,4.49980967,1,NA,0,NA,0,NA,1250,41.4545454545455
+19,54,"animal","animal",0,"animal",6,5.648974238,18,0,0,NA,0,NA,1415,41.4545454545455
+19,57,"triciclo (vehicles)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,41.4545454545455
+19,58,"tren","train",0,"tɾɛn",4,6.80682936,3,0,0,NA,1,NA,1296,41.4545454545455
+19,60,"moto","motorcycle",0,"moto",4,4.094344562,1,0,1,NA,7,2,1247,41.4545454545455
+19,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,NA,0,NA,0,NA,2188,41.4545454545455
+19,64,"camión/troca","truck",0,"kamjɔn",6,6.812345094,2,0,0,NA,4,NA,1410,41.4545454545455
+19,66,"bicicleta","bicycle",0,"biθikleta",9,4.553876892,1,0,0,NA,0,NA,1895,41.4545454545455
+19,67,"barco","boat",0,"baɾko",5,6.194405391,3,3,1,NA,4,NA,1252,41.4545454545455
+19,68,"avión","airplane",1,"aβjɔn",5,5.945420609,2,0,0,NA,2,NA,1357,41.4545454545455
+19,71,"arroz","rice",0,"arɔθ",4,5.093750201,1,NA,0,NA,0,NA,1308,41.4545454545455
+19,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,41.4545454545455
+19,73,"atún",NA,0,"atun",4,NA,NA,NA,0,NA,1,NA,1259,41.4545454545455
+19,74,"azúcar",NA,0,"aθukaɾ",6,NA,NA,NA,0,NA,0,NA,1426,41.4545454545455
+19,75,"café","coffee",0,"kafɛ",4,6.326149473,1,0,0,NA,4,2,1268,41.4545454545455
+19,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,41.4545454545455
+19,77,"carne","meat",0,"kaɾne",5,5.755742214,4,NA,0,NA,1,NA,1272,41.4545454545455
+19,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,41.4545454545455
+19,80,"chicle",NA,0,"tʃikle",6,NA,NA,NA,1,NA,1,NA,1465,41.4545454545455
+19,81,"chile","chili",0,"tʃile",5,2.63905733,1,0,1,NA,1,NA,1350,41.4545454545455
+19,82,"chocolate",NA,0,"tʃokolate",9,NA,NA,NA,0,NA,0,NA,1888,41.4545454545455
+19,83,"comida","food",1,"komiða",6,6.418364936,21,3,0,NA,3,NA,1386,41.4545454545455
+19,84,"dulce","candy",1,"dulθe",5,5.521460918,3,NA,0,NA,0,NA,1388,41.4545454545455
+19,87,"elote",NA,0,"elote",5,NA,NA,NA,0,NA,1,0,1309,41.4545454545455
+19,89,"fresa",NA,0,"fɾesa",5,NA,NA,NA,0,NA,1,NA,1290,41.4545454545455
+19,90,"frijoles","beans",0,"fɾixoles",8,5.068904202,2,0,0,NA,0,NA,1780,41.4545454545455
+19,91,"galleta","cookie",1,"ɡaʎeta",6,5.966146739,2,0,0,NA,3,NA,1326,41.4545454545455
+19,92,"gelatina",NA,0,"xelatina",8,NA,NA,NA,0,NA,0,NA,1618,41.4545454545455
+19,94,"helado/nieve","ice cream",0,"elaðo",5,0,2,0,0,NA,1,NA,1277,41.4545454545455
+19,95,"hielo",NA,0,"jelo",4,NA,NA,NA,2,NA,7,NA,1256,41.4545454545455
+19,97,"huevo","egg",1,"weβo",4,5.926926026,2,0,0,NA,5,NA,1287,41.4545454545455
+19,98,"jamón","ham",0,"xamɔn",5,4.025351691,3,NA,1,NA,4,NA,1315,41.4545454545455
+19,99,"jugo","juice",1,"xuɣo",4,6.986566459,2,0,0,NA,1,NA,1321,41.4545454545455
+19,103,"cacahuete/maní",NA,0,"kakawete",8,NA,NA,NA,0,NA,0,NA,1709,41.4545454545455
+19,105,"manzana","apple",0,"manθana",7,6.070737728,5,NA,0,NA,0,NA,1489,41.4545454545455
+19,106,"melón",NA,0,"melɔn",5,NA,NA,NA,0,NA,2,NA,1344,41.4545454545455
+19,108,"naranja","orange (food)",0,"naɾaŋxa",7,6.411818268,4,NA,0,NA,0,NA,1538,41.4545454545455
+19,109,"paleta","lollipop",1,"paleta",6,3.828641396,0,NA,0,NA,3,0,1253,41.4545454545455
+19,110,"palomitas",NA,0,"palomitas",9,NA,NA,NA,0,NA,0,NA,1760,41.4545454545455
+19,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,41.4545454545455
+19,114,"papitas",NA,0,"papitas",7,NA,NA,NA,0,NA,1,0,1434,41.4545454545455
+19,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,0,4,0,1237,41.4545454545455
+19,116,"pastel","cake",0,"pastel",6,6.584791392,2,NA,0,NA,2,NA,1359,41.4545454545455
+19,118,"pescado (food_drink)",NA,0,"peskaðo",7,NA,NA,NA,4,NA,4,NA,2986,41.4545454545455
+19,119,"plátano/banana","banana",1,"platano",7,5.023880521,2,NA,0,NA,1,NA,1427,41.4545454545455
+19,120,"pollo","chicken (food)",1,"pɔʎo",4,6.380122537,8,0,0,NA,6,1,1275,41.4545454545455
+19,121,"quesadilla","quesadilla",0,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,41.4545454545455
+19,122,"queso","cheese",0,"keso",4,6.208590026,4,0.5,0,NA,7,2,1245,41.4545454545455
+19,123,"sal",NA,0,"sal",3,NA,NA,NA,2,NA,4,1,1234,41.4545454545455
+19,124,"salchicha","hot dog",0,"saltʃitʃa",9,0,NA,NA,0,NA,0,NA,1853,41.4545454545455
+19,126,"sandía",NA,0,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,41.4545454545455
+19,127,"soda/refresco","soda",1,"soða",4,4.543294782,1,NA,1,0,7,0,1235,41.4545454545455
+19,129,"taco",NA,0,"tako",4,NA,NA,NA,0,NA,11,2,1192,41.4545454545455
+19,130,"té (food)",NA,0,"tɛ",2,NA,NA,NA,0,NA,1,NA,1313,41.4545454545455
+19,131,"torta/lonche",NA,0,"tɔɾta",5,NA,NA,NA,0,NA,3,NA,1253,41.4545454545455
+19,132,"tortilla","tortilla",0,"tɔɾtiʎa",7,2.944438979,0,NA,0,NA,2,NA,1532,41.4545454545455
+19,133,"uvas","grapes",0,"uβas",4,4.094344562,NA,NA,0,NA,1,NA,1297,41.4545454545455
+19,136,"yoghurt",NA,0,"ʝoɣuɾt",6,NA,NA,NA,0,NA,0,NA,1519,41.4545454545455
+19,137,"zanahoria",NA,0,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,41.4545454545455
+19,138,"botón","button",0,"botɔn",5,5.805134969,0,NA,0,NA,2,NA,1335,41.4545454545455
+19,140,"calcetín","sock",0,"kalθetin",8,4.394449155,1,0,0,NA,0,NA,1688,41.4545454545455
+19,141,"calzón","underpants",0,"kalθɔn",6,2.302585093,NA,NA,0,NA,2,NA,1382,41.4545454545455
+19,142,"camisa",NA,0,"kamisa",6,NA,NA,NA,0,NA,2,NA,1307,41.4545454545455
+19,143,"chancla",NA,0,"tʃankla",7,NA,NA,NA,0,NA,0,NA,1491,41.4545454545455
+19,146,"falda","skirt",0,"falða",5,3.583518938,3,NA,0,NA,1,NA,1241,41.4545454545455
+19,147,"gorra",NA,0,"ɡɔra",4,NA,NA,NA,0,NA,1,NA,1285,41.4545454545455
+19,148,"guantes",NA,0,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,41.4545454545455
+19,149,"lentes","glasses",0,"lɛntes",6,5.176149733,1,3,0,NA,1,NA,1436,41.4545454545455
+19,151,"pañal","diaper",1,"paɲal",5,5.087596335,0,NA,0,NA,3,0,1273,41.4545454545455
+19,152,"pantalón","pants",0,"pantalɔn",8,5.993961427,5,NA,0,NA,0,NA,1641,41.4545454545455
+19,153,"pijama","pajamas",0,"pixama",6,4.736198448,0,NA,0,NA,0,NA,1368,41.4545454545455
+19,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,41.4545454545455
+19,155,"ropa",NA,0,"ropa",4,NA,NA,NA,1,0,6,0,1256,41.4545454545455
+19,156,"shorts","shorts",0,"ʃɔɾts",5,3.583518938,2,NA,0,NA,1,NA,1353,41.4545454545455
+19,157,"sombrero","hat",0,"sɔmbɾɛɾɔ",8,6.874198495,2,NA,0,NA,0,NA,1852,41.4545454545455
+19,158,"suéter","sweater",0,"swɛtɛɾ",6,4.836281907,0,NA,0,NA,0,NA,1503,41.4545454545455
+19,159,"vestido","dress (object)",0,"bestiðo",7,5.823045895,4,NA,0,NA,0,NA,1543,41.4545454545455
+19,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,41.4545454545455
+19,163,"boca","mouth",1,"boka",4,6.985641818,5,3,2,NA,8,0,1226,41.4545454545455
+19,164,"brazo","arm",0,"bɾaθo",5,5.590986981,4,0,0,NA,2,NA,1288,41.4545454545455
+19,165,"cabeza","head",1,"kaβeθa",6,7.156176637,6,NA,0,NA,1,NA,1322,41.4545454545455
+19,166,"cachete","cheek",0,"katʃete",7,3.784189634,1,NA,0,NA,0,NA,1527,41.4545454545455
+19,167,"cara","face",0,"kaɾa",4,6.52649486,7,0,2,NA,10,2,1134,41.4545454545455
+19,168,"chichi/pecho","breast",0,"tʃitʃi",6,2.995732274,1,0,0,NA,0,NA,1491,41.4545454545455
+19,169,"dedo","finger",0,"deðo",4,6.22059017,2,0,0,NA,4,NA,1285,41.4545454545455
+19,170,"dientes","tooth",0,"djɛntes",7,4.418840608,1,NA,0,NA,1,NA,1612,41.4545454545455
+19,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,41.4545454545455
+19,172,"hombro",NA,0,"ɔmbɾo",5,NA,NA,NA,0,NA,0,NA,1365,41.4545454545455
+19,173,"labios",NA,0,"laβjos",6,NA,NA,NA,0,NA,0,NA,1387,41.4545454545455
+19,174,"lengua","tongue",0,"lɛŋɡwa",6,5.33753808,2,NA,0,NA,0,NA,1474,41.4545454545455
+19,176,"nalgas",NA,0,"nalɣas",6,NA,NA,NA,0,NA,0,NA,1368,41.4545454545455
+19,177,"nariz","nose",1,"naɾiθ",5,6.799055862,6,NA,0,NA,1,NA,1311,41.4545454545455
+19,178,"ojos","eye",1,"oxos",4,5.690359454,4,NA,1,NA,4,NA,1346,41.4545454545455
+19,179,"ombligo","belly button",0,"ɔmbliɣo",7,0,NA,NA,0,NA,0,NA,1617,41.4545454545455
+19,180,"oreja","ear",0,"ɔɾɛxa",5,5.416100402,3,NA,0,NA,0,NA,1313,41.4545454545455
+19,181,"panza","tummy",0,"panθa",5,5.153291594,0,NA,0,NA,4,1,1201,41.4545454545455
+19,182,"pelo","hair",1,"pelo",4,7.17395832,6,NA,2,NA,12,0.5,1220,41.4545454545455
+19,183,"pene","penis",0,"pene",4,2.302585093,0,NA,1,NA,3,1,1260,41.4545454545455
+19,184,"piernas","leg",0,"pjɛɾnas",7,5.620400866,6,NA,0,NA,0,NA,1538,41.4545454545455
+19,185,"pies","foot",1,"pjes",4,6.304448802,5,0.666666666666667,0,NA,0,NA,1293,41.4545454545455
+19,186,"rodilla","knee",0,"roðiʎa",6,5.147494477,1,NA,0,NA,0,NA,1415,41.4545454545455
+19,190,"colores",NA,0,"kolɔɾɛs",7,NA,NA,NA,0,NA,0,NA,1589,41.4545454545455
+19,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,41.4545454545455
+19,193,"hoja/papel",NA,0,"oxa",3,NA,NA,NA,1,NA,10,0,1247,41.4545454545455
+19,194,"juguete","toy (object)",0,"xuɣete",6,6.261491684,3,0.666666666666667,0,NA,0,NA,1479,41.4545454545455
+19,195,"lápiz","pen/pencil",1,"lapiθ",5,0,NA,NA,0,NA,1,NA,1315,41.4545454545455
+19,196,"libro","book",0,"liβɾo",5,7.722677516,2,NA,0,NA,1,NA,1321,41.4545454545455
+19,197,"muñeca","doll",0,"muɲeka",6,5.796057751,1,NA,0,NA,0,NA,1426,41.4545454545455
+19,198,"osito","teddybear",0,"osito",5,1.098612289,NA,NA,0,NA,1,NA,1298,41.4545454545455
+19,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,41.4545454545455
+19,201,"pinturas",NA,0,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,41.4545454545455
+19,203,"pluma/plumones",NA,0,"pluma",5,NA,NA,NA,0,NA,1,NA,1286,41.4545454545455
+19,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,41.4545454545455
+19,205,"triciclo (toys)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,41.4545454545455
+19,206,"botas","boots",0,"botas",5,5.375278408,0,NA,0,NA,4,NA,1280,41.4545454545455
+19,207,"bolsa (clothing)","purse",0,"bɔlsa",5,4.304065093,0,NA,4,NA,6,NA,2580,41.4545454545455
+19,208,"babero","bib",0,"baβɛɾɔ",6,3.970291914,NA,NA,0,NA,0,NA,1414,41.4545454545455
+19,209,"aretes","earrings",0,"aɾɛtes",6,3.737669618,0,NA,0,NA,0,NA,1424,41.4545454545455
+19,211,"almohada","pillow",0,"almoaða",7,4.787491743,2,NA,0,NA,0,NA,1510,41.4545454545455
+19,213,"basura","trash",0,"basuɾa",6,4.343805422,0,NA,0,NA,0,NA,1326,41.4545454545455
+19,214,"bolsa (household)",NA,0,"bɔlsa",5,NA,NA,NA,4,NA,6,NA,2580,41.4545454545455
+19,215,"botella/mamila","bottle",1,"boteʎa",6,5.953243334,2,3,0,NA,0,NA,1367,41.4545454545455
+19,216,"caja","box",0,"kaxa",4,7.201916318,3,0,2,NA,11,2,1167,41.4545454545455
+19,219,"cassette",NA,0,"kassette",8,NA,NA,NA,0,NA,0,NA,1730,41.4545454545455
+19,220,"cepillo de dientes","toothbrush",0,"θepiʎoðeðjɛntes",15,2.944438979,0,NA,0,NA,0,NA,3238,41.4545454545455
+19,221,"cepillo","brush (object)",0,"θepiʎo",6,5.916202063,5,NA,0,NA,0,NA,1434,41.4545454545455
+19,222,"cerillos",NA,0,"θɛɾiʎos",7,NA,NA,NA,0,NA,0,NA,1607,41.4545454545455
+19,223,"chupón/chupete","pacifier",0,"tʃupɔn",6,1.791759469,0,NA,0,NA,0,NA,1491,41.4545454545455
+19,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,NA,0,NA,0,NA,1569,41.4545454545455
+19,226,"cobija","blanket",0,"koβixa",6,4.941642423,2,NA,0,NA,2,NA,1383,41.4545454545455
+19,228,"cubeta",NA,0,"kuβeta",6,NA,NA,NA,0,NA,1,NA,1369,41.4545454545455
+19,229,"cuchara","spoon",0,"kutʃaɾa",7,5.942799375,5,0,0,NA,0,NA,1520,41.4545454545455
+19,230,"cuchillo","knife",0,"kutʃiʎo",7,4.941642423,4,NA,0,NA,0,NA,1584,41.4545454545455
+19,231,"dinero","money",0,"dinɛɾɔ",6,6.442540166,5,NA,0,NA,0,NA,1494,41.4545454545455
+19,232,"escoba","broom",0,"eskoβa",6,4.762173935,0,NA,0,NA,0,NA,1391,41.4545454545455
+19,233,"espejo","mirror",0,"espexo",6,5.099866428,4,NA,0,NA,0,NA,1440,41.4545454545455
+19,234,"fotos","photos",0,"fotos",5,2.397895273,0,NA,0,NA,3,NA,1341,41.4545454545455
+19,235,"jabón","soap",1,"xaβɔn",5,4.779123493,4,3,1,NA,4,NA,1312,41.4545454545455
+19,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,41.4545454545455
+19,237,"llave","keys",0,"ʎaβe",4,5.075173815,0,0,0,NA,1,NA,1258,41.4545454545455
+19,238,"luz","light",0,"luθ",3,6.343880434,4,NA,0,NA,1,NA,1335,41.4545454545455
+19,240,"medicina","medicine",0,"meðiθina",8,4.852030264,1,3,0,NA,0,NA,1739,41.4545454545455
+19,241,"olla",NA,0,"ɔʎa",3,NA,NA,NA,0,NA,4,NA,1259,41.4545454545455
+19,243,"papel","paper",0,"papel",5,6.970730078,7,NA,0,NA,3,0,1288,41.4545454545455
+19,244,"pasta de dientes",NA,0,"pastaðeðjɛntes",14,NA,NA,NA,0,NA,0,NA,2904,41.4545454545455
+19,245,"peine","comb (object)",0,"peɪne",5,5.068904202,2,NA,1,NA,1,NA,1348,41.4545454545455
+19,247,"plancha",NA,0,"plantʃa",7,NA,NA,NA,1,NA,1,NA,1444,41.4545454545455
+19,248,"plato","plate",0,"plato",5,5.85220248,0,NA,1,NA,8,NA,1226,41.4545454545455
+19,249,"radio","radio",0,"raðjo",5,4.976733742,0,NA,0,NA,1,NA,1297,41.4545454545455
+19,250,"reloj","watch (object)",0,"relɔx",5,7.413367336,0,0,0,NA,1,NA,1382,41.4545454545455
+19,251,"servilleta",NA,0,"sɛɾβiʎeta",9,NA,NA,NA,0,NA,0,NA,1934,41.4545454545455
+19,253,"taza","cup",0,"taθa",4,6.746412129,3,1.5,0,NA,10,NA,1159,41.4545454545455
+19,254,"teléfono","telephone",0,"telɛfono",8,5.693732139,0,NA,0,NA,0,NA,1737,41.4545454545455
+19,255,"tenedor","fork",0,"teneðɔɾ",7,5.081404365,3,NA,0,NA,0,NA,1618,41.4545454545455
+19,256,"tijeras","scissors",0,"tixɛɾas",7,5.257495372,0,NA,0,NA,0,NA,1546,41.4545454545455
+19,257,"toalla","towel",0,"toaʎa",5,4.927253685,2,3,0,NA,1,NA,1248,41.4545454545455
+19,258,"trapo","cloth",0,"tɾapo",5,4.025351691,4,NA,0,NA,2,NA,1287,41.4545454545455
+19,259,"vasos","glass",0,"basos",5,5.676753802,5,3,0,NA,2,NA,1279,41.4545454545455
+19,260,"vela","candle",0,"bela",4,4.043051268,0,NA,0,NA,10,NA,1192,41.4545454545455
+19,262,"árbol","tree",0,"aɾβɔl",5,6.768493212,11,NA,0,NA,0,NA,1348,41.4545454545455
+19,263,"bandera",NA,0,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,41.4545454545455
+19,264,"cielo","sky",0,"θjelo",5,5.147494477,6,NA,1,NA,2,NA,1342,41.4545454545455
+19,266,"columpio","swing (object)",0,"kolumpjo",8,4.564348191,1,NA,0,NA,0,NA,1773,41.4545454545455
+19,267,"estrella","star",0,"estɾeʎa",7,5.164785974,4,NA,0,NA,0,NA,1538,41.4545454545455
+19,268,"flor","flower",0,"flɔɾ",4,5.214935758,3,NA,0,NA,0,NA,1322,41.4545454545455
+19,270,"hojas",NA,0,"oxas",4,NA,NA,NA,2,NA,4,NA,1292,41.4545454545455
+19,272,"lluvia","rain",0,"ʎuβja",5,5.214935758,3,3,0,NA,0,NA,1337,41.4545454545455
+19,273,"luna","moon",0,"luna",4,5.117993812,3,NA,1,NA,5,NA,1217,41.4545454545455
+19,274,"maceta",NA,0,"maθeta",6,NA,NA,NA,0,NA,2,NA,1312,41.4545454545455
+19,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,41.4545454545455
+19,278,"nube","cloud",0,"nuβe",4,3.17805383,2,NA,0,NA,1,NA,1331,41.4545454545455
+19,280,"palo",NA,0,"palo",4,NA,NA,NA,2,NA,16,1.5,1164,41.4545454545455
+19,281,"pasto",NA,0,"pasto",5,NA,NA,NA,1,NA,7,NA,1215,41.4545454545455
+19,282,"piedra","rock (object)",0,"pjeðɾa",6,5.049856007,1,NA,0,NA,0,NA,1396,41.4545454545455
+19,283,"planta","plant",0,"planta",6,4.770684624,1,3,1,NA,3,NA,1290,41.4545454545455
+19,285,"resbaladilla","slide (object)",0,"resβalaðiʎa",11,5.902633333,1,3,0,NA,0,NA,2283,41.4545454545455
+19,286,"sol","sun",1,"sɔl",3,5.59471138,9,NA,1,NA,2,NA,1312,41.4545454545455
+19,289,"tierra",NA,0,"tjɛra",5,NA,NA,NA,0,NA,0,NA,1309,41.4545454545455
+19,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,41.4545454545455
+19,291,"viento/aire",NA,0,"bjɛnto",6,NA,NA,NA,0,NA,0,NA,1420,41.4545454545455
+19,292,"bacinica","potty",0,"baθinika",8,5.111987788,0,NA,0,NA,0,NA,1666,41.4545454545455
+19,293,"banco (outside)",NA,0,"banko",5,NA,NA,NA,1,NA,5,2,1246,41.4545454545455
+19,294,"baño","bathroom",0,"baɲo",4,5.828945618,3,NA,0,NA,12,2,1224,41.4545454545455
+19,295,"cajón","drawer",0,"kaxɔn",5,4.718498871,0,NA,0,NA,6,NA,1297,41.4545454545455
+19,296,"cama","bed",1,"kama",4,7.477038472,6,NA,2,NA,10,2,1164,41.4545454545455
+19,297,"champú",NA,0,"tʃampu",6,NA,NA,NA,0,NA,0,NA,1476,41.4545454545455
+19,299,"cocina","kitchen",0,"koθina",6,6.173786104,2,NA,0,NA,2,NA,1364,41.4545454545455
+19,301,"cuarto","room",0,"kwaɾto",6,7.306531399,3,NA,0,NA,0,NA,1366,41.4545454545455
+19,302,"cuna","crib",0,"kuna",4,4.060443011,0,NA,1,NA,6,NA,1221,41.4545454545455
+19,303,"escaleras","stairs",0,"eskalɛɾas",9,5.429345629,0,NA,0,NA,0,NA,1826,41.4545454545455
+19,304,"estufa","stove",0,"estufa",6,4.770684624,2,NA,0,NA,0,NA,1413,41.4545454545455
+19,309,"mesa","table",1,"mesa",4,7.249215057,5,NA,0,NA,4,NA,1205,41.4545454545455
+19,311,"patio (outside)",NA,0,"patjo",5,NA,NA,NA,1,NA,6,NA,1235,41.4545454545455
+19,312,"puerta","door",0,"pwɛɾta",6,7.207118856,6,NA,0,NA,1,NA,1375,41.4545454545455
+19,314,"refrigerador","refrigerator",0,"refɾixɛɾaðɔɾ",12,5.117993812,0,NA,0,NA,0,NA,2572,41.4545454545455
+19,315,"regadera/ducha","shower",0,"reɣaðɛɾa",8,4.442651256,5,3,0,NA,0,NA,1688,41.4545454545455
+19,317,"sala","living room",0,"sala",4,0,1,NA,1,NA,14,0,1151,41.4545454545455
+19,319,"silla","chair",1,"siʎa",4,7.177018766,6,NA,0,NA,6,0,1225,41.4545454545455
+19,320,"sillón",NA,0,"siʎɔn",5,NA,NA,NA,0,NA,1,NA,1363,41.4545454545455
+19,322,"televisión","tv",0,"teleβisjɔn",10,6.146329258,0,NA,0,NA,0,NA,2174,41.4545454545455
+19,323,"tina","bathtub",0,"tina",4,4.882801923,1,3,0,NA,5,NA,1177,41.4545454545455
+19,324,"ventana","window",0,"bɛntana",7,6.249975242,2,NA,0,NA,0,NA,1508,41.4545454545455
+20,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,161.315789473684
+20,15,"vaca","cow",1,"baka",4,6.49677499,4,1.5,1,0,13,1.5,1164,161.315789473684
+20,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,2,0,NA,2,NA,1563,161.315789473684
+20,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,1,0,NA,1,NA,1347,161.315789473684
+20,18,"ratón","mouse",0,"ratɔn",5,6.086774727,4,1,0,NA,5,1,1291,161.315789473684
+20,19,"rana","frog",0,"rana",4,5.590986981,0,8,0,NA,13,2.33333333333333,1168,161.315789473684
+20,20,"puerco","pig",0,"pwɛɾko",6,6.003887067,3,8,0,NA,1,NA,1436,161.315789473684
+20,21,"pollito","chick",0,"pɔʎito",6,2.63905733,1,1,0,NA,1,3,1400,161.315789473684
+20,23,"pescado","fish (animal)",0,"peskaðo",7,6.705639095,3,7,4,NA,4,NA,2986,161.315789473684
+20,26,"pájaro","bird",1,"paxaɾɔ",6,6.593044534,9,1.5,0,NA,0,NA,1367,161.315789473684
+20,27,"oso","bear",1,"oso",3,6.257667588,3,2,0,NA,7,0,1292,161.315789473684
+20,28,"mosco",NA,0,"mɔsko",5,NA,NA,NA,1,NA,1,NA,1346,161.315789473684
+20,29,"mosca","fly (animal)",0,"mɔska",5,5.720311777,8,1,1,NA,2,0,1304,161.315789473684
+20,30,"mono","monkey",0,"mono",4,5.940171253,3,0,2,0,4,4,1269,161.315789473684
+20,31,"mariposa","butterfly",0,"maɾiposa",8,4.605170186,0,2,0,NA,0,NA,1626,161.315789473684
+20,32,"lobo","wolf",0,"loβo",4,4.672828834,1,1.5,1,0,6,0.5,1278,161.315789473684
+20,33,"león","lion",0,"leɔn",4,6.001414878,3,1,0,NA,1,NA,1284,161.315789473684
+20,35,"hormiga","ant",0,"ɔɾmiɣa",6,3.526360525,0,6,0,NA,0,NA,1422,161.315789473684
+20,40,"gallina","hen",0,"ɡaʎina",6,3.912023005,3,1.5,0,NA,1,1,1332,161.315789473684
+20,41,"foca",NA,0,"foka",4,NA,NA,NA,1,0,6,2.66666666666667,1247,161.315789473684
+20,42,"elefante","elephant",0,"elefante",8,5.918893854,0,NA,0,NA,0,NA,1715,161.315789473684
+20,43,"conejo","bunny",0,"konexo",6,6.376726948,0,NA,0,NA,0,NA,1411,161.315789473684
+20,47,"burro","donkey",0,"buro",4,5.017279837,1,0,0,NA,4,3,1306,161.315789473684
+20,50,"borrego","lamb",0,"bɔreɣo",6,4.941642423,0,NA,0,NA,0,NA,1455,161.315789473684
+20,53,"araña","spider",0,"aɾaɲa",5,4.49980967,1,NA,0,NA,0,NA,1250,161.315789473684
+20,54,"animal","animal",0,"animal",6,5.648974238,18,1,0,NA,0,NA,1415,161.315789473684
+20,57,"triciclo (vehicles)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,161.315789473684
+20,58,"tren","train",0,"tɾɛn",4,6.80682936,3,1,0,NA,1,NA,1296,161.315789473684
+20,60,"moto","motorcycle",0,"moto",4,4.094344562,1,1,1,NA,7,5,1247,161.315789473684
+20,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,0,0,NA,0,NA,2188,161.315789473684
+20,64,"camión/troca","truck",0,"kamjɔn",6,6.812345094,2,1,0,NA,4,1,1410,161.315789473684
+20,66,"bicicleta","bicycle",0,"biθikleta",9,4.553876892,1,1,0,NA,0,NA,1895,161.315789473684
+20,67,"barco","boat",0,"baɾko",5,6.194405391,3,8,1,NA,4,NA,1252,161.315789473684
+20,71,"arroz","rice",0,"arɔθ",4,5.093750201,1,4.5,0,NA,0,NA,1308,161.315789473684
+20,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,161.315789473684
+20,73,"atún",NA,0,"atun",4,NA,NA,NA,0,NA,1,NA,1259,161.315789473684
+20,74,"azúcar",NA,0,"aθukaɾ",6,NA,NA,NA,0,NA,0,NA,1426,161.315789473684
+20,75,"café","coffee",0,"kafɛ",4,6.326149473,1,2,0,NA,4,3,1268,161.315789473684
+20,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,161.315789473684
+20,77,"carne","meat",0,"kaɾne",5,5.755742214,4,4.5,0,NA,1,NA,1272,161.315789473684
+20,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,161.315789473684
+20,80,"chicle",NA,0,"tʃikle",6,NA,NA,NA,1,NA,1,NA,1465,161.315789473684
+20,81,"chile","chili",0,"tʃile",5,2.63905733,1,4,1,NA,1,NA,1350,161.315789473684
+20,82,"chocolate",NA,0,"tʃokolate",9,NA,NA,NA,0,NA,0,NA,1888,161.315789473684
+20,87,"elote",NA,0,"elote",5,NA,NA,NA,0,NA,1,2,1309,161.315789473684
+20,89,"fresa",NA,0,"fɾesa",5,NA,NA,NA,0,NA,1,0,1290,161.315789473684
+20,90,"frijoles","beans",0,"fɾixoles",8,5.068904202,2,4,0,NA,0,NA,1780,161.315789473684
+20,92,"gelatina",NA,0,"xelatina",8,NA,NA,NA,0,NA,0,NA,1618,161.315789473684
+20,94,"helado/nieve","ice cream",0,"elaðo",5,0,2,3.66666666666667,0,NA,1,NA,1277,161.315789473684
+20,95,"hielo",NA,0,"jelo",4,NA,NA,NA,2,0,7,3,1256,161.315789473684
+20,98,"jamón","ham",0,"xamɔn",5,4.025351691,3,6,1,0,4,1,1315,161.315789473684
+20,103,"cacahuete/maní",NA,0,"kakawete",8,NA,NA,NA,0,NA,0,NA,1709,161.315789473684
+20,105,"manzana","apple",0,"manθana",7,6.070737728,5,3,0,NA,0,NA,1489,161.315789473684
+20,106,"melón",NA,0,"melɔn",5,NA,NA,NA,0,NA,2,NA,1344,161.315789473684
+20,108,"naranja","orange (food)",0,"naɾaŋxa",7,6.411818268,4,0,0,NA,0,NA,1538,161.315789473684
+20,110,"palomitas",NA,0,"palomitas",9,NA,NA,NA,0,NA,0,NA,1760,161.315789473684
+20,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,161.315789473684
+20,114,"papitas",NA,0,"papitas",7,NA,NA,NA,0,NA,1,1,1434,161.315789473684
+20,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,0,4,1,1237,161.315789473684
+20,116,"pastel","cake",0,"pastel",6,6.584791392,2,3.5,0,NA,2,NA,1359,161.315789473684
+20,118,"pescado (food_drink)",NA,0,"peskaðo",7,NA,NA,NA,4,NA,4,NA,2986,161.315789473684
+20,121,"quesadilla","quesadilla",0,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,161.315789473684
+20,122,"queso","cheese",0,"keso",4,6.208590026,4,2,0,NA,7,2.75,1245,161.315789473684
+20,123,"sal",NA,0,"sal",3,NA,NA,NA,2,0,4,1,1234,161.315789473684
+20,124,"salchicha","hot dog",0,"saltʃitʃa",9,0,NA,NA,0,NA,0,NA,1853,161.315789473684
+20,126,"sandía",NA,0,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,161.315789473684
+20,129,"taco",NA,0,"tako",4,NA,NA,NA,0,NA,11,5,1192,161.315789473684
+20,130,"té (food)",NA,0,"tɛ",2,NA,NA,NA,0,NA,1,NA,1313,161.315789473684
+20,131,"torta/lonche",NA,0,"tɔɾta",5,NA,NA,NA,0,NA,3,NA,1253,161.315789473684
+20,132,"tortilla","tortilla",0,"tɔɾtiʎa",7,2.944438979,0,NA,0,NA,2,NA,1532,161.315789473684
+20,133,"uvas","grapes",0,"uβas",4,4.094344562,NA,NA,0,NA,1,NA,1297,161.315789473684
+20,136,"yoghurt",NA,0,"ʝoɣuɾt",6,NA,NA,NA,0,NA,0,NA,1519,161.315789473684
+20,137,"zanahoria",NA,0,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,161.315789473684
+20,138,"botón","button",0,"botɔn",5,5.805134969,0,2,0,NA,2,NA,1335,161.315789473684
+20,140,"calcetín","sock",0,"kalθetin",8,4.394449155,1,2,0,NA,0,NA,1688,161.315789473684
+20,141,"calzón","underpants",0,"kalθɔn",6,2.302585093,NA,NA,0,NA,2,NA,1382,161.315789473684
+20,142,"camisa",NA,0,"kamisa",6,NA,NA,NA,0,NA,2,0.5,1307,161.315789473684
+20,143,"chancla",NA,0,"tʃankla",7,NA,NA,NA,0,NA,0,NA,1491,161.315789473684
+20,146,"falda","skirt",0,"falða",5,3.583518938,3,NA,0,NA,1,NA,1241,161.315789473684
+20,147,"gorra",NA,0,"ɡɔra",4,NA,NA,NA,0,NA,1,NA,1285,161.315789473684
+20,148,"guantes",NA,0,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,161.315789473684
+20,149,"lentes","glasses",0,"lɛntes",6,5.176149733,1,4,0,NA,1,NA,1436,161.315789473684
+20,152,"pantalón","pants",0,"pantalɔn",8,5.993961427,5,NA,0,NA,0,NA,1641,161.315789473684
+20,153,"pijama","pajamas",0,"pixama",6,4.736198448,0,1,0,NA,0,NA,1368,161.315789473684
+20,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,161.315789473684
+20,155,"ropa",NA,0,"ropa",4,NA,NA,NA,1,1,6,2.66666666666667,1256,161.315789473684
+20,156,"shorts","shorts",0,"ʃɔɾts",5,3.583518938,2,0,0,NA,1,NA,1353,161.315789473684
+20,157,"sombrero","hat",0,"sɔmbɾɛɾɔ",8,6.874198495,2,0.75,0,NA,0,NA,1852,161.315789473684
+20,158,"suéter","sweater",0,"swɛtɛɾ",6,4.836281907,0,NA,0,NA,0,NA,1503,161.315789473684
+20,159,"vestido","dress (object)",0,"bestiðo",7,5.823045895,4,NA,0,NA,0,NA,1543,161.315789473684
+20,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,161.315789473684
+20,164,"brazo","arm",0,"bɾaθo",5,5.590986981,4,1,0,NA,2,NA,1288,161.315789473684
+20,166,"cachete","cheek",0,"katʃete",7,3.784189634,1,2,0,NA,0,NA,1527,161.315789473684
+20,167,"cara","face",0,"kaɾa",4,6.52649486,7,1.25,2,0,10,3,1134,161.315789473684
+20,168,"chichi/pecho","breast",0,"tʃitʃi",6,2.995732274,1,3,0,NA,0,NA,1491,161.315789473684
+20,169,"dedo","finger",0,"deðo",4,6.22059017,2,1.5,0,NA,4,3,1285,161.315789473684
+20,170,"dientes","tooth",0,"djɛntes",7,4.418840608,1,2,0,NA,1,NA,1612,161.315789473684
+20,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,161.315789473684
+20,172,"hombro",NA,0,"ɔmbɾo",5,NA,NA,NA,0,NA,0,NA,1365,161.315789473684
+20,173,"labios",NA,0,"laβjos",6,NA,NA,NA,0,NA,0,NA,1387,161.315789473684
+20,174,"lengua","tongue",0,"lɛŋɡwa",6,5.33753808,2,2,0,NA,0,NA,1474,161.315789473684
+20,176,"nalgas",NA,0,"nalɣas",6,NA,NA,NA,0,NA,0,NA,1368,161.315789473684
+20,179,"ombligo","belly button",0,"ɔmbliɣo",7,0,NA,NA,0,NA,0,NA,1617,161.315789473684
+20,180,"oreja","ear",0,"ɔɾɛxa",5,5.416100402,3,1.33333333333333,0,NA,0,NA,1313,161.315789473684
+20,181,"panza","tummy",0,"panθa",5,5.153291594,0,NA,0,NA,4,2,1201,161.315789473684
+20,183,"pene","penis",0,"pene",4,2.302585093,0,NA,1,NA,3,3.5,1260,161.315789473684
+20,184,"piernas","leg",0,"pjɛɾnas",7,5.620400866,6,2,0,NA,0,NA,1538,161.315789473684
+20,186,"rodilla","knee",0,"roðiʎa",6,5.147494477,1,2,0,NA,0,NA,1415,161.315789473684
+20,190,"colores",NA,0,"kolɔɾɛs",7,NA,NA,NA,0,NA,0,NA,1589,161.315789473684
+20,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,161.315789473684
+20,193,"hoja/papel",NA,0,"oxa",3,NA,NA,NA,1,NA,10,2,1247,161.315789473684
+20,194,"juguete","toy (object)",0,"xuɣete",6,6.261491684,3,2,0,NA,0,NA,1479,161.315789473684
+20,196,"libro","book",0,"liβɾo",5,7.722677516,2,NA,0,NA,1,NA,1321,161.315789473684
+20,197,"muñeca","doll",0,"muɲeka",6,5.796057751,1,NA,0,NA,0,NA,1426,161.315789473684
+20,198,"osito","teddybear",0,"osito",5,1.098612289,NA,NA,0,NA,1,NA,1298,161.315789473684
+20,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,161.315789473684
+20,201,"pinturas",NA,0,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,161.315789473684
+20,203,"pluma/plumones",NA,0,"pluma",5,NA,NA,NA,0,NA,1,NA,1286,161.315789473684
+20,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,161.315789473684
+20,205,"triciclo (toys)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,161.315789473684
+20,206,"botas","boots",0,"botas",5,5.375278408,0,0,0,NA,4,2,1280,161.315789473684
+20,207,"bolsa (clothing)","purse",0,"bɔlsa",5,4.304065093,0,NA,4,NA,6,NA,2580,161.315789473684
+20,208,"babero","bib",0,"baβɛɾɔ",6,3.970291914,NA,NA,0,NA,0,NA,1414,161.315789473684
+20,209,"aretes","earrings",0,"aɾɛtes",6,3.737669618,0,NA,0,NA,0,NA,1424,161.315789473684
+20,211,"almohada","pillow",0,"almoaða",7,4.787491743,2,1,0,NA,0,NA,1510,161.315789473684
+20,213,"basura","trash",0,"basuɾa",6,4.343805422,0,NA,0,NA,0,NA,1326,161.315789473684
+20,214,"bolsa (household)",NA,0,"bɔlsa",5,NA,NA,NA,4,NA,6,NA,2580,161.315789473684
+20,216,"caja","box",0,"kaxa",4,7.201916318,3,1.5,2,0,11,3,1167,161.315789473684
+20,219,"cassette",NA,0,"kassette",8,NA,NA,NA,0,NA,0,NA,1730,161.315789473684
+20,220,"cepillo de dientes","toothbrush",0,"θepiʎoðeðjɛntes",15,2.944438979,0,NA,0,NA,0,NA,3238,161.315789473684
+20,221,"cepillo","brush (object)",0,"θepiʎo",6,5.916202063,5,1,0,NA,0,NA,1434,161.315789473684
+20,222,"cerillos",NA,0,"θɛɾiʎos",7,NA,NA,NA,0,NA,0,NA,1607,161.315789473684
+20,223,"chupón/chupete","pacifier",0,"tʃupɔn",6,1.791759469,0,NA,0,NA,0,NA,1491,161.315789473684
+20,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,NA,0,NA,0,NA,1569,161.315789473684
+20,226,"cobija","blanket",0,"koβixa",6,4.941642423,2,1,0,NA,2,0,1383,161.315789473684
+20,228,"cubeta",NA,0,"kuβeta",6,NA,NA,NA,0,NA,1,0,1369,161.315789473684
+20,229,"cuchara","spoon",0,"kutʃaɾa",7,5.942799375,5,4,0,NA,0,NA,1520,161.315789473684
+20,230,"cuchillo","knife",0,"kutʃiʎo",7,4.941642423,4,NA,0,NA,0,NA,1584,161.315789473684
+20,231,"dinero","money",0,"dinɛɾɔ",6,6.442540166,5,NA,0,NA,0,NA,1494,161.315789473684
+20,232,"escoba","broom",0,"eskoβa",6,4.762173935,0,NA,0,NA,0,NA,1391,161.315789473684
+20,233,"espejo","mirror",0,"espexo",6,5.099866428,4,NA,0,NA,0,NA,1440,161.315789473684
+20,234,"fotos","photos",0,"fotos",5,2.397895273,0,NA,0,NA,3,0,1341,161.315789473684
+20,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,161.315789473684
+20,237,"llave","keys",0,"ʎaβe",4,5.075173815,0,1,0,NA,1,NA,1258,161.315789473684
+20,238,"luz","light",0,"luθ",3,6.343880434,4,0,0,NA,1,NA,1335,161.315789473684
+20,240,"medicina","medicine",0,"meðiθina",8,4.852030264,1,4,0,NA,0,NA,1739,161.315789473684
+20,241,"olla",NA,0,"ɔʎa",3,NA,NA,NA,0,NA,4,2.5,1259,161.315789473684
+20,243,"papel","paper",0,"papel",5,6.970730078,7,NA,0,NA,3,1,1288,161.315789473684
+20,244,"pasta de dientes",NA,0,"pastaðeðjɛntes",14,NA,NA,NA,0,NA,0,NA,2904,161.315789473684
+20,245,"peine","comb (object)",0,"peɪne",5,5.068904202,2,1,1,NA,1,NA,1348,161.315789473684
+20,247,"plancha",NA,0,"plantʃa",7,NA,NA,NA,1,NA,1,NA,1444,161.315789473684
+20,248,"plato","plate",0,"plato",5,5.85220248,0,6,1,1,8,3.66666666666667,1226,161.315789473684
+20,249,"radio","radio",0,"raðjo",5,4.976733742,0,NA,0,NA,1,NA,1297,161.315789473684
+20,250,"reloj","watch (object)",0,"relɔx",5,7.413367336,0,2,0,NA,1,NA,1382,161.315789473684
+20,251,"servilleta",NA,0,"sɛɾβiʎeta",9,NA,NA,NA,0,NA,0,NA,1934,161.315789473684
+20,253,"taza","cup",0,"taθa",4,6.746412129,3,5,0,NA,10,1,1159,161.315789473684
+20,254,"teléfono","telephone",0,"telɛfono",8,5.693732139,0,NA,0,NA,0,NA,1737,161.315789473684
+20,255,"tenedor","fork",0,"teneðɔɾ",7,5.081404365,3,6,0,NA,0,NA,1618,161.315789473684
+20,256,"tijeras","scissors",0,"tixɛɾas",7,5.257495372,0,NA,0,NA,0,NA,1546,161.315789473684
+20,257,"toalla","towel",0,"toaʎa",5,4.927253685,2,4,0,NA,1,NA,1248,161.315789473684
+20,258,"trapo","cloth",0,"tɾapo",5,4.025351691,4,1,0,NA,2,NA,1287,161.315789473684
+20,259,"vasos","glass",0,"basos",5,5.676753802,5,2.25,0,NA,2,NA,1279,161.315789473684
+20,260,"vela","candle",0,"bela",4,4.043051268,0,NA,0,NA,10,2.33333333333333,1192,161.315789473684
+20,262,"árbol","tree",0,"aɾβɔl",5,6.768493212,11,1,0,NA,0,NA,1348,161.315789473684
+20,263,"bandera",NA,0,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,161.315789473684
+20,264,"cielo","sky",0,"θjelo",5,5.147494477,6,0,1,NA,2,5,1342,161.315789473684
+20,266,"columpio","swing (object)",0,"kolumpjo",8,4.564348191,1,1,0,NA,0,NA,1773,161.315789473684
+20,267,"estrella","star",0,"estɾeʎa",7,5.164785974,4,0,0,NA,0,NA,1538,161.315789473684
+20,268,"flor","flower",0,"flɔɾ",4,5.214935758,3,0.5,0,NA,0,NA,1322,161.315789473684
+20,270,"hojas",NA,0,"oxas",4,NA,NA,NA,2,0,4,0,1292,161.315789473684
+20,272,"lluvia","rain",0,"ʎuβja",5,5.214935758,3,4,0,NA,0,NA,1337,161.315789473684
+20,273,"luna","moon",0,"luna",4,5.117993812,3,0,1,NA,5,NA,1217,161.315789473684
+20,274,"maceta",NA,0,"maθeta",6,NA,NA,NA,0,NA,2,1.5,1312,161.315789473684
+20,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,161.315789473684
+20,278,"nube","cloud",0,"nuβe",4,3.17805383,2,NA,0,NA,1,NA,1331,161.315789473684
+20,280,"palo",NA,0,"palo",4,NA,NA,NA,2,0.5,16,4.25,1164,161.315789473684
+20,281,"pasto",NA,0,"pasto",5,NA,NA,NA,1,1,7,5.5,1215,161.315789473684
+20,282,"piedra","rock (object)",0,"pjeðɾa",6,5.049856007,1,1,0,NA,0,NA,1396,161.315789473684
+20,283,"planta","plant",0,"planta",6,4.770684624,1,8,1,NA,3,NA,1290,161.315789473684
+20,285,"resbaladilla","slide (object)",0,"resβalaðiʎa",11,5.902633333,1,8,0,NA,0,NA,2283,161.315789473684
+20,289,"tierra",NA,0,"tjɛra",5,NA,NA,NA,0,NA,0,NA,1309,161.315789473684
+20,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,161.315789473684
+20,291,"viento/aire",NA,0,"bjɛnto",6,NA,NA,NA,0,NA,0,NA,1420,161.315789473684
+20,292,"bacinica","potty",0,"baθinika",8,5.111987788,0,NA,0,NA,0,NA,1666,161.315789473684
+20,293,"banco (outside)",NA,0,"banko",5,NA,NA,NA,1,NA,5,4,1246,161.315789473684
+20,294,"baño","bathroom",0,"baɲo",4,5.828945618,3,0,0,NA,12,5,1224,161.315789473684
+20,295,"cajón","drawer",0,"kaxɔn",5,4.718498871,0,NA,0,NA,6,1,1297,161.315789473684
+20,297,"champú",NA,0,"tʃampu",6,NA,NA,NA,0,NA,0,NA,1476,161.315789473684
+20,299,"cocina","kitchen",0,"koθina",6,6.173786104,2,3.5,0,NA,2,0,1364,161.315789473684
+20,301,"cuarto","room",0,"kwaɾto",6,7.306531399,3,1,0,NA,0,NA,1366,161.315789473684
+20,302,"cuna","crib",0,"kuna",4,4.060443011,0,1,1,NA,6,1,1221,161.315789473684
+20,303,"escaleras","stairs",0,"eskalɛɾas",9,5.429345629,0,NA,0,NA,0,NA,1826,161.315789473684
+20,304,"estufa","stove",0,"estufa",6,4.770684624,2,NA,0,NA,0,NA,1413,161.315789473684
+20,311,"patio (outside)",NA,0,"patjo",5,NA,NA,NA,1,1,6,5.5,1235,161.315789473684
+20,312,"puerta","door",0,"pwɛɾta",6,7.207118856,6,NA,0,NA,1,NA,1375,161.315789473684
+20,314,"refrigerador","refrigerator",0,"refɾixɛɾaðɔɾ",12,5.117993812,0,6,0,NA,0,NA,2572,161.315789473684
+20,315,"regadera/ducha","shower",0,"reɣaðɛɾa",8,4.442651256,5,2.5,0,NA,0,NA,1688,161.315789473684
+20,317,"sala","living room",0,"sala",4,0,1,1,1,NA,14,1.8,1151,161.315789473684
+20,320,"sillón",NA,0,"siʎɔn",5,NA,NA,NA,0,NA,1,2,1363,161.315789473684
+20,322,"televisión","tv",0,"teleβisjɔn",10,6.146329258,0,NA,0,NA,0,NA,2174,161.315789473684
+20,323,"tina","bathtub",0,"tina",4,4.882801923,1,4,0,NA,5,2,1177,161.315789473684
+20,324,"ventana","window",0,"bɛntana",7,6.249975242,2,NA,0,NA,0,NA,1508,161.315789473684
+21,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,173.707317073171
+21,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,2,0,NA,2,NA,1563,173.707317073171
+21,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,1.5,0,NA,1,NA,1347,173.707317073171
+21,18,"ratón","mouse",0,"ratɔn",5,6.086774727,4,2,0,NA,5,1,1291,173.707317073171
+21,19,"rana","frog",0,"rana",4,5.590986981,0,8,0,NA,13,2.5,1168,173.707317073171
+21,20,"puerco","pig",0,"pwɛɾko",6,6.003887067,3,5,0,NA,1,NA,1436,173.707317073171
+21,21,"pollito","chick",0,"pɔʎito",6,2.63905733,1,1.5,0,NA,1,3,1400,173.707317073171
+21,23,"pescado","fish (animal)",0,"peskaðo",7,6.705639095,3,7,4,NA,4,NA,2986,173.707317073171
+21,28,"mosco",NA,0,"mɔsko",5,NA,NA,NA,1,NA,1,NA,1346,173.707317073171
+21,29,"mosca","fly (animal)",0,"mɔska",5,5.720311777,8,1.66666666666667,1,NA,2,0,1304,173.707317073171
+21,30,"mono","monkey",0,"mono",4,5.940171253,3,0,2,0,4,2.5,1269,173.707317073171
+21,31,"mariposa","butterfly",0,"maɾiposa",8,4.605170186,0,3.5,0,NA,0,NA,1626,173.707317073171
+21,32,"lobo","wolf",0,"loβo",4,4.672828834,1,2,1,0,6,0.666666666666667,1278,173.707317073171
+21,33,"león","lion",0,"leɔn",4,6.001414878,3,1,0,NA,1,NA,1284,173.707317073171
+21,35,"hormiga","ant",0,"ɔɾmiɣa",6,3.526360525,0,6,0,NA,0,NA,1422,173.707317073171
+21,40,"gallina","hen",0,"ɡaʎina",6,3.912023005,3,2,0,NA,1,1,1332,173.707317073171
+21,41,"foca",NA,0,"foka",4,NA,NA,NA,1,1,6,2.75,1247,173.707317073171
+21,42,"elefante","elephant",0,"elefante",8,5.918893854,0,NA,0,NA,0,NA,1715,173.707317073171
+21,43,"conejo","bunny",0,"konexo",6,6.376726948,0,NA,0,NA,0,NA,1411,173.707317073171
+21,47,"burro","donkey",0,"buro",4,5.017279837,1,1,0,NA,4,3,1306,173.707317073171
+21,50,"borrego","lamb",0,"bɔreɣo",6,4.941642423,0,NA,0,NA,0,NA,1455,173.707317073171
+21,53,"araña","spider",0,"aɾaɲa",5,4.49980967,1,NA,0,NA,0,NA,1250,173.707317073171
+21,54,"animal","animal",0,"animal",6,5.648974238,18,2,0,NA,0,NA,1415,173.707317073171
+21,57,"triciclo (vehicles)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,173.707317073171
+21,58,"tren","train",0,"tɾɛn",4,6.80682936,3,1,0,NA,1,NA,1296,173.707317073171
+21,60,"moto","motorcycle",0,"moto",4,4.094344562,1,1,1,NA,7,4,1247,173.707317073171
+21,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,0,0,NA,0,NA,2188,173.707317073171
+21,64,"camión/troca","truck",0,"kamjɔn",6,6.812345094,2,1,0,NA,4,1,1410,173.707317073171
+21,66,"bicicleta","bicycle",0,"biθikleta",9,4.553876892,1,1,0,NA,0,NA,1895,173.707317073171
+21,67,"barco","boat",0,"baɾko",5,6.194405391,3,8,1,NA,4,2,1252,173.707317073171
+21,71,"arroz","rice",0,"arɔθ",4,5.093750201,1,4.5,0,NA,0,NA,1308,173.707317073171
+21,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,173.707317073171
+21,73,"atún",NA,0,"atun",4,NA,NA,NA,0,NA,1,NA,1259,173.707317073171
+21,74,"azúcar",NA,0,"aθukaɾ",6,NA,NA,NA,0,NA,0,NA,1426,173.707317073171
+21,75,"café","coffee",0,"kafɛ",4,6.326149473,1,2.5,0,NA,4,3.5,1268,173.707317073171
+21,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,173.707317073171
+21,77,"carne","meat",1,"kaɾne",5,5.755742214,4,3.66666666666667,0,NA,1,NA,1272,173.707317073171
+21,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,173.707317073171
+21,80,"chicle",NA,0,"tʃikle",6,NA,NA,NA,1,NA,1,NA,1465,173.707317073171
+21,81,"chile","chili",0,"tʃile",5,2.63905733,1,4,1,NA,1,NA,1350,173.707317073171
+21,82,"chocolate",NA,0,"tʃokolate",9,NA,NA,NA,0,NA,0,NA,1888,173.707317073171
+21,87,"elote",NA,0,"elote",5,NA,NA,NA,0,NA,1,2,1309,173.707317073171
+21,89,"fresa",NA,0,"fɾesa",5,NA,NA,NA,0,NA,1,0,1290,173.707317073171
+21,90,"frijoles","beans",0,"fɾixoles",8,5.068904202,2,4,0,NA,0,NA,1780,173.707317073171
+21,92,"gelatina",NA,0,"xelatina",8,NA,NA,NA,0,NA,0,NA,1618,173.707317073171
+21,94,"helado/nieve","ice cream",0,"elaðo",5,0,2,4,0,NA,1,NA,1277,173.707317073171
+21,95,"hielo",NA,0,"jelo",4,NA,NA,NA,2,0,7,3,1256,173.707317073171
+21,98,"jamón","ham",0,"xamɔn",5,4.025351691,3,6,1,0,4,1,1315,173.707317073171
+21,103,"cacahuete/maní",NA,0,"kakawete",8,NA,NA,NA,0,NA,0,NA,1709,173.707317073171
+21,105,"manzana","apple",0,"manθana",7,6.070737728,5,3,0,NA,0,NA,1489,173.707317073171
+21,106,"melón",NA,0,"melɔn",5,NA,NA,NA,0,NA,2,NA,1344,173.707317073171
+21,108,"naranja","orange (food)",0,"naɾaŋxa",7,6.411818268,4,0,0,NA,0,NA,1538,173.707317073171
+21,110,"palomitas",NA,0,"palomitas",9,NA,NA,NA,0,NA,0,NA,1760,173.707317073171
+21,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,173.707317073171
+21,114,"papitas",NA,0,"papitas",7,NA,NA,NA,0,NA,1,1,1434,173.707317073171
+21,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,0,4,1,1237,173.707317073171
+21,116,"pastel","cake",0,"pastel",6,6.584791392,2,3.5,0,NA,2,NA,1359,173.707317073171
+21,118,"pescado (food_drink)",NA,0,"peskaðo",7,NA,NA,NA,4,NA,4,NA,2986,173.707317073171
+21,121,"quesadilla","quesadilla",0,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,173.707317073171
+21,122,"queso","cheese",0,"keso",4,6.208590026,4,2.5,0,NA,7,2.4,1245,173.707317073171
+21,123,"sal",NA,0,"sal",3,NA,NA,NA,2,0,4,1,1234,173.707317073171
+21,124,"salchicha","hot dog",0,"saltʃitʃa",9,0,NA,NA,0,NA,0,NA,1853,173.707317073171
+21,126,"sandía",NA,0,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,173.707317073171
+21,129,"taco",NA,0,"tako",4,NA,NA,NA,0,NA,11,4.4,1192,173.707317073171
+21,130,"té (food)",NA,0,"tɛ",2,NA,NA,NA,0,NA,1,NA,1313,173.707317073171
+21,131,"torta/lonche",NA,0,"tɔɾta",5,NA,NA,NA,0,NA,3,NA,1253,173.707317073171
+21,132,"tortilla","tortilla",0,"tɔɾtiʎa",7,2.944438979,0,NA,0,NA,2,NA,1532,173.707317073171
+21,133,"uvas","grapes",0,"uβas",4,4.094344562,NA,NA,0,NA,1,NA,1297,173.707317073171
+21,136,"yoghurt",NA,0,"ʝoɣuɾt",6,NA,NA,NA,0,NA,0,NA,1519,173.707317073171
+21,137,"zanahoria",NA,0,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,173.707317073171
+21,138,"botón","button",0,"botɔn",5,5.805134969,0,2,0,NA,2,NA,1335,173.707317073171
+21,140,"calcetín","sock",0,"kalθetin",8,4.394449155,1,2,0,NA,0,NA,1688,173.707317073171
+21,141,"calzón","underpants",0,"kalθɔn",6,2.302585093,NA,NA,0,NA,2,NA,1382,173.707317073171
+21,142,"camisa",NA,0,"kamisa",6,NA,NA,NA,0,NA,2,1,1307,173.707317073171
+21,143,"chancla",NA,0,"tʃankla",7,NA,NA,NA,0,NA,0,NA,1491,173.707317073171
+21,146,"falda","skirt",0,"falða",5,3.583518938,3,NA,0,NA,1,NA,1241,173.707317073171
+21,147,"gorra",NA,0,"ɡɔra",4,NA,NA,NA,0,NA,1,NA,1285,173.707317073171
+21,148,"guantes",NA,0,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,173.707317073171
+21,149,"lentes","glasses",0,"lɛntes",6,5.176149733,1,4,0,NA,1,NA,1436,173.707317073171
+21,152,"pantalón","pants",0,"pantalɔn",8,5.993961427,5,NA,0,NA,0,NA,1641,173.707317073171
+21,153,"pijama","pajamas",0,"pixama",6,4.736198448,0,1,0,NA,0,NA,1368,173.707317073171
+21,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,173.707317073171
+21,155,"ropa",NA,0,"ropa",4,NA,NA,NA,1,1,6,3,1256,173.707317073171
+21,156,"shorts","shorts",0,"ʃɔɾts",5,3.583518938,2,0,0,NA,1,NA,1353,173.707317073171
+21,157,"sombrero","hat",0,"sɔmbɾɛɾɔ",8,6.874198495,2,1,0,NA,0,NA,1852,173.707317073171
+21,158,"suéter","sweater",0,"swɛtɛɾ",6,4.836281907,0,NA,0,NA,0,NA,1503,173.707317073171
+21,159,"vestido","dress (object)",0,"bestiðo",7,5.823045895,4,NA,0,NA,0,NA,1543,173.707317073171
+21,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,173.707317073171
+21,164,"brazo","arm",0,"bɾaθo",5,5.590986981,4,1,0,NA,2,NA,1288,173.707317073171
+21,166,"cachete","cheek",0,"katʃete",7,3.784189634,1,2,0,NA,0,NA,1527,173.707317073171
+21,167,"cara","face",0,"kaɾa",4,6.52649486,7,1.25,2,0,10,3,1134,173.707317073171
+21,168,"chichi/pecho","breast",0,"tʃitʃi",6,2.995732274,1,3.5,0,NA,0,NA,1491,173.707317073171
+21,169,"dedo","finger",1,"deðo",4,6.22059017,2,2,0,NA,4,3,1285,173.707317073171
+21,170,"dientes","tooth",1,"djɛntes",7,4.418840608,1,2,0,NA,1,NA,1612,173.707317073171
+21,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,173.707317073171
+21,172,"hombro",NA,0,"ɔmbɾo",5,NA,NA,NA,0,NA,0,NA,1365,173.707317073171
+21,173,"labios",NA,0,"laβjos",6,NA,NA,NA,0,NA,0,NA,1387,173.707317073171
+21,174,"lengua","tongue",0,"lɛŋɡwa",6,5.33753808,2,2,0,NA,0,NA,1474,173.707317073171
+21,176,"nalgas",NA,0,"nalɣas",6,NA,NA,NA,0,NA,0,NA,1368,173.707317073171
+21,179,"ombligo","belly button",0,"ɔmbliɣo",7,0,NA,NA,0,NA,0,NA,1617,173.707317073171
+21,180,"oreja","ear",0,"ɔɾɛxa",5,5.416100402,3,1.33333333333333,0,NA,0,NA,1313,173.707317073171
+21,181,"panza","tummy",0,"panθa",5,5.153291594,0,NA,0,NA,4,2,1201,173.707317073171
+21,183,"pene","penis",0,"pene",4,2.302585093,0,NA,1,NA,3,3.5,1260,173.707317073171
+21,184,"piernas","leg",0,"pjɛɾnas",7,5.620400866,6,2,0,NA,0,NA,1538,173.707317073171
+21,186,"rodilla","knee",0,"roðiʎa",6,5.147494477,1,2,0,NA,0,NA,1415,173.707317073171
+21,190,"colores",NA,0,"kolɔɾɛs",7,NA,NA,NA,0,NA,0,NA,1589,173.707317073171
+21,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,173.707317073171
+21,193,"hoja/papel",NA,0,"oxa",3,NA,NA,NA,1,NA,10,2.2,1247,173.707317073171
+21,194,"juguete","toy (object)",0,"xuɣete",6,6.261491684,3,2.66666666666667,0,NA,0,NA,1479,173.707317073171
+21,196,"libro","book",0,"liβɾo",5,7.722677516,2,NA,0,NA,1,NA,1321,173.707317073171
+21,197,"muñeca","doll",0,"muɲeka",6,5.796057751,1,NA,0,NA,0,NA,1426,173.707317073171
+21,198,"osito","teddybear",0,"osito",5,1.098612289,NA,NA,0,NA,1,1,1298,173.707317073171
+21,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,173.707317073171
+21,201,"pinturas",NA,0,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,173.707317073171
+21,203,"pluma/plumones",NA,0,"pluma",5,NA,NA,NA,0,NA,1,NA,1286,173.707317073171
+21,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,173.707317073171
+21,205,"triciclo (toys)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,173.707317073171
+21,206,"botas","boots",0,"botas",5,5.375278408,0,1,0,NA,4,3,1280,173.707317073171
+21,207,"bolsa (clothing)","purse",0,"bɔlsa",5,4.304065093,0,NA,4,NA,6,NA,2580,173.707317073171
+21,208,"babero","bib",0,"baβɛɾɔ",6,3.970291914,NA,NA,0,NA,0,NA,1414,173.707317073171
+21,209,"aretes","earrings",0,"aɾɛtes",6,3.737669618,0,NA,0,NA,0,NA,1424,173.707317073171
+21,211,"almohada","pillow",0,"almoaða",7,4.787491743,2,1,0,NA,0,NA,1510,173.707317073171
+21,213,"basura","trash",1,"basuɾa",6,4.343805422,0,NA,0,NA,0,NA,1326,173.707317073171
+21,214,"bolsa (household)",NA,0,"bɔlsa",5,NA,NA,NA,4,NA,6,NA,2580,173.707317073171
+21,216,"caja","box",0,"kaxa",4,7.201916318,3,1.5,2,0,11,3,1167,173.707317073171
+21,219,"cassette",NA,0,"kassette",8,NA,NA,NA,0,NA,0,NA,1730,173.707317073171
+21,220,"cepillo de dientes","toothbrush",0,"θepiʎoðeðjɛntes",15,2.944438979,0,NA,0,NA,0,NA,3238,173.707317073171
+21,221,"cepillo","brush (object)",0,"θepiʎo",6,5.916202063,5,1,0,NA,0,NA,1434,173.707317073171
+21,222,"cerillos",NA,0,"θɛɾiʎos",7,NA,NA,NA,0,NA,0,NA,1607,173.707317073171
+21,223,"chupón/chupete","pacifier",0,"tʃupɔn",6,1.791759469,0,NA,0,NA,0,NA,1491,173.707317073171
+21,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,NA,0,NA,0,NA,1569,173.707317073171
+21,226,"cobija","blanket",0,"koβixa",6,4.941642423,2,1,0,NA,2,0,1383,173.707317073171
+21,228,"cubeta",NA,0,"kuβeta",6,NA,NA,NA,0,NA,1,0,1369,173.707317073171
+21,229,"cuchara","spoon",0,"kutʃaɾa",7,5.942799375,5,4,0,NA,0,NA,1520,173.707317073171
+21,230,"cuchillo","knife",0,"kutʃiʎo",7,4.941642423,4,NA,0,NA,0,NA,1584,173.707317073171
+21,231,"dinero","money",0,"dinɛɾɔ",6,6.442540166,5,NA,0,NA,0,NA,1494,173.707317073171
+21,232,"escoba","broom",0,"eskoβa",6,4.762173935,0,NA,0,NA,0,NA,1391,173.707317073171
+21,233,"espejo","mirror",0,"espexo",6,5.099866428,4,NA,0,NA,0,NA,1440,173.707317073171
+21,234,"fotos","photos",0,"fotos",5,2.397895273,0,NA,0,NA,3,1,1341,173.707317073171
+21,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,173.707317073171
+21,237,"llave","keys",0,"ʎaβe",4,5.075173815,0,1,0,NA,1,NA,1258,173.707317073171
+21,238,"luz","light",1,"luθ",3,6.343880434,4,0,0,NA,1,NA,1335,173.707317073171
+21,240,"medicina","medicine",0,"meðiθina",8,4.852030264,1,4,0,NA,0,NA,1739,173.707317073171
+21,241,"olla",NA,0,"ɔʎa",3,NA,NA,NA,0,NA,4,2.5,1259,173.707317073171
+21,243,"papel","paper",0,"papel",5,6.970730078,7,NA,0,NA,3,1,1288,173.707317073171
+21,244,"pasta de dientes",NA,0,"pastaðeðjɛntes",14,NA,NA,NA,0,NA,0,NA,2904,173.707317073171
+21,245,"peine","comb (object)",0,"peɪne",5,5.068904202,2,1,1,NA,1,NA,1348,173.707317073171
+21,247,"plancha",NA,0,"plantʃa",7,NA,NA,NA,1,NA,1,NA,1444,173.707317073171
+21,248,"plato","plate",0,"plato",5,5.85220248,0,6,1,1,8,3.66666666666667,1226,173.707317073171
+21,249,"radio","radio",0,"raðjo",5,4.976733742,0,NA,0,NA,1,NA,1297,173.707317073171
+21,250,"reloj","watch (object)",0,"relɔx",5,7.413367336,0,4,0,NA,1,NA,1382,173.707317073171
+21,251,"servilleta",NA,0,"sɛɾβiʎeta",9,NA,NA,NA,0,NA,0,NA,1934,173.707317073171
+21,253,"taza","cup",0,"taθa",4,6.746412129,3,5,0,NA,10,2,1159,173.707317073171
+21,254,"teléfono","telephone",1,"telɛfono",8,5.693732139,0,NA,0,NA,0,NA,1737,173.707317073171
+21,255,"tenedor","fork",0,"teneðɔɾ",7,5.081404365,3,6,0,NA,0,NA,1618,173.707317073171
+21,256,"tijeras","scissors",0,"tixɛɾas",7,5.257495372,0,NA,0,NA,0,NA,1546,173.707317073171
+21,257,"toalla","towel",0,"toaʎa",5,4.927253685,2,4,0,NA,1,NA,1248,173.707317073171
+21,258,"trapo","cloth",0,"tɾapo",5,4.025351691,4,1,0,NA,2,NA,1287,173.707317073171
+21,259,"vasos","glass",0,"basos",5,5.676753802,5,2.25,0,NA,2,NA,1279,173.707317073171
+21,260,"vela","candle",0,"bela",4,4.043051268,0,NA,0,NA,10,2.5,1192,173.707317073171
+21,262,"árbol","tree",0,"aɾβɔl",5,6.768493212,11,2,0,NA,0,NA,1348,173.707317073171
+21,263,"bandera",NA,0,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,173.707317073171
+21,264,"cielo","sky",0,"θjelo",5,5.147494477,6,0,1,NA,2,5,1342,173.707317073171
+21,266,"columpio","swing (object)",0,"kolumpjo",8,4.564348191,1,1,0,NA,0,NA,1773,173.707317073171
+21,267,"estrella","star",0,"estɾeʎa",7,5.164785974,4,0,0,NA,0,NA,1538,173.707317073171
+21,268,"flor","flower",0,"flɔɾ",4,5.214935758,3,0.5,0,NA,0,NA,1322,173.707317073171
+21,270,"hojas",NA,0,"oxas",4,NA,NA,NA,2,0,4,1,1292,173.707317073171
+21,272,"lluvia","rain",0,"ʎuβja",5,5.214935758,3,4,0,NA,0,NA,1337,173.707317073171
+21,273,"luna","moon",0,"luna",4,5.117993812,3,0,1,NA,5,NA,1217,173.707317073171
+21,274,"maceta",NA,0,"maθeta",6,NA,NA,NA,0,NA,2,1.5,1312,173.707317073171
+21,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,173.707317073171
+21,278,"nube","cloud",0,"nuβe",4,3.17805383,2,NA,0,NA,1,NA,1331,173.707317073171
+21,280,"palo",NA,0,"palo",4,NA,NA,NA,2,0.5,16,4.25,1164,173.707317073171
+21,281,"pasto",NA,0,"pasto",5,NA,NA,NA,1,1,7,5.5,1215,173.707317073171
+21,282,"piedra","rock (object)",0,"pjeðɾa",6,5.049856007,1,1,0,NA,0,NA,1396,173.707317073171
+21,283,"planta","plant",0,"planta",6,4.770684624,1,8,1,NA,3,NA,1290,173.707317073171
+21,285,"resbaladilla","slide (object)",0,"resβalaðiʎa",11,5.902633333,1,8,0,NA,0,NA,2283,173.707317073171
+21,289,"tierra",NA,0,"tjɛra",5,NA,NA,NA,0,NA,0,NA,1309,173.707317073171
+21,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,173.707317073171
+21,291,"viento/aire",NA,0,"bjɛnto",6,NA,NA,NA,0,NA,0,NA,1420,173.707317073171
+21,292,"bacinica","potty",0,"baθinika",8,5.111987788,0,NA,0,NA,0,NA,1666,173.707317073171
+21,293,"banco (outside)",NA,0,"banko",5,NA,NA,NA,1,NA,5,3,1246,173.707317073171
+21,294,"baño","bathroom",1,"baɲo",4,5.828945618,3,0,0,NA,12,4.4,1224,173.707317073171
+21,295,"cajón","drawer",0,"kaxɔn",5,4.718498871,0,NA,0,NA,6,1,1297,173.707317073171
+21,297,"champú",NA,0,"tʃampu",6,NA,NA,NA,0,NA,0,NA,1476,173.707317073171
+21,299,"cocina","kitchen",0,"koθina",6,6.173786104,2,3.5,0,NA,2,0,1364,173.707317073171
+21,301,"cuarto","room",0,"kwaɾto",6,7.306531399,3,1,0,NA,0,NA,1366,173.707317073171
+21,302,"cuna","crib",0,"kuna",4,4.060443011,0,1,1,NA,6,2,1221,173.707317073171
+21,303,"escaleras","stairs",0,"eskalɛɾas",9,5.429345629,0,NA,0,NA,0,NA,1826,173.707317073171
+21,304,"estufa","stove",0,"estufa",6,4.770684624,2,NA,0,NA,0,NA,1413,173.707317073171
+21,311,"patio (outside)",NA,0,"patjo",5,NA,NA,NA,1,1,6,5.5,1235,173.707317073171
+21,312,"puerta","door",0,"pwɛɾta",6,7.207118856,6,NA,0,NA,1,NA,1375,173.707317073171
+21,314,"refrigerador","refrigerator",0,"refɾixɛɾaðɔɾ",12,5.117993812,0,6,0,NA,0,NA,2572,173.707317073171
+21,315,"regadera/ducha","shower",0,"reɣaðɛɾa",8,4.442651256,5,2.5,0,NA,0,NA,1688,173.707317073171
+21,317,"sala","living room",0,"sala",4,0,1,1,1,NA,14,2,1151,173.707317073171
+21,320,"sillón",NA,0,"siʎɔn",5,NA,NA,NA,0,NA,1,2,1363,173.707317073171
+21,322,"televisión","tv",0,"teleβisjɔn",10,6.146329258,0,NA,0,NA,0,NA,2174,173.707317073171
+21,323,"tina","bathtub",0,"tina",4,4.882801923,1,4,0,NA,5,2,1177,173.707317073171
+21,324,"ventana","window",0,"bɛntana",7,6.249975242,2,NA,0,NA,0,NA,1508,173.707317073171
+22,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,213.458333333333
+22,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,2,0,NA,2,NA,1563,213.458333333333
+22,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,1.5,0,NA,1,NA,1347,213.458333333333
+22,18,"ratón","mouse",0,"ratɔn",5,6.086774727,4,2,0,NA,5,1,1291,213.458333333333
+22,19,"rana","frog",0,"rana",4,5.590986981,0,8,0,NA,13,3,1168,213.458333333333
+22,20,"puerco","pig",0,"pwɛɾko",6,6.003887067,3,5.5,0,NA,1,NA,1436,213.458333333333
+22,21,"pollito","chick",0,"pɔʎito",6,2.63905733,1,2,0,NA,1,3,1400,213.458333333333
+22,23,"pescado","fish (animal)",0,"peskaðo",7,6.705639095,3,7.5,4,NA,4,NA,2986,213.458333333333
+22,28,"mosco",NA,0,"mɔsko",5,NA,NA,NA,1,NA,1,NA,1346,213.458333333333
+22,29,"mosca","fly (animal)",0,"mɔska",5,5.720311777,8,2,1,NA,2,0,1304,213.458333333333
+22,30,"mono","monkey",0,"mono",4,5.940171253,3,0,2,0,4,3,1269,213.458333333333
+22,31,"mariposa","butterfly",0,"maɾiposa",8,4.605170186,0,4,0,NA,0,NA,1626,213.458333333333
+22,32,"lobo","wolf",0,"loβo",4,4.672828834,1,2,1,0,6,1,1278,213.458333333333
+22,33,"león","lion",0,"leɔn",4,6.001414878,3,1,0,NA,1,NA,1284,213.458333333333
+22,35,"hormiga","ant",0,"ɔɾmiɣa",6,3.526360525,0,7,0,NA,0,NA,1422,213.458333333333
+22,40,"gallina","hen",0,"ɡaʎina",6,3.912023005,3,2.66666666666667,0,NA,1,1,1332,213.458333333333
+22,41,"foca",NA,0,"foka",4,NA,NA,NA,1,1,6,3,1247,213.458333333333
+22,42,"elefante","elephant",0,"elefante",8,5.918893854,0,NA,0,NA,0,NA,1715,213.458333333333
+22,43,"conejo","bunny",0,"konexo",6,6.376726948,0,NA,0,NA,0,NA,1411,213.458333333333
+22,47,"burro","donkey",0,"buro",4,5.017279837,1,1,0,NA,4,3.75,1306,213.458333333333
+22,50,"borrego","lamb",0,"bɔreɣo",6,4.941642423,0,NA,0,NA,0,NA,1455,213.458333333333
+22,53,"araña","spider",0,"aɾaɲa",5,4.49980967,1,NA,0,NA,0,NA,1250,213.458333333333
+22,54,"animal","animal",0,"animal",6,5.648974238,18,2.2,0,NA,0,NA,1415,213.458333333333
+22,57,"triciclo (vehicles)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,213.458333333333
+22,58,"tren","train",1,"tɾɛn",4,6.80682936,3,1,0,NA,1,NA,1296,213.458333333333
+22,60,"moto","motorcycle",0,"moto",4,4.094344562,1,1,1,NA,7,4.75,1247,213.458333333333
+22,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,0,0,NA,0,NA,2188,213.458333333333
+22,64,"camión/troca","truck",0,"kamjɔn",6,6.812345094,2,1,0,NA,4,1,1410,213.458333333333
+22,66,"bicicleta","bicycle",0,"biθikleta",9,4.553876892,1,1,0,NA,0,NA,1895,213.458333333333
+22,67,"barco","boat",0,"baɾko",5,6.194405391,3,8,1,NA,4,4,1252,213.458333333333
+22,71,"arroz","rice",0,"arɔθ",4,5.093750201,1,5.5,0,NA,0,NA,1308,213.458333333333
+22,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,213.458333333333
+22,73,"atún",NA,0,"atun",4,NA,NA,NA,0,NA,1,NA,1259,213.458333333333
+22,74,"azúcar",NA,0,"aθukaɾ",6,NA,NA,NA,0,NA,0,NA,1426,213.458333333333
+22,75,"café","coffee",0,"kafɛ",4,6.326149473,1,2.5,0,NA,4,4,1268,213.458333333333
+22,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,213.458333333333
+22,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,213.458333333333
+22,80,"chicle",NA,0,"tʃikle",6,NA,NA,NA,1,NA,1,NA,1465,213.458333333333
+22,81,"chile","chili",1,"tʃile",5,2.63905733,1,4.5,1,NA,1,NA,1350,213.458333333333
+22,82,"chocolate",NA,1,"tʃokolate",9,NA,NA,NA,0,NA,0,NA,1888,213.458333333333
+22,87,"elote",NA,0,"elote",5,NA,NA,NA,0,NA,1,2,1309,213.458333333333
+22,89,"fresa",NA,0,"fɾesa",5,NA,NA,NA,0,NA,1,0,1290,213.458333333333
+22,90,"frijoles","beans",0,"fɾixoles",8,5.068904202,2,4.5,0,NA,0,NA,1780,213.458333333333
+22,92,"gelatina",NA,1,"xelatina",8,NA,NA,NA,0,NA,0,NA,1618,213.458333333333
+22,94,"helado/nieve","ice cream",0,"elaðo",5,0,2,4.33333333333333,0,NA,1,NA,1277,213.458333333333
+22,95,"hielo",NA,0,"jelo",4,NA,NA,NA,2,0,7,3.33333333333333,1256,213.458333333333
+22,98,"jamón","ham",0,"xamɔn",5,4.025351691,3,5,1,0,4,1,1315,213.458333333333
+22,103,"cacahuete/maní",NA,0,"kakawete",8,NA,NA,NA,0,NA,0,NA,1709,213.458333333333
+22,105,"manzana","apple",1,"manθana",7,6.070737728,5,3.5,0,NA,0,NA,1489,213.458333333333
+22,106,"melón",NA,0,"melɔn",5,NA,NA,NA,0,NA,2,NA,1344,213.458333333333
+22,108,"naranja","orange (food)",1,"naɾaŋxa",7,6.411818268,4,0,0,NA,0,NA,1538,213.458333333333
+22,110,"palomitas",NA,0,"palomitas",9,NA,NA,NA,0,NA,0,NA,1760,213.458333333333
+22,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,213.458333333333
+22,114,"papitas",NA,0,"papitas",7,NA,NA,NA,0,NA,1,1,1434,213.458333333333
+22,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,0,4,1,1237,213.458333333333
+22,116,"pastel","cake",1,"pastel",6,6.584791392,2,4,0,NA,2,NA,1359,213.458333333333
+22,118,"pescado (food_drink)",NA,0,"peskaðo",7,NA,NA,NA,4,NA,4,NA,2986,213.458333333333
+22,121,"quesadilla","quesadilla",0,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,213.458333333333
+22,122,"queso","cheese",0,"keso",4,6.208590026,4,2.5,0,NA,7,2.83333333333333,1245,213.458333333333
+22,123,"sal",NA,0,"sal",3,NA,NA,NA,2,0,4,1,1234,213.458333333333
+22,124,"salchicha","hot dog",0,"saltʃitʃa",9,0,NA,NA,0,NA,0,NA,1853,213.458333333333
+22,126,"sandía",NA,0,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,213.458333333333
+22,129,"taco",NA,0,"tako",4,NA,NA,NA,0,NA,11,5.33333333333333,1192,213.458333333333
+22,130,"té (food)",NA,0,"tɛ",2,NA,NA,NA,0,NA,1,NA,1313,213.458333333333
+22,131,"torta/lonche",NA,0,"tɔɾta",5,NA,NA,NA,0,NA,3,NA,1253,213.458333333333
+22,132,"tortilla","tortilla",1,"tɔɾtiʎa",7,2.944438979,0,NA,0,NA,2,NA,1532,213.458333333333
+22,133,"uvas","grapes",0,"uβas",4,4.094344562,NA,NA,0,NA,1,NA,1297,213.458333333333
+22,136,"yoghurt",NA,0,"ʝoɣuɾt",6,NA,NA,NA,0,NA,0,NA,1519,213.458333333333
+22,137,"zanahoria",NA,0,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,213.458333333333
+22,138,"botón","button",0,"botɔn",5,5.805134969,0,3,0,NA,2,NA,1335,213.458333333333
+22,140,"calcetín","sock",1,"kalθetin",8,4.394449155,1,2,0,NA,0,NA,1688,213.458333333333
+22,141,"calzón","underpants",1,"kalθɔn",6,2.302585093,NA,NA,0,NA,2,NA,1382,213.458333333333
+22,142,"camisa",NA,0,"kamisa",6,NA,NA,NA,0,NA,2,1,1307,213.458333333333
+22,143,"chancla",NA,0,"tʃankla",7,NA,NA,NA,0,NA,0,NA,1491,213.458333333333
+22,146,"falda","skirt",0,"falða",5,3.583518938,3,NA,0,NA,1,NA,1241,213.458333333333
+22,147,"gorra",NA,0,"ɡɔra",4,NA,NA,NA,0,NA,1,NA,1285,213.458333333333
+22,148,"guantes",NA,0,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,213.458333333333
+22,149,"lentes","glasses",0,"lɛntes",6,5.176149733,1,4.5,0,NA,1,0,1436,213.458333333333
+22,152,"pantalón","pants",1,"pantalɔn",8,5.993961427,5,NA,0,NA,0,NA,1641,213.458333333333
+22,153,"pijama","pajamas",0,"pixama",6,4.736198448,0,1,0,NA,0,NA,1368,213.458333333333
+22,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,213.458333333333
+22,155,"ropa",NA,0,"ropa",4,NA,NA,NA,1,1,6,3,1256,213.458333333333
+22,156,"shorts","shorts",0,"ʃɔɾts",5,3.583518938,2,1,0,NA,1,NA,1353,213.458333333333
+22,157,"sombrero","hat",0,"sɔmbɾɛɾɔ",8,6.874198495,2,1.25,0,NA,0,NA,1852,213.458333333333
+22,158,"suéter","sweater",0,"swɛtɛɾ",6,4.836281907,0,NA,0,NA,0,NA,1503,213.458333333333
+22,159,"vestido","dress (object)",0,"bestiðo",7,5.823045895,4,NA,0,NA,0,NA,1543,213.458333333333
+22,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,213.458333333333
+22,164,"brazo","arm",0,"bɾaθo",5,5.590986981,4,1.33333333333333,0,NA,2,5,1288,213.458333333333
+22,166,"cachete","cheek",0,"katʃete",7,3.784189634,1,3,0,NA,0,NA,1527,213.458333333333
+22,167,"cara","face",0,"kaɾa",4,6.52649486,7,1.75,2,0,10,2.75,1134,213.458333333333
+22,168,"chichi/pecho","breast",1,"tʃitʃi",6,2.995732274,1,4,0,NA,0,NA,1491,213.458333333333
+22,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,213.458333333333
+22,172,"hombro",NA,0,"ɔmbɾo",5,NA,NA,NA,0,NA,0,NA,1365,213.458333333333
+22,173,"labios",NA,0,"laβjos",6,NA,NA,NA,0,NA,0,NA,1387,213.458333333333
+22,174,"lengua","tongue",0,"lɛŋɡwa",6,5.33753808,2,3,0,NA,0,NA,1474,213.458333333333
+22,176,"nalgas",NA,0,"nalɣas",6,NA,NA,NA,0,NA,0,NA,1368,213.458333333333
+22,179,"ombligo","belly button",0,"ɔmbliɣo",7,0,NA,NA,0,NA,0,NA,1617,213.458333333333
+22,180,"oreja","ear",0,"ɔɾɛxa",5,5.416100402,3,1.66666666666667,0,NA,0,NA,1313,213.458333333333
+22,181,"panza","tummy",1,"panθa",5,5.153291594,0,NA,0,NA,4,2,1201,213.458333333333
+22,183,"pene","penis",0,"pene",4,2.302585093,0,NA,1,NA,3,4,1260,213.458333333333
+22,184,"piernas","leg",0,"pjɛɾnas",7,5.620400866,6,2,0,NA,0,NA,1538,213.458333333333
+22,186,"rodilla","knee",0,"roðiʎa",6,5.147494477,1,2,0,NA,0,NA,1415,213.458333333333
+22,190,"colores",NA,0,"kolɔɾɛs",7,NA,NA,NA,0,NA,0,NA,1589,213.458333333333
+22,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,213.458333333333
+22,193,"hoja/papel",NA,1,"oxa",3,NA,NA,NA,1,NA,10,2.2,1247,213.458333333333
+22,194,"juguete","toy (object)",1,"xuɣete",6,6.261491684,3,2.66666666666667,0,NA,0,NA,1479,213.458333333333
+22,196,"libro","book",0,"liβɾo",5,7.722677516,2,NA,0,NA,1,NA,1321,213.458333333333
+22,197,"muñeca","doll",0,"muɲeka",6,5.796057751,1,NA,0,NA,0,NA,1426,213.458333333333
+22,198,"osito","teddybear",1,"osito",5,1.098612289,NA,NA,0,NA,1,1,1298,213.458333333333
+22,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,213.458333333333
+22,201,"pinturas",NA,0,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,213.458333333333
+22,203,"pluma/plumones",NA,0,"pluma",5,NA,NA,NA,0,NA,1,NA,1286,213.458333333333
+22,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,213.458333333333
+22,205,"triciclo (toys)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,213.458333333333
+22,206,"botas","boots",0,"botas",5,5.375278408,0,1,0,NA,4,3,1280,213.458333333333
+22,207,"bolsa (clothing)","purse",0,"bɔlsa",5,4.304065093,0,NA,4,NA,6,NA,2580,213.458333333333
+22,208,"babero","bib",0,"baβɛɾɔ",6,3.970291914,NA,NA,0,NA,0,NA,1414,213.458333333333
+22,209,"aretes","earrings",0,"aɾɛtes",6,3.737669618,0,NA,0,NA,0,NA,1424,213.458333333333
+22,211,"almohada","pillow",0,"almoaða",7,4.787491743,2,1,0,NA,0,NA,1510,213.458333333333
+22,214,"bolsa (household)",NA,1,"bɔlsa",5,NA,NA,NA,4,NA,6,NA,2580,213.458333333333
+22,216,"caja","box",0,"kaxa",4,7.201916318,3,1.5,2,0,11,3.66666666666667,1167,213.458333333333
+22,219,"cassette",NA,0,"kassette",8,NA,NA,NA,0,NA,0,NA,1730,213.458333333333
+22,220,"cepillo de dientes","toothbrush",0,"θepiʎoðeðjɛntes",15,2.944438979,0,NA,0,NA,0,NA,3238,213.458333333333
+22,221,"cepillo","brush (object)",1,"θepiʎo",6,5.916202063,5,0.5,0,NA,0,NA,1434,213.458333333333
+22,222,"cerillos",NA,0,"θɛɾiʎos",7,NA,NA,NA,0,NA,0,NA,1607,213.458333333333
+22,223,"chupón/chupete","pacifier",0,"tʃupɔn",6,1.791759469,0,NA,0,NA,0,NA,1491,213.458333333333
+22,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,1,0,NA,0,NA,1569,213.458333333333
+22,226,"cobija","blanket",0,"koβixa",6,4.941642423,2,1,0,NA,2,0,1383,213.458333333333
+22,228,"cubeta",NA,0,"kuβeta",6,NA,NA,NA,0,NA,1,0,1369,213.458333333333
+22,229,"cuchara","spoon",1,"kutʃaɾa",7,5.942799375,5,4.5,0,NA,0,NA,1520,213.458333333333
+22,230,"cuchillo","knife",0,"kutʃiʎo",7,4.941642423,4,NA,0,NA,0,NA,1584,213.458333333333
+22,231,"dinero","money",0,"dinɛɾɔ",6,6.442540166,5,NA,0,NA,0,NA,1494,213.458333333333
+22,232,"escoba","broom",0,"eskoβa",6,4.762173935,0,NA,0,NA,0,NA,1391,213.458333333333
+22,233,"espejo","mirror",0,"espexo",6,5.099866428,4,NA,0,NA,0,NA,1440,213.458333333333
+22,234,"fotos","photos",0,"fotos",5,2.397895273,0,NA,0,NA,3,1,1341,213.458333333333
+22,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,213.458333333333
+22,237,"llave","keys",0,"ʎaβe",4,5.075173815,0,1,0,NA,1,NA,1258,213.458333333333
+22,240,"medicina","medicine",0,"meðiθina",8,4.852030264,1,4,0,NA,0,NA,1739,213.458333333333
+22,241,"olla",NA,0,"ɔʎa",3,NA,NA,NA,0,NA,4,2.5,1259,213.458333333333
+22,243,"papel","paper",1,"papel",5,6.970730078,7,NA,0,NA,3,1,1288,213.458333333333
+22,244,"pasta de dientes",NA,0,"pastaðeðjɛntes",14,NA,NA,NA,0,NA,0,NA,2904,213.458333333333
+22,245,"peine","comb (object)",0,"peɪne",5,5.068904202,2,1,1,NA,1,NA,1348,213.458333333333
+22,247,"plancha",NA,0,"plantʃa",7,NA,NA,NA,1,NA,1,NA,1444,213.458333333333
+22,248,"plato","plate",1,"plato",5,5.85220248,0,7,1,1,8,4.33333333333333,1226,213.458333333333
+22,249,"radio","radio",0,"raðjo",5,4.976733742,0,NA,0,NA,1,NA,1297,213.458333333333
+22,250,"reloj","watch (object)",0,"relɔx",5,7.413367336,0,4,0,NA,1,NA,1382,213.458333333333
+22,251,"servilleta",NA,0,"sɛɾβiʎeta",9,NA,NA,NA,0,NA,0,NA,1934,213.458333333333
+22,253,"taza","cup",0,"taθa",4,6.746412129,3,5,0,NA,10,2.5,1159,213.458333333333
+22,255,"tenedor","fork",0,"teneðɔɾ",7,5.081404365,3,7,0,NA,0,NA,1618,213.458333333333
+22,256,"tijeras","scissors",0,"tixɛɾas",7,5.257495372,0,NA,0,NA,0,NA,1546,213.458333333333
+22,257,"toalla","towel",0,"toaʎa",5,4.927253685,2,3,0,NA,1,NA,1248,213.458333333333
+22,258,"trapo","cloth",0,"tɾapo",5,4.025351691,4,1,0,NA,2,NA,1287,213.458333333333
+22,259,"vasos","glass",1,"basos",5,5.676753802,5,2.25,0,NA,2,5,1279,213.458333333333
+22,260,"vela","candle",0,"bela",4,4.043051268,0,1,0,NA,10,3,1192,213.458333333333
+22,262,"árbol","tree",0,"aɾβɔl",5,6.768493212,11,2,0,NA,0,NA,1348,213.458333333333
+22,263,"bandera",NA,0,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,213.458333333333
+22,264,"cielo","sky",0,"θjelo",5,5.147494477,6,1,1,NA,2,6,1342,213.458333333333
+22,266,"columpio","swing (object)",0,"kolumpjo",8,4.564348191,1,1,0,NA,0,NA,1773,213.458333333333
+22,267,"estrella","star",0,"estɾeʎa",7,5.164785974,4,1,0,NA,0,NA,1538,213.458333333333
+22,268,"flor","flower",0,"flɔɾ",4,5.214935758,3,1,0,NA,0,NA,1322,213.458333333333
+22,270,"hojas",NA,0,"oxas",4,NA,NA,NA,2,0,4,1,1292,213.458333333333
+22,272,"lluvia","rain",0,"ʎuβja",5,5.214935758,3,4.5,0,NA,0,NA,1337,213.458333333333
+22,273,"luna","moon",0,"luna",4,5.117993812,3,1,1,NA,5,0,1217,213.458333333333
+22,274,"maceta",NA,0,"maθeta",6,NA,NA,NA,0,NA,2,1.5,1312,213.458333333333
+22,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,213.458333333333
+22,278,"nube","cloud",0,"nuβe",4,3.17805383,2,NA,0,NA,1,NA,1331,213.458333333333
+22,280,"palo",NA,0,"palo",4,NA,NA,NA,2,0.5,16,4.88888888888889,1164,213.458333333333
+22,281,"pasto",NA,0,"pasto",5,NA,NA,NA,1,1,7,6.5,1215,213.458333333333
+22,282,"piedra","rock (object)",0,"pjeðɾa",6,5.049856007,1,1,0,NA,0,NA,1396,213.458333333333
+22,283,"planta","plant",0,"planta",6,4.770684624,1,8,1,NA,3,NA,1290,213.458333333333
+22,285,"resbaladilla","slide (object)",0,"resβalaðiʎa",11,5.902633333,1,8,0,NA,0,NA,2283,213.458333333333
+22,289,"tierra",NA,0,"tjɛra",5,NA,NA,NA,0,NA,0,NA,1309,213.458333333333
+22,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,213.458333333333
+22,291,"viento/aire",NA,0,"bjɛnto",6,NA,NA,NA,0,NA,0,NA,1420,213.458333333333
+22,292,"bacinica","potty",0,"baθinika",8,5.111987788,0,NA,0,NA,0,NA,1666,213.458333333333
+22,293,"banco (outside)",NA,0,"banko",5,NA,NA,NA,1,NA,5,4.33333333333333,1246,213.458333333333
+22,295,"cajón","drawer",0,"kaxɔn",5,4.718498871,0,NA,0,NA,6,1,1297,213.458333333333
+22,297,"champú",NA,0,"tʃampu",6,NA,NA,NA,0,NA,0,NA,1476,213.458333333333
+22,299,"cocina","kitchen",0,"koθina",6,6.173786104,2,2.66666666666667,0,NA,2,0,1364,213.458333333333
+22,301,"cuarto","room",0,"kwaɾto",6,7.306531399,3,1,0,NA,0,NA,1366,213.458333333333
+22,302,"cuna","crib",1,"kuna",4,4.060443011,0,1,1,NA,6,2,1221,213.458333333333
+22,303,"escaleras","stairs",0,"eskalɛɾas",9,5.429345629,0,NA,0,NA,0,NA,1826,213.458333333333
+22,304,"estufa","stove",0,"estufa",6,4.770684624,2,NA,0,NA,0,NA,1413,213.458333333333
+22,311,"patio (outside)",NA,0,"patjo",5,NA,NA,NA,1,1,6,6.5,1235,213.458333333333
+22,312,"puerta","door",1,"pwɛɾta",6,7.207118856,6,NA,0,NA,1,NA,1375,213.458333333333
+22,314,"refrigerador","refrigerator",0,"refɾixɛɾaðɔɾ",12,5.117993812,0,7,0,NA,0,NA,2572,213.458333333333
+22,315,"regadera/ducha","shower",0,"reɣaðɛɾa",8,4.442651256,5,2.75,0,NA,0,NA,1688,213.458333333333
+22,317,"sala","living room",0,"sala",4,0,1,1,1,NA,14,2.16666666666667,1151,213.458333333333
+22,320,"sillón",NA,0,"siʎɔn",5,NA,NA,NA,0,NA,1,2,1363,213.458333333333
+22,322,"televisión","tv",1,"teleβisjɔn",10,6.146329258,0,NA,0,NA,0,NA,2174,213.458333333333
+22,323,"tina","bathtub",0,"tina",4,4.882801923,1,3,0,NA,5,2,1177,213.458333333333
+22,324,"ventana","window",0,"bɛntana",7,6.249975242,2,NA,0,NA,0,NA,1508,213.458333333333
+23,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,378.986301369863
+23,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,4,0,NA,2,0,1563,378.986301369863
+23,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,2.33333333333333,0,NA,1,NA,1347,378.986301369863
+23,18,"ratón","mouse",0,"ratɔn",5,6.086774727,4,2,0,NA,5,1,1291,378.986301369863
+23,19,"rana","frog",0,"rana",4,5.590986981,0,9,0,NA,13,2.66666666666667,1168,378.986301369863
+23,20,"puerco","pig",0,"pwɛɾko",6,6.003887067,3,6,0,NA,1,0,1436,378.986301369863
+23,21,"pollito","chick",0,"pɔʎito",6,2.63905733,1,2.25,0,NA,1,3,1400,378.986301369863
+23,23,"pescado","fish (animal)",0,"peskaðo",7,6.705639095,3,10.5,4,NA,4,NA,2986,378.986301369863
+23,28,"mosco",NA,0,"mɔsko",5,NA,NA,NA,1,NA,1,NA,1346,378.986301369863
+23,29,"mosca","fly (animal)",0,"mɔska",5,5.720311777,8,2.5,1,NA,2,0,1304,378.986301369863
+23,30,"mono","monkey",0,"mono",4,5.940171253,3,1,2,0,4,4,1269,378.986301369863
+23,31,"mariposa","butterfly",0,"maɾiposa",8,4.605170186,0,4.5,0,NA,0,NA,1626,378.986301369863
+23,32,"lobo","wolf",0,"loβo",4,4.672828834,1,2.33333333333333,1,0,6,1.66666666666667,1278,378.986301369863
+23,33,"león","lion",0,"leɔn",4,6.001414878,3,1,0,NA,1,NA,1284,378.986301369863
+23,35,"hormiga","ant",0,"ɔɾmiɣa",6,3.526360525,0,12,0,NA,0,NA,1422,378.986301369863
+23,40,"gallina","hen",0,"ɡaʎina",6,3.912023005,3,3,0,NA,1,1,1332,378.986301369863
+23,41,"foca",NA,0,"foka",4,NA,NA,NA,1,1,6,4,1247,378.986301369863
+23,42,"elefante","elephant",0,"elefante",8,5.918893854,0,NA,0,NA,0,NA,1715,378.986301369863
+23,43,"conejo","bunny",0,"konexo",6,6.376726948,0,NA,0,NA,0,NA,1411,378.986301369863
+23,47,"burro","donkey",0,"buro",4,5.017279837,1,1,0,NA,4,4,1306,378.986301369863
+23,50,"borrego","lamb",0,"bɔreɣo",6,4.941642423,0,NA,0,NA,0,NA,1455,378.986301369863
+23,53,"araña","spider",0,"aɾaɲa",5,4.49980967,1,NA,0,NA,0,NA,1250,378.986301369863
+23,54,"animal","animal",0,"animal",6,5.648974238,18,2.4,0,NA,0,NA,1415,378.986301369863
+23,57,"triciclo (vehicles)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,378.986301369863
+23,60,"moto","motorcycle",1,"moto",4,4.094344562,1,3,1,NA,7,5.75,1247,378.986301369863
+23,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,0,0,NA,0,NA,2188,378.986301369863
+23,64,"camión/troca","truck",0,"kamjɔn",6,6.812345094,2,3,0,NA,4,0.5,1410,378.986301369863
+23,66,"bicicleta","bicycle",0,"biθikleta",9,4.553876892,1,3,0,NA,0,NA,1895,378.986301369863
+23,67,"barco","boat",0,"baɾko",5,6.194405391,3,9,1,NA,4,4.5,1252,378.986301369863
+23,71,"arroz","rice",1,"arɔθ",4,5.093750201,1,8.5,0,NA,0,NA,1308,378.986301369863
+23,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,378.986301369863
+23,73,"atún",NA,0,"atun",4,NA,NA,NA,0,NA,1,NA,1259,378.986301369863
+23,74,"azúcar",NA,0,"aθukaɾ",6,NA,NA,NA,0,NA,0,NA,1426,378.986301369863
+23,75,"café","coffee",0,"kafɛ",4,6.326149473,1,3,0,NA,4,4.5,1268,378.986301369863
+23,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,378.986301369863
+23,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,378.986301369863
+23,80,"chicle",NA,1,"tʃikle",6,NA,NA,NA,1,0,1,0,1465,378.986301369863
+23,87,"elote",NA,0,"elote",5,NA,NA,NA,0,NA,1,2,1309,378.986301369863
+23,89,"fresa",NA,0,"fɾesa",5,NA,NA,NA,0,NA,1,0,1290,378.986301369863
+23,90,"frijoles","beans",0,"fɾixoles",8,5.068904202,2,5.33333333333333,0,NA,0,NA,1780,378.986301369863
+23,94,"helado/nieve","ice cream",0,"elaðo",5,0,2,6.33333333333333,0,NA,1,3,1277,378.986301369863
+23,95,"hielo",NA,0,"jelo",4,NA,NA,NA,2,0,7,3.33333333333333,1256,378.986301369863
+23,98,"jamón","ham",0,"xamɔn",5,4.025351691,3,7.5,1,0,4,1,1315,378.986301369863
+23,103,"cacahuete/maní",NA,0,"kakawete",8,NA,NA,NA,0,NA,0,NA,1709,378.986301369863
+23,106,"melón",NA,0,"melɔn",5,NA,NA,NA,0,NA,2,NA,1344,378.986301369863
+23,110,"palomitas",NA,0,"palomitas",9,NA,NA,NA,0,NA,0,NA,1760,378.986301369863
+23,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,378.986301369863
+23,114,"papitas",NA,0,"papitas",7,NA,NA,NA,0,NA,1,2,1434,378.986301369863
+23,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,0,4,1.66666666666667,1237,378.986301369863
+23,118,"pescado (food_drink)",NA,0,"peskaðo",7,NA,NA,NA,4,NA,4,NA,2986,378.986301369863
+23,121,"quesadilla","quesadilla",0,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,378.986301369863
+23,122,"queso","cheese",0,"keso",4,6.208590026,4,2.33333333333333,0,NA,7,3.16666666666667,1245,378.986301369863
+23,123,"sal",NA,1,"sal",3,NA,NA,NA,2,0,4,1.5,1234,378.986301369863
+23,124,"salchicha","hot dog",0,"saltʃitʃa",9,0,NA,NA,0,NA,0,NA,1853,378.986301369863
+23,126,"sandía",NA,0,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,378.986301369863
+23,129,"taco",NA,1,"tako",4,NA,NA,NA,0,NA,11,5.83333333333333,1192,378.986301369863
+23,130,"té (food)",NA,0,"tɛ",2,NA,NA,NA,0,NA,1,0,1313,378.986301369863
+23,131,"torta/lonche",NA,0,"tɔɾta",5,NA,NA,NA,0,NA,3,0,1253,378.986301369863
+23,133,"uvas","grapes",0,"uβas",4,4.094344562,NA,NA,0,NA,1,NA,1297,378.986301369863
+23,136,"yoghurt",NA,0,"ʝoɣuɾt",6,NA,NA,NA,0,NA,0,NA,1519,378.986301369863
+23,137,"zanahoria",NA,0,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,378.986301369863
+23,138,"botón","button",0,"botɔn",5,5.805134969,0,1.5,0,NA,2,NA,1335,378.986301369863
+23,142,"camisa",NA,0,"kamisa",6,NA,NA,NA,0,NA,2,1.5,1307,378.986301369863
+23,143,"chancla",NA,0,"tʃankla",7,NA,NA,NA,0,NA,0,NA,1491,378.986301369863
+23,146,"falda","skirt",0,"falða",5,3.583518938,3,0,0,NA,1,NA,1241,378.986301369863
+23,147,"gorra",NA,0,"ɡɔra",4,NA,NA,NA,0,NA,1,NA,1285,378.986301369863
+23,148,"guantes",NA,0,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,378.986301369863
+23,149,"lentes","glasses",0,"lɛntes",6,5.176149733,1,5,0,NA,1,0,1436,378.986301369863
+23,153,"pijama","pajamas",0,"pixama",6,4.736198448,0,2,0,NA,0,NA,1368,378.986301369863
+23,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,378.986301369863
+23,155,"ropa",NA,0,"ropa",4,NA,NA,NA,1,1,6,4.25,1256,378.986301369863
+23,156,"shorts","shorts",0,"ʃɔɾts",5,3.583518938,2,0.5,0,NA,1,NA,1353,378.986301369863
+23,157,"sombrero","hat",0,"sɔmbɾɛɾɔ",8,6.874198495,2,1.5,0,NA,0,NA,1852,378.986301369863
+23,158,"suéter","sweater",0,"swɛtɛɾ",6,4.836281907,0,NA,0,NA,0,NA,1503,378.986301369863
+23,159,"vestido","dress (object)",0,"bestiðo",7,5.823045895,4,0,0,NA,0,NA,1543,378.986301369863
+23,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,378.986301369863
+23,164,"brazo","arm",0,"bɾaθo",5,5.590986981,4,1.33333333333333,0,NA,2,6,1288,378.986301369863
+23,166,"cachete","cheek",0,"katʃete",7,3.784189634,1,3,0,NA,0,NA,1527,378.986301369863
+23,167,"cara","face",1,"kaɾa",4,6.52649486,7,2,2,0,10,2.6,1134,378.986301369863
+23,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,378.986301369863
+23,172,"hombro",NA,0,"ɔmbɾo",5,NA,NA,NA,0,NA,0,NA,1365,378.986301369863
+23,173,"labios",NA,0,"laβjos",6,NA,NA,NA,0,NA,0,NA,1387,378.986301369863
+23,174,"lengua","tongue",0,"lɛŋɡwa",6,5.33753808,2,3,0,NA,0,NA,1474,378.986301369863
+23,176,"nalgas",NA,0,"nalɣas",6,NA,NA,NA,0,NA,0,NA,1368,378.986301369863
+23,179,"ombligo","belly button",0,"ɔmbliɣo",7,0,NA,NA,0,NA,0,NA,1617,378.986301369863
+23,180,"oreja","ear",1,"ɔɾɛxa",5,5.416100402,3,2,0,NA,0,NA,1313,378.986301369863
+23,183,"pene","penis",0,"pene",4,2.302585093,0,NA,1,NA,3,4.5,1260,378.986301369863
+23,184,"piernas","leg",0,"pjɛɾnas",7,5.620400866,6,3,0,NA,0,NA,1538,378.986301369863
+23,186,"rodilla","knee",0,"roðiʎa",6,5.147494477,1,3,0,NA,0,NA,1415,378.986301369863
+23,190,"colores",NA,0,"kolɔɾɛs",7,NA,NA,NA,0,NA,0,NA,1589,378.986301369863
+23,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,378.986301369863
+23,196,"libro","book",0,"liβɾo",5,7.722677516,2,2,0,NA,1,NA,1321,378.986301369863
+23,197,"muñeca","doll",1,"muɲeka",6,5.796057751,1,1,0,NA,0,NA,1426,378.986301369863
+23,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,378.986301369863
+23,201,"pinturas",NA,0,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,378.986301369863
+23,203,"pluma/plumones",NA,0,"pluma",5,NA,NA,NA,0,NA,1,NA,1286,378.986301369863
+23,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,378.986301369863
+23,205,"triciclo (toys)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,378.986301369863
+23,206,"botas","boots",0,"botas",5,5.375278408,0,1,0,NA,4,4,1280,378.986301369863
+23,207,"bolsa (clothing)","purse",0,"bɔlsa",5,4.304065093,0,NA,4,0,6,0,2580,378.986301369863
+23,208,"babero","bib",0,"baβɛɾɔ",6,3.970291914,NA,NA,0,NA,0,NA,1414,378.986301369863
+23,209,"aretes","earrings",0,"aɾɛtes",6,3.737669618,0,NA,0,NA,0,NA,1424,378.986301369863
+23,211,"almohada","pillow",0,"almoaða",7,4.787491743,2,1.5,0,NA,0,NA,1510,378.986301369863
+23,216,"caja","box",0,"kaxa",4,7.201916318,3,2,2,0,11,3.6,1167,378.986301369863
+23,219,"cassette",NA,0,"kassette",8,NA,NA,NA,0,NA,0,NA,1730,378.986301369863
+23,220,"cepillo de dientes","toothbrush",0,"θepiʎoðeðjɛntes",15,2.944438979,0,2,0,NA,0,NA,3238,378.986301369863
+23,222,"cerillos",NA,0,"θɛɾiʎos",7,NA,NA,NA,0,NA,0,NA,1607,378.986301369863
+23,223,"chupón/chupete","pacifier",0,"tʃupɔn",6,1.791759469,0,NA,0,NA,0,NA,1491,378.986301369863
+23,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,1,0,NA,0,NA,1569,378.986301369863
+23,226,"cobija","blanket",0,"koβixa",6,4.941642423,2,2,0,NA,2,0,1383,378.986301369863
+23,228,"cubeta",NA,0,"kuβeta",6,NA,NA,NA,0,NA,1,0,1369,378.986301369863
+23,230,"cuchillo","knife",0,"kutʃiʎo",7,4.941642423,4,2,0,NA,0,NA,1584,378.986301369863
+23,231,"dinero","money",1,"dinɛɾɔ",6,6.442540166,5,NA,0,NA,0,NA,1494,378.986301369863
+23,232,"escoba","broom",0,"eskoβa",6,4.762173935,0,2,0,NA,0,NA,1391,378.986301369863
+23,233,"espejo","mirror",0,"espexo",6,5.099866428,4,2,0,NA,0,NA,1440,378.986301369863
+23,234,"fotos","photos",1,"fotos",5,2.397895273,0,NA,0,NA,3,2,1341,378.986301369863
+23,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,378.986301369863
+23,237,"llave","keys",1,"ʎaβe",4,5.075173815,0,1.5,0,NA,1,NA,1258,378.986301369863
+23,240,"medicina","medicine",0,"meðiθina",8,4.852030264,1,5,0,NA,0,NA,1739,378.986301369863
+23,241,"olla",NA,0,"ɔʎa",3,NA,NA,NA,0,NA,4,3.33333333333333,1259,378.986301369863
+23,244,"pasta de dientes",NA,0,"pastaðeðjɛntes",14,NA,NA,NA,0,NA,0,NA,2904,378.986301369863
+23,245,"peine","comb (object)",0,"peɪne",5,5.068904202,2,2,1,NA,1,NA,1348,378.986301369863
+23,247,"plancha",NA,0,"plantʃa",7,NA,NA,NA,1,NA,1,NA,1444,378.986301369863
+23,249,"radio","radio",0,"raðjo",5,4.976733742,0,NA,0,NA,1,NA,1297,378.986301369863
+23,250,"reloj","watch (object)",0,"relɔx",5,7.413367336,0,5,0,NA,1,NA,1382,378.986301369863
+23,251,"servilleta",NA,0,"sɛɾβiʎeta",9,NA,NA,NA,0,NA,0,NA,1934,378.986301369863
+23,253,"taza","cup",0,"taθa",4,6.746412129,3,4.25,0,NA,10,2.33333333333333,1159,378.986301369863
+23,255,"tenedor","fork",0,"teneðɔɾ",7,5.081404365,3,7,0,NA,0,NA,1618,378.986301369863
+23,256,"tijeras","scissors",0,"tixɛɾas",7,5.257495372,0,2,0,NA,0,NA,1546,378.986301369863
+23,257,"toalla","towel",0,"toaʎa",5,4.927253685,2,3.33333333333333,0,NA,1,NA,1248,378.986301369863
+23,258,"trapo","cloth",0,"tɾapo",5,4.025351691,4,0.5,0,NA,2,NA,1287,378.986301369863
+23,260,"vela","candle",0,"bela",4,4.043051268,0,1,0,NA,10,2.6,1192,378.986301369863
+23,262,"árbol","tree",0,"aɾβɔl",5,6.768493212,11,2,0,NA,0,NA,1348,378.986301369863
+23,263,"bandera",NA,0,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,378.986301369863
+23,264,"cielo","sky",0,"θjelo",5,5.147494477,6,1,1,NA,2,6,1342,378.986301369863
+23,266,"columpio","swing (object)",0,"kolumpjo",8,4.564348191,1,0.333333333333333,0,NA,0,NA,1773,378.986301369863
+23,267,"estrella","star",0,"estɾeʎa",7,5.164785974,4,1,0,NA,0,NA,1538,378.986301369863
+23,268,"flor","flower",0,"flɔɾ",4,5.214935758,3,1.5,0,NA,0,NA,1322,378.986301369863
+23,270,"hojas",NA,0,"oxas",4,NA,NA,NA,2,0,4,3.5,1292,378.986301369863
+23,272,"lluvia","rain",0,"ʎuβja",5,5.214935758,3,5,0,NA,0,NA,1337,378.986301369863
+23,273,"luna","moon",1,"luna",4,5.117993812,3,1,1,0,5,0.5,1217,378.986301369863
+23,274,"maceta",NA,0,"maθeta",6,NA,NA,NA,0,NA,2,1.5,1312,378.986301369863
+23,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,378.986301369863
+23,278,"nube","cloud",0,"nuβe",4,3.17805383,2,NA,0,NA,1,NA,1331,378.986301369863
+23,280,"palo",NA,0,"palo",4,NA,NA,NA,2,1,16,5.1,1164,378.986301369863
+23,281,"pasto",NA,0,"pasto",5,NA,NA,NA,1,2,7,4.75,1215,378.986301369863
+23,282,"piedra","rock (object)",0,"pjeðɾa",6,5.049856007,1,1,0,NA,0,NA,1396,378.986301369863
+23,283,"planta","plant",0,"planta",6,4.770684624,1,9,1,NA,3,2,1290,378.986301369863
+23,285,"resbaladilla","slide (object)",0,"resβalaðiʎa",11,5.902633333,1,4.5,0,NA,0,NA,2283,378.986301369863
+23,289,"tierra",NA,0,"tjɛra",5,NA,NA,NA,0,NA,0,NA,1309,378.986301369863
+23,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,378.986301369863
+23,291,"viento/aire",NA,0,"bjɛnto",6,NA,NA,NA,0,NA,0,NA,1420,378.986301369863
+23,292,"bacinica","potty",0,"baθinika",8,5.111987788,0,NA,0,NA,0,NA,1666,378.986301369863
+23,293,"banco (outside)",NA,0,"banko",5,NA,NA,NA,1,NA,5,4.66666666666667,1246,378.986301369863
+23,295,"cajón","drawer",0,"kaxɔn",5,4.718498871,0,NA,0,NA,6,0.5,1297,378.986301369863
+23,297,"champú",NA,0,"tʃampu",6,NA,NA,NA,0,NA,0,NA,1476,378.986301369863
+23,299,"cocina","kitchen",0,"koθina",6,6.173786104,2,3.25,0,NA,2,0,1364,378.986301369863
+23,301,"cuarto","room",0,"kwaɾto",6,7.306531399,3,0.5,0,NA,0,NA,1366,378.986301369863
+23,303,"escaleras","stairs",0,"eskalɛɾas",9,5.429345629,0,NA,0,NA,0,NA,1826,378.986301369863
+23,304,"estufa","stove",0,"estufa",6,4.770684624,2,NA,0,NA,0,NA,1413,378.986301369863
+23,311,"patio (outside)",NA,0,"patjo",5,NA,NA,NA,1,2,6,6,1235,378.986301369863
+23,314,"refrigerador","refrigerator",0,"refɾixɛɾaðɔɾ",12,5.117993812,0,12,0,NA,0,NA,2572,378.986301369863
+23,315,"regadera/ducha","shower",0,"reɣaðɛɾa",8,4.442651256,5,3.25,0,NA,0,NA,1688,378.986301369863
+23,317,"sala","living room",0,"sala",4,0,1,1,1,NA,14,2.66666666666667,1151,378.986301369863
+23,320,"sillón",NA,0,"siʎɔn",5,NA,NA,NA,0,NA,1,2,1363,378.986301369863
+23,323,"tina","bathtub",0,"tina",4,4.882801923,1,3.33333333333333,0,NA,5,1.5,1177,378.986301369863
+23,324,"ventana","window",0,"bɛntana",7,6.249975242,2,1,0,NA,0,NA,1508,378.986301369863
+24,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,434.823529411765
+24,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,4,0,NA,2,0,1563,434.823529411765
+24,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,2.66666666666667,0,NA,1,NA,1347,434.823529411765
+24,18,"ratón","mouse",0,"ratɔn",5,6.086774727,4,2,0,NA,5,1,1291,434.823529411765
+24,19,"rana","frog",0,"rana",4,5.590986981,0,9,0,NA,13,3.875,1168,434.823529411765
+24,20,"puerco","pig",1,"pwɛɾko",6,6.003887067,3,6,0,NA,1,0,1436,434.823529411765
+24,21,"pollito","chick",1,"pɔʎito",6,2.63905733,1,2.5,0,NA,1,3,1400,434.823529411765
+24,23,"pescado","fish (animal)",0,"peskaðo",7,6.705639095,3,8.66666666666667,4,NA,4,NA,2986,434.823529411765
+24,28,"mosco",NA,0,"mɔsko",5,NA,NA,NA,1,NA,1,NA,1346,434.823529411765
+24,29,"mosca","fly (animal)",1,"mɔska",5,5.720311777,8,2.75,1,NA,2,0,1304,434.823529411765
+24,30,"mono","monkey",0,"mono",4,5.940171253,3,1,2,0,4,5.33333333333333,1269,434.823529411765
+24,31,"mariposa","butterfly",0,"maɾiposa",8,4.605170186,0,4.5,0,NA,0,NA,1626,434.823529411765
+24,32,"lobo","wolf",0,"loβo",4,4.672828834,1,2,1,0,6,2.75,1278,434.823529411765
+24,33,"león","lion",1,"leɔn",4,6.001414878,3,1,0,NA,1,NA,1284,434.823529411765
+24,35,"hormiga","ant",0,"ɔɾmiɣa",6,3.526360525,0,13,0,NA,0,NA,1422,434.823529411765
+24,40,"gallina","hen",1,"ɡaʎina",6,3.912023005,3,3.33333333333333,0,NA,1,1,1332,434.823529411765
+24,41,"foca",NA,0,"foka",4,NA,NA,NA,1,1,6,4.4,1247,434.823529411765
+24,42,"elefante","elephant",1,"elefante",8,5.918893854,0,2,0,NA,0,NA,1715,434.823529411765
+24,43,"conejo","bunny",1,"konexo",6,6.376726948,0,NA,0,NA,0,NA,1411,434.823529411765
+24,47,"burro","donkey",1,"buro",4,5.017279837,1,1,0,NA,4,4.75,1306,434.823529411765
+24,50,"borrego","lamb",0,"bɔreɣo",6,4.941642423,0,NA,0,NA,0,NA,1455,434.823529411765
+24,53,"araña","spider",1,"aɾaɲa",5,4.49980967,1,NA,0,NA,0,NA,1250,434.823529411765
+24,54,"animal","animal",1,"animal",6,5.648974238,18,2.4,0,NA,0,NA,1415,434.823529411765
+24,57,"triciclo (vehicles)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,434.823529411765
+24,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,0,0,NA,0,NA,2188,434.823529411765
+24,64,"camión/troca","truck",0,"kamjɔn",6,6.812345094,2,5,0,NA,4,0.5,1410,434.823529411765
+24,66,"bicicleta","bicycle",1,"biθikleta",9,4.553876892,1,2.5,0,NA,0,NA,1895,434.823529411765
+24,67,"barco","boat",0,"baɾko",5,6.194405391,3,9,1,NA,4,6,1252,434.823529411765
+24,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,434.823529411765
+24,73,"atún",NA,0,"atun",4,NA,NA,NA,0,NA,1,NA,1259,434.823529411765
+24,74,"azúcar",NA,1,"aθukaɾ",6,NA,NA,NA,0,NA,0,NA,1426,434.823529411765
+24,75,"café","coffee",1,"kafɛ",4,6.326149473,1,3,0,NA,4,5.66666666666667,1268,434.823529411765
+24,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,434.823529411765
+24,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,434.823529411765
+24,87,"elote",NA,0,"elote",5,NA,NA,NA,0,NA,1,2,1309,434.823529411765
+24,89,"fresa",NA,0,"fɾesa",5,NA,NA,NA,0,NA,1,0,1290,434.823529411765
+24,90,"frijoles","beans",1,"fɾixoles",8,5.068904202,2,4.25,0,NA,0,NA,1780,434.823529411765
+24,94,"helado/nieve","ice cream",0,"elaðo",5,0,2,6.66666666666667,0,NA,1,3,1277,434.823529411765
+24,95,"hielo",NA,0,"jelo",4,NA,NA,NA,2,0,7,3.33333333333333,1256,434.823529411765
+24,98,"jamón","ham",1,"xamɔn",5,4.025351691,3,8,1,0,4,1,1315,434.823529411765
+24,103,"cacahuete/maní",NA,0,"kakawete",8,NA,NA,NA,0,NA,0,NA,1709,434.823529411765
+24,106,"melón",NA,0,"melɔn",5,NA,NA,NA,0,NA,2,NA,1344,434.823529411765
+24,110,"palomitas",NA,0,"palomitas",9,NA,NA,NA,0,NA,0,NA,1760,434.823529411765
+24,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,434.823529411765
+24,114,"papitas",NA,1,"papitas",7,NA,NA,NA,0,NA,1,2,1434,434.823529411765
+24,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,0,4,1.66666666666667,1237,434.823529411765
+24,118,"pescado (food_drink)",NA,0,"peskaðo",7,NA,NA,NA,4,NA,4,NA,2986,434.823529411765
+24,121,"quesadilla","quesadilla",0,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,434.823529411765
+24,122,"queso","cheese",1,"keso",4,6.208590026,4,2.33333333333333,0,NA,7,3.66666666666667,1245,434.823529411765
+24,124,"salchicha","hot dog",1,"saltʃitʃa",9,0,NA,NA,0,NA,0,NA,1853,434.823529411765
+24,126,"sandía",NA,0,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,434.823529411765
+24,130,"té (food)",NA,0,"tɛ",2,NA,NA,NA,0,NA,1,0,1313,434.823529411765
+24,131,"torta/lonche",NA,0,"tɔɾta",5,NA,NA,NA,0,NA,3,0,1253,434.823529411765
+24,133,"uvas","grapes",1,"uβas",4,4.094344562,NA,NA,0,NA,1,NA,1297,434.823529411765
+24,136,"yoghurt",NA,1,"ʝoɣuɾt",6,NA,NA,NA,0,NA,0,NA,1519,434.823529411765
+24,137,"zanahoria",NA,0,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,434.823529411765
+24,138,"botón","button",1,"botɔn",5,5.805134969,0,2.5,0,NA,2,NA,1335,434.823529411765
+24,142,"camisa",NA,0,"kamisa",6,NA,NA,NA,0,NA,2,2,1307,434.823529411765
+24,143,"chancla",NA,1,"tʃankla",7,NA,NA,NA,0,NA,0,NA,1491,434.823529411765
+24,146,"falda","skirt",0,"falða",5,3.583518938,3,0,0,NA,1,NA,1241,434.823529411765
+24,147,"gorra",NA,1,"ɡɔra",4,NA,NA,NA,0,NA,1,NA,1285,434.823529411765
+24,148,"guantes",NA,0,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,434.823529411765
+24,149,"lentes","glasses",1,"lɛntes",6,5.176149733,1,5,0,NA,1,0,1436,434.823529411765
+24,153,"pijama","pajamas",0,"pixama",6,4.736198448,0,2,0,NA,0,NA,1368,434.823529411765
+24,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,434.823529411765
+24,155,"ropa",NA,1,"ropa",4,NA,NA,NA,1,1,6,4.25,1256,434.823529411765
+24,156,"shorts","shorts",0,"ʃɔɾts",5,3.583518938,2,1,0,NA,1,NA,1353,434.823529411765
+24,157,"sombrero","hat",0,"sɔmbɾɛɾɔ",8,6.874198495,2,2.5,0,NA,0,NA,1852,434.823529411765
+24,158,"suéter","sweater",1,"swɛtɛɾ",6,4.836281907,0,NA,0,NA,0,NA,1503,434.823529411765
+24,159,"vestido","dress (object)",0,"bestiðo",7,5.823045895,4,0,0,NA,0,NA,1543,434.823529411765
+24,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,434.823529411765
+24,164,"brazo","arm",1,"bɾaθo",5,5.590986981,4,1.66666666666667,0,NA,2,7,1288,434.823529411765
+24,166,"cachete","cheek",1,"katʃete",7,3.784189634,1,3,0,NA,0,NA,1527,434.823529411765
+24,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,434.823529411765
+24,172,"hombro",NA,0,"ɔmbɾo",5,NA,NA,NA,0,NA,0,NA,1365,434.823529411765
+24,173,"labios",NA,0,"laβjos",6,NA,NA,NA,0,NA,0,NA,1387,434.823529411765
+24,174,"lengua","tongue",1,"lɛŋɡwa",6,5.33753808,2,3,0,NA,0,NA,1474,434.823529411765
+24,176,"nalgas",NA,1,"nalɣas",6,NA,NA,NA,0,NA,0,NA,1368,434.823529411765
+24,179,"ombligo","belly button",1,"ɔmbliɣo",7,0,NA,NA,0,NA,0,NA,1617,434.823529411765
+24,183,"pene","penis",0,"pene",4,2.302585093,0,NA,1,NA,3,5,1260,434.823529411765
+24,184,"piernas","leg",0,"pjɛɾnas",7,5.620400866,6,3,0,NA,0,NA,1538,434.823529411765
+24,186,"rodilla","knee",0,"roðiʎa",6,5.147494477,1,3,0,NA,0,NA,1415,434.823529411765
+24,190,"colores",NA,0,"kolɔɾɛs",7,NA,NA,NA,0,NA,0,NA,1589,434.823529411765
+24,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,434.823529411765
+24,196,"libro","book",1,"liβɾo",5,7.722677516,2,2.5,0,NA,1,NA,1321,434.823529411765
+24,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,434.823529411765
+24,201,"pinturas",NA,0,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,434.823529411765
+24,203,"pluma/plumones",NA,0,"pluma",5,NA,NA,NA,0,NA,1,2,1286,434.823529411765
+24,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,434.823529411765
+24,205,"triciclo (toys)",NA,0,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,434.823529411765
+24,206,"botas","boots",0,"botas",5,5.375278408,0,1,0,NA,4,3,1280,434.823529411765
+24,207,"bolsa (clothing)","purse",1,"bɔlsa",5,4.304065093,0,2,4,0,6,0,2580,434.823529411765
+24,208,"babero","bib",0,"baβɛɾɔ",6,3.970291914,NA,NA,0,NA,0,NA,1414,434.823529411765
+24,209,"aretes","earrings",1,"aɾɛtes",6,3.737669618,0,NA,0,NA,0,NA,1424,434.823529411765
+24,211,"almohada","pillow",1,"almoaða",7,4.787491743,2,2.5,0,NA,0,NA,1510,434.823529411765
+24,216,"caja","box",1,"kaxa",4,7.201916318,3,3,2,1,11,5,1167,434.823529411765
+24,219,"cassette",NA,0,"kassette",8,NA,NA,NA,0,NA,0,NA,1730,434.823529411765
+24,220,"cepillo de dientes","toothbrush",1,"θepiʎoðeðjɛntes",15,2.944438979,0,2,0,NA,0,NA,3238,434.823529411765
+24,222,"cerillos",NA,0,"θɛɾiʎos",7,NA,NA,NA,0,NA,0,NA,1607,434.823529411765
+24,223,"chupón/chupete","pacifier",1,"tʃupɔn",6,1.791759469,0,NA,0,NA,0,NA,1491,434.823529411765
+24,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,1,0,NA,0,NA,1569,434.823529411765
+24,226,"cobija","blanket",1,"koβixa",6,4.941642423,2,2,0,NA,2,0,1383,434.823529411765
+24,228,"cubeta",NA,1,"kuβeta",6,NA,NA,NA,0,NA,1,0,1369,434.823529411765
+24,230,"cuchillo","knife",1,"kutʃiʎo",7,4.941642423,4,2,0,NA,0,NA,1584,434.823529411765
+24,232,"escoba","broom",1,"eskoβa",6,4.762173935,0,2,0,NA,0,NA,1391,434.823529411765
+24,233,"espejo","mirror",0,"espexo",6,5.099866428,4,3,0,NA,0,NA,1440,434.823529411765
+24,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,434.823529411765
+24,240,"medicina","medicine",1,"meðiθina",8,4.852030264,1,4,0,NA,0,NA,1739,434.823529411765
+24,241,"olla",NA,0,"ɔʎa",3,NA,NA,NA,0,NA,4,3.33333333333333,1259,434.823529411765
+24,244,"pasta de dientes",NA,0,"pastaðeðjɛntes",14,NA,NA,NA,0,NA,0,NA,2904,434.823529411765
+24,245,"peine","comb (object)",1,"peɪne",5,5.068904202,2,2.5,1,NA,1,NA,1348,434.823529411765
+24,247,"plancha",NA,0,"plantʃa",7,NA,NA,NA,1,NA,1,NA,1444,434.823529411765
+24,249,"radio","radio",0,"raðjo",5,4.976733742,0,NA,0,NA,1,NA,1297,434.823529411765
+24,250,"reloj","watch (object)",1,"relɔx",5,7.413367336,0,5,0,NA,1,NA,1382,434.823529411765
+24,251,"servilleta",NA,0,"sɛɾβiʎeta",9,NA,NA,NA,0,NA,0,NA,1934,434.823529411765
+24,253,"taza","cup",1,"taθa",4,6.746412129,3,4.25,0,NA,10,4.2,1159,434.823529411765
+24,255,"tenedor","fork",0,"teneðɔɾ",7,5.081404365,3,7.5,0,NA,0,NA,1618,434.823529411765
+24,256,"tijeras","scissors",0,"tixɛɾas",7,5.257495372,0,3,0,NA,0,NA,1546,434.823529411765
+24,257,"toalla","towel",1,"toaʎa",5,4.927253685,2,3.33333333333333,0,NA,1,NA,1248,434.823529411765
+24,258,"trapo","cloth",0,"tɾapo",5,4.025351691,4,0.5,0,NA,2,6,1287,434.823529411765
+24,260,"vela","candle",0,"bela",4,4.043051268,0,1,0,NA,10,3,1192,434.823529411765
+24,262,"árbol","tree",1,"aɾβɔl",5,6.768493212,11,2,0,NA,0,NA,1348,434.823529411765
+24,263,"bandera",NA,0,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,434.823529411765
+24,264,"cielo","sky",1,"θjelo",5,5.147494477,6,2,1,NA,2,6,1342,434.823529411765
+24,266,"columpio","swing (object)",0,"kolumpjo",8,4.564348191,1,1,0,NA,0,NA,1773,434.823529411765
+24,267,"estrella","star",1,"estɾeʎa",7,5.164785974,4,1.33333333333333,0,NA,0,NA,1538,434.823529411765
+24,268,"flor","flower",1,"flɔɾ",4,5.214935758,3,2,0,NA,0,NA,1322,434.823529411765
+24,270,"hojas",NA,0,"oxas",4,NA,NA,NA,2,0,4,4,1292,434.823529411765
+24,272,"lluvia","rain",0,"ʎuβja",5,5.214935758,3,5.5,0,NA,0,NA,1337,434.823529411765
+24,274,"maceta",NA,0,"maθeta",6,NA,NA,NA,0,NA,2,1.5,1312,434.823529411765
+24,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,434.823529411765
+24,278,"nube","cloud",0,"nuβe",4,3.17805383,2,NA,0,NA,1,0,1331,434.823529411765
+24,280,"palo",NA,1,"palo",4,NA,NA,NA,2,1,16,5.75,1164,434.823529411765
+24,281,"pasto",NA,0,"pasto",5,NA,NA,NA,1,2,7,5.75,1215,434.823529411765
+24,282,"piedra","rock (object)",1,"pjeðɾa",6,5.049856007,1,1,0,NA,0,NA,1396,434.823529411765
+24,283,"planta","plant",0,"planta",6,4.770684624,1,9,1,NA,3,2,1290,434.823529411765
+24,285,"resbaladilla","slide (object)",0,"resβalaðiʎa",11,5.902633333,1,5,0,NA,0,NA,2283,434.823529411765
+24,289,"tierra",NA,0,"tjɛra",5,NA,NA,NA,0,NA,0,NA,1309,434.823529411765
+24,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,434.823529411765
+24,291,"viento/aire",NA,0,"bjɛnto",6,NA,NA,NA,0,NA,0,NA,1420,434.823529411765
+24,292,"bacinica","potty",0,"baθinika",8,5.111987788,0,NA,0,NA,0,NA,1666,434.823529411765
+24,293,"banco (outside)",NA,0,"banko",5,NA,NA,NA,1,NA,5,6.25,1246,434.823529411765
+24,295,"cajón","drawer",0,"kaxɔn",5,4.718498871,0,NA,0,NA,6,0.5,1297,434.823529411765
+24,297,"champú",NA,1,"tʃampu",6,NA,NA,NA,0,NA,0,NA,1476,434.823529411765
+24,299,"cocina","kitchen",1,"koθina",6,6.173786104,2,3.75,0,NA,2,0,1364,434.823529411765
+24,301,"cuarto","room",1,"kwaɾto",6,7.306531399,3,1,0,NA,0,NA,1366,434.823529411765
+24,303,"escaleras","stairs",0,"eskalɛɾas",9,5.429345629,0,NA,0,NA,0,NA,1826,434.823529411765
+24,304,"estufa","stove",0,"estufa",6,4.770684624,2,NA,0,NA,0,NA,1413,434.823529411765
+24,311,"patio (outside)",NA,0,"patjo",5,NA,NA,NA,1,2,6,7.33333333333333,1235,434.823529411765
+24,314,"refrigerador","refrigerator",0,"refɾixɛɾaðɔɾ",12,5.117993812,0,13,0,NA,0,NA,2572,434.823529411765
+24,315,"regadera/ducha","shower",0,"reɣaðɛɾa",8,4.442651256,5,4,0,NA,0,NA,1688,434.823529411765
+24,317,"sala","living room",0,"sala",4,0,1,1,1,1,14,3.375,1151,434.823529411765
+24,320,"sillón",NA,0,"siʎɔn",5,NA,NA,NA,0,NA,1,2,1363,434.823529411765
+24,323,"tina","bathtub",1,"tina",4,4.882801923,1,3.33333333333333,0,NA,5,2.33333333333333,1177,434.823529411765
+24,324,"ventana","window",1,"bɛntana",7,6.249975242,2,1.5,0,NA,0,NA,1508,434.823529411765
+25,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,791.440559440559
+25,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,6,0,NA,2,0,1563,791.440559440559
+25,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,4.8,0,NA,1,NA,1347,791.440559440559
+25,18,"ratón","mouse",1,"ratɔn",5,6.086774727,4,4,0,NA,5,1,1291,791.440559440559
+25,19,"rana","frog",1,"rana",4,5.590986981,0,10.3333333333333,0,NA,13,5.75,1168,791.440559440559
+25,23,"pescado","fish (animal)",1,"peskaðo",7,6.705639095,3,12,4,NA,4,NA,2986,791.440559440559
+25,28,"mosco",NA,1,"mɔsko",5,NA,NA,NA,1,0,1,1,1346,791.440559440559
+25,30,"mono","monkey",1,"mono",4,5.940171253,3,6.66666666666667,2,0,4,6,1269,791.440559440559
+25,31,"mariposa","butterfly",0,"maɾiposa",8,4.605170186,0,5.25,0,NA,0,NA,1626,791.440559440559
+25,32,"lobo","wolf",0,"loβo",4,4.672828834,1,5.4,1,0,6,2.6,1278,791.440559440559
+25,35,"hormiga","ant",1,"ɔɾmiɣa",6,3.526360525,0,8,0,NA,0,NA,1422,791.440559440559
+25,41,"foca",NA,0,"foka",4,NA,NA,NA,1,1,6,5.5,1247,791.440559440559
+25,50,"borrego","lamb",0,"bɔreɣo",6,4.941642423,0,11,0,NA,0,NA,1455,791.440559440559
+25,57,"triciclo (vehicles)",NA,1,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,791.440559440559
+25,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,3.33333333333333,0,NA,0,NA,2188,791.440559440559
+25,64,"camión/troca","truck",0,"kamjɔn",6,6.812345094,2,7,0,NA,4,0.666666666666667,1410,791.440559440559
+25,67,"barco","boat",0,"baɾko",5,6.194405391,3,15,1,NA,4,8.33333333333333,1252,791.440559440559
+25,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,791.440559440559
+25,73,"atún",NA,0,"atun",4,NA,NA,NA,0,NA,1,NA,1259,791.440559440559
+25,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,791.440559440559
+25,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,791.440559440559
+25,87,"elote",NA,1,"elote",5,NA,NA,NA,0,NA,1,2,1309,791.440559440559
+25,89,"fresa",NA,0,"fɾesa",5,NA,NA,NA,0,NA,1,2,1290,791.440559440559
+25,94,"helado/nieve","ice cream",1,"elaðo",5,0,2,8.33333333333333,0,NA,1,4,1277,791.440559440559
+25,95,"hielo",NA,0,"jelo",4,NA,NA,NA,2,0.5,7,5.66666666666667,1256,791.440559440559
+25,103,"cacahuete/maní",NA,0,"kakawete",8,NA,NA,NA,0,NA,0,NA,1709,791.440559440559
+25,106,"melón",NA,1,"melɔn",5,NA,NA,NA,0,NA,2,0,1344,791.440559440559
+25,110,"palomitas",NA,1,"palomitas",9,NA,NA,NA,0,NA,0,NA,1760,791.440559440559
+25,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,791.440559440559
+25,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,0,4,2,1237,791.440559440559
+25,118,"pescado (food_drink)",NA,0,"peskaðo",7,NA,NA,NA,4,NA,4,NA,2986,791.440559440559
+25,121,"quesadilla","quesadilla",0,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,791.440559440559
+25,126,"sandía",NA,0,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,791.440559440559
+25,130,"té (food)",NA,0,"tɛ",2,NA,NA,NA,0,NA,1,0,1313,791.440559440559
+25,131,"torta/lonche",NA,0,"tɔɾta",5,NA,NA,NA,0,NA,3,0,1253,791.440559440559
+25,137,"zanahoria",NA,0,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,791.440559440559
+25,142,"camisa",NA,1,"kamisa",6,NA,NA,NA,0,NA,2,4.5,1307,791.440559440559
+25,146,"falda","skirt",0,"falða",5,3.583518938,3,1,0,NA,1,NA,1241,791.440559440559
+25,148,"guantes",NA,0,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,791.440559440559
+25,153,"pijama","pajamas",0,"pixama",6,4.736198448,0,5,0,NA,0,NA,1368,791.440559440559
+25,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,791.440559440559
+25,156,"shorts","shorts",0,"ʃɔɾts",5,3.583518938,2,3.5,0,NA,1,NA,1353,791.440559440559
+25,157,"sombrero","hat",0,"sɔmbɾɛɾɔ",8,6.874198495,2,3.8,0,NA,0,NA,1852,791.440559440559
+25,159,"vestido","dress (object)",0,"bestiðo",7,5.823045895,4,1,0,NA,0,NA,1543,791.440559440559
+25,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,791.440559440559
+25,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,791.440559440559
+25,172,"hombro",NA,0,"ɔmbɾo",5,NA,NA,NA,0,NA,0,NA,1365,791.440559440559
+25,173,"labios",NA,0,"laβjos",6,NA,NA,NA,0,NA,0,NA,1387,791.440559440559
+25,183,"pene","penis",0,"pene",4,2.302585093,0,NA,1,0,3,4.66666666666667,1260,791.440559440559
+25,184,"piernas","leg",1,"pjɛɾnas",7,5.620400866,6,2.5,0,NA,0,NA,1538,791.440559440559
+25,186,"rodilla","knee",0,"roðiʎa",6,5.147494477,1,2.5,0,NA,0,NA,1415,791.440559440559
+25,190,"colores",NA,1,"kolɔɾɛs",7,NA,NA,NA,0,NA,0,NA,1589,791.440559440559
+25,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,791.440559440559
+25,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,791.440559440559
+25,201,"pinturas",NA,0,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,791.440559440559
+25,203,"pluma/plumones",NA,1,"pluma",5,NA,NA,NA,0,NA,1,3,1286,791.440559440559
+25,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,791.440559440559
+25,205,"triciclo (toys)",NA,1,"tɾiθiklo",8,NA,NA,NA,4,NA,4,NA,3548,791.440559440559
+25,206,"botas","boots",0,"botas",5,5.375278408,0,3,0,NA,4,2.33333333333333,1280,791.440559440559
+25,208,"babero","bib",1,"baβɛɾɔ",6,3.970291914,NA,NA,0,NA,0,NA,1414,791.440559440559
+25,219,"cassette",NA,0,"kassette",8,NA,NA,NA,0,NA,0,NA,1730,791.440559440559
+25,222,"cerillos",NA,0,"θɛɾiʎos",7,NA,NA,NA,0,NA,0,NA,1607,791.440559440559
+25,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,2,0,NA,0,NA,1569,791.440559440559
+25,233,"espejo","mirror",0,"espexo",6,5.099866428,4,4.5,0,NA,0,NA,1440,791.440559440559
+25,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,791.440559440559
+25,241,"olla",NA,0,"ɔʎa",3,NA,NA,NA,0,NA,4,3.75,1259,791.440559440559
+25,244,"pasta de dientes",NA,1,"pastaðeðjɛntes",14,NA,NA,NA,0,NA,0,NA,2904,791.440559440559
+25,247,"plancha",NA,0,"plantʃa",7,NA,NA,NA,1,NA,1,NA,1444,791.440559440559
+25,249,"radio","radio",1,"raðjo",5,4.976733742,0,0,0,NA,1,NA,1297,791.440559440559
+25,251,"servilleta",NA,1,"sɛɾβiʎeta",9,NA,NA,NA,0,NA,0,NA,1934,791.440559440559
+25,255,"tenedor","fork",0,"teneðɔɾ",7,5.081404365,3,7.33333333333333,0,NA,0,NA,1618,791.440559440559
+25,256,"tijeras","scissors",0,"tixɛɾas",7,5.257495372,0,4,0,NA,0,NA,1546,791.440559440559
+25,258,"trapo","cloth",0,"tɾapo",5,4.025351691,4,1.66666666666667,0,NA,2,4.5,1287,791.440559440559
+25,260,"vela","candle",0,"bela",4,4.043051268,0,2,0,NA,10,5.16666666666667,1192,791.440559440559
+25,263,"bandera",NA,0,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,791.440559440559
+25,266,"columpio","swing (object)",0,"kolumpjo",8,4.564348191,1,3.6,0,NA,0,NA,1773,791.440559440559
+25,270,"hojas",NA,1,"oxas",4,NA,NA,NA,2,0,4,3.33333333333333,1292,791.440559440559
+25,272,"lluvia","rain",1,"ʎuβja",5,5.214935758,3,10.5,0,NA,0,NA,1337,791.440559440559
+25,274,"maceta",NA,0,"maθeta",6,NA,NA,NA,0,NA,2,2,1312,791.440559440559
+25,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,791.440559440559
+25,278,"nube","cloud",0,"nuβe",4,3.17805383,2,4,0,NA,1,0,1331,791.440559440559
+25,281,"pasto",NA,0,"pasto",5,NA,NA,NA,1,3,7,7.6,1215,791.440559440559
+25,283,"planta","plant",0,"planta",6,4.770684624,1,8.75,1,NA,3,3,1290,791.440559440559
+25,285,"resbaladilla","slide (object)",0,"resβalaðiʎa",11,5.902633333,1,9.5,0,NA,0,NA,2283,791.440559440559
+25,289,"tierra",NA,1,"tjɛra",5,NA,NA,NA,0,NA,0,NA,1309,791.440559440559
+25,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,791.440559440559
+25,291,"viento/aire",NA,1,"bjɛnto",6,NA,NA,NA,0,NA,0,NA,1420,791.440559440559
+25,292,"bacinica","potty",1,"baθinika",8,5.111987788,0,NA,0,NA,0,NA,1666,791.440559440559
+25,293,"banco (outside)",NA,0,"banko",5,NA,NA,NA,1,NA,5,8.25,1246,791.440559440559
+25,295,"cajón","drawer",1,"kaxɔn",5,4.718498871,0,NA,0,NA,6,2.75,1297,791.440559440559
+25,303,"escaleras","stairs",1,"eskalɛɾas",9,5.429345629,0,NA,0,NA,0,NA,1826,791.440559440559
+25,304,"estufa","stove",0,"estufa",6,4.770684624,2,0,0,NA,0,NA,1413,791.440559440559
+25,311,"patio (outside)",NA,1,"patjo",5,NA,NA,NA,1,3,6,9.25,1235,791.440559440559
+25,314,"refrigerador","refrigerator",0,"refɾixɛɾaðɔɾ",12,5.117993812,0,16,0,NA,0,NA,2572,791.440559440559
+25,315,"regadera/ducha","shower",0,"reɣaðɛɾa",8,4.442651256,5,6.5,0,NA,0,NA,1688,791.440559440559
+25,317,"sala","living room",1,"sala",4,0,1,2.33333333333333,1,1,14,6.09090909090909,1151,791.440559440559
+25,320,"sillón",NA,1,"siʎɔn",5,NA,NA,NA,0,NA,1,3,1363,791.440559440559
+26,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,1022
+26,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,5.5,0,NA,2,0,1563,1022
+26,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,5.4,0,NA,1,NA,1347,1022
+26,31,"mariposa","butterfly",0,"maɾiposa",8,4.605170186,0,5.5,0,NA,0,NA,1626,1022
+26,32,"lobo","wolf",0,"loβo",4,4.672828834,1,6,1,0,6,3,1278,1022
+26,41,"foca",NA,0,"foka",4,NA,NA,NA,1,1,6,6.5,1247,1022
+26,50,"borrego","lamb",0,"bɔreɣo",6,4.941642423,0,13,0,NA,0,NA,1455,1022
+26,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,3.66666666666667,0,NA,0,NA,2188,1022
+26,64,"camión/troca","truck",1,"kamjɔn",6,6.812345094,2,7,0,NA,4,2.5,1410,1022
+26,67,"barco","boat",1,"baɾko",5,6.194405391,3,9.5,1,NA,4,9,1252,1022
+26,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,1022
+26,73,"atún",NA,0,"atun",4,NA,NA,NA,0,NA,1,4,1259,1022
+26,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,1022
+26,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,1022
+26,89,"fresa",NA,0,"fɾesa",5,NA,NA,NA,0,NA,1,2,1290,1022
+26,95,"hielo",NA,0,"jelo",4,NA,NA,NA,2,0.5,7,6,1256,1022
+26,103,"cacahuete/maní",NA,0,"kakawete",8,NA,NA,NA,0,NA,0,NA,1709,1022
+26,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,1022
+26,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,0,4,2,1237,1022
+26,118,"pescado (food_drink)",NA,0,"peskaðo",7,NA,NA,NA,4,0,4,0,2986,1022
+26,121,"quesadilla","quesadilla",0,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,1022
+26,126,"sandía",NA,0,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,1022
+26,130,"té (food)",NA,0,"tɛ",2,NA,NA,NA,0,NA,1,0,1313,1022
+26,131,"torta/lonche",NA,0,"tɔɾta",5,NA,NA,NA,0,NA,3,0,1253,1022
+26,137,"zanahoria",NA,0,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,1022
+26,146,"falda","skirt",0,"falða",5,3.583518938,3,1,0,NA,1,12,1241,1022
+26,148,"guantes",NA,0,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,1022
+26,153,"pijama","pajamas",1,"pixama",6,4.736198448,0,5,0,NA,0,NA,1368,1022
+26,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,1022
+26,156,"shorts","shorts",0,"ʃɔɾts",5,3.583518938,2,4,0,NA,1,NA,1353,1022
+26,157,"sombrero","hat",0,"sɔmbɾɛɾɔ",8,6.874198495,2,4.4,0,NA,0,NA,1852,1022
+26,159,"vestido","dress (object)",1,"bestiðo",7,5.823045895,4,1,0,NA,0,NA,1543,1022
+26,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,1022
+26,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,1022
+26,172,"hombro",NA,0,"ɔmbɾo",5,NA,NA,NA,0,NA,0,NA,1365,1022
+26,173,"labios",NA,0,"laβjos",6,NA,NA,NA,0,NA,0,NA,1387,1022
+26,183,"pene","penis",1,"pene",4,2.302585093,0,NA,1,0,3,5,1260,1022
+26,186,"rodilla","knee",0,"roðiʎa",6,5.147494477,1,4,0,NA,0,NA,1415,1022
+26,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,1022
+26,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,1022
+26,201,"pinturas",NA,0,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,1022
+26,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,1022
+26,206,"botas","boots",1,"botas",5,5.375278408,0,1.5,0,NA,4,2.75,1280,1022
+26,219,"cassette",NA,0,"kassette",8,NA,NA,NA,0,NA,0,NA,1730,1022
+26,222,"cerillos",NA,0,"θɛɾiʎos",7,NA,NA,NA,0,NA,0,NA,1607,1022
+26,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,2,0,NA,0,NA,1569,1022
+26,233,"espejo","mirror",1,"espexo",6,5.099866428,4,5,0,NA,0,NA,1440,1022
+26,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,1022
+26,241,"olla",NA,0,"ɔʎa",3,NA,NA,NA,0,NA,4,4.5,1259,1022
+26,247,"plancha",NA,0,"plantʃa",7,NA,NA,NA,1,NA,1,NA,1444,1022
+26,255,"tenedor","fork",0,"teneðɔɾ",7,5.081404365,3,8.33333333333333,0,NA,0,NA,1618,1022
+26,256,"tijeras","scissors",1,"tixɛɾas",7,5.257495372,0,4,0,NA,0,NA,1546,1022
+26,258,"trapo","cloth",0,"tɾapo",5,4.025351691,4,2,0,NA,2,4.5,1287,1022
+26,260,"vela","candle",0,"bela",4,4.043051268,0,2,0,NA,10,6.42857142857143,1192,1022
+26,263,"bandera",NA,0,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,1022
+26,266,"columpio","swing (object)",1,"kolumpjo",8,4.564348191,1,4,0,NA,0,NA,1773,1022
+26,274,"maceta",NA,0,"maθeta",6,NA,NA,NA,0,NA,2,2,1312,1022
+26,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,1022
+26,278,"nube","cloud",1,"nuβe",4,3.17805383,2,2,0,NA,1,0,1331,1022
+26,281,"pasto",NA,1,"pasto",5,NA,NA,NA,1,4,7,8.16666666666667,1215,1022
+26,283,"planta","plant",0,"planta",6,4.770684624,1,10.25,1,NA,3,4.5,1290,1022
+26,285,"resbaladilla","slide (object)",0,"resβalaðiʎa",11,5.902633333,1,11,0,NA,0,NA,2283,1022
+26,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,1022
+26,293,"banco (outside)",NA,0,"banko",5,NA,NA,NA,1,NA,5,9.25,1246,1022
+26,304,"estufa","stove",1,"estufa",6,4.770684624,2,1,0,NA,0,NA,1413,1022
+26,314,"refrigerador","refrigerator",0,"refɾixɛɾaðɔɾ",12,5.117993812,0,19,0,NA,0,NA,2572,1022
+26,315,"regadera/ducha","shower",0,"reɣaðɛɾa",8,4.442651256,5,5.8,0,NA,0,NA,1688,1022
+27,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,1089.13513513514
+27,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,5.75,0,NA,2,0,1563,1089.13513513514
+27,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,5.4,0,NA,1,NA,1347,1089.13513513514
+27,31,"mariposa","butterfly",1,"maɾiposa",8,4.605170186,0,5.5,0,NA,0,NA,1626,1089.13513513514
+27,32,"lobo","wolf",0,"loβo",4,4.672828834,1,6,1,0,6,3,1278,1089.13513513514
+27,41,"foca",NA,0,"foka",4,NA,NA,NA,1,1,6,6.83333333333333,1247,1089.13513513514
+27,50,"borrego","lamb",1,"bɔreɣo",6,4.941642423,0,13,0,NA,0,NA,1455,1089.13513513514
+27,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,4,0,NA,0,NA,2188,1089.13513513514
+27,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,1089.13513513514
+27,73,"atún",NA,1,"atun",4,NA,NA,NA,0,NA,1,4,1259,1089.13513513514
+27,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,1089.13513513514
+27,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,1089.13513513514
+27,89,"fresa",NA,1,"fɾesa",5,NA,NA,NA,0,NA,1,2,1290,1089.13513513514
+27,95,"hielo",NA,0,"jelo",4,NA,NA,NA,2,0.5,7,6.33333333333333,1256,1089.13513513514
+27,103,"cacahuete/maní",NA,1,"kakawete",8,NA,NA,NA,0,NA,0,NA,1709,1089.13513513514
+27,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,1089.13513513514
+27,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,0,4,3,1237,1089.13513513514
+27,118,"pescado (food_drink)",NA,1,"peskaðo",7,NA,NA,NA,4,0,4,0,2986,1089.13513513514
+27,121,"quesadilla","quesadilla",0,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,1089.13513513514
+27,126,"sandía",NA,0,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,1089.13513513514
+27,130,"té (food)",NA,1,"tɛ",2,NA,NA,NA,0,NA,1,0,1313,1089.13513513514
+27,131,"torta/lonche",NA,0,"tɔɾta",5,NA,NA,NA,0,NA,3,0,1253,1089.13513513514
+27,137,"zanahoria",NA,0,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,1089.13513513514
+27,146,"falda","skirt",1,"falða",5,3.583518938,3,2.5,0,NA,1,12,1241,1089.13513513514
+27,148,"guantes",NA,0,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,1089.13513513514
+27,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,1089.13513513514
+27,156,"shorts","shorts",0,"ʃɔɾts",5,3.583518938,2,4.5,0,NA,1,NA,1353,1089.13513513514
+27,157,"sombrero","hat",0,"sɔmbɾɛɾɔ",8,6.874198495,2,4.4,0,NA,0,NA,1852,1089.13513513514
+27,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,1089.13513513514
+27,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,1089.13513513514
+27,172,"hombro",NA,1,"ɔmbɾo",5,NA,NA,NA,0,NA,0,NA,1365,1089.13513513514
+27,173,"labios",NA,1,"laβjos",6,NA,NA,NA,0,NA,0,NA,1387,1089.13513513514
+27,186,"rodilla","knee",1,"roðiʎa",6,5.147494477,1,4,0,NA,0,NA,1415,1089.13513513514
+27,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,1089.13513513514
+27,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,1089.13513513514
+27,201,"pinturas",NA,0,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,1089.13513513514
+27,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,1089.13513513514
+27,219,"cassette",NA,1,"kassette",8,NA,NA,NA,0,NA,0,NA,1730,1089.13513513514
+27,222,"cerillos",NA,1,"θɛɾiʎos",7,NA,NA,NA,0,NA,0,NA,1607,1089.13513513514
+27,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,2,0,NA,0,NA,1569,1089.13513513514
+27,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,1089.13513513514
+27,241,"olla",NA,0,"ɔʎa",3,NA,NA,NA,0,NA,4,4.5,1259,1089.13513513514
+27,247,"plancha",NA,1,"plantʃa",7,NA,NA,NA,1,NA,1,NA,1444,1089.13513513514
+27,255,"tenedor","fork",1,"teneðɔɾ",7,5.081404365,3,8.66666666666667,0,NA,0,NA,1618,1089.13513513514
+27,258,"trapo","cloth",1,"tɾapo",5,4.025351691,4,2.33333333333333,0,NA,2,5,1287,1089.13513513514
+27,260,"vela","candle",0,"bela",4,4.043051268,0,2,0,NA,10,6.85714285714286,1192,1089.13513513514
+27,263,"bandera",NA,0,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,1089.13513513514
+27,274,"maceta",NA,0,"maθeta",6,NA,NA,NA,0,NA,2,2,1312,1089.13513513514
+27,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,1089.13513513514
+27,283,"planta","plant",1,"planta",6,4.770684624,1,10.75,1,NA,3,5,1290,1089.13513513514
+27,285,"resbaladilla","slide (object)",1,"resβalaðiʎa",11,5.902633333,1,8,0,NA,0,NA,2283,1089.13513513514
+27,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,1089.13513513514
+27,293,"banco (outside)",NA,0,"banko",5,NA,NA,NA,1,0,5,8.6,1246,1089.13513513514
+27,314,"refrigerador","refrigerator",1,"refɾixɛɾaðɔɾ",12,5.117993812,0,10,0,NA,0,NA,2572,1089.13513513514
+27,315,"regadera/ducha","shower",0,"reɣaðɛɾa",8,4.442651256,5,6.4,0,NA,0,NA,1688,1089.13513513514
+28,13,"víbora",NA,0,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,1231.89215686275
+28,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,6.25,0,NA,2,0,1563,1231.89215686275
+28,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,5.8,0,NA,1,NA,1347,1231.89215686275
+28,32,"lobo","wolf",1,"loβo",4,4.672828834,1,6.6,1,0,6,3,1278,1231.89215686275
+28,41,"foca",NA,1,"foka",4,NA,NA,NA,1,1,6,6.83333333333333,1247,1231.89215686275
+28,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,4.33333333333333,0,NA,0,NA,2188,1231.89215686275
+28,72,"atole","atole",0,"atole",5,0,NA,NA,0,NA,0,NA,1309,1231.89215686275
+28,76,"calabaza",NA,0,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,1231.89215686275
+28,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,1231.89215686275
+28,95,"hielo",NA,1,"jelo",4,NA,NA,NA,2,0.5,7,6.33333333333333,1256,1231.89215686275
+28,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,1231.89215686275
+28,115,"pasas",NA,0,"pasas",5,NA,NA,NA,1,0,4,3,1237,1231.89215686275
+28,121,"quesadilla","quesadilla",1,"kesaðiʎa",8,0,NA,NA,0,NA,0,NA,1650,1231.89215686275
+28,126,"sandía",NA,1,"sandia",6,NA,NA,NA,0,NA,0,NA,1350,1231.89215686275
+28,131,"torta/lonche",NA,1,"tɔɾta",5,NA,NA,NA,0,NA,3,0,1253,1231.89215686275
+28,137,"zanahoria",NA,1,"θanaɔɾja",8,NA,NA,NA,0,NA,0,NA,1673,1231.89215686275
+28,148,"guantes",NA,1,"ɡwantes",7,NA,NA,NA,0,NA,0,NA,1544,1231.89215686275
+28,154,"playera","t-shirt",0,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,1231.89215686275
+28,156,"shorts","shorts",1,"ʃɔɾts",5,3.583518938,2,4.33333333333333,0,NA,1,NA,1353,1231.89215686275
+28,157,"sombrero","hat",1,"sɔmbɾɛɾɔ",8,6.874198495,2,4.4,0,NA,0,NA,1852,1231.89215686275
+28,162,"bigote","moustache",0,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,1231.89215686275
+28,171,"garganta/anginas",NA,0,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,1231.89215686275
+28,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,1231.89215686275
+28,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,1231.89215686275
+28,201,"pinturas",NA,1,"pintuɾas",8,NA,NA,NA,0,NA,0,NA,1686,1231.89215686275
+28,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,1231.89215686275
+28,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,2,0,NA,0,NA,1569,1231.89215686275
+28,236,"lámpara",NA,0,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,1231.89215686275
+28,241,"olla",NA,1,"ɔʎa",3,NA,NA,NA,0,NA,4,4.5,1259,1231.89215686275
+28,260,"vela","candle",1,"bela",4,4.043051268,0,2,0,NA,10,7.14285714285714,1192,1231.89215686275
+28,263,"bandera",NA,1,"bandɛɾa",7,NA,NA,NA,0,NA,0,NA,1497,1231.89215686275
+28,274,"maceta",NA,1,"maθeta",6,NA,NA,NA,0,NA,2,2,1312,1231.89215686275
+28,275,"manguera",NA,0,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,1231.89215686275
+28,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,1231.89215686275
+28,293,"banco (outside)",NA,1,"banko",5,NA,NA,NA,1,0,5,8.8,1246,1231.89215686275
+28,315,"regadera/ducha","shower",1,"reɣaðɛɾa",8,4.442651256,5,6.8,0,NA,0,NA,1688,1231.89215686275
+29,13,"víbora",NA,1,"biβɔɾa",6,NA,NA,NA,0,NA,0,NA,1393,1331.76470588235
+29,16,"tortuga","turtle",0,"tɔɾtuɣa",7,5.493061443,0,6.75,0,NA,2,1.5,1563,1331.76470588235
+29,17,"tigre","tiger",0,"tiɣɾe",5,6.955592608,3,6.4,0,NA,1,NA,1347,1331.76470588235
+29,61,"helicóptero","helicopter",0,"elikɔptɛɾɔ",10,4.477336814,1,4.33333333333333,0,NA,0,NA,2188,1331.76470588235
+29,72,"atole","atole",1,"atole",5,0,NA,NA,0,NA,0,NA,1309,1331.76470588235
+29,76,"calabaza",NA,1,"kalaβaθa",8,NA,NA,NA,0,NA,0,NA,1650,1331.76470588235
+29,79,"chícharo",NA,0,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,1331.76470588235
+29,112,"pan dulce",NA,0,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,1331.76470588235
+29,115,"pasas",NA,1,"pasas",5,NA,NA,NA,1,0,4,3,1237,1331.76470588235
+29,154,"playera","t-shirt",1,"plajjɛɾa",8,0,0,NA,0,NA,0,NA,1670,1331.76470588235
+29,162,"bigote","moustache",1,"biɣote",6,3.258096538,NA,NA,0,NA,0,NA,1434,1331.76470588235
+29,171,"garganta/anginas",NA,1,"ɡaɾɣanta",8,NA,NA,NA,0,NA,0,NA,1659,1331.76470588235
+29,191,"crayolas",NA,0,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,1331.76470588235
+29,199,"patines",NA,0,"patines",7,NA,NA,NA,0,NA,0,NA,1484,1331.76470588235
+29,204,"tambor","drum",0,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,1331.76470588235
+29,224,"cigarros","cigarette",0,"θiɣaros",7,3.044522438,0,3,0,NA,0,NA,1569,1331.76470588235
+29,236,"lámpara",NA,1,"lampaɾa",7,NA,NA,NA,0,NA,0,NA,1481,1331.76470588235
+29,275,"manguera",NA,1,"maŋɡɛɾa",7,NA,NA,NA,0,NA,0,NA,1538,1331.76470588235
+29,290,"timbre",NA,0,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,1331.76470588235
+30,16,"tortuga","turtle",1,"tɔɾtuɣa",7,5.493061443,0,6.75,0,NA,2,1.5,1563,1389.06086956522
+30,17,"tigre","tiger",1,"tiɣɾe",5,6.955592608,3,6.4,0,NA,1,NA,1347,1389.06086956522
+30,61,"helicóptero","helicopter",1,"elikɔptɛɾɔ",10,4.477336814,1,4.33333333333333,0,NA,0,NA,2188,1389.06086956522
+30,79,"chícharo",NA,1,"tʃitʃaɾɔ",8,NA,NA,NA,0,NA,0,NA,1738,1389.06086956522
+30,112,"pan dulce",NA,1,"pandulθe",8,NA,NA,NA,0,NA,0,NA,1749,1389.06086956522
+30,191,"crayolas",NA,1,"kɾajjolas",9,NA,NA,NA,0,NA,0,NA,1848,1389.06086956522
+30,199,"patines",NA,1,"patines",7,NA,NA,NA,0,NA,0,NA,1484,1389.06086956522
+30,204,"tambor","drum",1,"tambɔɾ",6,4.543294782,1,NA,0,NA,0,NA,1427,1389.06086956522
+30,224,"cigarros","cigarette",1,"θiɣaros",7,3.044522438,0,3,0,NA,0,NA,1569,1389.06086956522
+30,290,"timbre",NA,1,"timbɾe",6,NA,NA,NA,0,NA,1,NA,1476,1389.06086956522
