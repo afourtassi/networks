@@ -122,7 +122,7 @@ total_nouns <- feather::read_feather("saved_data/statistics.feather")
 ```
 
 
-Prepare data for age of acqusition analysis (regressions)
+Prepare data for age of acquisition analysis (regressions)
 
 ```{r}
 data_original <- list(Cro_combo, Dan_combo, Eng_combo, Ita_combo, Nor_combo, Rus_combo, Spa_combo, Tur_combo)
@@ -821,6 +821,8 @@ zscores_toJoin <- zscores_toJoin %>%
 
 individual_both <- bind_rows(post_individual_toJoin, zscores_toJoin)
 
+
+
 feather::write_feather(individual_both, "saved_data/individual_both.feather")
 individual_both <- feather::read_feather("saved_data/individual_both.feather")
 
@@ -848,6 +850,10 @@ ggplot(post_combined, aes(x = alpha, y = mean)) +
   scale_colour_solarized() +
   theme_bw()+
   theme(aspect.ratio = 0.7)
+
+individ <- individual_both %>%
+  
+
 
 ```
 
