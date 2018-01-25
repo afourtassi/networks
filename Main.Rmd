@@ -89,6 +89,61 @@ data_first_month <- data_first_month %>%
 
 ```
 
+Here do the power-law analysis and the log-log plots
+
+```{r}
+#make a loop
+degreeDist <- data.frame(matrix(ncol = 4, nrow = 0))
+x <- c("x", "y", "dimension", "language")
+colnames(degreeDist) <- x
+
+for (i in language_dict$language_name) {
+  #Select data for the language
+  data_lang <- data_first_month %>%
+    filter(language == i) %>%
+    select(language, PAC_assoc, PAC_phono_t2) %>%
+    rename(Sem = PAC_assoc, Phono = PAC_phono_t2) %>%
+    filter (!is.na(Sem),!is.na(Phono)) 
+  
+  #Do the transfomation
+  semList <- data_lang$Sem[data_lang$Sem != 0]
+  sem_pl = displ$new(semList)
+  sem_est = estimate_xmin(sem_pl)
+  sem_pl$setXmin(sem_est)
+  sem_dist = plot(sem_pl) %>%
+    mutate(dimension='Sem', language  =  i)
+  
+  phonoList <- data_lang$Phono[data_lang$Phono != 0]
+  phono_pl = displ$new(phonoList)
+  phono_est = estimate_xmin(phono_pl)
+  phono_pl$setXmin(phono_est)
+  phono_dist = plot(phono_pl) %>%
+    mutate(dimension='Phono', language = i)
+  
+  dist_lang <- bind_rows(sem_dist, phono_dist)
+  
+  degreeDist <- bind_rows(degreeDist, dist_lang) 
+  
+}
+
+feather::write_feather(degreeDist, "saved_data/degreeDist.feather")
+degreeDist <- feather::read_feather("saved_data/degreeDist.feather")
+
+#plot cumulative distributions
+ggplot(data = degreeDist,  aes(x=x, y=y, col=dimension))+
+  facet_grid(. ~ language)+#, scales = "free") +
+  geom_point(#aes(colour = lexical_class),
+    #colour = solarized_palette(1),
+    size = 0.5, alpha = 0.5) +
+  scale_y_log10() + scale_x_log10() +
+  theme(aspect.ratio = 1)
+  #scale_x_continuous(limits=c(-2,5))+
+  #geom_smooth(method = "lm", colour = "grey3", se=FALSE)+
+  #scale_colour_solarized(name = "") 
+
+
+```
+
 Here do the statistics 
 
 ```{r}
@@ -276,6 +331,7 @@ data_all_scaled <- feather::read_feather("saved_data/data_all_scaled.feather")
 feather::write_feather(data_all_scaled_bis, "saved_data/data_all_scaled_bis.feather")
 data_all_scaled_bis <- feather::read_feather("saved_data/data_all_scaled_bis.feather")
 ```
+
 
 Plot data for all languages
 ```{r fig.width=4, fig.height=2}
