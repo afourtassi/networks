@@ -111,20 +111,21 @@ Maouene, Riordan, \& Smith, 2010; Hills, Maouene, Maouene, Sheya, \&
 Smith, 2009; Stella, Beckage, \& Brede, 2017; Stokes, 2010; Storkel,
 2009).
 
-A crucial question that naturally emerges from these analyses is how
-does network connectivity influence word learning? Steyvers \& Tenenbaum
-(2005) suggested that the effect of connectivity is the consequence of
-how the lexical network gets constructed in the child's mind. According
-to this explanation, known as Preferential Attachment (PAT), highly
-connected words in the child's lexicon tend to ``attract'' more words
-over time, in a rich-get-richer scenario (Barabasi \& Albert, 1999). In
-other words, what predicts word learning is \emph{internal} connectivity
-in the child's early lexicon. In contrast, Hills et al. (2009) found
-that what biases the learning is not the connectivity in the child's
-internal lexicon but, rather, \emph{external} connectivity in the
-learning environment. They called this alternative explanation
-Preferential Acquisition (PAC). Figure \ref{fig:growth} shows an
-illustration of both growth scenarios with the same simplified network.
+While most studies focued on the static properties of the lexical
+network, a few have proposed to account for the underlying developmental
+process. Steyvers \& Tenenbaum (2005) suggested that the effect of
+connectivity is the consequence of how the lexical network gets
+constructed in the child's mind. According to this explanation, known as
+Preferential Attachment (PAT), highly connected words in the child's
+lexicon tend to ``attract'' more words over time, in a rich-get-richer
+scenario (Barabasi \& Albert, 1999). In other words, what predicts word
+learning is \emph{internal} connectivity in the child's early lexicon.
+In contrast, Hills et al. (2009) suggested that what biases the learning
+is not the connectivity in the child's internal lexicon but, rather,
+\emph{external} connectivity in the learning environment. They called
+this alternative explanation Preferential Acquisition (PAC). Figure
+\ref{fig:growth} shows an illustration of both growth scenarios with the
+same simplified network.
 
 \begin{CodeChunk}
 \begin{figure}[H]
@@ -142,7 +143,7 @@ networks using English data only (Hills et al., 2010, 2009; Steyvers \&
 Tenenbaum, 2005). The novelty of the current study is that it
 investigates whether phonological networks, like semantic networks, grow
 by PAC, or if they rather grow by PAT. It also provides a systematic
-comparison of network growth scenarios in the phonological and the
+comparison of both network growth scenarios in the phonological and the
 semantic domains and assesses their relative contribution to the
 learning process. Moreover, it tests the generality of the findings
 across eight languages.
@@ -164,7 +165,7 @@ potential learning mechanism that might drive early vocabulary learning.
 
 }
 
-\caption{\label{fig:data_all}Age of acquisition in the end-state network as predicted by the degree in this network. Results are shown in each language for the phonological network (top) and the semantic network (bottom). Each point is a word, with lines indicating linear model fits.}\label{fig:all_data}
+\caption{\label{fig:data_all}Age of acquisition in the global network as predicted by the degree in this network. Results are shown in each language for the phonological network (top) and the semantic network (bottom). Each point is a word, with lines indicating linear model fits.}\label{fig:all_data}
 \end{figure*}
 \end{CodeChunk}
 
@@ -283,15 +284,12 @@ with higher degrees are generally learned earlier.
 
 We also analysed the global network degree distribution. PAT is known to
 generate networks with a power-law degree distribution (Barabasi \&
-Albert, 1999). Thus, if the networks display this property, it means
-that PAT cannot be ruled out \emph{a priori} as a potential growth
-mechanism. In contrast, if there is strong evidence against a power law
-distribution, then PAT (but not PAC) can be ruled out. The distributions
-are shown in Figure \ref{fig:degree_distribution}. Overall, the results
-do not provide strong evidence against a power-law distribution.
-Moreover, the degree to which the distribution approximates a power law
-varies across dimension and languages. For a more conclusive test, we
-fit explicit growth models to the data (next section).
+Albert, 1999). If the networks display this property, this fact would
+strongly suggests a PAT-like generative process. The results are shown
+in Figure \ref{fig:degree_distribution}. Overall, the extent to which
+the degree distribution approximates a power law varies across
+dimensions and languages. For a more direct test of the developmental
+process, we fit explicit growth models to the data (see next section).
 
 \begin{CodeChunk}
 \begin{figure*}[h]
@@ -322,7 +320,7 @@ Where \(\beta\) is the fitting parameter. A positive value of \(\beta\)
 means that words with higher growth values \(d_i\) are acquired first,
 and a negative value means that words with lower growth values are
 acquired first. As explained in Figure \ref{fig:growth}, each candidate
-word \(w_i\) is characterized with a growth values \(d_i\) that depends
+word \(w_i\) is characterized with a growth value \(d_i\) that depends
 on the growth scenario tested. In PAT, the growth value of a given word
 is equal to the average degree of the existing nodes that it would
 attach to. In PAC, the growth value of a word is equal to its degree in
@@ -371,16 +369,13 @@ is, by substituting \(\beta d_i\) in formula (1) with:
 where the indices represent the 4 networks: semPAT, semPAC, phonoPAT and
 PhonoPAC. Using the same fitting technique, we obtained the values shown
 in Figure \ref{fig:pred_ind}. In term of growth scenarios, we found that
-PAC dominates the learning. In particular, though we found previously
-that phonological PAT predicted part of the learning in some languages
-when tested individually, here PAT appears to lose its predictive power
-when pitted against phonological PAC. In terms of domain, both
-phonological and semantic networks appear to contribute to learning,
-although the phonological network appears to be stronger and more
-reliable across languages. In summary, the findings show that both
-semantic and phonological networks grow primarily by PAC, and that,
-generally speaking, semantic and phonological networks both contribute
-to the learning process.
+PAC dominates the learning. In terms of domain, both phonological and
+semantic networks appear to contribute to the lexical growth, but the
+phonological network appears to be stronger and more consistent across
+languages. In summary, the findings show that both semantic and
+phonological networks grow primarily by PAC, and that, generally
+speaking, semantic and phonological networks both contribute to the
+learning process.
 
 \begin{CodeChunk}
 \begin{figure*}[h]
@@ -408,12 +403,13 @@ correlates with phonological connectivity.
 
 Since PAT was uninformative, we dropped it from this analysis. Thus, we
 no longer needed to fit the growth model month-by-month as in the
-previous section. In fact, word utilities in the case of PAC are fixed,
-they do not depend on previously learned words. A more direct way to
-assess and compare the contribution of PAC in relation to other factors
-is through conducting linear regressions, where connectivity in the
-learning environment (at both the phonological and semantic level),
-frequency and length predict the age of acquisition.
+previous section. In fact, word utilities (i.e., growth values) in the
+case of PAC are fixed, they do not depend on previously learned words. A
+more direct way to assess and compare the contribution of PAC in
+relation to other factors is through conducting linear regressions,
+where connectivity in the learning environment (at both the phonological
+and semantic level), frequency and length predict the age of
+acquisition.
 
 We used the frequency estimates from Braginsky et al. (2016) where
 unigram counts were derived based on CHILDES corpora in each language.
@@ -438,7 +434,7 @@ connectivity contributes to learning in languages such as Croatian,
 English and Russian, whereas semantic connectivity contributes to
 learning in Turkish, Spanish and to some extent in Croatian, but
 interestingly not in
-English\footnote{Semantic connectivity does not explain variance in English data beyond that explained by phonological connectivity, frequency and length. This contrasts with the original finding in Hills et al. 2009. However, in this previous study, semantic connectivity was not tested in a model that included both frequency and length as covariates. Another important difference is the number of words tested. Our study uses a larger set of nouns.}.
+English\footnote{Semantic connectivity does not explain variance in English data beyond that explained by phonological connectivity, frequency and length. This contrasts with the original finding in Hills et al. 2009. However, in this previous study, semantic connectivity was not tested in a model that included both frequency and length as covariates. Another important difference is the number of words tested: our study uses a larger set of nouns.}.
 Despite this cross-linguistic variation, both phonological and semantic
 connectivity remain significant predictors in the global model.
 
@@ -504,9 +500,10 @@ might explain their sensitivity and preference for highly connected
 words in the learning environment.
 
 Finally, this study shares a number of limitations with previous studies
-using similar datasets. In particular, the results provide correlational
-but not causal evidence. Thus, the conclusions of this study require
-parallel evidence, especially from controlled behavioral experiments.
+using similar research strategy and dataset. In particular, the results
+provide correlational but not causal evidence. Thus, the conclusions of
+this study require parallel evidence, especially from controlled
+behavioral experiments.
 
 \vspace{1em}
 
