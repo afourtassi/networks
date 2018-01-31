@@ -92,10 +92,16 @@ data_first_month <- data_first_month %>%
 Here do the power-law analysis and the log-log plots
 
 ```{r}
-#make a loop
+#Data for plot
 degreeDist <- data.frame(matrix(ncol = 4, nrow = 0))
-x <- c("x", "y", "dimension", "language")
-colnames(degreeDist) <- x
+dist_names <- c("x", "y", "dimension", "language")
+colnames(degreeDist) <- dist_names
+
+#Parameters and test
+degreeTest <- data.frame(matrix(ncol = 5, nrow = 0))
+test_names <- c("xMin", "alpha", "pVal", "dimension","language")
+colnames(degreeTest) <- test_names
+
 
 for (i in language_dict$language_name) {
   #Select data for the language
@@ -105,13 +111,19 @@ for (i in language_dict$language_name) {
     rename(Sem = PAC_assoc, Phono = PAC_phono_t2) %>%
     filter (!is.na(Sem),!is.na(Phono)) 
   
-  #Do the transfomation
+  #fit and derive parameters for power law
   semList <- data_lang$Sem[data_lang$Sem != 0]
   sem_pl = displ$new(semList)
   sem_est = estimate_xmin(sem_pl)
   sem_pl$setXmin(sem_est)
   sem_dist = plot(sem_pl) %>%
     mutate(dimension='Sem', language  =  i)
+  
+  #bootstrap to get p-value
+  sem_boot = bootstrap_p(sem_pl, no_of_sims=1000, threads=2)
+  
+  sem_test <- data.frame(as.numeric(sem_pl$xmin), as.numeric(sem_pl$pars), as.numeric(sem_boot$p), 'Sem', i)
+  colnames(sem_test) <- test_names
   
   phonoList <- data_lang$Phono[data_lang$Phono != 0]
   phono_pl = displ$new(phonoList)
@@ -120,14 +132,24 @@ for (i in language_dict$language_name) {
   phono_dist = plot(phono_pl) %>%
     mutate(dimension='Phono', language = i)
   
+  phono_boot = bootstrap_p(phono_pl, no_of_sims=1000, threads=2)
+  
+  phono_test <- data.frame(as.numeric(phono_pl$xmin), as.numeric(phono_pl$pars), as.numeric(phono_boot$p), 'Phono', i)
+  colnames(phono_test) <- test_names
+  
   dist_lang <- bind_rows(sem_dist, phono_dist)
+  test_lang <- bind_rows(sem_test, phono_test)
   
   degreeDist <- bind_rows(degreeDist, dist_lang) 
+  degreeTest <- bind_rows(degreeTest, test_lang) 
   
 }
 
-feather::write_feather(degreeDist, "saved_data/degreeDist.feather")
+#feather::write_feather(degreeDist, "saved_data/degreeDist.feather")
 degreeDist <- feather::read_feather("saved_data/degreeDist.feather")
+
+feather::write_feather(degreeTest, "saved_data/degreeTest.feather")
+degreeTest <- feather::read_feather("saved_data/degreeTest.feather")
 
 #plot cumulative distributions
 ggplot(data = degreeDist,  aes(x=x, y=y, col=dimension))+
