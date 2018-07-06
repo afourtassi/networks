@@ -218,7 +218,7 @@
 18,230,"forchetta","fork",0,"forketa",7,5.081404365,2,NA,0,NA,0,NA,2013,NA
 18,231,"fotografia",NA,0,"fotoɡrafia",10,NA,NA,NA,0,NA,0,NA,2706,NA
 18,232,"giornale","paper",0,"dʒornale",8,6.970730078,10,NA,0,NA,0,NA,2228,NA
-18,233,"luce","light",0,"lutʃe",5,6.343880434,4,NA,0,NA,1,NA,1890,NA
+18,233,"luce","light (object)",0,"lutʃe",5,6.343880434,4,NA,0,NA,1,NA,1890,NA
 18,234,"libro","book",0,"libro",5,7.722677516,6,NA,0,NA,1,NA,1837,NA
 18,235,"martello","hammer",0,"martɛllo",8,4.844187086,0,NA,0,NA,0,NA,2144,NA
 18,236,"matita/penna","pen/pencil",0,"matita",6,0,NA,NA,0,NA,0,NA,1776,NA
@@ -520,7 +520,7 @@
 19,230,"forchetta","fork",0,"forketa",7,5.081404365,2,NA,0,NA,0,NA,2013,36.8888888888889
 19,231,"fotografia",NA,0,"fotoɡrafia",10,NA,NA,NA,0,NA,0,NA,2706,36.8888888888889
 19,232,"giornale","paper",0,"dʒornale",8,6.970730078,10,NA,0,NA,0,NA,2228,36.8888888888889
-19,233,"luce","light",0,"lutʃe",5,6.343880434,4,NA,0,NA,1,1,1890,36.8888888888889
+19,233,"luce","light (object)",0,"lutʃe",5,6.343880434,4,NA,0,NA,1,1,1890,36.8888888888889
 19,234,"libro","book",0,"libro",5,7.722677516,6,NA,0,NA,1,NA,1837,36.8888888888889
 19,235,"martello","hammer",0,"martɛllo",8,4.844187086,0,NA,0,NA,0,NA,2144,36.8888888888889
 19,236,"matita/penna","pen/pencil",0,"matita",6,0,NA,NA,0,NA,0,NA,1776,36.8888888888889
@@ -821,7 +821,7 @@
 20,230,"forchetta","fork",0,"forketa",7,5.081404365,2,NA,0,NA,0,NA,2013,40.8
 20,231,"fotografia",NA,0,"fotoɡrafia",10,NA,NA,NA,0,NA,0,NA,2706,40.8
 20,232,"giornale","paper",0,"dʒornale",8,6.970730078,10,NA,0,NA,0,NA,2228,40.8
-20,233,"luce","light",0,"lutʃe",5,6.343880434,4,NA,0,NA,1,1,1890,40.8
+20,233,"luce","light (object)",0,"lutʃe",5,6.343880434,4,NA,0,NA,1,1,1890,40.8
 20,234,"libro","book",0,"libro",5,7.722677516,6,NA,0,NA,1,NA,1837,40.8
 20,235,"martello","hammer",0,"martɛllo",8,4.844187086,0,NA,0,NA,0,NA,2144,40.8
 20,236,"matita/penna","pen/pencil",0,"matita",6,0,NA,NA,0,NA,0,NA,1776,40.8
@@ -1120,7 +1120,7 @@
 21,230,"forchetta","fork",0,"forketa",7,5.081404365,2,NA,0,NA,0,NA,2013,49.6666666666667
 21,231,"fotografia",NA,0,"fotoɡrafia",10,NA,NA,NA,0,NA,0,NA,2706,49.6666666666667
 21,232,"giornale","paper",0,"dʒornale",8,6.970730078,10,NA,0,NA,0,NA,2228,49.6666666666667
-21,233,"luce","light",1,"lutʃe",5,6.343880434,4,NA,0,NA,1,1,1890,49.6666666666667
+21,233,"luce","light (object)",1,"lutʃe",5,6.343880434,4,NA,0,NA,1,1,1890,49.6666666666667
 21,234,"libro","book",0,"libro",5,7.722677516,6,NA,0,NA,1,NA,1837,49.6666666666667
 21,235,"martello","hammer",0,"martɛllo",8,4.844187086,0,NA,0,NA,0,NA,2144,49.6666666666667
 21,236,"matita/penna","pen/pencil",1,"matita",6,0,NA,NA,0,NA,0,NA,1776,49.6666666666667

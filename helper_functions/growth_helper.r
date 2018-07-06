@@ -33,7 +33,7 @@ PAT_generator<-function(vocab_age, word_pairs){
       link_to_exist<-(word_pairs %>% filter(pair==j, item %in% exist_words, link==1))$item
       PAT_value<-sem_acq %>%
         filter(item %in% link_to_exist)
-      vocab_age$value[row_n]<- mean(PAT_value$value)
+      vocab_age$value[row_n]<- mean(PAT_value$value) #here the "mean" is the crucial thing
       row_n<-row_n+1
     }
   }
@@ -86,7 +86,11 @@ PAT_nt_generator<-function(vocab_age, word_pairs){
 ######################################################################################################################
 
 PAC_generator<- function(vocab_age, word_pairs){
+  
+  #This condition is what reduces the number of words, keeping only items that are in the list of pairs
+  #To be kept in the list of pairs, a word has to appear as a cue or as target in the free associations  
   vocab_age<- vocab_age %>% filter((item %in% word_pairs$item) | (item %in% word_pairs$pair) )
+  
   word_pairs<- word_pairs %>% filter(item %in% vocab_age$item, pair %in% vocab_age$item)
   
   item_value<- word_pairs %>% 

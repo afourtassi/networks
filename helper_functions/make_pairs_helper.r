@@ -124,11 +124,11 @@ make_assoc_pairs <- function(lemma_list) {
   cue_target<- read.csv("in_files/association_cue_target.csv", as.is = T)
   # filter until words in lemma_list remain
   lemma_list<- lemma_list %>% filter((uni_lemma %in% cue_target$cue) | (uni_lemma %in% cue_target$target))
-  lemma<- lemma_list$uni_lemma
+  lemma<- lemma_list$uni_lemma #here maybe use uniqu
   cue_target<- cue_target %>% 
     filter(cue %in% lemma, 
-           target %in% lemma, 
-           normed=="YES") %>% 
+           target %in% lemma) %>% #, 
+           #normed=="YES") %>%  #Do we need this to be normed? I don't think so
     select(cue, target) %>% 
     mutate(link=1)
   

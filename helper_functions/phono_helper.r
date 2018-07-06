@@ -1,9 +1,10 @@
 ######################################################################################################
 # Espeak function
 Speak<- function(lang, word){
-  langs<- c("English (British)","English (American)", "Spanish", "Croatian", 
-            "Italian", "Danish", "Norwegian", "Turkish", "Slovak", "Swedish", "Russian", "German")
-  abbr <- c("en-rp", "en-us", "es", "hr", "it", "da", "no", "tr","sk", "sv","ru","de")
+  langs<- c("English (British)","English (American)", "English (Australian)", "Spanish (European)", "Spanish (Mexican)",  "Croatian", 
+            "Italian", "Danish", "Norwegian", "Turkish", "Slovak", "Swedish", "Russian", "German", "French (French)",
+            "French (Quebecois)", "Portuguese (European)", "Czech", "Greek (Cypriot)","Latvian" )
+  abbr <- c("en-rp", "en-us", "en", "es", "es", "hr", "it", "da", "no", "tr","sk", "sv","ru","de", "fr", "fr", "pt-pt","cs", "el", "lv")
   lang_abbr<- abbr[which(langs==lang)]
   IPA<- system(paste("espeak -q -v ", lang_abbr, " --ipa ", "\"", word, "\"",sep=""), intern=T)
   return(IPA)

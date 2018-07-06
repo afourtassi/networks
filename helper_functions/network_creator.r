@@ -17,8 +17,8 @@ create_combo <- function(languages){
       select(item, definition)
     
     # make pairs of words and show whether they have connection via associative norms
-    assoc_pairs<- make_assoc_pairs(lemma_list = lemma_list)
-    phono_pairs<- make_IPA_pairs(def_list = def_list, lang = lang_name)
+    assoc_pairs<- make_assoc_pairs(lemma_list = lemma_list) # here we used the unilemma
+    phono_pairs<- make_IPA_pairs(def_list = def_list, lang = lang_name) #here we use the defintion
     
     assoc_PAC<- PAC_generator(vocab_age = aoa_frame, word_pairs = assoc_pairs) %>% 
       rename(PAC_assoc = value) %>% select(-definition, -uni_lemma)

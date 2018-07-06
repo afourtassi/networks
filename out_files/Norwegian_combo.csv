@@ -221,7 +221,7 @@
 16,239,"krus",NA,0,"krʉs",4,NA,NA,NA,1,NA,8,NA,1547,NA
 16,240,"lampe","lamp",0,"lɑmpa",5,4.043051268,1,NA,0,NA,1,NA,1652,NA
 16,241,"lommebok","purse",0,"lɔmmebuk",8,4.304065093,0,NA,0,NA,0,NA,2383,NA
-16,242,"lys","light",0,"lys",3,6.343880434,4,NA,0,NA,15,NA,1512,NA
+16,242,"lys","light (object)",0,"lys",3,6.343880434,4,NA,0,NA,15,NA,1512,NA
 16,243,"medisin","medicine",0,"medisin",7,4.852030264,1,NA,0,NA,0,NA,2103,NA
 16,244,"nøkler","keys",0,"nœklər",6,5.075173815,0,NA,0,NA,2,NA,1808,NA
 16,245,"papir","paper",0,"papir",5,6.970730078,7,NA,0,NA,1,NA,1681,NA
@@ -525,7 +525,7 @@
 17,239,"krus",NA,0,"krʉs",4,NA,NA,NA,1,NA,8,NA,1547,NA
 17,240,"lampe","lamp",0,"lɑmpa",5,4.043051268,1,NA,0,NA,1,NA,1652,NA
 17,241,"lommebok","purse",0,"lɔmmebuk",8,4.304065093,0,NA,0,NA,0,NA,2383,NA
-17,242,"lys","light",0,"lys",3,6.343880434,4,NA,0,NA,15,NA,1512,NA
+17,242,"lys","light (object)",0,"lys",3,6.343880434,4,NA,0,NA,15,NA,1512,NA
 17,243,"medisin","medicine",0,"medisin",7,4.852030264,1,NA,0,NA,0,NA,2103,NA
 17,244,"nøkler","keys",0,"nœklər",6,5.075173815,0,NA,0,NA,2,NA,1808,NA
 17,245,"papir","paper",0,"papir",5,6.970730078,7,NA,0,NA,1,NA,1681,NA
@@ -828,7 +828,7 @@
 18,239,"krus",NA,0,"krʉs",4,NA,NA,NA,1,NA,8,NA,1547,4
 18,240,"lampe","lamp",0,"lɑmpa",5,4.043051268,1,NA,0,NA,1,NA,1652,4
 18,241,"lommebok","purse",0,"lɔmmebuk",8,4.304065093,0,NA,0,NA,0,NA,2383,4
-18,242,"lys","light",1,"lys",3,6.343880434,4,NA,0,NA,15,NA,1512,4
+18,242,"lys","light (object)",1,"lys",3,6.343880434,4,NA,0,NA,15,NA,1512,4
 18,243,"medisin","medicine",0,"medisin",7,4.852030264,1,NA,0,NA,0,NA,2103,4
 18,244,"nøkler","keys",0,"nœklər",6,5.075173815,0,NA,0,NA,2,NA,1808,4
 18,245,"papir","paper",0,"papir",5,6.970730078,7,NA,0,NA,1,NA,1681,4

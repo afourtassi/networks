@@ -1,0 +1,1119 @@
+
+Libraries
+```{r}
+  library(broom)
+  library(purrr)
+  library(readr)
+  library(ggplot2)
+  library(dplyr)
+  library(tidyr)
+  library(wordbankr)
+  library(stringr)
+  library(feather)
+  library(lme4)
+  library(boot)
+  library(langcog)
+  library(ggthemes)
+  library(nlme)
+  library(rwebppl)
+  library(jsonlite)
+  library(Hmisc)
+  library(poweRlaw)
+  library(HDInterval)
+```
+
+Import helper functions and probabilstic models
+
+```{r}
+#Load helper functions
+source(paste(getwd(),"/helper_functions/all_helper.r",sep = ""), chdir = T)
+
+#Load probabilsitic models
+source(paste(getwd(),"/models/all_models.r",sep = ""), chdir = T)
+
+```
+
+
+Load data and pre-process
+```{r}
+
+languages = c("Croatian","Danish","English (American)", "French (Quebecois)", "Italian", "Norwegian", "Russian", "Spanish (Mexican)", "Swedish", "Turkish")
+
+
+admins <- get_administration_data() %>%
+  select(data_id, age, language, form) %>%
+  filter(language %in% languages)
+
+items <- get_item_data() %>%
+  filter(type == "word", lexical_class == "nouns") %>%
+  filter(language %in% languages)
+
+items_by_inst <- split(items, paste(items$language, items$form, sep = "_"))
+
+
+get_inst_data <- function(inst_items) {
+  inst_lang <- unique(inst_items$language)
+  inst_form <- unique(inst_items$form)
+  inst_admins <- filter(admins, language == inst_lang, form == inst_form)
+  get_instrument_data(language = inst_lang ,
+                      form = inst_form,
+                      administrations = inst_admins,
+                      items = inst_items$item_id,
+                      iteminfo = inst_items
+                      ) %>%
+    filter(!is.na(age)) %>%
+    mutate(produces = !is.na(value) & value == "produces",
+           understands = !is.na(value) & (value == "understands" | value == "produces")) %>%
+    select(-value) %>%
+    gather(measure, value, produces, understands) %>%
+    filter((measure == "understands" & form == "WG") | (measure == "produces" & form == "WS") ) %>%
+    mutate(language = inst_lang,
+           form = inst_form)
+    
+}
+
+data_raw <- map(items_by_inst, get_inst_data) 
+  
+data_all <- bind_rows(data_raw) %>%
+  rename(item = num_item_id) %>%
+  group_by(language, form, measure,
+             lexical_category, lexical_class, uni_lemma,  item, definition, 
+             age) %>%
+  summarise(num_true = sum(value, na.rm = TRUE),
+              num_false = n() - num_true,
+              prop = mean(value, na.rm = TRUE)) 
+
+
+#feather::write_feather(data_all, "saved_data/data_all.feather")
+
+#I am taking out measure to keep only produce
+data_all <- feather::read_feather("saved_data/all_data.feather")  
+
+data_all$language <- plyr::mapvalues(data_all$language, 
+                                 from = c("Croatian","Danish","English (American)", "French (Quebecois)", "Italian", "Norwegian", "Russian", "Spanish (Mexican)", "Swedish", "Turkish"), 
+                                 to = c("Croatian","Danish","English", "French", "Italian", "Norwegian", "Russian", "Spanish", "Swedish", "Turkish"))
+  
+
+```
+
+
+Compute Age of Acqusition (AoA) of words
+
+```{r}
+
+fit_inst_measure_uni <- function(inst_measure_uni_data) {
+  ages <- min(inst_measure_uni_data$age):max(inst_measure_uni_data$age)
+  model <- glm(cbind(num_true, num_false) ~ age, family = "binomial",
+               data = inst_measure_uni_data)
+  fit <- predict(model, newdata = data.frame(age = ages), se.fit = TRUE)
+  aoa <- -model$coefficients[["(Intercept)"]] / model$coefficients[["age"]]
+  constants <- inst_measure_uni_data %>%
+    ungroup()%>%
+    select(language, form, measure, lexical_category, lexical_class, uni_lemma, item, definition) %>%
+    distinct()
+  
+  props <- inst_measure_uni_data %>%
+    ungroup() %>%
+    select(age, prop)
+  
+  data.frame(age = ages,
+             fit_prop = inv.logit(fit$fit),
+             fit_se = fit$se.fit,
+             aoa = aoa, language = constants$language,
+             form = constants$form,
+             measure = constants$measure,
+             uni_lemma = constants$uni_lemma,
+             item = constants$item,
+             definition = constants$definition) %>%
+    left_join(props)
+}
+
+list_by_item <- data_all %>%
+  # make this filtering at the beginning, not here
+  split(paste(.$language, .$form, .$measure, .$item))
+
+data_aoa <- map(list_by_item, fit_inst_measure_uni) %>%
+  bind_rows()
+
+data_aoa <- data_aoa %>%
+  select(language, form, measure, uni_lemma, item, definition, aoa) %>%
+  distinct()
+  
+#feather::write_feather(data_aoa, "saved_data/data_aoa.feather")
+
+#I am taking out measure to keep only produce
+#data_aoa2 <- feather::read_feather("saved_data/aoa_data.feather") %>%
+#  rename(definition = defintion) %>%
+#  select(language, form, measure, uni_lemma, item, definition, aoa) %>%
+#  distinct()
+  
+```
+
+Compute the growth data structue (based on AoA data)
+
+```{r}
+
+#make a growth dataframe
+make_data_growth <- function(word_aoa) {
+  
+  measure <- unique(word_aoa$measure)
+  lang <- unique(word_aoa$language)
+    
+  ages<- (word_aoa %>%
+    arrange(age) %>%
+    group_by(age) %>%
+    summarise(n = n()))$age
+  
+  df <- data.frame()
+  for (i in ages) {
+    rem_words <- word_aoa %>% filter(age >= i)
+    rem_lemma <- c(rem_words$uni_lemma)
+    rem_def <- c(rem_words$definition)
+    rem_item<- c(rem_words$item)
+    corr_age <- rep(i, times = length(rem_lemma))
+    curr_df <- data.frame(corr_age, rem_item, rem_lemma, rem_def)
+    df <- rbind(df, curr_df)
+  }  
+  df <- df %>% rename(uni_lemma = rem_lemma, definition=rem_def, item=rem_item)%>%
+    left_join(word_aoa %>% select(item, age)) %>%
+    mutate(learned = as.numeric(age == corr_age)) %>%
+    select(corr_age, item, definition, uni_lemma,learned) %>%
+    rename(age = corr_age) %>%
+    arrange(age, item) %>%
+    mutate(language = lang,
+           measure = measure)
+  return(df)
+}
+
+aoa_by_measure_lang <- data_aoa %>%
+  mutate(age = round(aoa)) %>%
+  select(-form, -aoa) %>%
+  split(paste(.$language, .$measure))
+  
+data_growth <- map(aoa_by_measure_lang, make_data_growth) %>%
+  bind_rows()
+
+#Save at this point
+#feather::write_feather(data_growth, "saved_data/data_growth.feather")
+#data_growth <- feather::read_feather("saved_data/data_growth.feather") 
+```
+
+
+Construct the netwroks and derive the dynamic predictors: PAC and PAT
+```{r}
+
+#I should here define the set of words that will be used in the network construction
+#Here I chose to use the full data for the phono netwotk and filter later for the unilemmas only, thus the utility will be more precise for the resulting subset 
+
+words_growth <- data_growth %>%
+  #filter(!is.na(uni_lemma)) %>% #only keep unilemmas that intersect with free association data
+  dplyr::filter(aoa > 5) 
+
+growth_by_meas <- words_growth %>%
+  split(paste(.$measure))
+
+growth_by_meas_lang <- words_growth %>%
+  split(paste(.$measure, .$language))
+
+#Semantic netwrok 
+##################
+
+sem_net_fun  <- function (growth_meas_lang){
+  
+  first_age<- growth_meas_lang$age[1]
+  
+  lemma_list<- growth_meas_lang %>%
+      trim_all_unilemma() %>%
+      filter(age==first_age) %>%
+      select(item, uni_lemma)
+
+assoc_pairs<- make_assoc_pairs(lemma_list = lemma_list)
+
+assoc_PAC<- PAC_generator(vocab_age = growth_meas_lang, word_pairs = assoc_pairs) %>% 
+      rename(PAC_assoc = value) %>% select(-definition, -uni_lemma)
+
+ assoc_PAT<- PAT_generator(vocab_age = growth_meas_lang, word_pairs = assoc_pairs) %>% 
+      rename(PAT_assoc = value) %>% select(-definition, -uni_lemma)
+ 
+ sem_growth <- growth_meas_lang %>%
+   left_join(assoc_PAC) %>%
+   left_join(assoc_PAT)
+ 
+ return(sem_growth)
+ 
+}
+
+sem_red <-  map(growth_by_meas_lang, sem_net_fun) %>%
+  bind_rows()
+
+#Save 
+#feather::write_feather(sem_red, "saved_data/sem_red.feather")
+#sem_red <- feather::read_feather("saved_data/sem_red.feather") 
+
+#Phonological Networks
+######################
+
+
+phono_net_fun <- function (growth_meas_lang) {
+  
+  lang <- unique(growth_meas_lang$language)
+  #meas <- unique(growth_meas_lang$measure)
+  
+  first_age<- growth_meas_lang$age[1]
+  
+  def_list<- growth_meas_lang %>%
+      trim_all_definition() %>% 
+      filter(age==first_age) %>%
+      select(item, definition)
+  
+  phono_pairs<- make_IPA_pairs(def_list = def_list, lang = lang)
+  
+  #Threshold the phonetic distance (we take t=2, becuase t=1 is too sparse) 
+  threshold <- 2
+
+  phono_PAC <- PAC_generator(vocab_age = growth_meas_lang, word_pairs = phono_pairs %>% IPA_threshold(threshold)) %>% 
+      rename(PAC_phono_t2 = value) %>% select(-definition, -uni_lemma)
+  
+  phono_PAT <- PAT_generator(vocab_age = growth_meas_lang, word_pairs = phono_pairs %>% IPA_threshold(threshold)) %>% 
+      rename(PAT_phono_t2 = value) %>% select(-definition, -uni_lemma)
+  
+  phono_growth <- growth_meas_lang %>%
+   left_join(phono_PAC) %>%
+   left_join(phono_PAT)
+  
+}
+
+phono_red <-  map(growth_by_meas_lang, phono_net_fun) %>%
+  bind_rows() 
+
+
+#feather::write_feather(phono_red, "saved_data/phono_red.feather")
+#phono_red <- feather::read_feather("saved_data/phono_red.feather") 
+
+#Combine data 
+data_growth_net <- words_growth %>%
+  left_join(sem_red) %>%
+  left_join(phono_red)
+
+```
+
+Compute other static predictors (frequency and length) besides PAC
+
+```{r}
+
+data_static <- data_growth_net %>%
+  distinct(measure, language, uni_lemma, definition, item, PAC_assoc, PAC_phono) %>%
+  rename(sem_deg = PAC_assoc, 
+         phono_deg =  PAC_phono)
+  
+#Word length
+
+words_len <- data_static %>%
+  trim_all_definition() %>%
+  rowwise() %>%
+  mutate(IPA=Speak(lang = language, word = definition)) %>%
+  trim_IPA_completely() %>%
+  mutate(length = str_count(IPA)) %>%
+  select(-definition, -uni_lemma, -sem_deg, -phono_deg)
+
+#Word frequency: we use frequency values derived from Childes (from Mika e al. 2016) 
+
+load("saved_data/uni_joined.RData")
+
+frequency_mika <- uni_joined %>%
+  filter(lexical_classes =='nouns') %>%
+  distinct(language, uni_lemma, frequency) %>%
+  mutate(lang_temp = ifelse(language == "French (Quebec)", "French (Quebecois)", language)) %>%
+  select(-language) %>%
+  rename(language = lang_temp)
+
+words_freq <- data_static %>%
+  left_join(frequency_mika) %>%
+  select(-definition, -uni_lemma, -sem_deg, -phono_deg)
+
+aoa_items <- data_aoa %>%
+  select(language, measure, item, aoa) # Here I should round the AoA?
+
+  
+#Combine predictors
+
+data_static_pred  <- data_static %>%
+  left_join(words_len) %>%
+  left_join(words_freq) %>%
+  left_join(aoa_items) #%>%
+  #select(-definition, -uni_lemma)
+
+#Use feather here
+################
+
+
+#Combine with full proportion-based data  (for the second regression which fit the entire production curve)
+
+
+
+data_static_pred$language <- plyr::mapvalues(data_static_pred$language, 
+                                 from = c("Croatian","Danish","English (American)", "French (Quebecois)", "Italian", "Norwegian", "Russian", "Spanish (Mexican)", "Swedish", "Turkish"), 
+                                 to = c("Croatian","Danish","English", "French", "Italian", "Norwegian", "Russian", "Spanish", "Swedish", "Turkish"))
+
+
+data_static_prop$language <- plyr::mapvalues(data_static_prop$language, 
+                                 from = c("Croatian","Danish","English (American)", "French (Quebecois)", "Italian", "Norwegian", "Russian", "Spanish (Mexican)", "Swedish", "Turkish"), 
+                                 to = c("Croatian","Danish","English", "French", "Italian", "Norwegian", "Russian", "Spanish", "Swedish", "Turkish"))
+
+
+data_static_prop <- data_all %>%
+  left_join(data_static_pred) 
+```
+
+
+## Correlations
+
+Correlatinon degree/AoA using unilemmas 
+
+```{r}
+#Sem_deg is defined over unilemmas,  phono_deg is defined over definitions, and AoA is defined over items 
+#For a given defintion we can have more than one item (polysemy), for one unilemma we can have more than one definiton (if the semantic distinction is not very important), or we might have 0 unilemma (if the meaning of the defintion is not part of the main cross-lingusitc lemmas)
+#The following analyses predict try to predict the items' AoA. I keep duplicated values of the predictors for different items (when they have the same defintions and/or unilemma) since I consider that this is the actual (albeit braod) information brough by the precitors
+
+#Restrict analysis to unilemmas (i.e., definitons which have translations in English). This allows us to comapre various predictors on the same set of data
+unilemmas <- data_static_pred %>%
+  select(-IPA) %>%
+  filter(!is.na(uni_lemma)) %>% 
+  filter(!is.na(sem_deg)) %>% #only keep unilemmas that intersect with free association data 
+  filter(aoa > 5) #These AoA are  artifact of the glm fitting (likely due to very few data point, I need to check these) 
+
+#Impute missing values and center/scale
+uni_scale <- unilemmas %>%
+  group_by(measure, language) %>%
+  mutate_at(c('sem_deg', 'phono_deg', 'length', 'frequency'), funs(as.numeric(Hmisc::impute(.)))) %>%
+  mutate_at(c('sem_deg', 'phono_deg', 'length', 'frequency'), funs(as.numeric(scale(.))))
+
+feather::write_feather(uni_scale, "saved_data/data_static_scaled.feather")
+#phono_red <- feather::read_feather("saved_data/phono_red.feather") 
+
+  
+data_long <- uni_scale %>%
+  gather(predictor, value, sem_deg:frequency) %>%
+  filter(predictor == "sem_deg" | predictor == "phono_deg") 
+
+correlations <- data_long %>%
+  group_by(measure, language, predictor) %>%
+  summarise(cor = round(cor(aoa, value), 2))
+
+
+#Reproduce the first analyses of correlation, (degree distribution later), then regressions both language specific and aggragate, 
+#Then go to the intercation based regression, and aggregate, show that there is no significant interaction with age. And also show 
+
+```
+
+Production
+
+```{r fig.width=10, fig.height=5}
+plot_correlation_prod <- ggplot(subset(data_long, measure == "produces"), aes(x=value, y=aoa))+
+  facet_grid(predictor ~ language)+#, scales = "free") +
+  geom_jitter(#aes(colour = lexical_class),
+    colour = solarized_palette(1),
+    size = 0.5, alpha = 0.5) +
+  geom_abline(slope = -1)+
+  coord_cartesian(xlim=c(-1,5))+
+  #scale_x_continuous(limits=c(-2,5))+
+  scale_y_continuous(breaks =c(15,25,35))+
+  geom_smooth(method = "lm", colour = "grey3", se=FALSE)+
+  scale_colour_solarized(name = "") +
+  theme_few()+
+  #theme_bw()+
+  theme(aspect.ratio = 0.7, 
+        plot.margin=grid::unit(c(0,0,0,0), "mm")
+        )+
+  geom_text(data=subset(correlations, measure=="produces"), aes(label=paste("r=", cor, sep="")), x=3.5, y=33, size=2, fontface = "bold")+
+  xlab("degree z-score") +ylab("AoA")
+
+  
+plot_correlation_prod
+
+```
+
+Comprehension
+```{r fig.width=10, fig.height=5}
+plot_correlation_comp <- ggplot(subset(data_long, measure == "understands"), aes(x=value, y=aoa))+
+  facet_grid(predictor ~ language)+#, scales = "free") +
+  geom_jitter(#aes(colour = lexical_class),
+    colour = solarized_palette(1),
+    size = 0.5, alpha = 0.5) +
+  geom_abline(slope = -1)+
+  coord_cartesian(xlim=c(-1,5))+
+  #scale_x_continuous(limits=c(-2,5))+
+  scale_y_continuous(breaks =c(15,25,35))+
+  geom_smooth(method = "lm", colour = "grey3", se=FALSE)+
+  scale_colour_solarized(name = "") +
+  theme_few()+
+  #theme_bw()+
+  theme(aspect.ratio = 0.7, 
+        plot.margin=grid::unit(c(0,0,0,0), "mm")
+        )+
+  geom_text(data=subset(correlations, measure=="understands"), aes(label=paste("r=", cor, sep="")), x=3.5, y=33, size=2, fontface = "bold")+
+  xlab("degree z-score") +ylab("AoA")
+  
+plot_correlation_comp
+
+```
+
+##Static netwrok properties 
+
+### Degree distribution
+Import the analysese from cogsci paper
+
+```{r}
+
+
+#function that takes data growth and does power law analyses
+
+#Data for plot
+degreeDist <- data.frame(matrix(ncol = 5, nrow = 0))
+dist_names <- c("x", "y", "dimension", "language", "measure")
+colnames(degreeDist) <- dist_names
+
+#Parameters and test
+degreeTest <- data.frame(matrix(ncol = 6, nrow = 0))
+test_names <- c("xMin", "alpha", "pVal", "dimension","language", "measure")
+colnames(degreeTest) <- test_names
+
+
+powerLaw_fun <- function(data_growth_meas_lang, analysis){
+  
+  lang <- unique(data_growth_meas_lang$language)
+  meas <- unique(data_growth_meas_lang$measure)
+  
+  data_meas_lang <- data_growth_meas_lang %>%
+    select(measure, language, sem_deg, phono_deg) %>%
+    dplyr::rename(Sem = sem_deg, Phono = phono_deg) %>%
+    dplyr::filter (!is.na(Sem),!is.na(Phono)) 
+  
+  ##Semantic network
+  
+  #fit and derive parameters for power law
+  semList <- data_meas_lang$Sem[data_meas_lang$Sem != 0]
+  sem_pl = displ$new(semList)
+  sem_est = estimate_xmin(sem_pl)
+  sem_pl$setXmin(sem_est)
+  sem_dist = plot(sem_pl) %>%
+    mutate(dimension='Sem', language  =  lang, measure = meas)
+  
+  #bootstrap to get p-value
+  sem_boot = bootstrap_p(sem_pl, no_of_sims=1000, threads=2)
+  
+  sem_test <- data.frame(as.numeric(sem_pl$xmin), as.numeric(sem_pl$pars), as.numeric(sem_boot$p), 'Sem', lang, meas)
+  colnames(sem_test) <- test_names
+  
+  ##Phonological network
+  
+  #fit and derive parameters for power law
+  phonoList <- data_meas_lang$Phono[data_meas_lang$Phono != 0]
+  phono_pl = displ$new(phonoList)
+  phono_est = estimate_xmin(phono_pl)
+  phono_pl$setXmin(phono_est)
+  phono_dist = plot(phono_pl) %>%
+    mutate(dimension='Phono', language = lang, measure = meas)
+  
+  #bootstrap to get p-value
+  phono_boot = bootstrap_p(phono_pl, no_of_sims=1000, threads=2)
+  
+  phono_test <- data.frame(as.numeric(phono_pl$xmin), as.numeric(phono_pl$pars), as.numeric(phono_boot$p), 'Phono', lang, meas)
+  colnames(phono_test) <- test_names
+  
+  dist_meas_lang <- bind_rows(sem_dist, phono_dist)
+  test_meas_lang <- bind_rows(sem_test, phono_test)
+  
+  #return(dist_meas_lang)
+  
+  if (analysis == 'distribution') {
+    
+    return(dist_meas_lang)
+    
+  } else if (analysis == 'test') {
+    
+    return(test_meas_lang)
+    
+  } else {
+    
+    print("Please specify the analysis type ('distribution' or 'test')")
+    
+  }
+  
+}
+
+
+
+#Split by measure and language
+
+
+data_by_meas_lang <- unilemmas %>%
+  split(paste(.$measure, .$language))
+
+degree_dist  <- map2(data_by_meas_lang, 'distribution', powerLaw_fun) %>%
+  bind_rows()
+
+feather::write_feather(degree_dist, "saved_data/degree_dist.feather")
+
+degree_test  <- map2(data_by_meas_lang, 'test' , powerLaw_fun) %>%
+  bind_rows()
+
+feather::write_feather(degreeDist, "saved_data/degree_dist.feather")
+degree_dist <- feather::read_feather("saved_data/degree_dist.feather")
+
+
+feather::write_feather(degree_test, "saved_data/degree_test.feather")
+degree_test <- feather::read_feather("saved_data/degree_test.feather")
+
+#plot cumulative distributions
+ggplot(data = degree_dist,  aes(x=x, y=y, col=dimension))+
+  facet_grid(measure ~ language)+#, scales = "free") +
+  geom_point(#aes(colour = lexical_class),
+    #colour = solarized_palette(1),
+    size = 0.5, alpha = 0.5) +
+  scale_y_log10() + scale_x_log10() +
+  theme(aspect.ratio = 1)
+  #scale_x_continuous(limits=c(-2,5))+
+  #geom_smooth(method = "lm", colour = "grey3", se=FALSE)+
+  #scale_colour_solarized(name = "") 
+
+
+```
+
+### Small world properties
+
+Use igraph to derive small world properties
+
+For each netwrok, compute:
+-Clustering coefficient 
+-Shortest path length 
+what we want: Compared to an equivalent random network, we want a balance between local processing (high clustering coefficient) and global integration (small short path length)
+
+
+## Growth mechanisms
+
+PreProcessing growth data strcutire for network growth models 
+
+```{r}
+
+#Filtering 
+data_growth_pred <- data_growth_net %>%
+  filter(!is.na(uni_lemma)) %>% #use only words with english translation 
+  filter(!is.na(PAC_assoc)) %>% # keep unilemma whcih intersect with free association data
+  filter(!is.na(PAC_phono_t2)) # In case a word is not trnascribed phonologically (there should not be any)
+
+  # replace NA in PAT with O (NA is when the utility cannot be computed, e.g., a candidate word is not linked to any previousely learned word, as opposed to being linked to a previously learned word with a degree=0)
+
+data_growth_pred$PAT_assoc[is.na(data_growth_pred$PAT_assoc)] <- 0
+data_growth_pred$PAT_phono_t2[is.na(data_growth_pred$PAT_phono_t2)] <- 0
+
+#Scale predictors
+
+data_growth_pred$language <- plyr::mapvalues(data_growth_pred$language, 
+                                 from = c("Croatian","Danish","English (American)", "French (Quebecois)", "Italian", "Norwegian", "Russian", "Spanish (Mexican)", "Swedish", "Turkish"), 
+                                 to = c("Croatian","Danish","English", "French", "Italian", "Norwegian", "Russian", "Spanish", "Swedish", "Turkish"))
+
+data_growth_pred <- data_growth_pred %>%
+  group_by(measure, language) %>%
+  mutate_at(c('PAC_assoc', 'PAT_assoc', 'PAC_phono_t2', 'PAT_phono_t2'), funs(as.numeric(scale(.)))) %>%
+  select(-definition) #removing defintions because they cause JSon parser to fail in rWebppl (especially the (') in French)
+
+
+```
+
+Here we train the probabilistic models
+
+```{r}
+#Define the models
+
+#Load probabilsitic models
+source(paste(getwd(),"/models/all_models.r",sep = ""), chdir = T)
+
+#Isolateed predictors
+model_semPAT <-  paste(helper, sem_PAT, optimize, sep = '\n')
+model_semPAC <-  paste(helper, sem_PAC, optimize, sep = '\n')
+model_phonoPAT <-  paste(helper, phono_PAT, optimize, sep = '\n')
+model_phonoPAC <-  paste(helper, phono_PAC, optimize, sep = '\n')
+
+#Combined predictors
+model_semPAC_phonoPAC_semPAT_phonoPAT <-  paste(helper, semPAC_phonoPAC_semPAT_phonoPAT, optimize, sep = '\n')
+
+#Make a list of theses models
+model_list = list(model_semPAT, model_semPAC, model_phonoPAT, model_phonoPAC,
+                  model_semPAC_phonoPAC_semPAT_phonoPAT
+                  )
+
+model_name=c('semPAT', 'semPAC', 'phonoPAT', 'phonoPAC',
+                                        'model_semPAC_phonoPAC_semPAT_phonoPAT')
+
+```
+
+
+Compute posteriors
+```{r}
+
+#Function that computes the posterior
+
+posterior_fun <- function(data_growth_meas_lang) {
+  
+  lang <- unique(data_growth_meas_lang$language)
+  meas <- unique(data_growth_meas_lang$measure)
+  
+  posteriors_lang <- vector("list", length = length(model_list))
+  
+  for (i in 1:length(model_list)) {
+    
+    posterior_model <- NULL
+    print(model_name[[i]]) 
+    print(meas)
+    print(lang)
+    
+    while (typeof(posterior_model)=="NULL") {
+      posterior_model <- webppl(model_list[[i]],
+                                data = data_growth_meas_lang,
+                                data_var = "data",
+                                inference_opts = list(
+                                  method = "MCMC",
+                                  samples = 1000, 
+                                  burn = 500),
+                                model_var = "AOA",
+                                output_format = "webppl")
+    }
+    
+    
+    
+    posteriors_lang[[i]] <- posterior_model %>%
+      mutate(measure = meas,
+             language = lang,
+             model_name = model_name[i])
+  }
+  
+  return(bind_rows(posteriors_lang))
+  
+} 
+
+
+#Split by measure and language
+
+
+data_growth_by_meas_lang <- data_growth_pred %>%
+  split(paste(.$measure, .$language))
+
+posterior <- map(data_growth_by_meas_lang, posterior_fun) %>%
+  bind_rows()
+
+feather::write_feather(posterior, "saved_data/posterior.feather")
+posterior <- feather::read_feather("saved_data/posterior.feather") 
+
+```
+
+Extact coefficients from the posterior
+
+```{r}
+
+
+param <- posterior %>%
+  select(starts_with("value.parameters"), measure, language, model_name) %>%
+  gather(alpha, value, value.parameters.alpha1:value.parameters.alpha6) %>%
+  mutate(alpha = gsub("value.parameters.", "", alpha)) %>%
+  dplyr::filter(alpha != "alpha5",
+         alpha != "alpha6") %>%
+  rename(model = model_name)
+
+#feather::write_feather(param, "saved_data/param.feather")
+#param <- feather::read_feather("saved_data/param.feather")
+
+param_summary <- param %>%
+  group_by(measure, language, model, alpha) %>%
+  summarise(mean = mean(value),
+            median = median(value),
+            quantile_lower = quantile(value, c(0.025, 0.975))["2.5%"],
+            quantile_upper = quantile(value, c(0.025, 0.975))["97.5%"],
+            hdi_lower = hdi(value)['lower'],
+            hdi_upper = hdi(value)['upper']
+  )
+
+
+param_summary_ind <- param_summary %>%
+  dplyr::filter(model != "model_semPAC_phonoPAC_semPAT_phonoPAT",
+         alpha == "alpha1") %>%
+  mutate(Test = 'Individual') %>%
+  select(-alpha)
+  
+
+param_summary_com <- param_summary %>%
+  ungroup() %>%
+  dplyr::filter(model == "model_semPAC_phonoPAC_semPAT_phonoPAT") %>%
+  select(-model) %>%
+  rename(model = alpha) %>%
+  mutate(Test = 'Combined')
+
+param_summary_com$model <- plyr::mapvalues(param_summary_com$model, 
+                                 from = c("alpha1", "alpha2","alpha3","alpha4"), 
+                                 to = c("semPAC", "phonoPAC", "semPAT", "phonoPAT"))
+
+param_summary_all <- param_summary_ind %>%
+  bind_rows(param_summary_com)
+
+feather::write_feather(param_summary_all, "saved_data/growth_preds.feather")
+param_summary_all <- feather::read_feather("saved_data/growth_preds.feather")
+
+```
+
+Plot growth data (production)
+
+```{r fig.width=5, fig.height=2}
+ggplot(subset(param_summary_all, measure == "produces"), aes(x = model , y = mean)) +
+  geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model, linetype=Test),
+                  position = position_dodge(width = .5),
+                  size = 0.5,
+                  fatten = 0.5)+
+  geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
+  coord_flip() +
+  facet_wrap( ~ language, ncol=5) +
+  guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.3)))+
+  scale_colour_solarized() +
+  theme_bw()+
+  theme(aspect.ratio = 0.7)
+
+```
+
+
+Plot growth data (comprehension)
+
+```{r fig.width=5, fig.height=2}
+ggplot(subset(param_summary_all, measure == "understands"), aes(x = model , y = mean)) +
+  geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model, linetype=Test),
+                  position = position_dodge(width = .5),
+                  size = 0.5,
+                  fatten = 0.5)+
+  geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
+  coord_flip() +
+  facet_wrap( ~ language, ncol=5) +
+  guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.3)))+
+  scale_colour_solarized() +
+  theme_bw()+
+  theme(aspect.ratio = 0.7)
+
+```
+
+## Compare PAC to other predictors of AoA
+
+```{r}
+
+sem_formula <- as.formula("aoa ~ sem_deg")
+phono_formula <- as.formula("aoa ~ phono_deg")
+all_formula <- as.formula("aoa ~ frequency + length + sem_deg + phono_deg")
+
+formulas <- list(sem_formula,  phono_formula, all_formula)
+
+coefs_all <- data.frame()
+
+
+for (formula in formulas){
+  
+#Model
+model_reg <- function(data) {
+   lm(formula, data = data)
+}
+
+#CI
+ci_reg <- function(data) {
+   confint(lm(formula, data = data))
+ }
+  
+reg <- uni_scale %>%
+  group_by(measure, language) %>%
+  nest() %>%
+  mutate(model = map(data, model_reg)) %>%
+  mutate(conf = map(data, ci_reg))
+
+coefs_form <- reg %>%
+  mutate(coefs = map(model, broom::tidy)) %>%
+  mutate(ci = map(conf, broom::tidy)) %>%
+  select(measure, language, coefs, ci) %>%
+  unnest() %>%
+  select(-.rownames) %>%
+  dplyr::filter(term != "(Intercept)") %>%
+  rename(predictor = term) %>%
+  mutate(Test = ifelse(toString(formula[3])=='frequency + length + sem_deg + phono_deg', 'Combined', 'Individual'))
+
+ coefs_all <- bind_rows(coefs_all, coefs_form)
+
+}
+
+feather::write_feather(coefs_all, "saved_data/static_preds.feather")
+coefs_all <- feather::read_feather("saved_data/static_preds.feather")
+
+```
+
+Plot for production
+```{r}
+plot_reg_prod <- ggplot(subset(coefs_all, measure =="produces"), aes(x = predictor, y = estimate)) +
+  geom_pointrange(aes(ymin = X2.5.., ymax = X97.5.., y = estimate, col = predictor, linetype=Test), 
+                  position = position_dodge(width = .5),
+                  size = 0.5,
+                  fatten = 0.5)+
+  geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
+  facet_wrap(~language, ncol=4)  +
+  coord_flip() +
+  guides(colour=FALSE)+
+  scale_colour_solarized() +
+  theme_few()+
+  theme(aspect.ratio = 0.7)
+ 
+plot_reg_prod
+
+```
+
+Plot for comprehension
+```{r}
+plot_reg_comp <- ggplot(subset(coefs_all, measure =="understands"), aes(x = predictor, y = estimate)) +
+  geom_pointrange(aes(ymin = X2.5.., ymax = X97.5.., y = estimate, col = predictor, linetype=Test),
+                  position = position_dodge(width = .5),
+                  size = 0.5,
+                  fatten = 0.5)+
+                  
+  geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
+  facet_wrap(~language, ncol=4)  +
+  coord_flip() +
+  guides(colour=FALSE)+
+  scale_colour_solarized() +
+  theme_few()+
+  theme(aspect.ratio = 0.7)
+ 
+plot_reg_comp
+
+```
+
+Regression for data aggregated across all languages 
+
+```{r}
+
+#Regression with all predictors and language as a random effect
+#reg_agg <- lme(aoa ~ frequency + length + sem_deg + phono_deg , random=~1|language,  data= uni_scale)
+
+sem_formula <- as.formula("aoa ~ sem_deg + (1 | language)")
+phono_formula <- as.formula("aoa ~ phono_deg + (1 | language)")
+all_formula <- as.formula("aoa ~ frequency + length + sem_deg + phono_deg + (1 | language)")
+
+formulas <- list(sem_formula,  phono_formula, all_formula)
+
+coefs_agg_all <- data.frame()
+
+for (formula in formulas){
+
+reg_agg_prod <- lmer(formula,  data= subset(uni_scale, measure == "produces"))
+reg_agg_comp <- lmer(formula,  data= subset(uni_scale, measure == "understands"))
+
+#Extract coeficnet and confidence intervals
+coef_agg_fun <- function (model, meas_name) {
+conf <- confint(model, method ="Wald") 
+conf <- data.frame(predictor = row.names(conf), conf) %>%
+  dplyr::filter(!(predictor %in% c('.sig01', '.sigma', '(Intercept)'))) 
+
+coef <- coef(summary(model))
+data.frame(predictor = row.names(coef), coef) %>%
+  dplyr::filter(predictor !='(Intercept)') %>%
+  left_join(conf) %>%
+  mutate(measure = meas_name)
+}
+
+
+coef_agg_prod <- coef_agg_fun(reg_agg_prod, 'production')
+coef_agg_comp <- coef_agg_fun(reg_agg_comp, 'comprehension')
+
+
+coef_agg_form <- coef_agg_prod %>%
+  bind_rows(coef_agg_comp) %>%
+  mutate(Test = ifelse(toString(formula[3])=='frequency + length + sem_deg + phono_deg + (1 | language)', 'Combined', 'Individual'))
+
+ coefs_agg_all <- bind_rows(coefs_agg_all, coef_agg_form)
+
+}
+
+
+feather::write_feather(coefs_agg_all, "saved_data/static_preds_all.feather")
+coefs_agg_all <- feather::read_feather("saved_data/static_preds_all.feather")
+
+
+
+
+plot_agg <- ggplot(coefs_agg_all, aes(x = predictor, y = Estimate)) +
+  geom_pointrange(aes(ymin = X2.5.., ymax = X97.5.., y = Estimate, col = predictor, linetype=Test),
+                  position = position_dodge(width = .5),
+                  size = 0.5,
+                  fatten = 0.5)+
+  geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
+  facet_wrap(~measure)  +
+  coord_flip() +
+  guides(colour=FALSE)+
+  scale_colour_solarized() +
+  theme_few()+
+  theme(aspect.ratio = 0.7)
+ 
+plot_agg
+
+
+```
+# Supplementary material
+
+## Interaction with age 
+
+To examine interaction with age, we need to predict curve of acquisition instead of just AoA 
+```{r}
+#Start with reproducing Mika's analysis
+
+predictors <- c("sem_deg", "phono_deg", "length", "frequency")
+#predictors <- c("frequency", "length")
+###Do we want to separate by 'form'? let's omit 'form' for now and focus on priduction (the case of understading is more problematic)
+
+cols <- c("language", "measure", "uni_lemma", "lexical_class", "lexical_class", "defintion", "age",
+          "num_true", "num_false", "prop", predictors)
+
+load("saved_data/uni_joined.RData")
+uni_joined$language <- plyr::mapvalues(uni_joined$language, 
+                                 from = c("Croatian","Danish","English (American)", "French (Quebec)", "Italian", "Norwegian", "Russian", "Spanish (Mexican)", "Swedish", "Turkish"), 
+                                 to = c("Croatian","Danish","English", "French", "Italian", "Norwegian", "Russian", "Spanish", "Swedish", "Turkish"))
+
+uni_joined <- uni_joined %>%
+  dplyr::filter(lexical_classes =='nouns') %>%
+  rename(length = num_phons)
+
+#Impute and scale (it's also good to have a sense of the missing data)
+#uni_model_data <- uni_joined %>%
+#  dplyr::filter(lexical_classes =='nouns') %>%
+uni_model_data <- data_static_prop %>%
+  #filter(language =="English (American)") %>%
+  dplyr::filter(!is.na(uni_lemma)) %>% 
+  #filter(!is.na(sem_deg)) %>% #only keep unilemmas that intersect with free association data 
+  dplyr::filter(aoa > 5) %>%
+  #group_by(language, measure) %>%
+  group_by(measure, language) %>%
+  mutate_at(vars(!!predictors), funs(as.numeric(Hmisc::impute(.)))) %>% #To fill NA 
+  mutate(unscaled_age = age) %>%
+  mutate_at(vars(c(!!predictors, "age")), funs(as.numeric(scale(.)))) %>%# Center and scale predictors 
+  ungroup()
+
+```
+
+
+Interaction with age
+```{r}
+#This works for each language separately, 
+
+lang_model_fun <- function(lang, lang_data) {
+   print(sprintf("Fitting glmer for %s...", lang))
+   interaction_formula <- as.formula(
+     #sprintf("prop ~ (age | item) +  %s",
+     sprintf("cbind(num_true, num_false) ~ (age | uni_lemma) +  %s",
+             paste(sprintf("age * %s", predictors), collapse = " + "))
+   )
+  
+   glmer(interaction_formula, family = "binomial", data = lang_data, 
+         control=glmerControl(optimizer="bobyqa",
+                            optCtrl=list(maxfun=2e7))
+         )
+               
+}
+
+
+
+  
+lang_models <- uni_model_data %>%
+  group_by(measure, language) %>%
+  nest() %>%
+  mutate(model = map2(language, data, lang_model_fun))# %>%
+  #mutate(conf = map2(language, data, lang_coef_fun))
+
+all_model_fun <- function(data) {
+   interaction_formula <- as.formula(
+     sprintf("cbind(num_true, num_false) ~ (age | item) + (sem_deg + phono_deg + length + frequency | language) + %s",
+             paste(sprintf("age * %s", predictors), collapse = " + "))
+   )
+  
+   glmer(interaction_formula, family = "binomial", data = data, 
+         control=glmerControl(optimizer="bobyqa",
+                            optCtrl=list(maxfun=2e7))
+         )
+               
+}
+
+all_model <- uni_model_data %>%
+  group_by(measure) %>%
+  nest() %>%
+  mutate(model = map(data, all_model_fun))#
+
+
+all_coefs_net <- all_model %>%
+  mutate(coefs = map(model, broom::tidy)) %>%
+  #mutate(ci = map(conf, broom::tidy)) %>%
+  select(measure, coefs) %>%
+  unnest() %>%
+  dplyr::filter(term != "(Intercept)", term != "age", group == 'fixed') %>%
+  mutate(interaction = ifelse(grepl(":", term), "interaction with age",
+                                "main effect"),
+           term = gsub("age:", "", term)) %>%
+  rename(predictor = term) %>%
+  mutate(ci_low = estimate-1.96*std.error,
+         ci_up = estimate+1.96*std.error)
+
+
+lang_coefs_net <- lang_models %>%
+  mutate(coefs = map(model, broom::tidy)) %>%
+  #mutate(ci = map(conf, broom::tidy)) %>%
+  select(measure, language, coefs) %>%
+  unnest() %>%
+  dplyr::filter(term != "(Intercept)", term != "age", group == 'fixed') %>%
+  mutate(interaction = ifelse(grepl(":", term), "interaction with age",
+                                "main effect"),
+           term = gsub("age:", "", term)) %>%
+  rename(predictor = term) %>%
+  mutate(ci_low = estimate-1.96*std.error,
+         ci_up = estimate+1.96*std.error)
+
+mean_coefs <- lang_coefs_net %>%
+  group_by(predictor, measure, interaction) %>%
+  summarise(mean = mean(estimate))
+  
+
+```
+
+```{r}
+ggplot(lang_coefs_net, aes(x = estimate, y = predictor)) +
+  #facet_grid(measure ~ interaction,  scales="free_x") +
+  facet_grid(measure ~ interaction) +
+  geom_point(aes(colour = predictor), size = 1, alpha = 0.4) +
+  #geom_point(aes(x = mean, colour = predictor), size = 3, data = mean_coefs) +
+  geom_point(aes(x = estimate, colour = predictor), size = 3, data = all_coefs_net) +
+  geom_vline(xintercept = 0, color = "grey", linetype = "dashed") +
+  scale_fill_solarized(guide = FALSE) +
+  scale_colour_manual(guide = FALSE,
+                      values = rev(solarized_palette(num_coefs))) +
+  ylab("") +
+  scale_x_continuous(name = "Coefficient estimate")
+```
+
+
+```{r fig.width=5, fig.height=2}
+ggplot(data=subset(lang_coefs_net, measure== 'produces'), aes(x = predictor, y = estimate)) +
+  facet_grid(~ interaction, scales="free_x") +
+  geom_pointrange(aes(ymin = ci_low, ymax = ci_up, col=language), 
+                  position = position_dodge(width = .5),
+                  size=0.3,
+                  fatten = 0.5)+
+  geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
+  coord_flip() 
+
+
+ggplot(data=subset(lang_coefs_net, measure== 'understands'), aes(x = predictor, y = estimate)) +
+  facet_grid(~ interaction, scales="free_x") +
+  geom_pointrange(aes(ymin = ci_low, ymax = ci_up, col=language), 
+                  position = position_dodge(width = .5),
+                  size=0.3,
+                  fatten = 0.5)+
+  geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
+  coord_flip() 
+  
+```
+
