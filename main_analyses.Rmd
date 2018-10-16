@@ -195,7 +195,7 @@ data_growth <- map(aoa_by_measure_lang, make_data_growth) %>%
 
 #Save at this point
 #feather::write_feather(data_growth, "saved_data/data_growth.feather")
-#data_growth <- feather::read_feather("saved_data/data_growth.feather") 
+data_growth <- feather::read_feather("saved_data/data_growth.feather") 
 ```
 
 
@@ -296,6 +296,7 @@ data_growth_net <- words_growth %>%
   left_join(phono_red)
 
 ```
+
 
 Compute other static predictors (frequency and length) besides PAC
 

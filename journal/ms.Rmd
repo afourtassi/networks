@@ -156,7 +156,7 @@ data_all <- feather::read_feather("../saved_data/data_static_scaled.feather")
 data_long <- data_all %>%
   rename(Sem = sem_deg, Phono=phono_deg) %>%
   gather(predictor, value, Sem:frequency) %>%
-  filter(predictor == "Sem" | predictor == "Phono") 
+  dplyr::filter(predictor == "Sem" | predictor == "Phono") 
 
 correlations <- data_long %>%
   group_by(measure, language, predictor) %>%
@@ -183,7 +183,7 @@ plot_correlation_prod <- ggplot(subset(data_long, measure == "produces"), aes(x=
 
 
 
-plot_correlation_comp <- ggplot(subset(data_long, measure == "understands"), aes(x=value, y=aoa))+
+plot_correlation_comp <- ggplot(subset(data_long, measure == "understands" & aoa < 35), aes(x=value, y=aoa))+
   facet_grid(predictor ~ language)+#, scales = "free") +
   geom_jitter(#aes(colour = lexical_class),
     colour = solarized_palette(1),
@@ -199,7 +199,7 @@ plot_correlation_comp <- ggplot(subset(data_long, measure == "understands"), aes
   theme(aspect.ratio = 0.7, 
         plot.margin=grid::unit(c(0,0,0,0), "mm")
         )+
-  geom_text(data=subset(correlations, measure=="understands"), aes(label=paste("r=", cor, sep="")), x=3.5, y=33, size=2, fontface = "bold")+
+  geom_text(data=subset(correlations, measure=="understands"), aes(label=paste("r=", cor, sep="")), x=3.5, y=25, size=2, fontface = "bold")+
   xlab("degree z-score") +ylab("Age")
 
 #ggsave("figs/plot_correlation_prod.pdf", plot = plot_correlation_prod, width = 10, height = 3)
@@ -249,14 +249,15 @@ We also analyzed the global network's degree distribution. The shape of this dis
 
 In sum, the static properties of the global network are *a priori* compatible with both PAT and PAC. In order to decide between these two developmental scenarios, we need to fit explicit growth models to the data.
 
-
+<!--
 
 ```{r}
 
 growth_preds <- feather::read_feather("../saved_data/growth_preds.feather")
 
-plot_growth_preds_prod <- ggplot(subset(growth_preds, measure == "produces"), aes(x = model , y = mean)) +
-  geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model, linetype=Test),
+plot_growth_preds_prod <- ggplot(subset(growth_preds, measure == "produces" & Test=='Individual'), aes(x = model , y = mean)) +
+  #geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model, linetype=Test),
+  geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model),
                   position = position_dodge(width = .5),
                   size = 0.5,
                   fatten = 0.5)+
@@ -266,11 +267,15 @@ plot_growth_preds_prod <- ggplot(subset(growth_preds, measure == "produces"), ae
   guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.3)))+
   scale_colour_solarized() +
   theme_few()+
-  theme(aspect.ratio = 0.7)
+  theme(aspect.ratio = 0.7) + #,+
+        #axis.text.x = element_text(size=7.5, angle=45)) +
+  scale_y_continuous(breaks =c(0,0.2))
+  #scale_y_discrete(breaks =NULL)
 
 
-plot_growth_preds_comp <- ggplot(subset(growth_preds, measure == "understands"), aes(x = model , y = mean)) +
-  geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model, linetype=Test),
+plot_growth_preds_comp <- ggplot(subset(growth_preds, measure == "understands" & Test=='Individual'), aes(x = model , y = mean)) +
+  #geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model, linetype=Test),
+  geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model),
                   position = position_dodge(width = .5),
                   size = 0.5,
                   fatten = 0.5)+
@@ -280,7 +285,8 @@ plot_growth_preds_comp <- ggplot(subset(growth_preds, measure == "understands"),
   guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.3)))+
   scale_colour_solarized() +
   theme_few()+
-  theme(aspect.ratio = 0.7)
+  theme(aspect.ratio = 0.7) +
+  scale_y_continuous(breaks =c(0,0.2))
 
 
 
@@ -292,17 +298,60 @@ plot_growth_preds_comp <- ggplot(subset(growth_preds, measure == "understands"),
 
 ```
 
+-->
 
-```{r growthPred, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Evaluation of network growth scenarios, for both A) production and B) comprehension. We plot values when predictors are evaluted individually (dotted), and when combined in the same growth model (solid). Each dot represents the mean of the posterior distribution of the corresponding growth parameter, with ranges representing 95\\% credible intervals (computed using the highest density intervals). Positive values mean that learning proceeds according to the predictions of the growth scenario. Negative values mean that learning proceeds in opposition to the predictions of the growth scenario."}
+```{r}
+##Test
+growth_preds <- feather::read_feather("../saved_data/growth_preds.feather")
 
-legend <- get_legend(plot_growth_preds_prod)
+growth_preds$model <- plyr::mapvalues(growth_preds$model, 
+                                 from = c("semPAC","semPAT","phonoPAC", "phonoPAT"), 
+                                 to = c("semEXT","semINT","phonoEXT", "phonoINT"))
 
-plot_noLegend <- plot_grid(plot_growth_preds_prod + theme(legend.position="none"), NULL, plot_growth_preds_comp + theme(legend.position="none"), labels = c("A", "", "B"), ncol = 1, align = "v", rel_heights = c(1.3, 0.1, 1.3))
+growth_preds$measure <- plyr::mapvalues(growth_preds$measure, 
+                                 from = c("produces","understands"), 
+                                 to = c("production","comprehension"))
 
-plot_grid(plot_noLegend, legend, rel_widths = c(2, .2))
+plot_growth_preds <- ggplot(subset(growth_preds, Test=='Individual'), aes(x = model , y = mean)) +
+  geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model, linetype=measure),
+  #geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model),
+                  position = position_dodge(width = .5),
+                  size = 0.5,
+                  fatten = 0.5)+
+  geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
+  coord_flip() +
+  facet_wrap( ~ language, ncol=5) +
+  guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.3)))+
+  scale_colour_solarized() +
+  theme_few()+
+  theme(aspect.ratio = 0.7) + #,+
+        #axis.text.x = element_text(size=7.5, angle=45)) +
+  scale_y_continuous(breaks =c(0,0.2))  +
+  #scale_y_discrete(breaks =NULL)
+  ylab("Estimate") +xlab("Mechanism")
+
+
+#plot_growth_preds
+```
+
+
+
+```{r growthPred, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Evaluation of growth scenarios (EXT: externally-driven, INT: internally-driven) for both semantic and phonological networks. Each point represents the mean of the posterior distribution of the growth parameter, with ranges representing 95\\% credible intervals. Positive values mean that learning proceeds according to the predictions of the growth scenario, whereas negative values mean that learning proceeds in opposition to the predictions of the growth scenario."}
+
+#legend <- get_legend(plot_growth_preds_prod)
+
+#plot_noLegend <- plot_grid(plot_growth_preds_prod + theme(legend.position="none"), NULL, plot_growth_preds_comp + theme(legend.position="none"), labels = c("A", "", "B"), ncol = 1, align = "v", rel_heights = c(1.3, 0.1, 1.3))
+
+#plot_grid(plot_noLegend, legend, rel_widths = c(2, .2))
+
+
+#plot_noLegend <- plot_grid(plot_growth_preds_prod, NULL, plot_growth_preds_comp , labels = c("A", "", "B"), ncol = 1, align = "v", rel_heights = c(1.3, 0.1, 1.3))
+
+#plot_grid(plot_noLegend)
 
 #knitr::include_graphics("figs/plot_growth_preds_prod.pdf")
 
+plot_growth_preds
 
 ```
 
@@ -323,12 +372,46 @@ We estimated the parameter $\beta$ using a Bayesian approach. The inference was 
 
 For the semantic networks, the results replicate Hills et al.'s finding in English, which is that the semantic network grows by PAC, not by PAT. Moreover, this finding holds in seven of the eight languages we examined.\footnote{One could imagine that the fact of using English free association norms cross-linguistically would decrease the effect of non-English semantic networks because of possible cultural differences. However, our findings do not support this assumption as the effects were generally similar in magnitude cross-linguistically.} The PAC model also fits better than PAT for phonological networks. We note however that PAT, though weaker, fares  better for the phonological networks (where it predicts part of the growth process in some languages such as Croatian, English, Norwegian and Russian) than it does for the semantic networks (where it is rather universally unpredictive).
 
+```{r}
+##Test
+static_preds <- feather::read_feather("../saved_data/static_preds.feather")
 
+static_preds$predictor <- plyr::mapvalues(static_preds$predictor, 
+                                 from = c("sem_deg","phono_deg","frequency", "length"), 
+                                 to = c("semEXT","phonoEXT", "frequency", "length"))
+
+static_preds$measure <- plyr::mapvalues(static_preds$measure, 
+                                 from = c("produces","understands"), 
+                                 to = c("production","comprehension"))
+
+plot_static_preds <- ggplot(subset(static_preds, Test=='Combined'), aes(x = predictor , y = estimate)) +
+  geom_pointrange(aes(ymin = X2.5.., ymax = X97.5.., col = predictor, linetype=measure),
+  #geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model),
+                  position = position_dodge(width = .5),
+                  size = 0.5,
+                  fatten = 0.5)+
+  geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
+  coord_flip() +
+  facet_wrap( ~ language, ncol=5) +
+  guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.3)))+
+  scale_colour_solarized() +
+  theme_few()+
+  theme(aspect.ratio = 0.7) + #,+
+        #axis.text.x = element_text(size=7.5, angle=45)) +
+  scale_y_continuous(breaks =c(0,0.2))  +
+  #scale_y_discrete(breaks =NULL)
+  ylab("Estimate") +xlab("Mechanism")
+
+plot_static_preds
+
+```
+<!--
 ```{r}
 static_preds <- feather::read_feather("../saved_data/static_preds.feather")
 
-plot_static_preds_prod <- ggplot(subset(static_preds, measure =="produces"), aes(x = predictor, y = estimate)) +
-  geom_pointrange(aes(ymin = X2.5.., ymax = X97.5.., y = estimate, col = predictor, linetype=Test), 
+plot_static_preds_prod <- ggplot(subset(static_preds, measure =="produces" & Test =="Combined"), aes(x = predictor, y = estimate)) +
+  #geom_pointrange(aes(ymin = X2.5.., ymax = X97.5.., y = estimate, col = predictor, linetype=Test), 
+  geom_pointrange(aes(ymin = X2.5.., ymax = X97.5.., y = estimate, col = predictor),
                   position = position_dodge(width = .5),
                   size = 0.5,
                   fatten = 0.5)+
@@ -340,8 +423,9 @@ plot_static_preds_prod <- ggplot(subset(static_preds, measure =="produces"), aes
   theme_few()+
   theme(aspect.ratio = 0.7)
 
-plot_static_preds_comp <- ggplot(subset(static_preds, measure =="understands"), aes(x = predictor, y = estimate)) +
-  geom_pointrange(aes(ymin = X2.5.., ymax = X97.5.., y = estimate, col = predictor, linetype=Test),
+plot_static_preds_comp <- ggplot(subset(static_preds, measure =="understands" & Test =="Combined"), aes(x = predictor, y = estimate)) +
+  #geom_pointrange(aes(ymin = X2.5.., ymax = X97.5.., y = estimate, col = predictor, linetype=Test),
+  geom_pointrange(aes(ymin = X2.5.., ymax = X97.5.., y = estimate, col = predictor),
                   position = position_dodge(width = .5),
                   size = 0.5,
                   fatten = 0.5)+
@@ -354,26 +438,37 @@ plot_static_preds_comp <- ggplot(subset(static_preds, measure =="understands"), 
   theme(aspect.ratio = 0.7)
 
 ```
+-->
 
-```{r staticPred, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of predictor coefficients by language in production (A) and comprehension (B), with ranges indicating 95\\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA)."}
+```{r staticPred, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of the relative contribution of each predictor of AoA in the combined regression model. Results are shown for both production and comprehension data. Ranges indicate 95\\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA)."}
 
-legend <- get_legend(plot_static_preds_prod)
+#legend <- get_legend(plot_static_preds_prod)
 
-plot_noLegend <- plot_grid(plot_static_preds_prod + theme(legend.position="none"), NULL, plot_static_preds_comp + theme(legend.position="none"), labels = c("A", "", "B"), ncol = 1, align = "v", rel_heights = c(1.3, 0.1, 1.3))
+#plot_noLegend <- plot_grid(plot_static_preds_prod + theme(legend.position="none"), NULL, plot_static_preds_comp + theme(legend.position="none"), labels = c("A", "", "B"), ncol = 1, align = "v", rel_heights = c(1.3, 0.1, 1.3))
 
-plot_grid(plot_noLegend, legend, rel_widths = c(2, .2))
+#plot_grid(plot_noLegend, legend, rel_widths = c(2, .2))
 
-#plot_static_preds_prod
+
+#plot_noLegend <- plot_grid(plot_static_preds_prod, NULL, plot_static_preds_comp , labels = c("A", "", "B"), ncol = 1, align = "v", rel_heights = c(1.3, 0.1, 1.3))
+
+#plot_grid(plot_noLegend)
+
+plot_static_preds
 
 ```
 
-
+<!--
 ### What is the relative contribution of each growth model?
 
 Above we evaluated the network growth scenarios individually. As a next step, we analyzed their relative contribution to the learning process. This was done through adding more fitted parameters to the model, that is, by substituting $\beta d_i$ in formula (1) with: $$\beta_{1} d_{i, 1} + \beta_{2} d_{i, 2} + \beta_{3} d_{i, 3} + \beta_{4} d_{i, 4}$$ where the indices represent the 4 networks: semPAT, semPAC, phonoPAT and PhonoPAC. Using the same fitting technique, we obtained the values shown in Figure \ref{fig:pred_ind}. PAC dominates the learning. Both phonological and semantic networks contribute to lexical growth, but the phonological network appears to be stronger and more consistent across languages. In summary, the findings show that both semantic and phonological networks contribute to the learning process, and that they both grow primarily by PAC, relying on the external connectivity in the learning environment, rather than the internal connectivity in the acquired lexicon.
 
 ```{r}
 static_preds_all <- feather::read_feather("../saved_data/static_preds_all.feather")
+
+
+static_preds_all$predictor <- plyr::mapvalues(static_preds_all$predictor, 
+                                 from = c("sem_deg","phono_deg","frequency", "length"), 
+                                 to = c("semEXT","phonoEXT","frequency", "length"))
 
 plot_static_preds_all <- ggplot(static_preds_all, aes(x = predictor, y = Estimate)) +
   geom_pointrange(aes(ymin = X2.5.., ymax = X97.5.., y = Estimate, col = predictor, linetype=Test),
@@ -398,6 +493,8 @@ knitr::include_graphics("figs/plot_static_preds_all.pdf")
 
 ```
 
+-->
+
 ## Comparison to other predictors of age of acquisition
 
 We saw that the way semantic and phonological information is structured in the learning environment (i.e., PAC) contributes to noun learning across languages. However, we know that other factors influence learning as well [e.g., @braginsky2016]. Next we investigated how semantic and phonological connectivity interact with two other factors. The first one is word frequency, a well studied factor shown to predict the age of acquisition in a reliable fashion [e.g. @goodman2008]. The second factor is word length, which correlates with phonological connectivity. 
@@ -408,9 +505,6 @@ We used the frequency estimates from @braginsky2016 where unigram counts were de
 
 We conducted two analyses. We fit a linear regression for each language, and we fit a linear mixed-effect model to all the data pooled across languages, with language as a random effect. Figure \@ref(fig:staticPred) shows the coefficient estimate for each predictor in each language for production and comprehension data. Figure \@ref(fig:staticAll) shows the coefficient estimates for all languages combined (all predictors were centered and scaled). The findings were as follows. Overall, frequency is the largest and most consistent predictor of age of acquisition, replicating results for nouns across a variety of analyses [@goodman2008; @braginsky2016; @roy2015]. Word length predicts learning in some languages such as Croatian and Norwegian, but not in others (including English). It remains, however, a significant predictor in the global model. As for the factors of interest, i.e., semantic and phonological connectivity, we also found cross-linguistic differences. Phonological connectivity contributes to learning in languages such as Croatian, English and Russian, whereas semantic connectivity contributes to learning in Turkish, Spanish and to some extent in Croatian, but not in English.\footnote{Semantic connectivity does not explain variance in English data beyond that explained by phonological connectivity, frequency and length. This contrasts with the original finding in Hills et al. 2009. However, in this previous study, semantic connectivity was not tested in a model that included frequency, length and phonological connectivity as covariates. Another important difference is the number of words tested: Our study uses a larger set of nouns.} Despite these cross-linguistic differences, both phonological and semantic connectivity are significant predictors in the combined model. 
 
-## Does the network's effect change with age?
-
-As a final analysis, we examined  whether the effect of semantic and phnonological networks change over development. @braginsky2016 found that 
 
 # Discussion
 

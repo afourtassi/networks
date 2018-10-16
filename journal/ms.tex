@@ -58,6 +58,15 @@
 \endgroup}
 
 
+  \usepackage{graphicx}
+  \makeatletter
+  \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+  \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+  \makeatother
+  % Scale images if necessary, so that they will not overflow the page
+  % margins by default, and it is still possible to overwrite the defaults
+  % using explicit options in \includegraphics[width, height, ...]{}
+  \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 \ifxetex
   \usepackage[setpagesize=false, % page size defined by xetex
               unicode=false, % unicode breaks when used with xetex
@@ -418,7 +427,7 @@ developmental scenarios, we need to fit explicit growth models to the
 data.
 
 \begin{figure}[!h]
-\includegraphics[width=\textwidth]{ms_files/figure-latex/growthPred-1} \caption{Evaluation of network growth scenarios, for both A) production and B) comprehension. We plot values when predictors are evaluted individually (dotted), and when combined in the same growth model (solid). Each dot represents the mean of the posterior distribution of the corresponding growth parameter, with ranges representing 95\% credible intervals (computed using the highest density intervals). Positive values mean that learning proceeds according to the predictions of the growth scenario. Negative values mean that learning proceeds in opposition to the predictions of the growth scenario.}\label{fig:growthPred}
+\includegraphics[width=\textwidth]{ms_files/figure-latex/growthPred-1} \caption{Evaluation of growth scenarios (EXT: externally-driven, INT: internally-driven) for both semantic and phonological networks. Each point represents the mean of the posterior distribution of the growth parameter, with ranges representing 95\% credible intervals. Positive values mean that learning proceeds according to the predictions of the growth scenario, whereas negative values mean that learning proceeds in opposition to the predictions of the growth scenario.}\label{fig:growthPred}
 \end{figure}
 
 \subsection{Network growth models}\label{network-growth-models}
@@ -463,31 +472,10 @@ networks (where it predicts part of the growth process in some languages
 such as Croatian, English, Norwegian and Russian) than it does for the
 semantic networks (where it is rather universally unpredictive).
 
-\begin{figure}[!h]
-\includegraphics[width=\textwidth]{ms_files/figure-latex/staticPred-1} \caption{Estimates of predictor coefficients by language in production (A) and comprehension (B), with ranges indicating 95\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).}\label{fig:staticPred}
-\end{figure}
-
-\subsubsection{What is the relative contribution of each growth
-model?}\label{what-is-the-relative-contribution-of-each-growth-model}
-
-Above we evaluated the network growth scenarios individually. As a next
-step, we analyzed their relative contribution to the learning process.
-This was done through adding more fitted parameters to the model, that
-is, by substituting \(\beta d_i\) in formula (1) with:
-\[\beta_{1} d_{i, 1} + \beta_{2} d_{i, 2} + \beta_{3} d_{i, 3} + \beta_{4} d_{i, 4}\]
-where the indices represent the 4 networks: semPAT, semPAC, phonoPAT and
-PhonoPAC. Using the same fitting technique, we obtained the values shown
-in Figure \ref{fig:pred_ind}. PAC dominates the learning. Both
-phonological and semantic networks contribute to lexical growth, but the
-phonological network appears to be stronger and more consistent across
-languages. In summary, the findings show that both semantic and
-phonological networks contribute to the learning process, and that they
-both grow primarily by PAC, relying on the external connectivity in the
-learning environment, rather than the internal connectivity in the
-acquired lexicon.
+\includegraphics{ms_files/figure-latex/unnamed-chunk-6-1.pdf}
 
 \begin{figure}[!h]
-\includegraphics[width=\textwidth]{figs/plot_static_preds_all} \caption{Estimates of predictor coefficients in the combined mixed-effect model with language as a random effect for both production and comprehension. Ranges indicate 95\% confidence intervals. Lighter points indicate estimates of PAC predictors in a model that does not include frequency and length as covariates.}\label{fig:staticAll}
+\includegraphics[width=\textwidth]{ms_files/figure-latex/staticPred-1} \caption{Estimates of the relative contribution of each predictor of AoA in the combined regression model. Results are shown for both production and comprehension data. Ranges indicate 95\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).}\label{fig:staticPred}
 \end{figure}
 
 \subsection{Comparison to other predictors of age of
@@ -607,7 +595,7 @@ patterns of growth can be produced in controlled behavioral experiments.
 
 \vspace{1em}
 
-\fbox{\parbox[b][][c]{14cm}{\centering All data and code for these analyses are available at\ \url{https://github.com/afourtassi/WordRec}}}
+\fbox{\parbox[b][][c]{14cm}{\centering All data and code for these analyses are available at\ \url{https://github.com/afourtassi/networks}}}
 \vspace{1em}
 
 \section{Acknowledgements}\label{acknowledgements}

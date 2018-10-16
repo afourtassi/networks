@@ -138,7 +138,10 @@ make_assoc_pairs <- function(lemma_list) {
   
   #make a association network dataframe with item number
   #rename stuffs so it could conform to the format PAT_generator needs
-  #item corresponds to target ;  pair corresponds to cue
+  
+  #item corresponds to target ;  pair corresponds to cue: 
+  #it is important to keep that in mind becuase later will compute 'incoming' degree:
+  #for each item (target), we will sum the pairs (cues)
   assoc_link <- assoc_table %>%
     rename(pair.definition = cue) %>%
     left_join(lemma_list, c("pair.definition" = "uni_lemma")) %>%

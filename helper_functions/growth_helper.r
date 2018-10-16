@@ -3,6 +3,7 @@
 # column name: 
 # item, item.definition, pair, pair.definition, link
 
+
 PAT_generator<-function(vocab_age, word_pairs){
   vocab_age<-vocab_age %>%
     filter(item %in% word_pairs$item) %>%
@@ -13,7 +14,7 @@ PAT_generator<-function(vocab_age, word_pairs){
     summarise(n=n()))$age
   ages<- all_ages[2:length(all_ages)]
   for (i in ages){
-    #current items in this age
+    #current items in this age 
     curr_items<- (vocab_age %>%
                     filter(age==i) %>%
                     select(item))$item
@@ -30,6 +31,8 @@ PAT_generator<-function(vocab_age, word_pairs){
     row_n<-which(vocab_age$age==i & vocab_age$item==curr_items[1])
     for (j in curr_items){
       #calculating d
+      
+      #here determine the nodes to which candidate word "j" is related
       link_to_exist<-(word_pairs %>% filter(pair==j, item %in% exist_words, link==1))$item
       PAT_value<-sem_acq %>%
         filter(item %in% link_to_exist)
