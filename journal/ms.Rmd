@@ -98,15 +98,47 @@ library(HDInterval)
 
 What factors shape vocabulary learning over the course of early childhood? To investigate this question, scientists have adopted multiple research strategies, from conducting controlled laboratory experiments [e.g. @markman90] to analyzing dense corpora capturing language learning in context [e.g., @roy2015]. One strategy consists in documenting the timeline of words' acquisition, and studying the properties that make words easy or hard to learn. For example, within a lexical category, words that are more frequent in child-directed speech are acquired earlier [@goodman2008]. Other factors include word length, the mean length of utterances in which the word occurs, and concreteness [see @braginsky2016]. 
 
-Besides these word-level properties, the lexical structure (that is, how words relate to each other) also influences the age of acquisition of words. The lexical structure is best characterized in terms of a network where each node represents a word in the vocabulary, and each link between two nodes represents a relationship between the corresponding pair of words. Previous studies have investigated early vocabulary structure by constructing networks using  a variety of word-word relations including shared semantic features, target-cue relationships in free association norms, co-occurrence in child directed speech, and phonological similarity. These studies have found that children tend to produce words that have higher neighborhood density (i.e., high connectivity in the network) earlier, both at the phonological and the semantic level [@storkel2009; @hills2009; @hills2010; @engelthaler2017; @stella2017]. 
+Besides these word-level properties, the lexical structure (that is, how words relate to each other) also influences the age of acquisition of words.  The lexical structure can be characterized in terms of a network where each node represents a word in the vocabulary, and each link between two nodes represents a relationship between the corresponding pair of words (Collins and Loftus, 1975).  Previous studies have investigated early vocabulary structure by constructing networks using  a variety of word-word relations including shared semantic features, target-cue relationships in free association norms, co-occurrence in child directed speech, and phonological similarity. These studies have found that children tend to produce words that have higher neighborhood density (i.e., high connectivity in the network) earlier, both at the phonological and the semantic level [@storkel2009; @hills2009; @hills2010; @engelthaler2017; @stella2017] add Beckage, 2011 and other people... 
 
-While most studies have focused on the static properties of the lexical network, a few have investigated the underlying developmental process. In particular, @steyvers2005 suggested that the observed effects of connectivity are the consequence of how the lexical network gets constructed in the child's mind. According to this explanation, known as Preferential Attachment (PAT), highly connected words in the child's lexicon tend to "attract" more words over time, in a rich-get-richer scenario [@barabasi99]. In other words, what predicts word learning is the *internal* connectivity in the child's early lexicon. In contrast, @hills2009 suggested that what biases the learning is not the connectivity in the child's internal lexicon but, rather, *external* connectivity in the learning environment. They called this alternative explanation Preferential Acquisition (PAC).  Figure\ \@ref(fig:growth) shows an illustration of both growth scenarios with the same simplified network. These two proposals represent two divergent ideas about the role of lexical networks in acquisition. On the PAT proposal, network structure is a causal factor in early word learning; in contrast, on the PAC approach, network structure is not internally represented and, therefore, might be an epiphenomenon of the statistics of the linguistic input.
+While most studies have focused on the static properties of the lexical network, a few have investigated the underlying developmental process. In particular, @steyvers2005 suggested that the observed effects of connectivity are the consequence of how the lexical network gets constructed in the child's mind. According to this explanation, known as Preferential Attachment, highly connected words in the child's lexicon tend to "attract" more words over time, in a rich-get-richer scenario [@barabasi99]. In other words, what predicts word learning is the *internal* connectivity in the child's early lexicon.  In contrast, @hills2009 suggested that what biases the learning is not the connectivity in the child's internal lexicon but, rather, *external* connectivity in the learning environment. They called this alternative explanation Preferential Acquisition. For clarity of reading, we will rename these scenarios in a ways that reflects how their modes of operation contrast with each other. We will call preferential attachment the Internally-driven mechanism (INT), and preferential acquisition the Externally-driven mechanism (EXT). Figure\ \@ref(fig:growth) shows an illustration of both growth scenarios with the same simplified network. These two proposals represent two divergent ideas about the role of lexical networks in acquisition. On the INT proposal, network structure is a causal factor in early word learning; in contrast, on the EXT approach, network structure is not internally represented and, therefore, might be an epiphenomenon of the statistics of the linguistic input.
 
-```{r growth, fig.cap = "Illustration of the growth scenarios. Filled circles (I1-I4) represent known words (internal), and empty circles (E1 and E2) represent words that have not been learned yet (external). Black lines represent links that are relevant in each growth scenario, and gray lines represent links that are irrelevant. For PAT, the utility of a candidate, external node is the average degree (i.e., number of links) of the internal nodes that it would attach to. Thus, according to PAT, the node E1 is more likely to enter the lexicon first. For PAC, the utility of a candidate node is its degree in the entire network. According to PAC, the node E2 is more likely to enter the lexicon first.", fig.align = "center", out.width = "400px"}
+```{r growth, fig.cap = "Illustration of the two growth scenarios. Filled circles (I1-I4) represent known words (Internal), and empty circles (E1 and E2) represent words that have not been learned yet (External). Black lines represent links that are relevant in each growth scenario, and gray lines represent links that are irrelevant. For INT, the utility of a candidate, external node is the average degree (i.e., number of links) of the internal nodes that it would attach to. Thus, according to INT, the node E1 is more likely to enter the lexicon first. For EXT, the utility of a candidate node is its degree in the entire network. According to EXT, the node E2 is more likely to enter the lexicon first.", fig.align = "center", out.width = "400px"}
 knitr::include_graphics("figs/growth2.png")
 ```
 
-Studies that investigate lexical network growth have focused on semantic networks using English data [@steyvers2005; @hills2009; @hills2010].  The novelty of the current study is threefold:  First, it investigates whether phonological networks, like semantic networks, grow by PAC, or if they rather grow by PAT. Second, it provides a systematic comparison of both network growth scenarios in the phonological and the semantic domains and assesses their relative contribution to the learning process. Third, it tests the generality of the findings across eight languages.
+@hills2009 found that early networks do not grow through INT as was originally hypothesised by @steyvers2005, but rather through EXT. This finding, though potentially very profound, has only been estabished in the special case of networks that are 1) based on semantic associations, 2) use data from English-learning children, and 3) consider word production as a measure of acqusition. Thus, it could be that the result depends on the domain, culture or/and the measure. In this work, we test the generality of the finding along these three dimesnions.
+
+First, we investigte the mechanism that underlies the growth of phonological networks. Previous studies have analyzed various strcutural properties of adults phonological networks, and found that some of these properties influence the language processes of word recognition and production as well as language-related memory processes (Vitevitch, 2008; Luce & Pisoni, 1998; Chan & Vitevitch, 2009; Chan & Vitevitch,2010; Vitevitch, Chan, and Roodenrys, 2012; Castro et al. 2018). More relvant to our study is the research that investigates learning in children, and in particualr the finding that words' connectivity in a phonological network is negatively correlated with their age of learning in children (Stokes 2004; Storkel, 2004, 2009). In other words, the finding suggests that words learned earlier tend to sound similar to many other words than a word learned later in life.  This finding is similar to semantics however, does not address the question of the learning mechanism.  In fact, as with semantic networks, the fact that the connectivity in the end-state network predicts AoA can be the outcome of both the internallay- and externally-driven mechanisms (Hills et al. 2009).
+
+Second, we test how the proposed growth mechanims predict word comprehension as compared to production. These two measures differ in their assessment of vocabulary composition (e.g., Benedict, 1979).  Testing both measures is critical as it allows us to investigate the extent to which the mechanism  is infleunced by production constraints (i.e., how difficult a word is to say) as compared to comprehension constraints (i.e., how difficult it is to store or access). If there is consistency across both measures, this would suggest that the growth mechanism captures learning patterns beyond these specific constraints. 
+
+Finally, we use developmental data of children in 10 cultures. Such cross-linguistic comparison is crucial to test what growth mechanism is cognitively universal and is used by all children, and what mechansism is specific to some patterns of learning that emerge due to the particulars of a given language or culture (Bates & MacWhinney, 1987; Slobin, 1985). More precisely, we test whether Hill's finding with English-learning data generalize to other languages, and we test whether this generalization holds for both the semantic and phonological networks, and for both the comprehension and production data.  
+
+ 
+ 
+
+
+
+
+we test the growth mechanim in the phonological domain. Although previous results showed that ... (Storkel,), the growth mechanim has never been tested. The outcome could enrich the debate as to whether children first learn the words that  (Here I should read the Dautrich paper).   Second, we use developmental data collected from children in 10 cultures. Third, we compare results  using production and comprehension as measures of acuquition.
+
+Why phonological domain is important
+Why languages are important
+Why comprehension is important
+
+
+
+
+whether phonological networks, like semantic networks, grow by , or if they rather grow by P
+
+
+Studies that investigate lexical network growth have focused on semantic networks using the English vocabulary and development data based on word production. In particualr,
+
+However, the lexicon is not only strctured semantically
+
+Our work expands this previous research in three ways: 1) we test whether   
+
+The novelty of the current study is threefold:  First, it investigates whether phonological networks, like semantic networks, grow by PAC, or if they rather grow by PAT. Second, it provides a systematic comparison of both network growth scenarios in the phonological and the semantic domains and assesses their relative contribution to the learning process. Third, it tests the generality of the findings across eight languages.
 
 
 # Networks
@@ -402,7 +434,7 @@ plot_static_preds <- ggplot(subset(static_preds, Test=='Combined'), aes(x = pred
   #scale_y_discrete(breaks =NULL)
   ylab("Estimate") +xlab("Mechanism")
 
-plot_static_preds
+
 
 ```
 <!--
@@ -462,6 +494,8 @@ plot_static_preds
 
 Above we evaluated the network growth scenarios individually. As a next step, we analyzed their relative contribution to the learning process. This was done through adding more fitted parameters to the model, that is, by substituting $\beta d_i$ in formula (1) with: $$\beta_{1} d_{i, 1} + \beta_{2} d_{i, 2} + \beta_{3} d_{i, 3} + \beta_{4} d_{i, 4}$$ where the indices represent the 4 networks: semPAT, semPAC, phonoPAT and PhonoPAC. Using the same fitting technique, we obtained the values shown in Figure \ref{fig:pred_ind}. PAC dominates the learning. Both phonological and semantic networks contribute to lexical growth, but the phonological network appears to be stronger and more consistent across languages. In summary, the findings show that both semantic and phonological networks contribute to the learning process, and that they both grow primarily by PAC, relying on the external connectivity in the learning environment, rather than the internal connectivity in the acquired lexicon.
 
+-->
+
 ```{r}
 static_preds_all <- feather::read_feather("../saved_data/static_preds_all.feather")
 
@@ -487,13 +521,12 @@ ggsave("figs/plot_static_preds_all.pdf", plot = plot_static_preds_all, width = 6
 
 ```
 
-```{r staticAll, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of predictor coefficients in the combined mixed-effect model with language as a random effect for both production and comprehension. Ranges indicate 95\\% confidence intervals. Lighter points indicate estimates of PAC predictors in a model that does not include frequency and length as covariates."}
+```{r staticAll, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of the relative contribution of each predictor of AoA in the combined mixed-effects model with language as a random effect. Results are shown for both production and comprehension data. Ranges indicate 95\\% confidence intervals. Dotted ranges indicate the estimates for the predictor in a separate model that includes only this predictor as a fixed effect."}
 
 knitr::include_graphics("figs/plot_static_preds_all.pdf")
 
 ```
 
--->
 
 ## Comparison to other predictors of age of acquisition
 
@@ -509,8 +542,6 @@ We conducted two analyses. We fit a linear regression for each language, and we 
 # Discussion
 
 The present study provided a comprehensive analysis of how lexical connectivity influences the age of acquisition of nouns in toddlers. We compared two network growth scenarios and assessed their relative contributions across eight languages. One scenario, PAT, described a rich-get-richer network growth model in which the structure of the learner's internal network determines future growth; the other, PAC, described a model in which the external, global environmental network structure determines learners' growth patterns.  Our findings largely replicate the results obtained by @hills2009: Semantic networks grow by preferential acquisition, not by preferential attachment. A novel finding is that phonological networks also grow primarily by preferential acquisition. Moreover, both semantic and phonological connectivity in the learning environment predict growth. These findings generalize well across languages. When pitted against other known predictors of age of acquisition (word frequency and length), the effect of word connectivity shows a cross-linguistic variation, predicting learning in some languages, but not in others. Nevertheless, this cross-linguistic variability is to be taken with a grain of salt as it might be exaggerated in our study by the limited and partially-overlapping sample of nouns for each language. In fact, both phonological and semantic connectivity are significant predictors when data are pooled across languages. 
-
-
 
 Children start by learning words that have high semantic and phonological similarity to a variety of other words in the learning environment, not in the child's available lexicon.  This result suggests that children are sensitive to connectivity even without having first acquired the connected words. How can children indirectly detect highly connected words, and why would such words be more readily learned? 
 

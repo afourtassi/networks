@@ -58,15 +58,6 @@
 \endgroup}
 
 
-  \usepackage{graphicx}
-  \makeatletter
-  \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-  \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-  \makeatother
-  % Scale images if necessary, so that they will not overflow the page
-  % margins by default, and it is still possible to overwrite the defaults
-  % using explicit options in \includegraphics[width, height, ...]{}
-  \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 \ifxetex
   \usepackage[setpagesize=false, % page size defined by xetex
               unicode=false, % unicode breaks when used with xetex
@@ -214,38 +205,43 @@ Yurovsky, Marchman, \& Frank, 2016).
 
 Besides these word-level properties, the lexical structure (that is, how
 words relate to each other) also influences the age of acquisition of
-words. The lexical structure is best characterized in terms of a network
+words. The lexical structure can be characterized in terms of a network
 where each node represents a word in the vocabulary, and each link
 between two nodes represents a relationship between the corresponding
-pair of words. Previous studies have investigated early vocabulary
-structure by constructing networks using a variety of word-word
-relations including shared semantic features, target-cue relationships
-in free association norms, co-occurrence in child directed speech, and
-phonological similarity. These studies have found that children tend to
-produce words that have higher neighborhood density (i.e., high
-connectivity in the network) earlier, both at the phonological and the
-semantic level (Engelthaler \& Hills, 2017; Hills, Maouene, Riordan, \&
-Smith, 2010; Hills, Maouene, Maouene, Sheya, \& Smith, 2009; Stella,
-Beckage, \& Brede, 2017; Storkel, 2009).
+pair of words (Collins and Loftus, 1975). Previous studies have
+investigated early vocabulary structure by constructing networks using a
+variety of word-word relations including shared semantic features,
+target-cue relationships in free association norms, co-occurrence in
+child directed speech, and phonological similarity. These studies have
+found that children tend to produce words that have higher neighborhood
+density (i.e., high connectivity in the network) earlier, both at the
+phonological and the semantic level (Engelthaler \& Hills, 2017; Hills,
+Maouene, Riordan, \& Smith, 2010; Hills, Maouene, Maouene, Sheya, \&
+Smith, 2009; Stella, Beckage, \& Brede, 2017; Storkel, 2009) add
+Beckage, 2011 and other people\ldots{}
 
 While most studies have focused on the static properties of the lexical
 network, a few have investigated the underlying developmental process.
 In particular, Steyvers and Tenenbaum (2005) suggested that the observed
 effects of connectivity are the consequence of how the lexical network
 gets constructed in the child's mind. According to this explanation,
-known as Preferential Attachment (PAT), highly connected words in the
-child's lexicon tend to \enquote{attract} more words over time, in a
+known as Preferential Attachment, highly connected words in the child's
+lexicon tend to \enquote{attract} more words over time, in a
 rich-get-richer scenario (Barabasi \& Albert, 1999). In other words,
 what predicts word learning is the \emph{internal} connectivity in the
 child's early lexicon. In contrast, Hills et al. (2009) suggested that
 what biases the learning is not the connectivity in the child's internal
 lexicon but, rather, \emph{external} connectivity in the learning
 environment. They called this alternative explanation Preferential
-Acquisition (PAC). Figure~\ref{fig:growth} shows an illustration of both
+Acquisition. For clarity of reading, we will rename these scenarios in a
+ways that reflects how their modes of operation contrast with each
+other. We will call preferential attachment the Internally-driven
+mechanism (INT), and preferential acquisition the Externally-driven
+mechanism (EXT). Figure~\ref{fig:growth} shows an illustration of both
 growth scenarios with the same simplified network. These two proposals
 represent two divergent ideas about the role of lexical networks in
-acquisition. On the PAT proposal, network structure is a causal factor
-in early word learning; in contrast, on the PAC approach, network
+acquisition. On the INT proposal, network structure is a causal factor
+in early word learning; in contrast, on the EXT approach, network
 structure is not internally represented and, therefore, might be an
 epiphenomenon of the statistics of the linguistic input.
 
@@ -255,18 +251,88 @@ epiphenomenon of the statistics of the linguistic input.
 
 }
 
-\caption{Illustration of the growth scenarios. Filled circles (I1-I4) represent known words (internal), and empty circles (E1 and E2) represent words that have not been learned yet (external). Black lines represent links that are relevant in each growth scenario, and gray lines represent links that are irrelevant. For PAT, the utility of a candidate, external node is the average degree (i.e., number of links) of the internal nodes that it would attach to. Thus, according to PAT, the node E1 is more likely to enter the lexicon first. For PAC, the utility of a candidate node is its degree in the entire network. According to PAC, the node E2 is more likely to enter the lexicon first.}\label{fig:growth}
+\caption{Illustration of the two growth scenarios. Filled circles (I1-I4) represent known words (Internal), and empty circles (E1 and E2) represent words that have not been learned yet (External). Black lines represent links that are relevant in each growth scenario, and gray lines represent links that are irrelevant. For INT, the utility of a candidate, external node is the average degree (i.e., number of links) of the internal nodes that it would attach to. Thus, according to INT, the node E1 is more likely to enter the lexicon first. For EXT, the utility of a candidate node is its degree in the entire network. According to EXT, the node E2 is more likely to enter the lexicon first.}\label{fig:growth}
 \end{figure}
 
+Hills et al. (2009) found that early networks do not grow through INT as
+was originally hypothesised by Steyvers and Tenenbaum (2005), but rather
+through EXT. This finding, though potentially very profound, has only
+been estabished in the special case of networks that are 1) based on
+semantic associations, 2) use data from English-learning children, and
+3) consider word production as a measure of acqusition. Thus, it could
+be that the result depends on the domain, culture or/and the measure. In
+this work, we test the generality of the finding along these three
+dimesnions.
+
+First, we investigte the mechanism that underlies the growth of
+phonological networks. Previous studies have analyzed various strcutural
+properties of adults phonological networks, and found that some of these
+properties influence the language processes of word recognition and
+production as well as language-related memory processes (Vitevitch,
+2008; Luce \& Pisoni, 1998; Chan \& Vitevitch, 2009; Chan \&
+Vitevitch,2010; Vitevitch, Chan, and Roodenrys, 2012; Castro et al.
+2018). More relvant to our study is the research that investigates
+learning in children, and in particualr the finding that words'
+connectivity in a phonological network is negatively correlated with
+their age of learning in children (Stokes 2004; Storkel, 2004, 2009). In
+other words, the finding suggests that words learned earlier tend to
+sound similar to many other words than a word learned later in life.
+This finding however, does not address the question of the learning
+mechanism. In fact, as with semantic networks, the fact that the
+connectivity in the end-state network predicts AoA can be the outcome of
+both the internallay- and externally-driven mechanisms (Hills et al.
+2009).
+
+Second, we test how the proposed growth mechanims predict word
+comprehension as compared to production. These two measures differ in
+their assessment of vocabulary composition (e.g., Benedict, 1979).
+Testing both measures is critical as it allows us to investigate the
+extent to which the mechanism is infleunced by production constraints
+(i.e., how difficult a word is to say) as compared to comprehension
+constraints (i.e., how difficult it is to store or access). If there is
+consistency across both measures, this would suggest that the growth
+mechanism captures learning patterns beyond these specific constraints.
+
+Finally, we use developmental data of children in 10 cultures. Such
+cross-linguistic comparison is crucial to test what growth mechanism is
+cognitively universal and is used by all children, and what mechansism
+is specific to some patterns of learning that emerge due to the
+particulars of a given language or culture (Bates \& MacWhinney, 1987;
+Slobin, 1985). More precisely, we test whether Hill's finding with
+English-learning data generalize to other languages, and we test whether
+this generalization holds for both the semantic and phonological
+networks, and for both the comprehension and production data.
+
+we test the growth mechanim in the phonological domain. Although
+previous results showed that \ldots{} (Storkel,), the growth mechanim
+has never been tested. The outcome could enrich the debate as to whether
+children first learn the words that (Here I should read the Dautrich
+paper). Second, we use developmental data collected from children in 10
+cultures. Third, we compare results using production and comprehension
+as measures of acuquition.
+
+Why phonological domain is important Why languages are important Why
+comprehension is important
+
+whether phonological networks, like semantic networks, grow by , or if
+they rather grow by P
+
 Studies that investigate lexical network growth have focused on semantic
-networks using English data (Hills et al., 2010, 2009; Steyvers \&
-Tenenbaum, 2005). The novelty of the current study is threefold: First,
-it investigates whether phonological networks, like semantic networks,
-grow by PAC, or if they rather grow by PAT. Second, it provides a
-systematic comparison of both network growth scenarios in the
-phonological and the semantic domains and assesses their relative
-contribution to the learning process. Third, it tests the generality of
-the findings across eight languages.
+networks using the English vocabulary and development data based on word
+production. In particualr,
+
+However, the lexicon is not only strctured semantically
+
+Our work expands this previous research in three ways: 1) we test
+whether
+
+The novelty of the current study is threefold: First, it investigates
+whether phonological networks, like semantic networks, grow by PAC, or
+if they rather grow by PAT. Second, it provides a systematic comparison
+of both network growth scenarios in the phonological and the semantic
+domains and assesses their relative contribution to the learning
+process. Third, it tests the generality of the findings across eight
+languages.
 
 \section{Networks}\label{networks}
 
@@ -472,10 +538,12 @@ networks (where it predicts part of the growth process in some languages
 such as Croatian, English, Norwegian and Russian) than it does for the
 semantic networks (where it is rather universally unpredictive).
 
-\includegraphics{ms_files/figure-latex/unnamed-chunk-6-1.pdf}
-
 \begin{figure}[!h]
 \includegraphics[width=\textwidth]{ms_files/figure-latex/staticPred-1} \caption{Estimates of the relative contribution of each predictor of AoA in the combined regression model. Results are shown for both production and comprehension data. Ranges indicate 95\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).}\label{fig:staticPred}
+\end{figure}
+
+\begin{figure}[!h]
+\includegraphics[width=\textwidth]{figs/plot_static_preds_all} \caption{Estimates of the relative contribution of each predictor of AoA in the combined mixed-effects model with language as a random effect. Results are shown for both production and comprehension data. Ranges indicate 95\% confidence intervals. Dotted ranges indicate the estimates for the predictor in a separate model that includes only this predictor as a fixed effect.}\label{fig:staticAll}
 \end{figure}
 
 \subsection{Comparison to other predictors of age of
