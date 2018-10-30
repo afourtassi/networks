@@ -20,6 +20,7 @@ Libraries
   library(Hmisc)
   library(poweRlaw)
   library(HDInterval)
+  library(kableExtra)
 ```
 
 Import helper functions and probabilstic models
@@ -96,6 +97,36 @@ data_all$language <- plyr::mapvalues(data_all$language,
 
 ```
 
+Here compute the statistics 
+language, measure, number of nouns, age limits, and number  
+```{r}
+
+mysummary <- data_all %>%
+  group_by(language, measure) %>%
+  summarise(min_age = min(age),
+            max_age = max(age),
+            nouns = n_distinct(item)) %>%
+  mutate(age_range = paste(min_age, max_age, sep = "-")) %>%
+  select(-min_age, -max_age)  %>%
+  group_by(language, measure) %>%
+  nest() %>%
+  spread(measure, data) %>%
+  unnest(.sep = "_") %>%
+  select(language, un = understands_nouns, ua=understands_age_range,
+                   pn = produces_nouns, pa=produces_age_range)
+
+feather::write_feather(mysummary, "saved_data/stats_new.feather")
+  
+
+kable(mysummary, format = "latex", escape = FALSE, booktabs = TRUE,
+      linesep = "", format.args = list(big.mark = ","),
+      caption = "Statistics for data from Wordbank.",
+      col.names = c("Language",  "Nouns", "Ages", "Nouns", "Ages")) %>%
+  add_header_above(c("", "Comprehension" = 2, "Production" = 2)) %>%
+  column_spec(1, bold = TRUE) %>%
+  kable_styling(position = "center")
+
+```
 
 Compute Age of Acqusition (AoA) of words
 
@@ -198,12 +229,10 @@ data_growth <- map(aoa_by_measure_lang, make_data_growth) %>%
 data_growth <- feather::read_feather("saved_data/data_growth.feather") 
 ```
 
-
 Construct the netwroks and derive the dynamic predictors: PAC and PAT
 ```{r}
 
-#I should here define the set of words that will be used in the network construction
-#Here I chose to use the full data for the phono netwotk and filter later for the unilemmas only, thus the utility will be more precise for the resulting subset 
+#Here I chose to use the full data for the phono netwotk and filter later for the unilemmas only when doing what? the combined regression?, thus the utility will be more precise for the resulting subset 
 
 words_growth <- data_growth %>%
   #filter(!is.na(uni_lemma)) %>% #only keep unilemmas that intersect with free association data
@@ -223,7 +252,7 @@ sem_net_fun  <- function (growth_meas_lang){
   first_age<- growth_meas_lang$age[1]
   
   lemma_list<- growth_meas_lang %>%
-      trim_all_unilemma() %>%
+      trim_all_unilemma() %>% #For semantic netowtks only the unilmma
       filter(age==first_age) %>%
       select(item, uni_lemma)
 
@@ -248,7 +277,7 @@ sem_red <-  map(growth_by_meas_lang, sem_net_fun) %>%
 
 #Save 
 #feather::write_feather(sem_red, "saved_data/sem_red.feather")
-#sem_red <- feather::read_feather("saved_data/sem_red.feather") 
+sem_red <- feather::read_feather("saved_data/sem_red.feather") 
 
 #Phonological Networks
 ######################
@@ -288,7 +317,7 @@ phono_red <-  map(growth_by_meas_lang, phono_net_fun) %>%
 
 
 #feather::write_feather(phono_red, "saved_data/phono_red.feather")
-#phono_red <- feather::read_feather("saved_data/phono_red.feather") 
+phono_red <- feather::read_feather("saved_data/phono_red.feather") 
 
 #Combine data 
 data_growth_net <- words_growth %>%
@@ -317,8 +346,7 @@ words_len <- data_static %>%
   mutate(length = str_count(IPA)) %>%
   select(-definition, -uni_lemma, -sem_deg, -phono_deg)
 
-#Word frequency: we use frequency values derived from Childes (from Mika e al. 2016) 
-
+#Word frequency: we use frequency values derived from Cross-lingusitic corpora in CHILDES (from Mika e al. 2016) 
 load("saved_data/uni_joined.RData")
 
 frequency_mika <- uni_joined %>%
@@ -372,9 +400,10 @@ data_static_prop <- data_all %>%
 Correlatinon degree/AoA using unilemmas 
 
 ```{r}
+
 #Sem_deg is defined over unilemmas,  phono_deg is defined over definitions, and AoA is defined over items 
 #For a given defintion we can have more than one item (polysemy), for one unilemma we can have more than one definiton (if the semantic distinction is not very important), or we might have 0 unilemma (if the meaning of the defintion is not part of the main cross-lingusitc lemmas)
-#The following analyses predict try to predict the items' AoA. I keep duplicated values of the predictors for different items (when they have the same defintions and/or unilemma) since I consider that this is the actual (albeit braod) information brough by the precitors
+#The following analyses predict the items' AoA. I keep duplicated values of the predictors for different items (when they have the same defintions and/or unilemma) since I consider that this is the actual (albeit braod) information brough by the precitors
 
 #Restrict analysis to unilemmas (i.e., definitons which have translations in English). This allows us to comapre various predictors on the same set of data
 unilemmas <- data_static_pred %>%
@@ -581,15 +610,6 @@ ggplot(data = degree_dist,  aes(x=x, y=y, col=dimension))+
 
 ```
 
-### Small world properties
-
-Use igraph to derive small world properties
-
-For each netwrok, compute:
--Clustering coefficient 
--Shortest path length 
-what we want: Compared to an equivalent random network, we want a balance between local processing (high clustering coefficient) and global integration (small short path length)
-
 
 ## Growth mechanisms
 
@@ -600,8 +620,8 @@ PreProcessing growth data strcutire for network growth models
 #Filtering 
 data_growth_pred <- data_growth_net %>%
   filter(!is.na(uni_lemma)) %>% #use only words with english translation 
-  filter(!is.na(PAC_assoc)) %>% # keep unilemma whcih intersect with free association data
-  filter(!is.na(PAC_phono_t2)) # In case a word is not trnascribed phonologically (there should not be any)
+  filter(!is.na(PAC_assoc)) %>% # keep unilemma which intersect with free association data
+  filter(!is.na(PAC_phono_t2)) # In case a word is not transcribed phonologically (there should not be any)
 
   # replace NA in PAT with O (NA is when the utility cannot be computed, e.g., a candidate word is not linked to any previousely learned word, as opposed to being linked to a previously learned word with a degree=0)
 
