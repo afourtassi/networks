@@ -145,15 +145,16 @@ documented, little is known about the underlying developmental
 mechanism. One view suggests that learning is primarily driven by a
 network growth model where highly connected words in the child's early
 lexicon attract similar words. Another view suggests that learning is
-driven by highly connected words in the external learning environment
+driven by highly connected words in the external learning environment,
 instead of highly connected words in the early internal lexicon. The
 present study tests both scenarios systematically in both the
 phonological and semantic domains across 10 languages. We show that
 external connectivity in the learning environment drives growth in both
-production- and comprehension-based vocabularies. The findings suggest a
-word learning mechanism where children harness their statistical
-learning abilities to (indirectly) detect and learn highly connected
-words in the learning environment.}
+production- and comprehension-based vocabularies, even controlling for
+word frequency and length. This pattern of findings suggests a word
+learning mechanism where children harness their statistical learning
+abilities to (indirectly) detect and learn highly connected words in the
+learning environment.}
   \keywords{Language understanding; audio-visual processing; word learning; speech
 perception; computational modeling. \\
 
@@ -202,21 +203,22 @@ Dale, \& Li, 2008). Other factors include word length, the mean length
 of utterances in which the word occurs, and concreteness (see Braginsky,
 Yurovsky, Marchman, \& Frank, 2016).
 
-Besides these word-level properties, the lexical structure (that is, how
-words relate to each other) also influences the age of acquisition of
-words. The lexical structure can be characterized in terms of a network
-where each node represents a word in the vocabulary, and each link
-between two nodes represents a relationship between the corresponding
-pair of words (e.g., Collins and Loftus, 1975). Previous studies have
-investigated early vocabulary structure by constructing networks using a
-variety of word-word relations including shared semantic features,
-target-cue relationships in free association norms, co-occurrence in
-child directed speech, and phonological relatedness. These studies have
-found that children tend to produce words that have higher neighborhood
-density (i.e., high connectivity in the network) earlier, both at the
-phonological and the semantic level (Carlson, Sonderegger, \& Bane,
-2014; Hills, Maouene, Riordan, \& Smith, 2010; Hills, Maouene, Maouene,
-Sheya, \& Smith, 2009; Stella, Beckage, \& Brede, 2017; Storkel, 2009).
+Besides these word-level properties, the structure of the lexicon (that
+is, how words relate to each other) also predicts the age of acquisition
+of words. The lexical structure can be characterized in terms of a
+network where each node represents a word in the vocabulary, and each
+link between two nodes represents a relationship between the
+corresponding pair of words (e.g., Collins \& Loftus, 1975). Previous
+studies have investigated early vocabulary structure by constructing
+networks using a variety of word-word relations including shared
+semantic features, target-cue relationships in free association norms,
+co-occurrence in child directed speech, and phonological relatedness.
+These studies have found that children tend to produce words that have
+higher neighborhood density (i.e., high connectivity in the network)
+earlier, both at the phonological and the semantic level (Carlson,
+Sonderegger, \& Bane, 2014; Hills, Maouene, Riordan, \& Smith, 2010;
+Hills, Maouene, Maouene, Sheya, \& Smith, 2009; Stella, Beckage, \&
+Brede, 2017; Storkel, 2009).
 
 While most studies have focused on the static properties of the lexical
 network, a few have investigated the underlying developmental process.
@@ -235,12 +237,25 @@ Acquisition. For clarity of reading, we will call preferential
 attachment the Internally-driven mechanism (INT), and preferential
 acquisition the Externally-driven mechanism (EXT).
 Figure~\ref{fig:growth} shows an illustration of both growth scenarios
-with the same simplified network. These two proposals represent two
-divergent ideas about the role of lexical networks in acquisition. On
-the INT proposal, network structure is a causal factor in early word
-learning; in contrast, on the EXT approach, network structure is not
-internally represented and, therefore, might be an epiphenomenon of the
-statistics of the linguistic input.
+with the same simplified network.
+
+These two proposals represent two divergent ideas about the role of
+lexical networks in acquisition. On the INT proposal, learning is driven
+by known words with high connectivity to other known words (Figure 1,
+left). Thus, the network structure is a causal factor in early word
+learning, that is, children might be relying on the organization of
+their past knowledge to determine future learning. For example, having a
+rich and organized knowledge about the domain of dinosaurs would
+facilitate the acquisition of new dinosaur-related words (Chi \& Koeske,
+1983). In contrast, on the EXT approach, learning is driven by the
+connectivity of words that are not known yet (Figure 1, right). Thus,
+the relevant network structure is not internally represented by
+children, and the related connectivity effect might be an epiphenomenon
+of some low level properties of the linguistic input. For example,
+highly connected words in the input could be more easily learned because
+of their contextual diversity (e.g., Smith \& Yu, 2008) or because
+caregivers emphasize such words in child-directed speech (MacWhinney,
+2014).
 
 \begin{figure}
 
@@ -251,30 +266,37 @@ statistics of the linguistic input.
 \caption{Illustration of the two growth scenarios. Filled grey circles represent known words (Internal) at a certain point in time. The empty, numbered circles represent words that have not yet been learned (External) and which are candidates to enter the lexicon next. The identity of the word that is going to be learned depends on the growth scenario.  Here the squares indicate the node that drives growth in each scenario and the hand pointer indicates which word is likely to be learned. For INT, the utility of a candidate, external node is the average degree (i.e., number of links) of the internal nodes that it would attach to. Thus, according to INT, the node 1 is more likely to enter the lexicon. For EXT, the utility of a candidate node is its degree in the entire network. According to EXT, the node 2 is more likely to enter the lexicon next.}\label{fig:growth}
 \end{figure}
 
-Hills et al. (2009) found that early lexical networks do not grow
-through INT as was originally hypothesised by Steyvers and Tenenbaum
-(2005), but rather through EXT. This finding, though potentially very
-profound, has only been established in the special case of networks that
-are based on 1) semantic associations, 2) production-based vocabularies,
-and 2) data from English-learning children, only. The extent to which
-this result depends on the domain, the measure and culture/language is
-still unclear. In this work, we test the generality of the finding along
-these three dimensions.
+Hills et al. (2009) investigated the growth of lexico-semantic networks
+in toddlers and found that growth did not proceed according to INT as
+was originally hypothesised by Steyvers and Tenenbaum (2005), but rather
+according to
+EXT.\footnote{Besides INT and EXT, the authors tested a third mechanism (called the lure of associates) which resembles EXT in that it is driven by the connectivity of external nodes, except that this connectivity is computed with respect to words that are known. However, EXT is the externally-driven scenario that best predicted the data in this previous work.}
+This is a profound finding because it suggests that learning in the
+early stages is mostly driven by properties of the external input,
+regardless of how past knowledge is organized. However, this work has
+been done in the special case of networks that are based on 1) semantic
+associations, 2) production-based vocabularies, and 2) data from
+English-learning children, only. The extent to which this result depends
+on the domain (e.g., semantic vs.~phonological connectivity), the
+vocabulary measure (production vs.~comprehension) and culture/language
+is still unclear. In this work, we test the generality of the finding
+along these three dimensions.
 
 First, we study the phonological network in addition to the semantic
 network. These two networks represent different ways the mental lexicon
 is structured. In particular, words that are neighbors in the semantic
 network (e.g., \enquote{cat}, \enquote{dog}) are not necessarily
 neighbors in the phonological network, and vice versa. Does the
-phonological network also influence word learning? Previous work did
-find an effect of words' connectivity in the phonological network on
-their age of learning (Carlson et al., 2014; Stella et al., 2017;
-Storkel, 2009). In other words, words learned earlier in life tend to
-sound similar to many other words than a word learned later in life.
-However, this finding is compatible with both INT and EXT, and previous
-studies did not explicitly compare these two mechanisms. Here, we
-investigate whether phonological networks, like semantic networks, grow
-through EXT, or if they rather grow via INT (Figure~\ref{fig:growth}).
+phonological network also predict word learning? Previous work did find
+an effect of words' connectivity in the phonological network on their
+age of learning (Carlson et al., 2014; Stella et al., 2017; Storkel,
+2009). In other words, words learned earlier in life tend to sound
+similar to many other words than a word learned later in life. However,
+this finding is \emph{a priori} compatible with both INT and EXT, and
+previous studies did not explicitly compare these two mechanisms. Here,
+we investigate whether phonological networks, like semantic networks,
+grow through EXT, or if they rather grow via INT
+(Figure~\ref{fig:growth}).
 
 Second, we study vocabularies measured using both comprehension and
 production. Previous studies have found differences between these
@@ -292,16 +314,23 @@ beyond the specific constraints of production.
 Finally, we use developmental data in 10 languages. Lexical networks can
 show more or less cross-linguistic variability along both the semantic
 and phonological domains (Arbesman, Strogatz, \& Vitevitch, 2010; Youn
-et al.,
-2016).\footnote{The difference is more obvious in the phonological case where the network structure––and the distribution of word connectivity––can a priori change from language to language depending on various languistic conventions.}
-Besides, cultures might differ in the way caregivers talk to children
-(Cristia, Dupoux, Gurven, \& Stieglitz, 2017; Kuhl et al., 1997), and
-this difference in the input could influence the chidlren's learning
-strategy. Thus, Cross-linguistic comparison is crucial to test what
-mechanism is cognitively universal and is used by all children, and what
-mechanism is specific to some patterns of learning that emerge due to
-the particulars of a given language or culture (Bates \& MacWhinney,
+et al., 2016). Besides, cultures might differ in the way caregivers talk
+to children (Cristia, Dupoux, Gurven, \& Stieglitz, 2017; Kuhl et al.,
+1997), and this difference in the input could influence the children's
+learning strategy. Thus, Cross-linguistic comparison is crucial to test
+what mechanism is cognitively universal and is used by all children, and
+what mechanism is specific to some patterns of learning that emerge due
+to the particulars of a given language or culture (Bates \& MacWhinney,
 1987; Slobin, 2014).
+
+We test the growth scenarios using parent reports of children
+vocabularies and their normative age of acquisition (Fenson et al.,
+1994). Children may vary in their individual learning trajectories, but
+the aggregate data leads to an average learning pattern which is highly
+consistent. It is this normative trajectory that we model in the current
+study, following the steps of previous research using similar datasets
+(Braginsky et al., 2016; J. C. Goodman et al., 2008; Hills et al., 2010,
+2009; Stella et al., 2017; Storkel, 2009)
 
 The paper is organized as follows. First, we describe the datasets we
 used and explain how we constructed the networks. Second, we analyze
@@ -330,11 +359,11 @@ child \enquote{understands} (comprehension) or \enquote{understands and
 says} (production) each of about 400-700 words. For younger children
 (e.g., 8 to 18 months in the English data), both comprehension and
 production are queried, whereas for older children (16 to 36 months)
-only production is queried. We use data from younger children to test
-comprehension and data from older children to test production across 10
-languages. Following previous studies (Hills et al., 2009; Storkel,
-2009), we restrict our analysis to nouns. Table \ref{tab:stats} gives an
-overview of the data.
+only production is queried. Thus, we use data from younger children to
+test comprehension and data from older children to test production
+across 10 languages. Following previous studies (Hills et al., 2009;
+Storkel, 2009), we restrict our analysis to nouns. Table \ref{tab:stats}
+gives an overview of the data.
 
 \subsection{Age of acquisition}\label{age-of-acquisition}
 
@@ -347,7 +376,7 @@ al., 2016; J. C. Goodman et al., 2008).
 
 \begin{table}
 
-\caption{\label{tab:stats}Statistics for data from Wordbank.}
+\caption{\label{tab:stats}Statistics for dataset we used.}
 \centering
 \begin{tabular}[t]{>{\bfseries}lrlrl}
 \toprule
@@ -393,7 +422,7 @@ the same association data across languages does not necessarily mean
 that the resulting networks will be the same across languages, or that
 these networks will grow similarly. Indeed, though this approximation
 assumes that the semantic similarity measure is universal----which is a
-reasonable assumption (e.g., Youn et al. 2015), the set of words
+reasonable assumption (e.g., Youn et al., 2016), the set of words
 acquired by children as well as the timeline of this acquisition can
 still vary from language to language leading to possibility different
 learning strategies.
@@ -468,8 +497,8 @@ average correlation was -0.21 (SD=0.08) for the semantic networks and
 that nouns with higher degrees are generally learned earlier, thus
 replicating previous findings in English (e.g., Storkel 2004, 2009;
 Hills et al. 2009) and extending these findings to ten different
-languages (with few exceptions) in both production- and
-comprehension-based vocabularies.
+languages, generally, in both production- and comprehension-based
+vocabularies.
 
 \begin{figure}[!h]
 \includegraphics[width=\textwidth]{ms_files/figure-latex/degreeDist-1} \caption{Log-log plot of the cumulative degree distribution function for the global phonological and semantic networks across languages. The figure shows the results for both production and comprehension data. A perfect power-law distribution should appear as a straight line in this graph.}\label{fig:degreeDist}
@@ -483,13 +512,13 @@ this distribution is particularly relevant to INT as this growth
 scenario is known to generate networks with a power-law degree
 distribution, i.e., a distribution of the form
 \(p(k) \propto \frac{1}{k^{\alpha}}\) (Barabasi \& Albert, 1999). If the
-network displays this property, this fact would suggest an INT-like
-generative process. Conversely, if the degree distribution does not
-follow a power law, this fact would weaken the case for INT. The log-log
-plots are shown in Figure \ref{fig:degreeDist}. We fit a power law to
-each empirical degree distribution following the procedure outlined in
-Clauset, Shalizi, and Newman (2009) and using a related R package
-(poweRlaw, Gillespie, 2015).
+network displays this property, this fact would suggest, but not prove,
+an INT-like generative process. If the degree distribution does not
+follow a power law, this would largely weaken the case for INT. The
+log-log plots are shown in Figure \ref{fig:degreeDist}. We fit a power
+law to each empirical degree distribution following the procedure
+outlined in Clauset, Shalizi, and Newman (2009) and using a related R
+package (poweRlaw, Gillespie, 2015).
 
 \begin{table}
 
@@ -554,11 +583,11 @@ distribution: The \(p\)-value was generally above 0.1 in almost all
 languages for both production and comprehension. That said, phonological
 networks had relatively larger cut-offs than semantic networks. As was
 suggested by Arbesman et al. (2010), these \enquote{truncated}
-power-laws in phonological networks ----as well as the observed
-cross-linguistic variability in the value of the cut-offs---- may
-reflect the various constraints that exist on word formation such as the
-number of phonemes in the language, the phonotactics (i.e., the way
-sound sequences are arranged in words), and the length of words. Such
+power-laws in phonological networks--as well as the observed
+cross-linguistic variability in the value of the cut-offs--may reflect
+the various constraints that exist on word formation such as the number
+of phonemes in the language, the phonotactics (i.e., the way sound
+sequences are arranged in words), and the length of words. Such
 constraints may limit the number of words that are phonologically
 similar, thus leading to distributions which decay faster than a
 non-truncated power law.
@@ -604,7 +633,7 @@ Chain Monte Carlo sampling resulted in a posterior distribution over
 First, the results replicate Hills et al.'s original finding regarding
 the semantic network in English and production data, which is that this
 network grows by EXT, not by INT. Second, our results show that,
-generally speaing, this finding generalizes to comprehension, and holds
+generally speaking, this finding generalizes to comprehension, and holds
 across languages. This generalization was obtained in both the
 semantic\footnote{One could imagine that the fact of using English free association norms cross-linguistically would decrease the effect of non-English semantic networks because of possible cultural differences. However, our findings do not support this assumption, rather it supports our initial approximation about the universality of the semantic similarity measure.}
 and phonological domains.
@@ -629,8 +658,8 @@ factors. The first one is word frequency, a well studied factor shown to
 predict the age of acquisition in a reliable fashion (e.g. J. C. Goodman
 et al., 2008). The second factor is word length, which was shown to
 correlate with phonological connectivity: Shorter words are more likely
-to have higher connectivity (Pisoni et al., 1985; Vitevitch and
-Rodriguez, 2004).
+to have higher connectivity (Pisoni, Nusbaum, Luce, \& Slowiaczek, 1985;
+Vitevitch \& Rodríguez, 2005).
 
 Since we found INT to be uninformative, we dropped it from this
 analysis, keeping only EXT. This simplified the model because we no
@@ -645,14 +674,14 @@ and length predict the age of acquisition.
 For word length, we counted the number of phonemes in our generated IPA
 transcription. For word frequency, we used the frequency estimates from
 Braginsky et al. (2016) where unigram counts were derived based on
-CHILDES corpora in each language (MacWhinney, 2000). For each word,
+CHILDES corpora in each language (MacWhinney, 2014). For each word,
 counts included words that shared the same stem (e.g., \enquote{cats}
 counts as \enquote{cat}), or words that were synonymous (e.g.
 \enquote{father} counts as \enquote{daddy}). Although these frequency
 counts use transcripts from independent sets of children, they are based
 on large samples, and this allows us to average out possible differences
-between children and the specificities of their input (see Goodman et
-al. 2008).
+between children and the specificities of their input (see J. C. Goodman
+et al., 2008).
 
 We conducted two analyses. We fit a linear regression for each language,
 and we fit a linear mixed-effect model to all the data pooled across
@@ -680,12 +709,11 @@ contributes to learning in some languages but not in other. In
 particular, semantic connectivity does not explain variance in English
 data beyond that explained by phonological connectivity, frequency and
 length. This contrasts with the original finding in Hills et al. (2009).
-However, in this previous study, semantic connectivity was not tested in
-a model that included frequency, length and phonological connectivity as
-covariates. Another important difference is the number of words tested:
-Our study uses a larger set of nouns. That said, and despite these
-apparent cross-linguistic differences, both phonological and semantic
-connectivity are significant predictors in the combined model.
+However, this might be due to our using of a slightly different model
+(which included word length as a covariate) and a larger dataset. That
+said, and despite these apparent cross-linguistic differences, both
+phonological and semantic connectivity are significant predictors in the
+combined model.
 
 \section{Discussion}\label{discussion}
 
@@ -698,19 +726,15 @@ the learner's internal network determines future growth; the other, EXT
 (originally called Preferential Acquisition) described a model in which
 the external, global environmental network structure determines
 learners' growth patterns. These two mechanisms represent two
-fundamentally different accounts of lexical growth: one suggests that
+fundamentally different accounts of lexical growth: One suggests that
 future word knowledge is primarily shaped by the children's past
 knowledge and its organization, whereas the other suggests that learning
 is shaped, rather, by salient properties in the input regardless of how
-past knowledge is organized.
-
-Previous work (Hills et al., 2010, 2009) has been limited in its scope:
-It focused primarily on semantic networks, production-based
-vocabularies, and developmental data from English-learning children. The
-present study tested the generality of previous findings by 1)
-investigating phonological networks together with semantic networks, 2)
-testing both comprehension- and production-based vocabularies, and 3)
-comparing the results across 10 languages.
+past knowledge is organized. The present study tested the generality of
+previous findings (Hills et al., 2010, 2009) by 1) investigating
+phonological networks together with semantic networks, 2) testing both
+comprehension- and production-based vocabularies, and 3) comparing the
+results across 10 languages.
 
 We found that the original findings reported in Hills et al. (2009)
 generalize well across all these dimensions. First, just like semantic
@@ -730,26 +754,42 @@ across languages.
 These findings corroborate the hypothesis that children start by
 learning words that have high similarity to a variety of other words in
 the learning environment, not in the child's available lexicon. This
-means, strikingly, that children are sensitive to highly connected words
-although they do not initially have access to the full network. This
-finding raises some important questions. What mechanism allows children
-to distinguish highly connected words from other words? Besides, why
-would highly connected words be easier to learn?
+hypothesis implies that children are sensitive to highly connected words
+although they do not initially have access to the full network, thus
+raising some important questions: What mechanism allows children to
+distinguish highly connected words from other words? Besides, why would
+highly connected words be easier to learn?
 
-One possibility is that children rely on their statistical learning
-abilities. For example, in the semantic domain, children might be using
-a mechanism akin to cross-situational learning to pick up the meanings
-of some words, especially concrete nouns (Smith \& Yu, 2008), and such
-learning would resemble the growth scenario described by EXT. Indeed,
-since free association is related to contextual co-occurrence (Griffiths
-et al., 2007), highly connected words will tend to occur in a variety of
-speech and referential contexts. This fact makes such words easier to
-learnonly because they have more referential disambiguating cues across
-learning contexts, and crucially, even without knowing the entire set of
-words with witch they occurs (hence the similarity with EXT). This
-possibility is supported by the finding that words' diversity of
-occurrence in child directed speech predicts their age of learning
-(Hills et al., 2010).
+One possibility is that these patterns emerge from children's use of
+statistical learning abilities (Aslin \& Newport, 2012; Saffran, Aslin,
+\& Newport, 1996; Smith \& Yu, 2008). The term \enquote{statistical
+learning} has been used in the developmental literature to describes the
+process by which one acquires information about their environment
+through keeping track of the frequency distribution of some elements
+(e.g., words) in different contexts. An important property of this kind
+of learning is that it occurs without explicit instructions and through
+mere exposure to the input. Previous work in the line of research has
+documented mechanisms which can explain the patterns found in the
+current study.
+
+For example, in the semantic domain, growth according to EXT can be
+explained by a mechanism similar to cross-situational learning (Pinker,
+2013; Smith \& Yu, 2008; Yurovsky \& Frank, 2015). According to this
+mechanism, children track the co-occurrence of concrete nouns with their
+possible semantic referents. The referent of a word heard in only one
+naming situation can be ambiguous (e.g., when the word \enquote{ball} is
+heard for the first time in the presence of both a ball and a chair),
+but hearing the same word in a diversity of semantic contexts allows the
+learner to narrow down the set of possible word-object mappings. In our
+case, free association is related to contextual co-occurrence
+(Griffiths, Steyvers, \& Tenenbaum, 2007), meaning that highly connected
+words will tend to occur in a variety of speech and referential
+contexts. This fact makes such words easier to learn because they have
+more referential disambiguating cues across learning contexts, and
+crucially, even without knowing the entire set of words with witch they
+co-occur (hence the similarity with EXT). This possibility is supported
+by the finding that words' diversity of occurrence in child directed
+speech predicts their age of learning (Hills et al., 2010).
 
 In the phonological case, network growth according to EXT is also
 compatible with a scenario whereby children are tracking lwo level
@@ -759,11 +799,12 @@ phonotactic probability (M. S. Vitevitch, Luce, Pisoni, \& Auer, 1999).
 That is, highly connected words tend to be made of frequent sound
 sequences. Children are sensitive to local phonotactic regularities
 (Jusczyk, Luce, \& Charles-Luce, 1994) and this sensitivity might lead
-them to learn higher-probability words more easily (e.g., Storkel,
-2001). This explanation is supported by computational simulations that
-shows how learning general phonotactics patterns create ``well-worn
-paths'' which allow the models to represent several distinct but
-phonologically neighboring words (Dell et al; 1993; Takac et al. 2017).
+them to learn higher-probability words more easily (Storkel, 2001). This
+explanation is supported by computational simulations that shows how
+learning general phonotactics patterns create ``well-worn paths'' which
+allow the models to represent several distinct but phonologically
+neighboring words (Dell, Juliano, \& Govindjee, 1993; Takac, Knott, \&
+Stokes, 2017).
 
 Besides using their own statistical learning skills, children could also
 benefit from the way their caregivers speak. Perhaps the caregivers put
@@ -774,27 +815,27 @@ access to the distribution of words' connectivity in the final network.
 Investigating this possibility would require further research on
 caregiver-child interaction (MacWhinney, 2014; B. C. Roy et al., 2015),
 examining what words are introduced over development and the extent to
-which children's uptake is influenced by this input (Clark 2007; Hoff
-and Naigles, 2002; Hurtado et al., 2008).
+which children's uptake is influenced by this input (Clark, 2007; Hoff
+\& Naigles, 2002).
 
 This work shares a number of limitations with previous studies using
-similar research strategy and datasets (e.g., Hills et al. 2009; 2010).
-Chief among these limitations is the fact that the age of word
-acquisition is computed using different children at different ages (due
-to the fact that available CDI data is mainly cross-sectional). Although
-this measure has proven highly consistent (Fensen et al. 1994), it lead
-us to focus on studying the learning mechanism of the \enquote{average}
-child. Individual trajectories, however, could show different learning
-patterns. For example, using longitudinal data Beckage, Smith, and Hills
-(2011) found differences between typical and late talkers in terms of
-the semantic network structure. Besides, although our study endorses the
+similar research strategy and datasets. Chief among these limitations is
+the fact that the age of word acquisition is computed using different
+children at different ages (due to the fact that available CDI data is
+mainly cross-sectional). Although this measure has proven highly
+consistent (Fenson et al., 1994), it led us to focus on studying the
+learning mechanism of the \enquote{average} child. Individual
+trajectories, however, could show different learning patterns. For
+example, using longitudinal data Beckage, Smith, and Hills (2011) found
+differences between typical and late talkers in terms of the semantic
+network structure. Besides, although our study endorses the
 externally-driven account of network growth, this does not mean
 individual children never use some variant of INT or some combination of
 both INT and EXT (Beckage and Colunga, under review). For example, some
 children develop \enquote{islands of expertise}, that is, well organized
 knowledge about a certain topic (e.g., birds or dinosaurs). This prior
 knowledge enables these children to learn new related words more easily
-(e.g., Chi and Koeske, 1983).
+(e.g., Chi \& Koeske, 1983).
 
 To conclude, our work validates and generalizes previous results in
 early network development. It suggests that the advantage of highly
@@ -829,6 +870,11 @@ Arbesman, S., Strogatz, S. H., \& Vitevitch, M. S. (2010). The structure
 of phonological networks across multiple languages. \emph{International
 Journal of Bifurcation and Chaos}, \emph{20}(03), 679--685.
 
+\hypertarget{ref-aslin2012}{}
+Aslin, R. N., \& Newport, E. L. (2012). Statistical learning: From
+acquiring specific items to forming general rules. \emph{Current
+Directions in Psychological Science}, \emph{21}(3).
+
 \hypertarget{ref-barabasi99}{}
 Barabasi, A.-L., \& Albert, R. (1999). Emergence of scaling in random
 networks. \emph{Science}, \emph{286}(5439), 509--512.
@@ -858,15 +904,32 @@ explore the phonological network in child-directed speech: A survival
 analysis of children?s first word productions. \emph{Journal of Memory
 and Language}, \emph{75}, 159--180.
 
+\hypertarget{ref-chi1983}{}
+Chi, M. T., \& Koeske, R. D. (1983). Network representation of a child's
+dinosaur knowledge. \emph{Developmental Psychology}, \emph{19}(1).
+
+\hypertarget{ref-clark2007}{}
+Clark, E. V. (2007). Young children's uptake of new words in
+conversation. \emph{Language in Society}, \emph{36}(2).
+
 \hypertarget{ref-clauset09}{}
 Clauset, A., Shalizi, C. R., \& Newman, M. E. J. (2009). Power-law
 distributions in empirical data. \emph{SIAM Review}, \emph{51}(4),
 661--703.
 
+\hypertarget{ref-collins1975}{}
+Collins, A. M., \& Loftus, E. F. (1975). A spreading-activation theory
+of semantic processing. \emph{Psychological Review}, \emph{82}(6).
+
 \hypertarget{ref-cristia2017}{}
 Cristia, A., Dupoux, E., Gurven, M., \& Stieglitz, J. (2017).
 Child-directed speech is infrequent in a forager-farmer population: A
 time allocation study. \emph{Child Development}.
+
+\hypertarget{ref-dell1993}{}
+Dell, G. S., Juliano, C., \& Govindjee, A. (1993). Structure and content
+in language production: A theory of frame constraints in phonological
+speech errors. \emph{Cognitive Science}, \emph{17}(2), 149--195.
 
 \hypertarget{ref-fenson94}{}
 Fenson, L., Dale, P. S., Reznick, J. S., Bates, E., Thal, D. J.,
@@ -893,6 +956,11 @@ Language}, \emph{35}(3), 515--531.
 Goodman, N., \& Stuhlmuller, A. (2014). The Design and Implementation of
 Probabilistic Programming Languages. \url{http://dippl.org}.
 
+\hypertarget{ref-griffiths07}{}
+Griffiths, T. L., Steyvers, M., \& Tenenbaum, J. B. (2007). Topics in
+semantic representation. \emph{Psychological Review}, \emph{114}(2),
+2007.
+
 \hypertarget{ref-hills2010}{}
 Hills, T. T., Maouene, J., Riordan, B., \& Smith, L. B. (2010). The
 associative structure of language: Contextual diversity in early word
@@ -903,6 +971,10 @@ Hills, T. T., Maouene, M., Maouene, J., Sheya, A., \& Smith, L. (2009).
 Longitudinal analysis of early semantic networks: Preferential
 attachment or preferential acquisition? \emph{Psychological Science},
 \emph{20}(6), 729--739.
+
+\hypertarget{ref-hoff2002}{}
+Hoff, E., \& Naigles, L. (2002). How children use input to acquire a
+lexicon. \emph{Child Development}, \emph{73}(2).
 
 \hypertarget{ref-jusczyk1994}{}
 Jusczyk, P. W., Luce, P. A., \& Charles-Luce, J. (1994). Infant's
@@ -928,10 +1000,24 @@ Nelson, D. L., McEvoy, C. L., \& Schreiber, T. A. (1998). \emph{The
 University of South Florida word association, rhyme, and word fragment
 norms}. Retrieved from \url{http://w3.usf.edu/FreeAssociation/}
 
+\hypertarget{ref-pinker2013}{}
+Pinker, S. (2013). \emph{Learnability and cognition: The acquisition of
+argument structure}. MIT press.
+
+\hypertarget{ref-pisoni1985}{}
+Pisoni, D. B., Nusbaum, H. C., Luce, P. A., \& Slowiaczek, L. M. (1985).
+Speech perception, word recognition and the structure of the lexicon.
+\emph{Speech Communication}, \emph{4}(1), 75--95.
+
 \hypertarget{ref-roy2015}{}
 Roy, B. C., Frank, M. C., DeCamp, P., Miller, M., \& Roy, D. (2015).
 Predicting the birth of a spoken word. \emph{Proceedings of the National
 Academy of Sciences}, \emph{112}(41), 12663--12668.
+
+\hypertarget{ref-saffran1996}{}
+Saffran, J. R., Aslin, R. N., \& Newport, E. L. (1996). Statistical
+learning by 8-month-old infants. \emph{Science}, \emph{274}(5294),
+1926--1928.
 
 \hypertarget{ref-slobin2014}{}
 Slobin, D. I. (2014). \emph{The crosslinguistic study of language
@@ -940,7 +1026,7 @@ acquisition} (Vol. 4). Psychology Press.
 \hypertarget{ref-smith2008}{}
 Smith, L., \& Yu, C. (2008). Infants rapidly learn word-referent
 mappings via cross-situational statistics. \emph{Cognition},
-\emph{106}(3), 1558--1568.
+\emph{106}(3).
 
 \hypertarget{ref-stella2017}{}
 Stella, M., Beckage, N. M., \& Brede, M. (2017). Multiplex lexical
@@ -962,6 +1048,17 @@ Storkel, H. L. (2009). Developmental differences in the effects of
 phonological, lexical and semantic variables on word learning by
 infants. \emph{Journal of Child Language}, \emph{36}(2), 29--321.
 
+\hypertarget{ref-takac2017}{}
+Takac, M., Knott, A., \& Stokes, S. (2017). What can neighbourhood
+density effects tell us about word learning? Insights from a
+connectionist model of vocabulary development. \emph{Journal of Child
+Language}, \emph{44}(2).
+
+\hypertarget{ref-vitevitch2005}{}
+Vitevitch, M. S., \& Rodríguez, E. (2005). Neighborhood density effects
+in spoken word recognition in spanish. \emph{Journal of Multilingual
+Communication Disorders}, \emph{3}(1).
+
 \hypertarget{ref-vitevitch1999}{}
 Vitevitch, M. S., Luce, P. A., Pisoni, D. B., \& Auer, E. T. (1999).
 Phonotactics, neighborhood activation, and lexical access for spoken
@@ -972,6 +1069,10 @@ Youn, H., Sutton, L., Smith, E., Moore, C., Wilkins, J. F., Maddieson,
 I., \ldots{} Bhattacharya, T. (2016). On the universal structure of
 human lexical semantics. \emph{Proceedings of the National Academy of
 Sciences}, \emph{113}(7), 1766--1771.
+
+\hypertarget{ref-yurovsky2015}{}
+Yurovsky, D., \& Frank, M. C. (2015). An integrative account of
+constraints on cross-situational learning. \emph{Cognition}, \emph{145}.
 
 
 
