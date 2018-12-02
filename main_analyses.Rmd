@@ -682,7 +682,7 @@ posterior_fun <- function(data_growth_meas_lang) {
   
   posteriors_lang <- vector("list", length = length(model_list))
   
-  for (i in 1:length(model_list)) {
+   {
     
     posterior_model <- NULL
     print(model_name[[i]]) 
