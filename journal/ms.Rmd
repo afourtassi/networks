@@ -1,6 +1,6 @@
 ---
-title             : "Noun Learning as Network Growth: A Cross-linguistic Analysis"
-shorttitle        : "Noun Learning as Network Growth"
+title             : "The growth of children’s semantic and phonological networks: insight from 10 languages"
+shorttitle        : "Lexical Development as Network Growth"
 #numbersections: true
 
 author: 
@@ -175,7 +175,7 @@ In previous studies, two nodes were linked if they had an edit distance of 1 [@s
 
 ## Static properties of the global network
 
-We start by analyzing word connectivity in the global (static) network. We constructed this network using nouns learned by the oldest age for which we have CDI data (e.g., in English this corresponds, in comprehension, to the network by 18 months, and in production, to the network by 30 months). This global network is the end-state towards which both INT and EXT converge by the last month of learning. Moreover, following @hills2009, we used this end-state network as a proxy for the external connectivity in the learning environment. Below we analyze properties of this global networks that may a priori hint at an INT- or EXT-like growth.  In order to compare various predictors on the same data, we restrict the analysis to the subset of nouns for which we had semantic associates in the free association norms.
+We start by analyzing word connectivity in the global (static) network. We constructed this network using nouns learned by the oldest age for which we have CDI data (e.g., in English this corresponds, in comprehension, to the network by 18 months, and in production, to the network by 30 months). This global network is the end-state towards which both INT and EXT converge by the last month of learning. Moreover, following @hills2009, we used this end-state network as a proxy for the external connectivity in the learning environment. Below we analyze properties of this global networks that may a priori hint at an INT- or EXT-like growth. 
 
 
 ```{r}
