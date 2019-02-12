@@ -101,6 +101,16 @@ Here compute the statistics
 language, measure, number of nouns, age limits, and number  
 ```{r}
 
+#Number of children 
+
+#Number of children
+n_child <- data_all %>%
+  mutate(sum_child =  num_true+num_false) %>%
+  group_by(language, measure, item) %>%
+  summarise(children = sum(sum_child)) %>%
+  distinct(language, measure, children)
+  
+  
 mysummary <- data_all %>%
   group_by(language, measure) %>%
   summarise(min_age = min(age),
@@ -116,6 +126,8 @@ mysummary <- data_all %>%
                    pn = produces_nouns, pa=produces_age_range)
 
 feather::write_feather(mysummary, "saved_data/stats_new.feather")
+  
+
   
 
 kable(mysummary, format = "latex", escape = FALSE, booktabs = TRUE,
