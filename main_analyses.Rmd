@@ -89,10 +89,6 @@ data_all <- bind_rows(data_raw) %>%
 
 #I am taking out measure to keep only produce
 data_all <- feather::read_feather("saved_data/all_data.feather")  
-
-data_all$language <- plyr::mapvalues(data_all$language, 
-                                 from = c("Croatian","Danish","English (American)", "French (Quebecois)", "Italian", "Norwegian", "Russian", "Spanish (Mexican)", "Swedish", "Turkish"), 
-                                 to = c("Croatian","Danish","English", "French", "Italian", "Norwegian", "Russian", "Spanish", "Swedish", "Turkish"))
   
 
 ```
@@ -116,19 +112,19 @@ mysummary <- data_all %>%
   summarise(min_age = min(age),
             max_age = max(age),
             nouns = n_distinct(item)) %>%
+  left_join(n_child) %>%
   mutate(age_range = paste(min_age, max_age, sep = "-")) %>%
   select(-min_age, -max_age)  %>%
   group_by(language, measure) %>%
   nest() %>%
   spread(measure, data) %>%
   unnest(.sep = "_") %>%
-  select(language, un = understands_nouns, ua=understands_age_range,
-                   pn = produces_nouns, pa=produces_age_range)
+  select(language, un = understands_nouns, ua=understands_age_range, uc= understands_children,
+                   pn = produces_nouns, pa=produces_age_range, pc=produces_children)
 
 feather::write_feather(mysummary, "saved_data/stats_new.feather")
   
 
-  
 
 kable(mysummary, format = "latex", escape = FALSE, booktabs = TRUE,
       linesep = "", format.args = list(big.mark = ","),
@@ -178,11 +174,14 @@ list_by_item <- data_all %>%
 data_aoa <- map(list_by_item, fit_inst_measure_uni) %>%
   bind_rows()
 
-data_aoa <- data_aoa %>%
+feather::write_feather(data_aoa, "saved_data/data_aoa.feather")
+
+
+aoa <- feather::read_feather("saved_data/data_aoa.feather")  %>%
   select(language, form, measure, uni_lemma, item, definition, aoa) %>%
   distinct()
+
   
-#feather::write_feather(data_aoa, "saved_data/data_aoa.feather")
 
 #I am taking out measure to keep only produce
 #data_aoa2 <- feather::read_feather("saved_data/aoa_data.feather") %>%
@@ -239,6 +238,8 @@ data_growth <- map(aoa_by_measure_lang, make_data_growth) %>%
 #Save at this point
 #feather::write_feather(data_growth, "saved_data/data_growth.feather")
 data_growth <- feather::read_feather("saved_data/data_growth.feather") 
+
+
 ```
 
 Construct the netwroks and derive the dynamic predictors: PAC and PAT
@@ -247,8 +248,8 @@ Construct the netwroks and derive the dynamic predictors: PAC and PAT
 #Here I chose to use the full data for the phono netwotk and filter later for the unilemmas only when doing what? the combined regression?, thus the utility will be more precise for the resulting subset 
 
 words_growth <- data_growth %>%
-  #filter(!is.na(uni_lemma)) %>% #only keep unilemmas that intersect with free association data
-  dplyr::filter(aoa > 5) 
+    #filter(!is.na(uni_lemma)) %>% #only keep unilemmas that intersect with free association data
+  filter(age > 5) 
 
 growth_by_meas <- words_growth %>%
   split(paste(.$measure))
@@ -275,6 +276,7 @@ assoc_PAC<- PAC_generator(vocab_age = growth_meas_lang, word_pairs = assoc_pairs
 
  assoc_PAT<- PAT_generator(vocab_age = growth_meas_lang, word_pairs = assoc_pairs) %>% 
       rename(PAT_assoc = value) %>% select(-definition, -uni_lemma)
+ 
  
  sem_growth <- growth_meas_lang %>%
    left_join(assoc_PAC) %>%
@@ -307,10 +309,12 @@ phono_net_fun <- function (growth_meas_lang) {
       filter(age==first_age) %>%
       select(item, definition)
   
-  phono_pairs<- make_IPA_pairs(def_list = def_list, lang = lang)
+  phono_pairs<- make_IPA_pairs(def_list = def_list, lang = lang) %>%
+    mutate(language = lang) %>%
+    
   
   #Threshold the phonetic distance (we take t=2, becuase t=1 is too sparse) 
-  threshold <- 2
+  threshold <- 1
 
   phono_PAC <- PAC_generator(vocab_age = growth_meas_lang, word_pairs = phono_pairs %>% IPA_threshold(threshold)) %>% 
       rename(PAC_phono_t2 = value) %>% select(-definition, -uni_lemma)
@@ -318,26 +322,133 @@ phono_net_fun <- function (growth_meas_lang) {
   phono_PAT <- PAT_generator(vocab_age = growth_meas_lang, word_pairs = phono_pairs %>% IPA_threshold(threshold)) %>% 
       rename(PAT_phono_t2 = value) %>% select(-definition, -uni_lemma)
   
+ # phono_nt_PAC <- PAC_generator(vocab_age = growth_meas_lang, word_pairs = phono_pairs %>% IPA_continuous()) #%>% 
+ #    rename(PAC_phono = value) %>% select(-definition, -uni_lemma)
+   
   phono_growth <- growth_meas_lang %>%
+   left_join(phono_nt_PAC) 
    left_join(phono_PAC) %>%
    left_join(phono_PAT)
   
+  return(phono_growth)
 }
 
-phono_red <-  map(growth_by_meas_lang, phono_net_fun) %>%
+phono_red_nt <-  map(growth_by_meas_lang, phono_net_fun) %>%
   bind_rows() 
 
 
-#feather::write_feather(phono_red, "saved_data/phono_red.feather")
-phono_red <- feather::read_feather("saved_data/phono_red.feather") 
+feather::write_feather(phono_red_nt, "saved_data/phono_red_nt.feather")
+
+feather::write_feather(phono_red, "saved_data/phono_red_edit1.feather")
+phono_red <- feather::read_feather("saved_data/phono_red_nt.feather") 
 
 #Combine data 
 data_growth_net <- words_growth %>%
   left_join(sem_red) %>%
   left_join(phono_red)
 
+feather::write_feather(data_growth_net, "saved_data/data_growth_net_nt.feather") 
+
+
+
 ```
 
+Here do Mantel tests
+```{r}
+
+phono_net_fun <- function (growth_meas_lang) {
+  
+  lang <- unique(growth_meas_lang$language)
+  #meas <- unique(growth_meas_lang$measure)
+  
+  first_age<- growth_meas_lang$age[1]
+  
+  def_list<- growth_meas_lang %>%
+    filter(!is.na(uni_lemma)) %>%
+    trim_all_definition() %>% 
+    filter(age==first_age) %>%
+    select(item, definition)
+  
+  item_unilemma <- growth_meas_lang %>%
+    filter(!is.na(uni_lemma)) %>%
+    select(item, uni_lemma)
+  
+  phono_pairs<- make_IPA_pairs(def_list = def_list, lang = lang) %>%
+    mutate(language = lang) %>%
+    left_join(item_unilemma) %>%
+    rename(item0 = item,
+           item = pair,
+           item.uni_lemma = uni_lemma) %>%
+    left_join(item_unilemma) %>%
+    rename(pair.uni_lemma = uni_lemma,
+           pair = item,
+           item = item0)
+  
+  return(phono_pairs)
+}
+
+#Ici mantel test
+phono_pairs_all <- map(growth_by_meas_lang, phono_net_fun) %>%
+  bind_rows()  
+
+feather::write_feather(phono_pairs_all, "saved_data/phono_pairs_all.feather") 
+
+phono_pairs_dist <- phono_pairs_all %>%
+  mutate(link1 = as.numeric(dist<=1)) %>%
+  mutate(link2 = as.numeric(dist<=2)) %>%
+  mutate(link_cont = ifelse(dist==0, 1, 1/dist))
+
+
+#Pairwise comparision: each time, take the overlap and do the test
+
+data_prod <- data_aoa %>%
+  filter(measure =='produces')
+  
+data_by_lang <- split(phono_pairs_dist$language)
+
+pair_data <- function(lang1){
+  
+  pair_cor_data <- function (lang2){
+  
+  lang1_unilemmas <- unique(lang1$uni_lemma)
+  lang2_unilemmas <- unique(lang2$uni_lemma)
+  uni_intersect <-  intersect(lang1_unilemmas, lang2_unilemmas)
+  
+  data_lang1 <- lang1 %>%
+    filter(!is.na(uni_lemma),
+           uni_lemma %in% uni_intersect) %>%
+    select(uni_lemma, aoa) %>%
+    group_by(uni_lemma) %>%
+    summarise(aoa1=mean(aoa))
+
+  
+  data_lang2 <- lang2 %>%
+    filter(!is.na(uni_lemma),
+           uni_lemma %in% uni_intersect) %>%
+    select(uni_lemma, aoa) %>%
+    group_by(uni_lemma) %>%
+    summarise(aoa2=mean(aoa))
+  
+  both <- data_lang1 %>%
+    left_join(data_lang2)
+  
+  mycorr <- cor.test(rank(both$aoa1), rank(both$aoa2), method = 'kendall')
+  val=mycorr$estimate
+  p=mycorr$p.value
+  language1 = unique(lang1$language) 
+  language2 = unique(lang2$language)
+  
+  data.frame(language1=language1, language2=language2, tau=val, sig = p)
+  
+}
+  map(data_by_lang, pair_cor_data) %>%
+    bind_rows()
+
+}
+
+
+
+```
 
 Compute other static predictors (frequency and length) besides PAC
 
@@ -372,7 +483,7 @@ words_freq <- data_static %>%
   left_join(frequency_mika) %>%
   select(-definition, -uni_lemma, -sem_deg, -phono_deg)
 
-aoa_items <- data_aoa %>%
+aoa_items <- aoa %>%
   select(language, measure, item, aoa) # Here I should round the AoA?
 
   
@@ -397,13 +508,10 @@ data_static_pred$language <- plyr::mapvalues(data_static_pred$language,
                                  to = c("Croatian","Danish","English", "French", "Italian", "Norwegian", "Russian", "Spanish", "Swedish", "Turkish"))
 
 
-data_static_prop$language <- plyr::mapvalues(data_static_prop$language, 
-                                 from = c("Croatian","Danish","English (American)", "French (Quebecois)", "Italian", "Norwegian", "Russian", "Spanish (Mexican)", "Swedish", "Turkish"), 
-                                 to = c("Croatian","Danish","English", "French", "Italian", "Norwegian", "Russian", "Spanish", "Swedish", "Turkish"))
-
-
 data_static_prop <- data_all %>%
   left_join(data_static_pred) 
+
+
 ```
 
 
@@ -412,6 +520,11 @@ data_static_prop <- data_all %>%
 Correlatinon degree/AoA using unilemmas 
 
 ```{r}
+
+#data_all$language <- plyr::mapvalues(data_all$language, 
+#                                 from = c("Croatian","Danish","English (American)", "French (Quebecois)", #"Italian", "Norwegian", "Russian", "Spanish (Mexican)", "Swedish", "Turkish"), 
+#                                 to = c("Croatian","Danish","English", "French", "Italian", "Norwegian", #"Russian", "Spanish", "Swedish", "Turkish"))
+
 
 #Sem_deg is defined over unilemmas,  phono_deg is defined over definitions, and AoA is defined over items 
 #For a given defintion we can have more than one item (polysemy), for one unilemma we can have more than one definiton (if the semantic distinction is not very important), or we might have 0 unilemma (if the meaning of the defintion is not part of the main cross-lingusitc lemmas)
@@ -424,13 +537,16 @@ unilemmas <- data_static_pred %>%
   filter(!is.na(sem_deg)) %>% #only keep unilemmas that intersect with free association data 
   filter(aoa > 5) #These AoA are  artifact of the glm fitting (likely due to very few data point, I need to check these) 
 
+unilemmas_nt <-unilemmas %>%
+  filter(phono_deg != 'Inf')
+
 #Impute missing values and center/scale
-uni_scale <- unilemmas %>%
+uni_scale <- unilemmas_nt %>%
   group_by(measure, language) %>%
   mutate_at(c('sem_deg', 'phono_deg', 'length', 'frequency'), funs(as.numeric(Hmisc::impute(.)))) %>%
   mutate_at(c('sem_deg', 'phono_deg', 'length', 'frequency'), funs(as.numeric(scale(.))))
 
-feather::write_feather(uni_scale, "saved_data/data_static_scaled.feather")
+feather::write_feather(uni_scale, "saved_data/data_static_scaled_nt.feather")
 #phono_red <- feather::read_feather("saved_data/phono_red.feather") 
 
   
@@ -448,6 +564,17 @@ correlations <- data_long %>%
 
 ```
 
+Here do some analysis
+```{r}
+#Regression with phono (edit=1)
+
+
+
+#Regression with phono (1/edit)
+```
+
+
+
 Production
 
 ```{r fig.width=10, fig.height=5}
@@ -457,7 +584,7 @@ plot_correlation_prod <- ggplot(subset(data_long, measure == "produces"), aes(x=
     colour = solarized_palette(1),
     size = 0.5, alpha = 0.5) +
   geom_abline(slope = -1)+
-  coord_cartesian(xlim=c(-1,5))+
+  #coord_cartesian(xlim=c(-1,10))+
   #scale_x_continuous(limits=c(-2,5))+
   scale_y_continuous(breaks =c(15,25,35))+
   geom_smooth(method = "lm", colour = "grey3", se=FALSE)+
@@ -629,6 +756,9 @@ PreProcessing growth data strcutire for network growth models
 
 ```{r}
 
+#data_growth_net <- feather::read_feather("saved_data/data_growth_net.feather")
+data_growth_net_as_ws <- feather::read_feather("../asNet_local/saved_data/data_growth_net_AS_WS.feather")
+
 #Filtering 
 data_growth_pred <- data_growth_net %>%
   filter(!is.na(uni_lemma)) %>% #use only words with english translation 
@@ -650,6 +780,9 @@ data_growth_pred <- data_growth_pred %>%
   group_by(measure, language) %>%
   mutate_at(c('PAC_assoc', 'PAT_assoc', 'PAC_phono_t2', 'PAT_phono_t2'), funs(as.numeric(scale(.)))) %>%
   select(-definition) #removing defintions because they cause JSon parser to fail in rWebppl (especially the (') in French)
+
+
+#data_growth_pred_as <- feather::read_feather("../asNet_local/saved_data/data_growth_pred_wg_as_test")
 
 
 ```
@@ -679,6 +812,8 @@ model_list = list(model_semPAT, model_semPAC, model_phonoPAT, model_phonoPAC,
 model_name=c('semPAT', 'semPAC', 'phonoPAT', 'phonoPAC',
                                         'model_semPAC_phonoPAC_semPAT_phonoPAT')
 
+
+
 ```
 
 
@@ -694,7 +829,8 @@ posterior_fun <- function(data_growth_meas_lang) {
   
   posteriors_lang <- vector("list", length = length(model_list))
   
-   {
+   #for (i in 1:1) {
+   for (i in 1:length(model_list)) {
     
     posterior_model <- NULL
     print(model_name[[i]]) 
@@ -707,7 +843,7 @@ posterior_fun <- function(data_growth_meas_lang) {
                                 data_var = "data",
                                 inference_opts = list(
                                   method = "MCMC",
-                                  samples = 1000, 
+                                  samples = 500, 
                                   burn = 500),
                                 model_var = "AOA",
                                 output_format = "webppl")
@@ -735,8 +871,12 @@ data_growth_by_meas_lang <- data_growth_pred %>%
 posterior <- map(data_growth_by_meas_lang, posterior_fun) %>%
   bind_rows()
 
-feather::write_feather(posterior, "saved_data/posterior.feather")
-posterior <- feather::read_feather("saved_data/posterior.feather") 
+feather::write_feather(posterior, "saved_data/posterior_as_ws.feather")
+#posterior <- feather::read_feather("saved_data/posterior.feather") 
+
+#data_growth_meas_lang <- data_growth_by_meas_lang[[1]]
+
+#posterior_fun(data_test)
 
 ```
 
@@ -788,16 +928,16 @@ param_summary_com$model <- plyr::mapvalues(param_summary_com$model,
 param_summary_all <- param_summary_ind %>%
   bind_rows(param_summary_com)
 
-feather::write_feather(param_summary_all, "saved_data/growth_preds.feather")
-param_summary_all <- feather::read_feather("saved_data/growth_preds.feather")
+#feather::write_feather(param_summary_all, "saved_data/growth_preds.feather")
+#param_summary_all <- feather::read_feather("saved_data/growth_preds.feather")
 
 ```
 
 Plot growth data (production)
 
 ```{r fig.width=5, fig.height=2}
-ggplot(subset(param_summary_all, measure == "produces"), aes(x = model , y = mean)) +
-  geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model, linetype=Test),
+ggplot(subset(param_summary_all, measure == "produces" & Test =="Individual"), aes(x = model , y = mean)) +
+  geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model),
                   position = position_dodge(width = .5),
                   size = 0.5,
                   fatten = 0.5)+
@@ -815,7 +955,8 @@ ggplot(subset(param_summary_all, measure == "produces"), aes(x = model , y = mea
 Plot growth data (comprehension)
 
 ```{r fig.width=5, fig.height=2}
-ggplot(subset(param_summary_all, measure == "understands"), aes(x = model , y = mean)) +
+ggplot(subset(param_summary_all, measure == "understands" & Test =="Individual"
+              ), aes(x = model , y = mean)) +
   geom_pointrange(aes(ymin = hdi_lower, ymax = hdi_upper, col = model, linetype=Test),
                   position = position_dodge(width = .5),
                   size = 0.5,
@@ -855,6 +996,9 @@ ci_reg <- function(data) {
    confint(lm(formula, data = data))
  }
   
+uni_scale <- feather::read_feather("saved_data/data_static_scaled_nt.feather")
+#uni_scale_edit <- feather::read_feather("saved_data/data_static_scaled_edit1.feather")
+
 reg <- uni_scale %>%
   group_by(measure, language) %>%
   nest() %>%
@@ -875,8 +1019,8 @@ coefs_form <- reg %>%
 
 }
 
-feather::write_feather(coefs_all, "saved_data/static_preds.feather")
-coefs_all <- feather::read_feather("saved_data/static_preds.feather")
+feather::write_feather(coefs_all, "saved_data/coefs_all_nt.feather")
+
 
 ```
 
@@ -928,7 +1072,7 @@ Regression for data aggregated across all languages
 
 sem_formula <- as.formula("aoa ~ sem_deg + (1 | language)")
 phono_formula <- as.formula("aoa ~ phono_deg + (1 | language)")
-all_formula <- as.formula("aoa ~ frequency + length + sem_deg + phono_deg + (1 | language)")
+all_formula <- as.formula("aoa ~ frequency + length + sem_deg + phono_deg +  (1 | language)")
 
 formulas <- list(sem_formula,  phono_formula, all_formula)
 
@@ -959,17 +1103,15 @@ coef_agg_comp <- coef_agg_fun(reg_agg_comp, 'comprehension')
 
 coef_agg_form <- coef_agg_prod %>%
   bind_rows(coef_agg_comp) %>%
-  mutate(Test = ifelse(toString(formula[3])=='frequency + length + sem_deg + phono_deg + (1 | language)', 'Combined', 'Individual'))
+  mutate(Test = ifelse(toString(formula[3])=='frequency + length + sem_deg + head(phono_deg + (1 | language)', 'Combined', 'Individual'))
 
  coefs_agg_all <- bind_rows(coefs_agg_all, coef_agg_form)
 
 }
 
 
-feather::write_feather(coefs_agg_all, "saved_data/static_preds_all.feather")
-coefs_agg_all <- feather::read_feather("saved_data/static_preds_all.feather")
-
-
+feather::write_feather(coefs_agg_all, "saved_data/static_preds_all_nt.feather")
+coefs_agg_all <- feather::read_feather("saved_data/static_preds_all_nt.feather")
 
 
 plot_agg <- ggplot(coefs_agg_all, aes(x = predictor, y = Estimate)) +

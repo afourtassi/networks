@@ -37,4 +37,10 @@ IPA_threshold<- function(IPA_list, threshold){
   return(IPA_list)
 }
 
+IPA_continuous<- function(IPA_list){
+  IPA_list<- IPA_list %>%
+    mutate(link=as.numeric(1/dist))
+  return(IPA_list)
+}
+
 ######################################################################################################
