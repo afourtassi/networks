@@ -353,13 +353,102 @@ feather::write_feather(data_growth_net, "saved_data/data_growth_net_nt.feather")
 
 ```
 
+
+```{r}
+
+phono_red <- feather::read_feather("saved_data/phono_red_nt.feather") 
+
+data_by_lang <- phono_red %>%
+  filter(measure =="produces") %>%
+  split(.$language)
+
+pair_data <- function(lang1){
+
+  pair_cor_data <- function (lang2){
+  
+  lang1_unilemmas <- unique(lang1$uni_lemma)
+  lang2_unilemmas <- unique(lang2$uni_lemma)
+  
+  uni_intersect <-  intersect(lang1_unilemmas, lang2_unilemmas)
+  
+  data_lang1 <- lang1 %>%
+    filter(!is.na(uni_lemma), 
+           !is.na(PAC_phono),
+           PAC_phono != "Inf",
+           uni_lemma %in% uni_intersect) %>%
+    select(uni_lemma, PAC_phono) %>%
+    group_by(uni_lemma) %>%
+    summarise(deg_lang1 = mean(PAC_phono))
+  
+  data_lang2 <- lang2 %>%
+    filter(!is.na(uni_lemma), 
+           !is.na(PAC_phono),
+           PAC_phono != "Inf",
+           uni_lemma %in% uni_intersect) %>%
+    select(uni_lemma, PAC_phono) %>%
+    group_by(uni_lemma) %>%
+    summarise(deg_lang2 = mean(PAC_phono_t2))
+  
+  both <- data_lang1 %>%
+    left_join(data_lang2)
+  
+  mycorr <- cor.test(both$deg_lang1, both$deg_lang2)
+
+  val=mycorr$estimate
+  p=mycorr$p.value
+
+  
+  language1 = unique(lang1$language) 
+  language2 = unique(lang2$language)
+  
+  data.frame(language1=language1, language2=language2, tau=val, sig = p)
+  
+  }
+  map(data_by_lang, pair_cor_data) %>%
+    bind_rows()
+}
+  
+cor_data <- map(data_by_lang, pair_data) %>%
+  bind_rows() %>%
+  filter(language1!=language2) %>%
+  mutate(data="languages")
+
+
+#feather::write_feather(cor_data, "saved_data/cor_data.feather")
+cor_data <- feather::read_feather("saved_data/cor_data.feather") 
+    
+```
+
+
+plots
+```{r}
+
+ggplot(cor_data, 
+      aes(x = tau)) +
+  geom_histogram(aes(y = (..count..)/tapply(..count..,..PANEL..,sum)[..PANEL..]),
+                 alpha=0.5,
+                 binwidth=0.1)+
+  #scale_x_log10() +
+  theme_few() + 
+  theme(aspect.ratio = 0.7, legend.title = element_text(size=8)) +  #facet_grid(Segmentation ~ language)+
+  scale_y_continuous(labels = scales::percent)+
+  xlab("pairwise correlation") +ylab("Count")
+
+
+```
+
+
 Here do Mantel tests
 ```{r}
+
+growth_by_meas_lang <- words_growth %>%
+  split(paste(.$measure, .$language))
+
 
 phono_net_fun <- function (growth_meas_lang) {
   
   lang <- unique(growth_meas_lang$language)
-  #meas <- unique(growth_meas_lang$measure)
+  meas <- unique(growth_meas_lang$measure)
   
   first_age<- growth_meas_lang$age[1]
   
@@ -374,7 +463,8 @@ phono_net_fun <- function (growth_meas_lang) {
     select(item, uni_lemma)
   
   phono_pairs<- make_IPA_pairs(def_list = def_list, lang = lang) %>%
-    mutate(language = lang) %>%
+    mutate(language = lang, 
+           measure = meas) %>%
     left_join(item_unilemma) %>%
     rename(item0 = item,
            item = pair,
@@ -391,7 +481,6 @@ phono_net_fun <- function (growth_meas_lang) {
 phono_pairs_all <- map(growth_by_meas_lang, phono_net_fun) %>%
   bind_rows()  
 
-feather::write_feather(phono_pairs_all, "saved_data/phono_pairs_all.feather") 
 
 phono_pairs_dist <- phono_pairs_all %>%
   mutate(link1 = as.numeric(dist<=1)) %>%
@@ -399,28 +488,47 @@ phono_pairs_dist <- phono_pairs_all %>%
   mutate(link_cont = ifelse(dist==0, 1, 1/dist))
 
 
+
+#phono_pairs_wide <- phono_pairs_dist %>%
+ # spread(language, dist)
 #Pairwise comparision: each time, take the overlap and do the test
 
-data_prod <- data_aoa %>%
-  filter(measure =='produces')
-  
-data_by_lang <- split(phono_pairs_dist$language)
+phono_pairs_produce <- phono_pairs_dist %>%
+  filter(measure == "produces")
+
+
+data_by_lang <- phono_pairs_produce %>% 
+  split(.$language)
 
 pair_data <- function(lang1){
   
   pair_cor_data <- function (lang2){
   
-  lang1_unilemmas <- unique(lang1$uni_lemma)
-  lang2_unilemmas <- unique(lang2$uni_lemma)
+  lang1_unilemmas <- unique(lang1$item.uni_lemma)
+  lang2_unilemmas <- unique(lang2$item.uni_lemma)
+  
   uni_intersect <-  intersect(lang1_unilemmas, lang2_unilemmas)
   
   data_lang1 <- lang1 %>%
-    filter(!is.na(uni_lemma),
-           uni_lemma %in% uni_intersect) %>%
-    select(uni_lemma, aoa) %>%
-    group_by(uni_lemma) %>%
-    summarise(aoa1=mean(aoa))
-
+    filter(item.uni_lemma %in% uni_intersect,
+           pair.uni_lemma %in% uni_intersect) %>%
+    select(item.uni_lemma, pair.uni_lemma, link2) %>%
+    rename(link2_lang1 = link2)
+  
+  data_lang2 <- lang2 %>%
+    filter(item.uni_lemma %in% uni_intersect,
+           pair.uni_lemma %in% uni_intersect) %>%
+    select(item.uni_lemma, pair.uni_lemma, link2) %>%
+    rename(link2_lang2 = link2)
+  
+  data_both <- data_lang1 %>%
+    left_join(data_lang2) 
+  
+  #data_mat <- acast(data_both, item.uni_lemma~pair.uni_lemma, value.var="link2_lang1")
+  
+  #This too costly computationnally speaking, will try the one-dimentional analysis instead, it should be enough
+  
+  
   
   data_lang2 <- lang2 %>%
     filter(!is.na(uni_lemma),
@@ -443,10 +551,21 @@ pair_data <- function(lang1){
 }
   map(data_by_lang, pair_cor_data) %>%
     bind_rows()
-
 }
 
 
+cor_data <- map(growth_by_meas_lang, pair_data) %>%
+  bind_rows() %>%
+  filter(language1!=language2) %>%
+  mutate(data="languages")
+
+
+```
+
+
+Here I will do the analysis for the power law (less computation-costly and more relant to the rest of the analyses)
+
+```{r}
 
 ```
 

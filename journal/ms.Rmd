@@ -99,7 +99,7 @@ library(kableExtra)
 
 #Introduction
 
-What factors shape vocabulary learning over the course of early childhood? To investigate this question, scientists have adopted multiple research strategies, from conducting controlled laboratory experiments [e.g. @markman90] to analyzing dense corpora capturing language learning in context [e.g., @roy2015]. One prominent strategy consists in documenting the timeline of words' acquisition, and studying the properties that make words easy or hard to learn [e.g., @goodman2008; @huttenlocher1991]. For example, @goodman2008 found that, within a lexical category (e.g., nouns), higher parental frequency is associated with earlier learning. Researchers have studied the role of several other factors such as word length and the mean length of utterances in which the word occurs [e.g., @braginsky; @swingley2018].
+What factors shape vocabulary learning over the course of early childhood? To investigate this question, scientists have adopted multiple research strategies, from conducting controlled laboratory experiments [e.g. @markman90] to analyzing dense corpora capturing language learning in context [e.g., @roy2015]. One prominent strategy consists in documenting the timeline of words' acquisition, and studying the properties that make words easy or hard to learn [e.g., @goodman2008; @huttenlocher1991]. For example, @goodman2008 found that, within a lexical category (e.g., nouns), higher parental frequency is associated with earlier learning. Researchers have studied the role of several other factors such as word length and the mean length of utterances in which the word occurs [e.g., @braginsky2019; @swingley2018].
 
 Besides word-level properties, the structure of the lexicon (that is, how words relate to one another) is also linked to the the Age of Acquisition (AoA) of words. The lexical structure can be characterized in terms of a network where each node represents a word in the vocabulary, and each link between two nodes represents a relationship between the corresponding pair of words [e.g., @collins1975; @luce1998]. Previous studies have investigated early vocabulary structure by constructing networks using  a variety of word-word relations including shared semantic features [@mcrae2005], target-cue relationships in free association norms [@nelson1998], co-occurrence in child directed speech [@macwhinney2014], and phonological relatedness [@vitevitch2008]. These studies have generally found that children tend to produce words that have higher neighborhood density (i.e., high connectivity in the network) earlier, both at the phonological and the semantic level [@storkel2009; @hills2009; @hills2010; @stella2017; @carlson2014]. 
 
@@ -108,7 +108,7 @@ While most studies have focused on the static properties of the lexical network,
 <!-- For example, having a rich and organized knowledge about the domain of dinosaurs would facilitate the acquisition of new dinosaur-related words [@chi1983]. -->
 These two proposals represent two divergent ideas about the role of lexical networks in acquisition. On the INT proposal, learning is driven by known words with high connectivity to other known words (Figure 1, left). Thus, the network structure is a causal factor in word learning, that is, children rely on the organization of their past knowledge to determine future learning [@storkel2009; @altvater2013; @chi1983; @borovsky2016]. In contrast, on the EXT approach, learning is driven by the connectivity of words that are not known yet (Figure 1, right). Thus, the relevant network structure is not internally represented by children, and the observed connectivity effect might be an epiphenomenon of some properties of the linguistic input. For example, highly connected concrete nouns in the input could be more easily learned because of their contextual diversity, allowing for an easier meaning disambiguation [@smith2008; @mcmurray2012; @yurovsky2015]. Another reason could be that these words are emphasized by the caregivers in their child-directed speech [@huttenlocher1991; @hoff2002; @clark2007].
 
-```{r growth, fig.cap = "Illustration of the two growth scenarios. Filled grey circles represent known words (Internal) at a certain point in time. The empty, numbered circles represent words that have not yet been learned (External) and which are candidates to enter the lexicon next. The identity of the word that is going to be learned depends on the growth scenario.  Here the squares indicate the node that drives growth in each scenario and the hand pointer indicates which word is likely to be learned. For INT, the utility of a candidate, external node is the average degree (i.e., number of links) of the internal nodes that it would attach to. Thus, according to INT, node 1 is more likely to enter the lexicon. For EXT, the utility of a candidate node is its degree in the entire network. According to EXT, node 2 is more likely to enter the lexicon next. This figure is based on an example from Hills et al (2009).", fig.align = "center", out.width = "300px"}
+```{r growth, fig.cap = "Illustration of the two growth scenarios. Filled grey circles represent known words (Internal) at a certain point in time. The empty, numbered circles represent words that have not yet been learned (External) and which are candidates to enter the lexicon next. The identity of the word that is going to be learned depends on the growth scenario.  Here the squares indicate the node that drives growth in each scenario and the hand pointer indicates which word is likely to be learned. For INT, the utility of a candidate, external node is the average degree (i.e., number of links) of the internal nodes that it would attach to. In this simplified example, candidate node 1 would connect to an internal node with 3 connections, thus we have $u_{INT}(node_1)= 3$. As for candidate node 2, it would connect to internal nodes that have only one connection each, making an average of 1, i.e., $u_{INT}(node_2)= 1$. According to INT, node 1 is more likely to enter the lexicon. For EXT, the utility of a candidate node is its degree in the entire network. In our example, candidate node 1 has 2 connections in total whereas candidate node 2 has 5 connections. So we have $u_{EXT}(node_1)= 2$ and $u_{EXT}(node_2)= 5$. Thus, according to EXT, node 2 is more likely to enter the lexicon next. This figure is based on an example from Hills et al. (2009).", fig.align = "center", out.width = "300px"}
 knitr::include_graphics("figs/growth3.png")
 ```
 
@@ -118,7 +118,7 @@ First, we study the phonological network in addition to the semantic network. Th
 <!--
 The phonological strcuture influence word processing in adults (Vitevitch, 2008;  Chan & Vitevitch, 2009; Chan & Vitevitch,2010; Vitevitch, Chan, and Roodenrys, 2012; Castro et al. 2018). Here we test whether the mechanism of networtk growth in the phonological domains mirrors the mechanism found in the semantic domains. -->
 
-Second, we study vocabularies measured using both comprehension and production. Previous studies have found differences between these vocabularies in terms of their content and rate of acquisition [@benedict1979; @fenson94; @bates1995]. These differences may reflect the fact that comprehension and production do not share the same constraints. For instance, whereas comprehension depends on the ease with which words are stored and accessed, production depends, additionally, on the ease with which words are articulated, e.g., shorter words are produced earlier [@braginsky]. By investigating comprehension-based vocabularies, we assess the extent to which the network growth mechanism captures general learning patterns beyond the specific constraints of production. 
+Second, we study vocabularies measured using both comprehension and production. Previous studies have found differences between these vocabularies in terms of their content and rate of acquisition [@benedict1979; @fenson94; @bates1995]. These differences may reflect the fact that comprehension and production do not share the same constraints. For instance, whereas comprehension depends on the ease with which words are stored and accessed, production depends, additionally, on the ease with which words are articulated, e.g., shorter words are produced earlier [@braginsky2019]. By investigating comprehension-based vocabularies, we assess the extent to which the network growth mechanism captures general learning patterns beyond the specific constraints of production. 
 
 Finally, we use developmental data in 10 languages. Lexical networks can show more or less cross-linguistic variability along both the semantic and phonological domains [@youn2016; @arbesman2010;@lupyan2017]. Besides, cultures might differ in the way caregivers talk to children [@kuhl1997; @cristia2017], and this difference in the input could influence the way in which the children's networks grow. Thus, cross-linguistic comparison is crucial to test the extent to which growth mechanisms are equally engaged across a wider variety of cultures compared with the extent to which the growth mechanisms are specific to patterns of learning that emerge due to the particulars of a given language or culture [@bates1987; @slobin2014]. 
  <!--
@@ -140,7 +140,7 @@ We used data from Wordbank [@frank2017], an open repository aggregating cross-li
 \footnote{This choice was also forced by the fact that the great majority of association data produced by adults–and which we used to build semantic networks–were nouns.}-->
 
 ## Age of acquisition
-For each word in the CDI data, we compute the proportion of children who understand or produce the word at each month. Then we fit a logistic curve to these proportions and determined when the curve crosses 0.5, i.e., the age at which at least 50% of children know the word. We take this point in time to be each word’s age of acquisition [@goodman2008; @braginsky].
+For each word in the CDI data, we compute the proportion of children who understand or produce the word at each month. Then we fit a logistic curve to these proportions and determined when the curve crosses 0.5, i.e., the age at which at least 50% of children know the word. We take this point in time to be each word’s age of acquisition [@goodman2008; @braginsky2019].
 <!--We obtained these nouns in ten languages: Croatian, Danish, English, French, Italian, Norwegian, Russian, Spanish, Swedish, and Turkish. We used the subset of nouns that had entries in the Florida Association Norms (see below). Since these norms are available only in English, we used the hand-checked translation equivalents provided by @braginsky2016, allowing us to use the English association norms across languages. Table \@ref(tab:stats) gives an overview of the data used. --> 
 
 
@@ -151,7 +151,7 @@ statistics <- feather::read_feather("../saved_data/stats_new.feather")
 
 kable(statistics, format = "latex", escape = FALSE, booktabs = TRUE,
       linesep = "", format.args = list(big.mark = ","),
-      caption = "Statistics for the dataset we used.",
+      caption = "Statistics for the dataset we used. The ages are in months.",
       col.names = c("Language",  "Nouns", "Ages", "N", "Nouns", "Ages","N")) %>%
   add_header_above(c("", "Comprehension" = 3, "Production" = 3)) %>%
   column_spec(1, bold = TRUE) %>%
@@ -196,6 +196,11 @@ corrAve <- correlations %>%
   summarise(ave = mean(cor),
             sd = sd(cor))
 
+cor_phon_len_edit2 <- data_all %>%
+  group_by(language, measure) %>%
+  summarise(phon_len = cor(phono_deg, length)) %>%
+  group_by(measure) %>%
+  summarise(ave = mean(phon_len))
 
 #Average values of the correlation 
 pp_ave=corrAve$ave[which(corrAve$measure == "produces" & corrAve$predictor == "Phono")]
@@ -228,7 +233,7 @@ plot_correlation_prod_1 <- ggplot(subset(data_long, measure == "produces" & data
         plot.margin=grid::unit(c(0,0,0,0), "mm")
         )+
   geom_text(data=subset(correlations, measure=="produces" & correlations$language %in% c('Croatian', 'Danish', 'English', 'French','Italian')), aes(label=paste("r=", cor, sep="")), x=3.5, y=33, size=2, fontface = "bold")+
-  xlab("degree z-score") +ylab("Age")
+  xlab("degree z-score") +ylab("Age (in months)")
 
 plot_correlation_prod_2 <- ggplot(subset(data_long, measure == "produces" & data_long$language %in% c('Norwegian', 'Russian', 'Spanish', 'Swedish','Turkish')), aes(x=value, y=aoa))+
   facet_grid(language~ predictor)+#, scales = "free") +
@@ -247,7 +252,7 @@ plot_correlation_prod_2 <- ggplot(subset(data_long, measure == "produces" & data
         plot.margin=grid::unit(c(0,0,0,0), "mm")
         )+
   geom_text(data=subset(correlations, measure=="produces" & correlations$language %in% c('Norwegian', 'Russian', 'Spanish', 'Swedish','Turkish')), aes(label=paste("r=", cor, sep="")), x=3.5, y=33, size=2, fontface = "bold")+
-  xlab("degree z-score") +ylab("Age")
+  xlab("degree z-score") +ylab("Age (in months)")
 
 
 corr_prod <- cowplot::plot_grid(
@@ -281,7 +286,7 @@ plot_correlation_comp_1 <- ggplot(subset(data_long, measure == "understands" & a
         plot.margin=grid::unit(c(0,0,0,0), "mm")
         )+
   geom_text(data=subset(correlations, measure=="understands" & correlations$language %in% c('Croatian', 'Danish', 'English', 'French','Italian')), aes(label=paste("r=", cor, sep="")), x=3.5, y=25, size=2, fontface = "bold")+
-  xlab("degree z-score") +ylab("Age")
+  xlab("degree z-score") +ylab("Age (in months)")
 
 plot_correlation_comp_2 <- ggplot(subset(data_long, measure == "understands" & aoa < 35 & data_long$language %in% c('Norwegian', 'Russian', 'Spanish', 'Swedish','Turkish')), aes(x=value, y=aoa))+
   facet_grid(language~ predictor)+#, scales = "free") +
@@ -300,7 +305,7 @@ plot_correlation_comp_2 <- ggplot(subset(data_long, measure == "understands" & a
         plot.margin=grid::unit(c(0,0,0,0), "mm")
         )+
   geom_text(data=subset(correlations, measure=="understands" & correlations$language %in% c('Norwegian', 'Russian', 'Spanish', 'Swedish','Turkish')), aes(label=paste("r=", cor, sep="")), x=3.5, y=25, size=2, fontface = "bold")+
-  xlab("degree z-score") +ylab("Age")
+  xlab("degree z-score") +ylab("Age (in months)")
 
 corr_comp <- cowplot::plot_grid(
   plot_correlation_comp_1 ,
@@ -519,6 +524,11 @@ plot_growth_preds_comp <- ggplot(subset(growth_preds, measure == "understands" &
 
 ```{r}
 ##Test
+
+#Colorblind-friendly palette
+cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+
 growth_preds <- feather::read_feather("../saved_data/growth_preds.feather")
 
 growth_preds$model <- plyr::mapvalues(growth_preds$model, 
@@ -538,11 +548,11 @@ plot_growth_preds <- ggplot(subset(growth_preds, Test=='Individual'), aes(x = mo
   geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
   coord_flip() +
   facet_wrap( ~ language, ncol=5) +
-  guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.3)))+
-  scale_colour_solarized() +
+  guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.5)))+
+  scale_colour_manual(values=cbPalette)+
   theme_few()+
-  theme(aspect.ratio = 0.7) + #,+
-        #axis.text.x = element_text(size=7.5, angle=45)) +
+  theme(aspect.ratio = 0.7,
+        axis.text = element_text(size=12)) +
   scale_y_continuous(breaks =c(0,0.2))  +
   #scale_y_discrete(breaks =NULL)
   ylab("Estimate") +xlab("Mechanism")
@@ -553,7 +563,7 @@ plot_growth_preds <- ggplot(subset(growth_preds, Test=='Individual'), aes(x = mo
 
 
 
-```{r growthPred, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Evaluation of growth scenarios (EXT: externally-driven, INT: internally-driven) for both semantic and phonological networks. Each point represents the mean of the posterior distribution of the growth parameter, with ranges representing 95\\% credible intervals. Positive values mean that learning proceeds according to the predictions of the growth scenario, whereas negative values mean that learning proceeds in opposition to the predictions of the growth scenario.", fig.width=8, fig.height=3}
+```{r growthPred, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Evaluation of growth scenarios (EXT: externally-driven, INT: internally-driven) for both semantic and phonological networks. Each point represents the mean of the posterior distribution of the growth parameter, with ranges representing 95\\% credible intervals. Positive values mean that learning proceeds according to the predictions of the growth scenario, whereas negative values mean that learning proceeds in opposition to the predictions of the growth scenario.", fig.width=10, fig.height=4}
 
 #legend <- get_legend(plot_growth_preds_prod)
 
@@ -568,7 +578,7 @@ plot_growth_preds <- ggplot(subset(growth_preds, Test=='Individual'), aes(x = mo
 
 #knitr::include_graphics("figs/plot_growth_preds_prod.pdf")
 
-plot_growth_preds
+plot_growth_preds + theme(legend.position="bottom")
 
 ```
 
@@ -585,7 +595,7 @@ We estimated the parameter $\beta$ using a Bayesian approach. The inference was 
 
 ```{r}
 ##Test
-static_preds <- feather::read_feather("../saved_data/static_preds.feather")
+static_preds <- feather::read_feather("../saved_data/coefs_all.feather")
 
 static_preds$predictor <- plyr::mapvalues(static_preds$predictor, 
                                  from = c("sem_deg","phono_deg","frequency", "length"), 
@@ -604,11 +614,11 @@ plot_static_preds <- ggplot(subset(static_preds, Test=='Combined'), aes(x = pred
   geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
   coord_flip() +
   facet_wrap( ~ language, ncol=5) +
-  guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.3)))+
-  scale_colour_solarized() +
+  guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.6)))+
+  scale_colour_manual(values=cbPalette)+
   theme_few()+
-  theme(aspect.ratio = 0.7) + #,+
-        #axis.text.x = element_text(size=7.5, angle=45)) +
+  theme(aspect.ratio = 0.7,
+        axis.text = element_text(size=12)) +
   scale_y_continuous(breaks =c(-1,0,1))  +
   #scale_y_discrete(breaks =NULL)
   ylab("Estimate") +xlab("Mechanism")
@@ -651,7 +661,7 @@ plot_static_preds_comp <- ggplot(subset(static_preds, measure =="understands" & 
 ```
 -->
 
-```{r staticPred, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of the relative contribution of each predictor of AoA in the regression model in each language. Results are shown for both production and comprehension data. Ranges indicate 95\\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).", fig.width=8, fig.height=3}
+```{r staticPred, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of the relative contribution of each predictor of AoA in the regression model in each language. Results are shown for both production and comprehension data. Ranges indicate 95\\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).", fig.width=10, fig.height=4}
 
 #legend <- get_legend(plot_static_preds_prod)
 
@@ -664,7 +674,7 @@ plot_static_preds_comp <- ggplot(subset(static_preds, measure =="understands" & 
 
 #plot_grid(plot_noLegend)
 
-plot_static_preds
+plot_static_preds + theme(legend.position="bottom")
 
 ```
 
@@ -692,7 +702,7 @@ plot_static_preds_all <- ggplot(static_preds_all, aes(x = predictor, y = Estimat
   facet_wrap(~measure)  +
   coord_flip() +
   guides(colour=FALSE)+
-  scale_colour_solarized() +
+  scale_colour_manual(values=cbPalette)+
   theme_few()+
   theme(aspect.ratio = 0.7)
 
@@ -708,15 +718,15 @@ plot_static_preds_all
 
 ## Comparison to other predictors of age of acquisition
 
-Above we showed that the way semantic and phonological information is structured in the learning environment contributes to noun learning (via EXT) across languages. However, we know that other factors influence learning as well [e.g., @braginsky]. Next we investigated how semantic and phonological connectivity interact with two other factors. The first one is word frequency, a well studied factor shown to predict the age of acquisition in a reliable fashion [e.g. @goodman2008]. The second factor is word length, which was shown to correlate with phonological connectivity: Shorter words are more likely to have higher connectivity [@pisoni1985; @vitevitch2005].   
+Above we showed that the way semantic and phonological information is structured in the learning environment contributes to noun learning (via EXT) across languages. However, we know that other factors influence learning as well [e.g., @braginsky2019]. Next we investigated how semantic and phonological connectivity interact with two other factors. The first one is word frequency, a well studied factor shown to predict the age of acquisition in a reliable fashion [e.g. @goodman2008]. The second factor is word length, which was shown to correlate with phonological connectivity: Shorter words are more likely to have higher connectivity [@pisoni1985; @vitevitch2005].   
 
 Since we found INT to be uninformative, we dropped it from this analysis, keeping only EXT. This simplified the model because we no longer needed to fit growth month-by-month. The latter was a requirement only for INT where the words' utilities varied from month to month, depending on how connectivity changed in the growing internal network. A more direct way to assess and compare the contribution of EXT in relation to other word-level factors is through conducting regressions, where connectivity in the learning environment, frequency and length predict the age of acquisition.
 
-For word length, we counted the number of phonemes in our generated IPA transcription. For word frequency, we used the frequency estimates from @braginsky where unigram counts were derived based on CHILDES corpora in each language [@macwhinney2014]. Although these frequency counts use transcripts from independent sets of children, they are based on large samples, and this allows us to average out possible differences between children and the specificities of their input [see @goodman2008 for a similar research strategy]. 
+For word length, we counted the number of phonemes in our generated IPA transcription. For word frequency, we used the frequency estimates from @braginsky2019 where unigram counts were derived based on CHILDES corpora in each language [@macwhinney2014]. Although these frequency counts use transcripts from independent sets of children, they are based on large samples, and this allows us to average out possible differences between children and the specificities of their input [see @goodman2008 for a similar research strategy]. 
 
 We conducted two analyses. We fit a linear regression for each language, and we fit a linear mixed-effect model to all the data pooled across languages, with language as a random effect. Figure \@ref(fig:staticPred) shows the coefficient estimate for each predictor in each language for production and comprehension data. Figure \@ref(fig:staticAll) shows the coefficient estimates for all languages combined (all predictors were centered and scaled). 
 
-The findings for the new predictors were as follows. Overall, frequency is the largest and most consistent predictor of age of acquisition in both comprehension and production data and across languages, endorsing results for nouns across a variety of analyses [@goodman2008; @braginsky; @roy2015]. Word length is more predictive for production than comprehension (and this difference is very clear in the global model), replicating previous work [@braginsky]. Thus, word length seems to reflect the effects of production's constraints rather than comprehension's constraints, i.e., longer words are harder to articulate but they may not be significantly more difficult to store and access. 
+The findings for the new predictors were as follows. Overall, frequency is the largest and most consistent predictor of age of acquisition in both comprehension and production data and across languages, endorsing results for nouns across a variety of analyses [@goodman2008; @braginsky2019; @roy2015]. Word length is more predictive for production than comprehension (and this difference is very clear in the global model), replicating previous work [@braginsky2019]. Thus, word length seems to reflect the effects of production's constraints rather than comprehension's constraints, i.e., longer words are harder to articulate but they may not be significantly more difficult to store and access. 
 
 As for the factors of interest, i.e., semantic and phonological connectivity, we found cross-linguistic differences. Connectivity contributes to learning in some languages but not in other. In particular, semantic connectivity does not explain variance in English data beyond that explained by phonological connectivity, frequency and length. This finding contrasts with the original finding in @hills2009. However, this difference might be due to our using a slightly different model (which included word length as a covariate) and a larger dataset. That said, and despite these apparent cross-linguistic differences, both phonological and semantic connectivity are significant predictors in the combined model (Figure \@ref(fig:staticAll)).
 
@@ -732,11 +742,17 @@ One possibility is that these patterns emerge from children’s use of statistic
 
 For example, in the semantic domain, growth according to EXT could be explained by a mechanism similar to cross-situational learning [@smith2008; @mcmurray2012; @yurovsky2015]. According to this mechanism, children track the co-occurrence of concrete nouns with their possible semantic referents. The referent of a word heard in only one naming situation can be ambiguous (e.g., when the word "ball" is heard for the first time in the presence of both a ball and a chair), but hearing the same word in a diversity of semantic contexts allows the learner to narrow down the set of possible word-object mappings. In our case, free association (used to determine semantic network connectivity) is related to contextual co-occurrence [@griffiths07; @fourtassi2013], meaning that highly connected words will tend to occur in a variety of speech and referential contexts.  This fact makes such words easier to learn because they have more referential disambiguating cues across learning contexts. Crucially, children can learn these words without necessarily knowing the meaning of all other words with which they co-occur (hence the similarity with EXT). This possibility is supported by the finding that words' diversity of occurrence in child directed speech predicts their age of learning [@stella2017; @hills2010].
 
-In the phonological case, network growth according to EXT is also compatible with a scenario whereby children are tracking low level statistical patterns, e.g., high probability sound sequences. Indeed, connectivity in the phonological network is inherently correlated with phonotactic probability [@vitevitch1999]. That is, highly connected words tend to be made of frequent sound sequences. Children are sensitive to local phonotactic regularities [@jusczyk1994] and this sensitivity might lead them to learn higher-probability words more easily [@storkel2001]. This explanation is supported by computational simulations that show how learning general phonotactics patterns create "well-worn paths" which allow the models to represent several distinct but phonologically neighboring words [@dell1993; @takac2017].
+In the phonological case, network growth according to EXT is also compatible with a scenario whereby children are tracking low level statistical patterns, e.g., high probability sound sequences. Indeed, connectivity in the phonological network is inherently correlated with phonotactic probability [@vitevitch1999]. That is, highly connected words tend to be made of frequent sound sequences. Children are sensitive to local phonotactic regularities [@jusczyk1994] and this sensitivity might lead them to learn higher-probability words more easily [@storkel2001]. This explanation is supported by computational simulations that show how learning general phonotactics patterns create "well-worn paths" which allow the models to represent several distinct but phonologically neighboring words [@dell1993; @takac2017; @siew2013]. More generally, there is a growing interest in investigating precisely how the local patterns acquired through statistical learning may give rise to the global network orgnization [For a review, see @karuza2016].
 
 Besides using their own statistical learning skills, children could also benefit from the way their caregivers speak. Perhaps the caregivers put more emphasis on the words that are highly connected in *their* mature lexical network. This emphasis would guide children to learn first these highly connected words even though children do not have access to the distribution of words' connectivity in the final network.  Investigating this possibility would require further research on caregiver-child interaction [@macwhinney2014; @roy2015], examining what words are introduced over development and the extent to which children's uptake is influenced by this input [@huttenlocher1991; @clark2007; @hoff2002].
 
-This work shares a number of limitations with previous studies using similar research strategy and datasets. Chief among these limitations is the fact that the age of word acquisition is computed using different children at different ages (due to the fact that available CDI data is mainly cross-sectional). Such a measure has been shown to be valid and reliable [@fenson94], and has allowed researchers to study important aspects of word learning [@hills2009; @stella2017; @storkel2009; @goodman2008; @braginsky]. In our case, the use of cost-effective cross-sectional data has allowed us to leverage large-scale studies across several languages. That said, it is important to remember that this type of data can only inform us about the learning trajectory of the "average" child. Although our study endorses, overall, the externally-driven account of network growth, this does not mean individual children never use some variant of INT or some combination of both INT and EXT [@beckage]. To illustrate, some children develop "islands of expertise", that is, well organized knowledge about a certain topic (e.g., birds or dinosaurs). This prior knowledge enables these children to learn new related words more easily [e.g., @chi1983].
+This study investigated the class of nouns in isolation --- following previous studies investigating the early semantic and phonological network [@hills2009; @storkel2009]. We could ask if studying one class separtaly is a legitimate research strategy. In other words, would word classes (such as nouns, verbs and function words) be acquired relatively differently, or would they interact substantially to the extent that it becomes unreasonable to study each class separately?
+
+We know that different word classes follow different time trajectories. For instance, in the early stages of development, nouns tend to be acquired at a higher pace than predicates and function words [@bates1994]. Research has shown that this difference cannot be trivially attributed to differences in the degree to which these classes are present in the input; if anything, verbs and function words are often more frequent in the input than nouns [e.g., @gentner1982].  @goodman2008 found an effect of frequency on the age of acquisition within --- not across --- classes. Further, a recent work by @braginsky2019 tested a large number of predictors, besides frequency, and found that these predictors do not influence the acquisition of word classes in the same way. For example, the acquisition of nouns was found to be most influenced by frequency and concreteness, whereas the acquisition of function words was most influenced by word length. 
+
+These patterns support the hypothesis that different word classes have different pathways of learning, thus making it worthwhile to study each class separately. This hypothesis, however, does not preclude all sorts of inter-class interaction. For example, @dautriche2015 found that the acquisition of similar-sounding words ("bih"-"dih") is easier if these words belong to different syntactic categories (e.g., a noun and a verb).
+
+This work shares a number of limitations with previous studies using similar research strategy and datasets. Chief among these limitations is the fact that the age of word acquisition is computed using different children at different ages (due to the fact that available CDI data is mainly cross-sectional). Such a measure has been shown to be valid and reliable [@fenson94], and has allowed researchers to study important aspects of word learning [@hills2009; @stella2017; @storkel2009; @goodman2008; @braginsky2019]. In our case, the use of cost-effective cross-sectional data has allowed us to leverage large-scale studies across several languages. That said, it is important to remember that this type of data can only inform us about the learning trajectory of the "average" child. Although our study endorses, overall, the externally-driven account of network growth, this does not mean individual children never use some variant of INT or some combination of both INT and EXT [@beckage]. To illustrate, some children develop "islands of expertise", that is, well organized knowledge about a certain topic (e.g., birds or dinosaurs). This prior knowledge enables these children to learn new related words more easily [e.g., @chi1983].
 
 <!--Individual trajectories, however, could lead to different network strcutures and show different learning patterns. For example, using longitudinal data from English-learning toddlers  @beckage2011 found differences between typical and late talkers in terms of the semantic network structure. Besides, although our study endorses the externally-driven account of network growth, this does not mean individual children never use some variant of INT or some combination of both INT and EXT (Beckage and Colunga, under review). For example, some children develop "islands of expertise", that is, well organized knowledge about a certain topic (e.g., birds or dinosaurs). This prior knowledge enables these children to learn new related words more easily [e.g., @chi1983].   -->
 
@@ -748,9 +764,30 @@ In particular, the results provide correlational but not causal evidence. Thus, 
 -->
 
 
-# Appendix 
 
-## Edit 1
+\vspace{1em} \fbox{\parbox[b][][c]{14cm}{\centering All data and code for these analyses are available at\ \url{https://github.com/afourtassi/networks}}} \vspace{1em}
+
+
+# Acknowledgements
+This work was supported by a post-doctoral grant from the Fyssen Foundation, NSF #1528526, and NSF #1659585.
+
+
+# Disclosure statement
+None of the authors have any financial interest or a conflict of interest regarding this work and this submission.
+
+\clearpage
+
+# Appendix A: Analyses using different phnonological distances
+
+In the methods section, we based the choice of setting the threshold of edit distance at 2 on the fact that the early lexicon is very sparse in terms of phonological neighborhood; the early proposal that set the threshold at 1 (e.g., Vitevitch, 2008) was defined in the context of rather mature, dense lexicon. Increasing the threshold from 1 to 2 allows for a more reasonable representation of the similarity space of the early phonological network.
+
+That said, it is useful to include the results obtained with both thresholds. In addition, it could be useful to compare the results to the case of weighted networks, i.e., with no thresholding. The main analyses for these two cases are shown in what follows. In summary, both methods of constructing the phonological networks had issues. While the fact of using edit = 1 created sparsity, using weighted networks created colinearity with length. 
+
+## Analyses using phonological networks constructed with an edit distance of 1
+
+We show in Figure \@ref(fig:corrPlot) the correlation between the phonological connectivity and age of acquisition in both comprehension and production. The sparsity issue, due the low phonological neighborhood in the children's lexicon is apparent: most words had 0 degree and a few had non-zero but small degrees. The values of the correlations are much lower than the ones obtained with the threshold of 2.
+
+The next figures show how the phonology-based mechanism of growth (phonoEXT) fares in comaprision to semEXT and other predictors of learing in each language (Figure \@ref(fig:staticPredEdit1) and across all languages (Figure \@ref(fig:staticAllEdit)). These figures show that phonoEXT based on edit distance 1 had no noticeable effect on learning.
 
 ```{r}
 #Import data from saved
@@ -789,7 +826,7 @@ plot_correlation_1 <- ggplot(subset(data_long, data_long$language %in% c('Croati
         plot.margin=grid::unit(c(0,0,0,0), "mm")
         )+
   geom_text(data=subset(correlations, correlations$language %in% c('Croatian', 'Danish', 'English', 'French','Italian')), aes(label=paste("r=", cor, sep="")), x=3.5, y=33, size=2, fontface = "bold")+
-  xlab("degree z-score") +ylab("Age")
+  xlab("degree z-score") +ylab("Age (in months)")
 
 plot_correlation_2 <- ggplot(subset(data_long,  data_long$language %in% c('Norwegian', 'Russian', 'Spanish', 'Swedish','Turkish')), aes(x=value, y=aoa))+
   facet_grid(language~ measure)+#, scales = "free") +
@@ -808,7 +845,7 @@ plot_correlation_2 <- ggplot(subset(data_long,  data_long$language %in% c('Norwe
         plot.margin=grid::unit(c(0,0,0,0), "mm")
         )+
   geom_text(data=subset(correlations,  correlations$language %in% c('Norwegian', 'Russian', 'Spanish', 'Swedish','Turkish')), aes(label=paste("r=", cor, sep="")), x=3.5, y=33, size=2, fontface = "bold")+
-  xlab("degree z-score") +ylab("Age")
+  xlab("degree z-score") +ylab("Age (in months)")
 
 
 corr_plot <- cowplot::plot_grid(
@@ -819,6 +856,11 @@ corr_plot <- cowplot::plot_grid(
   #hjust = -1
 )
 
+cor_phon_len_edit1 <- data_all %>%
+  group_by(language, measure) %>%
+  summarise(phon_len = cor(phono_deg, length)) %>%
+  group_by(measure) %>%
+  summarise(ave = mean(phon_len))
 
 #legend <- cowplot::get_legend(plot_degree_1)
 
@@ -831,7 +873,7 @@ corr_plot <- cowplot::plot_grid(
 
 
 
-```{r corrPlot, out.width = "\\textwidth", fig.pos = "!h", fig.height=5, fig.cap = "Production data (Age of acquisition) as predicted by the degree (i.e., connectivity) in this network. Results are shown in each language for phonological and semantic networks. Each point is a word, with lines indicating linear model fits, and numbers indicating the Pearson correlation coefficients."}
+```{r corrPlot, out.width = "\\textwidth", fig.pos = "!h", fig.height=5, fig.cap = "Age of acquistion in both comprehension and production as predicted by the degree (i.e., connectivity) in phonological network, using an edit distance of 1. Each point is a word, with lines indicating linear model fits, and numbers indicating the Pearson correlation coefficients."}
 
 corr_plot
 #plot_grid(plot_correlation_prod , NULL, plot_correlation_comp , labels = c("A", "", "B"), ncol = 1, align = "v", rel_heights = c(1.3, 0.1, 1.3))
@@ -860,11 +902,11 @@ plot_static_preds_edit1 <- ggplot(subset(static_preds, Test=='Combined'), aes(x 
   geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
   coord_flip() +
   facet_wrap( ~ language, ncol=5) +
-  guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.3)))+
-  scale_colour_solarized() +
+  guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.6)))+
+  scale_colour_manual(values=cbPalette)+ 
   theme_few()+
-  theme(aspect.ratio = 0.7) + #,+
-        #axis.text.x = element_text(size=7.5, angle=45)) +
+  theme(aspect.ratio = 0.7,
+        axis.text = element_text(size=12))+
   scale_y_continuous(breaks =c(-1,0,1))  +
   #scale_y_discrete(breaks =NULL)
   ylab("Estimate") +xlab("Mechanism")
@@ -874,7 +916,7 @@ plot_static_preds_edit1 <- ggplot(subset(static_preds, Test=='Combined'), aes(x 
 ```
 
 
-```{r staticPredEdit1, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of the relative contribution of each predictor of AoA in the regression model in each language. Results are shown for both production and comprehension data. Ranges indicate 95\\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).", fig.width=8, fig.height=3}
+```{r staticPredEdit1, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of the relative contribution of each predictor of AoA in the regression model in each language. Results are shown for both production and comprehension data. Ranges indicate 95\\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).", fig.width=10, fig.height=4}
 
 #legend <- get_legend(plot_static_preds_prod)
 
@@ -887,7 +929,7 @@ plot_static_preds_edit1 <- ggplot(subset(static_preds, Test=='Combined'), aes(x 
 
 #plot_grid(plot_noLegend)
 
-plot_static_preds_edit1
+plot_static_preds_edit1 + theme(legend.position="bottom")
 
 ```
 
@@ -909,7 +951,7 @@ plot_static_preds_all <- ggplot(static_preds_all, aes(x = predictor, y = Estimat
   facet_wrap(~measure)  +
   coord_flip() +
   guides(colour=FALSE)+
-  scale_colour_solarized() +
+  scale_colour_manual(values=cbPalette) +
   theme_few()+
   theme(aspect.ratio = 0.7)
 
@@ -917,14 +959,13 @@ ggsave("figs/plot_static_preds_all_edit1.pdf", plot = plot_static_preds_all, wid
 
 ```
 
-```{r staticAllEdit, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of the relative contribution of each predictor of AoA in the combined mixed-effects model with language as a random effect. Results are shown for both production and comprehension data. Ranges indicate 95\\% confidence intervals. Dotted ranges indicate the estimates for the predictor in a separate model that includes only this predictor as a fixed effect.", fig.width=6, fig.height=2.5}
+```{r staticAllEdit, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of the relative contribution of each predictor of AoA in the combined model. Here the phonologocal networks were based on an edit distance of 1. Results are shown for both production and comprehension data. Ranges indicate 95\\% confidence intervals. Dotted ranges indicate the estimates for the predictor in a separate model that includes only this predictor as a fixed effect.", fig.width=6, fig.height=2.5}
 
 plot_static_preds_all
 
 ```
 
-
-## Continuous edit distance 
+## Analyses using wighted phonological networks with no thresholding
 
 ```{r}
 #Import data from saved
@@ -963,7 +1004,7 @@ plot_correlation_1 <- ggplot(subset(data_long, data_long$language %in% c('Croati
         plot.margin=grid::unit(c(0,0,0,0), "mm")
         )+
   geom_text(data=subset(correlations, correlations$language %in% c('Croatian', 'Danish', 'English', 'French','Italian')), aes(label=paste("r=", cor, sep="")), x=1.5, y=35, size=2, fontface = "bold")+
-  xlab("degree z-score") +ylab("Age")
+  xlab("degree z-score") +ylab("Age (in months)")
 
 plot_correlation_2 <- ggplot(subset(data_long,  data_long$language %in% c('Norwegian', 'Russian', 'Spanish', 'Swedish','Turkish')), aes(x=value, y=aoa))+
   facet_grid(language~ measure)+#, scales = "free") +
@@ -982,7 +1023,7 @@ plot_correlation_2 <- ggplot(subset(data_long,  data_long$language %in% c('Norwe
         plot.margin=grid::unit(c(0,0,0,0), "mm")
         )+
   geom_text(data=subset(correlations,  correlations$language %in% c('Norwegian', 'Russian', 'Spanish', 'Swedish','Turkish')), aes(label=paste("r=", cor, sep="")), x=1.5, y=35, size=2, fontface = "bold")+
-  xlab("degree z-score") +ylab("Age")
+  xlab("degree z-score") +ylab("Age (in months)")
 
 
 corr_plot_nt <- cowplot::plot_grid(
@@ -994,6 +1035,13 @@ corr_plot_nt <- cowplot::plot_grid(
 )
 
 
+cor_phon_len_nt <- data_all %>%
+  group_by(language, measure) %>%
+  summarise(phon_len = cor(phono_deg, length)) %>%
+  group_by(measure) %>%
+  summarise(ave = mean(phon_len))
+
+
 #legend <- cowplot::get_legend(plot_degree_1)
 
 #plot_degree <- cowplot::plot_grid(prow, legend, nrow = 1, rel_widths = c(4, .5))
@@ -1003,7 +1051,9 @@ corr_plot_nt <- cowplot::plot_grid(
 #ggsave("figs/plot_correlation_comp.pdf", plot = plot_correlation_comp, width = 10, height = 3)
 ```
 
+We constructed weighted phonological networks where the edge between a given pair of words $(w_1, w_2)$ was wieghted by $\frac{1}{edit(w_1,w_2)}$. The phonological connectivity of a given word $w$ was defined as the sum over all weighted edges with every other word $w_i$ in the network, i.e., $\sum_{i} \frac{1}{edit(w,w_i)}$.  
 
+The results were as follows. On the one hand, the correlations were generally high and in many cases (especially in the production data), higher than the ones obtained with the thresholds 2 and 1 (Figure \@ref(fig:corrPlotnt)). On the other hand, phonoEXT resulted in very noisy estimates when we controlled for frequency and length (Figures \@ref(fig:staticPrednt) and \@ref(fig:staticAllnt)). The reason was that the new phonological connectivity was very highly correlated with length. The average correlation across languages was $r =$ `r cor_phon_len_nt$ave[cor_phon_len_nt$measure == "produces"]` for production data (compared to `r cor_phon_len_edit1$ave[cor_phon_len_edit1$measure == "produces"]` and `r cor_phon_len_edit2$ave[cor_phon_len_edit2$measure == "produces"]` for the phonological networks with edit = 1 and 2, respectvely). This fact lead to a collinearity issue in the regression, making the effect hard to estimate.
 
 ```{r corrPlotnt, out.width = "\\textwidth", fig.pos = "!h", fig.height=5, fig.cap = "Production data (Age of acquisition) as predicted by the degree (i.e., connectivity) in this network. Results are shown in each language for phonological and semantic networks. Each point is a word, with lines indicating linear model fits, and numbers indicating the Pearson correlation coefficients."}
 
@@ -1034,11 +1084,11 @@ plot_static_preds_nt <- ggplot(subset(static_preds, Test=='Combined'), aes(x = p
   geom_hline(yintercept = 0, color = "grey", linetype = "dashed")+
   coord_flip() +
   facet_wrap( ~ language, ncol=5) +
-  guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.3)))+
-  scale_colour_solarized() +
+  guides(colour=FALSE, linetype = guide_legend(override.aes = list(size=0.6)))+
+  scale_colour_manual(values=cbPalette) +
   theme_few()+
-  theme(aspect.ratio = 0.7) + #,+
-        #axis.text.x = element_text(size=7.5, angle=45)) +
+  theme(aspect.ratio = 0.7,
+        axis.text = element_text(size=12))+
   scale_y_continuous(breaks =c(-1,0,1))  +
   #scale_y_discrete(breaks =NULL)
   ylab("Estimate") +xlab("Mechanism")
@@ -1048,7 +1098,7 @@ plot_static_preds_nt <- ggplot(subset(static_preds, Test=='Combined'), aes(x = p
 ```
 
 
-```{r staticPrednt, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of the relative contribution of each predictor of AoA in the regression model in each language. Results are shown for both production and comprehension data. Ranges indicate 95\\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).", fig.width=8, fig.height=3}
+```{r staticPrednt, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of the relative contribution of each predictor of AoA in the regression model in each language. Results are shown for both production and comprehension data. Ranges indicate 95\\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).", fig.width=10, fig.height=4}
 
 #legend <- get_legend(plot_static_preds_prod)
 
@@ -1061,7 +1111,7 @@ plot_static_preds_nt <- ggplot(subset(static_preds, Test=='Combined'), aes(x = p
 
 #plot_grid(plot_noLegend)
 
-plot_static_preds_nt
+plot_static_preds_nt + theme(legend.position="bottom")
 
 ```
 
@@ -1083,7 +1133,7 @@ plot_static_preds_all_nt <- ggplot(static_preds_all, aes(x = predictor, y = Esti
   facet_wrap(~measure)  +
   coord_flip() +
   guides(colour=FALSE)+
-  scale_colour_solarized() +
+  scale_colour_manual(values=cbPalette)+
   theme_few()+
   theme(aspect.ratio = 0.7)
 
@@ -1091,34 +1141,56 @@ ggsave("figs/plot_static_preds_all_nt.pdf", plot = plot_static_preds_all_nt, wid
 
 ```
 
-```{r staticAllnt, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of the relative contribution of each predictor of AoA in the combined mixed-effects model with language as a random effect. Results are shown for both production and comprehension data. Ranges indicate 95\\% confidence intervals. Dotted ranges indicate the estimates for the predictor in a separate model that includes only this predictor as a fixed effect.", fig.width=6, fig.height=2.5}
+```{r staticAllnt, out.width = "\\textwidth", fig.pos = "!h", fig.cap = "Estimates of the relative contribution of each predictor of AoA in the combined model. Here the phonologocal networks were based on weighted edges between words. Results are shown for both production and comprehension data. Ranges indicate 95\\% confidence intervals. Dotted ranges indicate the estimates for the predictor in a separate model that includes only this predictor as a fixed effect.", fig.width=6, fig.height=2.5}
 
 plot_static_preds_all_nt
 
 ```
 
+\clearpage
 
-Problem of colinearity beteen phono and length, that's why the estimates are noisy
+# Appendix B: Phonological connectivity across languages
 
-## Phonological compostion across languages
+We were interested in investigating if, for a given meaning (e.g., "dog" in English and "chien" in French), phonological connectivity varied across languages. For example, if "dog" is highly connected in the English phonological network, will "chien" also be highly connected in the French network, or will these two forms be situated independently in their relative phonological networks?
 
-generate pair and edit distance, link=1 and link = 2  
-Transform the pairs into matrices 
-Do pairwise mantel test and draw the distribution
+If the phonological networks are very similar across languages, then network growth in the phonological domain may not be an independent mechanism of acquisition, but rather an epiphenomenon of semantic-based learning. If, instead, the phonological connectivity is different from language to language, then this fact would lend support to phonological growth being an independent driving mechanism of early word learning.^[Note that this question can also be answered through the models in Figures 5 and 6 where we test both semantic and phonological connectivities.]
 
+To test this hypothesis, we compute the correlation of the unilemma's phonological connectivity between every pair of languages. In Figure \@ref(fig:corrPair), we plot the distribution of the pairwise pearson correlation coefficent. Generally speaking, languages are not highly correlated at the phonological level as the distributions peak at low values of r, showing that phonological connectivily is not (at least not fully) determined semantically.
 
-
-\vspace{1em} \fbox{\parbox[b][][c]{14cm}{\centering All data and code for these analyses are available at\ \url{https://github.com/afourtassi/networks}}} \vspace{1em}
-
+```{r corrPair, out.width = "\\textwidth", fig.pos = "!h", fig.height=5, fig.cap = "The distribution of the Pearson correlation coefficents of the unilemma's phonological connectivity between every pair of languages."}
 
 
-# Acknowledgements
-This work was supported by a post-doctoral grant from the Fyssen Foundation, NSF #1528526, and NSF #1659585.
+cor_data_t2 <- feather::read_feather("../saved_data/cor_data.feather")  %>%
+  mutate(distance = "edit=2")
 
+cor_data_t1 <- feather::read_feather("../saved_data/cor_data_t1.feather")  %>%
+  mutate(distance = "edit=1")
 
-# Disclosure statement
-None of the authors have any financial interest or a conflict of interest regarding this work and this submission.
+cor_data_nt <- feather::read_feather("../saved_data/cor_data_nt.feather")  %>%
+  mutate(distance = "1/edit")
 
+cor_data_all <- cor_data_t2 %>%
+  bind_rows(cor_data_t1) %>%
+  bind_rows(cor_data_nt)
+
+ggplot(cor_data_all, 
+      aes(x = tau)) +
+  facet_grid(.~distance) +
+  geom_histogram(aes(y = (..count..)/tapply(..count..,..PANEL..,sum)[..PANEL..]),
+                 alpha=0.5,
+                 binwidth=0.1)+
+  #scale_x_log10() +
+  theme_few() + 
+  theme(aspect.ratio = 0.7, legend.title = element_text(size=8)) +  #facet_grid(Segmentation ~ language)+
+  scale_y_continuous(labels = scales::percent)+
+  coord_cartesian(xlim=c(0,1))+
+  xlab("pairwise correlation") +ylab("Count")
+
+#plot_grid(plot_correlation_prod , NULL, plot_correlation_comp , labels = c("A", "", "B"), ncol = 1, align = "v", rel_heights = c(1.3, 0.1, 1.3))
+
+```
+
+\newpage 
 
 # References
 ```{r create_r-references}

@@ -205,7 +205,7 @@ al. (2008) found that, within a lexical category (e.g., nouns), higher
 parental frequency is associated with earlier learning. Researchers have
 studied the role of several other factors such as word length and the
 mean length of utterances in which the word occurs (e.g., Braginsky,
-Yurovsky, Marchman, \& Frank, in revision; Swingley \& Humphrey, 2018).
+Yurovsky, Marchman, \& Frank, 2019; D. Swingley \& Humphrey, 2018).
 
 Besides word-level properties, the structure of the lexicon (that is,
 how words relate to one another) is also linked to the the Age of
@@ -270,7 +270,7 @@ emphasized by the caregivers in their child-directed speech (Clark,
 
 }
 
-\caption{Illustration of the two growth scenarios. Filled grey circles represent known words (Internal) at a certain point in time. The empty, numbered circles represent words that have not yet been learned (External) and which are candidates to enter the lexicon next. The identity of the word that is going to be learned depends on the growth scenario.  Here the squares indicate the node that drives growth in each scenario and the hand pointer indicates which word is likely to be learned. For INT, the utility of a candidate, external node is the average degree (i.e., number of links) of the internal nodes that it would attach to. Thus, according to INT, node 1 is more likely to enter the lexicon. For EXT, the utility of a candidate node is its degree in the entire network. According to EXT, node 2 is more likely to enter the lexicon next. This figure is based on an example from Hills et al (2009).}\label{fig:growth}
+\caption{Illustration of the two growth scenarios. Filled grey circles represent known words (Internal) at a certain point in time. The empty, numbered circles represent words that have not yet been learned (External) and which are candidates to enter the lexicon next. The identity of the word that is going to be learned depends on the growth scenario.  Here the squares indicate the node that drives growth in each scenario and the hand pointer indicates which word is likely to be learned. For INT, the utility of a candidate, external node is the average degree (i.e., number of links) of the internal nodes that it would attach to. In this simplified example, candidate node 1 would connect to an internal node with 3 connections, thus we have $u_{INT}(node_1)= 3$. As for candidate node 2, it would connect to internal nodes that have only one connection each, making an average of 1, i.e., $u_{INT}(node_2)= 1$. According to INT, node 1 is more likely to enter the lexicon. For EXT, the utility of a candidate node is its degree in the entire network. In our example, candidate node 1 has 2 connections in total whereas candidate node 2 has 5 connections. So we have $u_{EXT}(node_1)= 2$ and $u_{EXT}(node_2)= 5$. Thus, according to EXT, node 2 is more likely to enter the lexicon next. This figure is based on an example from Hills et al. (2009).}\label{fig:growth}
 \end{figure}
 
 Hills et al. (2009) investigated the growth of lexico-semantic networks
@@ -314,10 +314,10 @@ differences may reflect the fact that comprehension and production do
 not share the same constraints. For instance, whereas comprehension
 depends on the ease with which words are stored and accessed, production
 depends, additionally, on the ease with which words are articulated,
-e.g., shorter words are produced earlier (Braginsky et al., in
-revision). By investigating comprehension-based vocabularies, we assess
-the extent to which the network growth mechanism captures general
-learning patterns beyond the specific constraints of production.
+e.g., shorter words are produced earlier (Braginsky et al., 2019). By
+investigating comprehension-based vocabularies, we assess the extent to
+which the network growth mechanism captures general learning patterns
+beyond the specific constraints of production.
 
 Finally, we use developmental data in 10 languages. Lexical networks can
 show more or less cross-linguistic variability along both the semantic
@@ -391,11 +391,11 @@ understand or produce the word at each month. Then we fit a logistic
 curve to these proportions and determined when the curve crosses 0.5,
 i.e., the age at which at least 50\% of children know the word. We take
 this point in time to be each word's age of acquisition (Braginsky et
-al., in revision; J. C. Goodman et al., 2008).
+al., 2019; J. C. Goodman et al., 2008).
 
 \begin{table}
 
-\caption{\label{tab:stats}Statistics for the dataset we used.}
+\caption{\label{tab:stats}Statistics for the dataset we used. The ages are in months.}
 \centering
 \begin{tabular}[t]{>{\bfseries}lrlrrlr}
 \toprule
@@ -689,14 +689,14 @@ acquisition}\label{comparison-to-other-predictors-of-age-of-acquisition}
 Above we showed that the way semantic and phonological information is
 structured in the learning environment contributes to noun learning (via
 EXT) across languages. However, we know that other factors influence
-learning as well (e.g., Braginsky et al., in revision). Next we
-investigated how semantic and phonological connectivity interact with
-two other factors. The first one is word frequency, a well studied
-factor shown to predict the age of acquisition in a reliable fashion
-(e.g. J. C. Goodman et al., 2008). The second factor is word length,
-which was shown to correlate with phonological connectivity: Shorter
-words are more likely to have higher connectivity (Pisoni, Nusbaum,
-Luce, \& Slowiaczek, 1985; Vitevitch \& Rodríguez, 2005).
+learning as well (e.g., Braginsky et al., 2019). Next we investigated
+how semantic and phonological connectivity interact with two other
+factors. The first one is word frequency, a well studied factor shown to
+predict the age of acquisition in a reliable fashion (e.g. J. C. Goodman
+et al., 2008). The second factor is word length, which was shown to
+correlate with phonological connectivity: Shorter words are more likely
+to have higher connectivity (Pisoni, Nusbaum, Luce, \& Slowiaczek, 1985;
+Vitevitch \& Rodríguez, 2005).
 
 Since we found INT to be uninformative, we dropped it from this
 analysis, keeping only EXT. This simplified the model because we no
@@ -710,8 +710,8 @@ predict the age of acquisition.
 
 For word length, we counted the number of phonemes in our generated IPA
 transcription. For word frequency, we used the frequency estimates from
-Braginsky et al. (in revision) where unigram counts were derived based
-on CHILDES corpora in each language (MacWhinney, 2014). Although these
+Braginsky et al. (2019) where unigram counts were derived based on
+CHILDES corpora in each language (MacWhinney, 2014). Although these
 frequency counts use transcripts from independent sets of children, they
 are based on large samples, and this allows us to average out possible
 differences between children and the specificities of their input (see
@@ -728,14 +728,14 @@ centered and scaled).
 The findings for the new predictors were as follows. Overall, frequency
 is the largest and most consistent predictor of age of acquisition in
 both comprehension and production data and across languages, endorsing
-results for nouns across a variety of analyses (Braginsky et al., in
-revision; J. C. Goodman et al., 2008; B. C. Roy et al., 2015). Word
-length is more predictive for production than comprehension (and this
-difference is very clear in the global model), replicating previous work
-(Braginsky et al., in revision). Thus, word length seems to reflect the
-effects of production's constraints rather than comprehension's
-constraints, i.e., longer words are harder to articulate but they may
-not be significantly more difficult to store and access.
+results for nouns across a variety of analyses (Braginsky et al., 2019;
+J. C. Goodman et al., 2008; B. C. Roy et al., 2015). Word length is more
+predictive for production than comprehension (and this difference is
+very clear in the global model), replicating previous work (Braginsky et
+al., 2019). Thus, word length seems to reflect the effects of
+production's constraints rather than comprehension's constraints, i.e.,
+longer words are harder to articulate but they may not be significantly
+more difficult to store and access.
 
 As for the factors of interest, i.e., semantic and phonological
 connectivity, we found cross-linguistic differences. Connectivity
@@ -842,8 +842,11 @@ higher-probability words more easily (Storkel, 2001). This explanation
 is supported by computational simulations that show how learning general
 phonotactics patterns create \enquote{well-worn paths} which allow the
 models to represent several distinct but phonologically neighboring
-words (Dell, Juliano, \& Govindjee, 1993; Takac, Knott, \& Stokes,
-2017).
+words (Dell, Juliano, \& Govindjee, 1993; Siew, 2013; Takac, Knott, \&
+Stokes, 2017). More generally, there is a growing interest in
+investigating precisely how the local patterns acquired through
+statistical learning may give rise to the global network orgnization
+(For a review, see Karuza, Thompson-Schill, \& Bassett, 2016).
 
 Besides using their own statistical learning skills, children could also
 benefit from the way their caregivers speak. Perhaps the caregivers put
@@ -857,13 +860,45 @@ examining what words are introduced over development and the extent to
 which children's uptake is influenced by this input (Clark, 2007; Hoff
 \& Naigles, 2002; Huttenlocher et al., 1991).
 
+This study investigated the class of nouns in isolation --- following
+previous studies investigating the early semantic and phonological
+network (Hills et al., 2009; Storkel, 2009). We could ask if studying
+one class separtaly is a legitimate research strategy. In other words,
+would word classes (such as nouns, verbs and function words) be acquired
+relatively differently, or would they interact substantially to the
+extent that it becomes unreasonable to study each class separately?
+
+We know that different word classes follow different time trajectories.
+For instance, in the early stages of development, nouns tend to be
+acquired at a higher pace than predicates and function words (Bates et
+al., 1994). Research has shown that this difference cannot be trivially
+attributed to differences in the degree to which these classes are
+present in the input; if anything, verbs and function words are often
+more frequent in the input than nouns (e.g., Gentner, 1982). J. C.
+Goodman et al. (2008) found an effect of frequency on the age of
+acquisition within --- not across --- classes. Further, a recent work by
+Braginsky et al. (2019) tested a large number of predictors, besides
+frequency, and found that these predictors do not influence the
+acquisition of word classes in the same way. For example, the
+acquisition of nouns was found to be most influenced by frequency and
+concreteness, whereas the acquisition of function words was most
+influenced by word length.
+
+These patterns support the hypothesis that different word classes have
+different pathways of learning, thus making it worthwhile to study each
+class separately. This hypothesis, however, does not preclude all sorts
+of inter-class interaction. For example, Dautriche, Swingley, and
+Christophe (2015) found that the acquisition of similar-sounding words
+(\enquote{bih}-\enquote{dih}) is easier if these words belong to
+different syntactic categories (e.g., a noun and a verb).
+
 This work shares a number of limitations with previous studies using
 similar research strategy and datasets. Chief among these limitations is
 the fact that the age of word acquisition is computed using different
 children at different ages (due to the fact that available CDI data is
 mainly cross-sectional). Such a measure has been shown to be valid and
 reliable (Fenson et al., 1994), and has allowed researchers to study
-important aspects of word learning (Braginsky et al., in revision; J. C.
+important aspects of word learning (Braginsky et al., 2019; J. C.
 Goodman et al., 2008; Hills et al., 2009; Stella et al., 2017; Storkel,
 2009). In our case, the use of cost-effective cross-sectional data has
 allowed us to leverage large-scale studies across several languages.
@@ -886,36 +921,6 @@ and phonological domains. One question for future experimental work is
 whether such correlational patterns of growth can be produced in
 controlled behavioral experiments.
 
-\section{Appendix}\label{appendix}
-
-\subsection{Edit 1}\label{edit-1}
-
-\begin{figure}[!h]
-\includegraphics[width=\textwidth]{ms_files/figure-latex/corrPlot-1} \caption{Production data (Age of acquisition) as predicted by the degree (i.e., connectivity) in this network. Results are shown in each language for phonological and semantic networks. Each point is a word, with lines indicating linear model fits, and numbers indicating the Pearson correlation coefficients.}\label{fig:corrPlot}
-\end{figure}
-
-\begin{figure}[!h]
-\includegraphics[width=\textwidth]{ms_files/figure-latex/staticPredEdit1-1} \caption{Estimates of the relative contribution of each predictor of AoA in the regression model in each language. Results are shown for both production and comprehension data. Ranges indicate 95\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).}\label{fig:staticPredEdit1}
-\end{figure}
-
-\begin{figure}[!h]
-\includegraphics[width=\textwidth]{ms_files/figure-latex/staticAllEdit-1} \caption{Estimates of the relative contribution of each predictor of AoA in the combined mixed-effects model with language as a random effect. Results are shown for both production and comprehension data. Ranges indicate 95\% confidence intervals. Dotted ranges indicate the estimates for the predictor in a separate model that includes only this predictor as a fixed effect.}\label{fig:staticAllEdit}
-\end{figure}
-
-\subsection{Continuous edit distance}\label{continuous-edit-distance}
-
-\begin{figure}[!h]
-\includegraphics[width=\textwidth]{ms_files/figure-latex/corrPlotnt-1} \caption{Production data (Age of acquisition) as predicted by the degree (i.e., connectivity) in this network. Results are shown in each language for phonological and semantic networks. Each point is a word, with lines indicating linear model fits, and numbers indicating the Pearson correlation coefficients.}\label{fig:corrPlotnt}
-\end{figure}
-
-\begin{figure}[!h]
-\includegraphics[width=\textwidth]{ms_files/figure-latex/staticPrednt-1} \caption{Estimates of the relative contribution of each predictor of AoA in the regression model in each language. Results are shown for both production and comprehension data. Ranges indicate 95\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).}\label{fig:staticPrednt}
-\end{figure}
-
-\begin{figure}[!h]
-\includegraphics[width=\textwidth]{ms_files/figure-latex/staticAllnt-1} \caption{Estimates of the relative contribution of each predictor of AoA in the combined mixed-effects model with language as a random effect. Results are shown for both production and comprehension data. Ranges indicate 95\% confidence intervals. Dotted ranges indicate the estimates for the predictor in a separate model that includes only this predictor as a fixed effect.}\label{fig:staticAllnt}
-\end{figure}
-
 \vspace{1em}
 
 \fbox{\parbox[b][][c]{14cm}{\centering All data and code for these analyses are available at\ \url{https://github.com/afourtassi/networks}}}
@@ -930,6 +935,129 @@ Foundation, NSF \#1528526, and NSF \#1659585.
 
 None of the authors have any financial interest or a conflict of
 interest regarding this work and this submission.
+
+\clearpage
+
+\section{Appendix A: Analyses using different phnonological
+distances}\label{appendix-a-analyses-using-different-phnonological-distances}
+
+In the methods section, we based the choice of setting the threshold of
+edit distance at 2 on the fact that the early lexicon is very sparse in
+terms of phonological neighborhood; the early proposal that set the
+threshold at 1 (e.g., Vitevitch, 2008) was defined in the context of
+rather mature, dense lexicon. Increasing the threshold from 1 to 2
+allows for a more reasonable representation of the similarity space of
+the early phonological network.
+
+That said, it is useful to include the results obtained with both
+thresholds. In addition, it could be useful to compare the results to
+the case of weighted networks, i.e., with no thresholding. The main
+analyses for these two cases are shown in what follows. In summary, both
+methods of constructing the phonological networks had issues. While the
+fact of using edit = 1 created sparsity, using weighted networks created
+colinearity with length.
+
+\subsection{Analyses using phonological networks constructed with an
+edit distance of
+1}\label{analyses-using-phonological-networks-constructed-with-an-edit-distance-of-1}
+
+We show in Figure \ref{fig:corrPlot} the correlation between the
+phonological connectivity and age of acquisition in both comprehension
+and production. The sparsity issue, due the low phonological
+neighborhood in the children's lexicon is apparent: most words had 0
+degree and a few had non-zero but small degrees. The values of the
+correlations are much lower than the ones obtained with the threshold of
+2.
+
+The next figures show how the phonology-based mechanism of growth
+(phonoEXT) fares in comaprision to semEXT and other predictors of
+learing in each language (Figure \ref{fig:staticPredEdit1} and across
+all languages (Figure \ref{fig:staticAllEdit}). These figures show that
+phonoEXT based on edit distance 1 had no noticeable effect on learning.
+
+\begin{figure}[!h]
+\includegraphics[width=\textwidth]{ms_files/figure-latex/corrPlot-1} \caption{Age of acquistion in both comprehension and production as predicted by the degree (i.e., connectivity) in phonological network, using an edit distance of 1. Each point is a word, with lines indicating linear model fits, and numbers indicating the Pearson correlation coefficients.}\label{fig:corrPlot}
+\end{figure}
+
+\begin{figure}[!h]
+\includegraphics[width=\textwidth]{ms_files/figure-latex/staticPredEdit1-1} \caption{Estimates of the relative contribution of each predictor of AoA in the regression model in each language. Results are shown for both production and comprehension data. Ranges indicate 95\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).}\label{fig:staticPredEdit1}
+\end{figure}
+
+\begin{figure}[!h]
+\includegraphics[width=\textwidth]{ms_files/figure-latex/staticAllEdit-1} \caption{Estimates of the relative contribution of each predictor of AoA in the combined model. Here the phonologocal networks were based on an edit distance of 1. Results are shown for both production and comprehension data. Ranges indicate 95\% confidence intervals. Dotted ranges indicate the estimates for the predictor in a separate model that includes only this predictor as a fixed effect.}\label{fig:staticAllEdit}
+\end{figure}
+
+\subsection{Analyses using wighted phonological networks with no
+thresholding}\label{analyses-using-wighted-phonological-networks-with-no-thresholding}
+
+We constructed weighted phonological networks where the edge between a
+given pair of words \((w_1, w_2)\) was wieghted by
+\(\frac{1}{edit(w_1,w_2)}\). The phonological connectivity of a given
+word \(w\) was defined as the sum over all weighted edges with every
+other word \(w_i\) in the network, i.e.,
+\(\sum_{i} \frac{1}{edit(w,w_i)}\).
+
+The results were as follows. On the one hand, the correlations were
+generally high and in many cases (especially in the production data),
+higher than the ones obtained with the thresholds 2 and 1 (Figure
+\ref{fig:corrPlotnt}). On the other hand, phonoEXT resulted in very
+noisy estimates when we controlled for frequency and length (Figures
+\ref{fig:staticPrednt} and \ref{fig:staticAllnt}). The reason was that
+the new phonological connectivity was very highly correlated with
+length. The average correlation across languages was \(r =\) -0.95 for
+production data (compared to -0.29 and -0.60 for the phonological
+networks with edit = 1 and 2, respectvely). This fact lead to a
+collinearity issue in the regression, making the effect hard to
+estimate.
+
+\begin{figure}[!h]
+\includegraphics[width=\textwidth]{ms_files/figure-latex/corrPlotnt-1} \caption{Production data (Age of acquisition) as predicted by the degree (i.e., connectivity) in this network. Results are shown in each language for phonological and semantic networks. Each point is a word, with lines indicating linear model fits, and numbers indicating the Pearson correlation coefficients.}\label{fig:corrPlotnt}
+\end{figure}
+
+\begin{figure}[!h]
+\includegraphics[width=\textwidth]{ms_files/figure-latex/staticPrednt-1} \caption{Estimates of the relative contribution of each predictor of AoA in the regression model in each language. Results are shown for both production and comprehension data. Ranges indicate 95\% confidence intervals. Positive values indicate a positive relationship (e.g. longer words tend to have a higher AoA), while negative values indicate a negative relationship (e.g. words with higher frequency tend to have a lower AoA).}\label{fig:staticPrednt}
+\end{figure}
+
+\begin{figure}[!h]
+\includegraphics[width=\textwidth]{ms_files/figure-latex/staticAllnt-1} \caption{Estimates of the relative contribution of each predictor of AoA in the combined model. Here the phonologocal networks were based on weighted edges between words. Results are shown for both production and comprehension data. Ranges indicate 95\% confidence intervals. Dotted ranges indicate the estimates for the predictor in a separate model that includes only this predictor as a fixed effect.}\label{fig:staticAllnt}
+\end{figure}
+
+\clearpage
+
+\section{Appendix B: Phonological connectivity across
+languages}\label{appendix-b-phonological-connectivity-across-languages}
+
+We were interested in investigating if, for a given meaning (e.g.,
+\enquote{dog} in English and \enquote{chien} in French), phonological
+connectivity varied across languages. For example, if \enquote{dog} is
+highly connected in the English phonological network, will
+\enquote{chien} also be highly connected in the French network, or will
+these two forms be situated independently in their relative phonological
+networks?
+
+If the phonological networks are very similar across languages, then
+network growth in the phonological domain may not be an independent
+mechanism of acquisition, but rather an epiphenomenon of semantic-based
+learning. If, instead, the phonological connectivity is different from
+language to language, then this fact would lend support to phonological
+growth being an independent driving mechanism of early word
+learning.\footnote{Note that this question can also be answered through
+  the models in Figures 5 and 6 where we test both semantic and
+  phonological connectivities.}
+
+To test this hypothesis, we compute the correlation of the unilemma's
+phonological connectivity between every pair of languages. In Figure
+\ref{fig:corrPair}, we plot the distribution of the pairwise pearson
+correlation coefficent. Generally speaking, languages are not highly
+correlated at the phonological level as the distributions peak at low
+values of r, showing that phonological connectivily is not (at least not
+fully) determined semantically.
+
+\begin{figure}[!h]
+\includegraphics[width=\textwidth]{ms_files/figure-latex/corrPair-1} \caption{The distribution of the Pearson correlation coefficents of the unilemma's phonological connectivity between every pair of languages.}\label{fig:corrPair}
+\end{figure}
+
+\newpage 
 
 \section{References}\label{references}
 
@@ -966,6 +1094,12 @@ their implications for theories of language development. In P. Fletcher
 \& B. MacWhinney (Eds.), \emph{The handbook of child language}. Oxford,
 England: Blackwell.
 
+\hypertarget{ref-bates1994}{}
+Bates, E., Marchman, V., Thal, D., Fenson, L., Dale, P., Reznick, J. S.,
+\ldots{} Hartung, J. (1994). Developmental and stylistic variation in
+the composition of early vocabulary. \emph{Journal of Child Language},
+\emph{21}(1).
+
 \hypertarget{ref-beckage2016}{}
 Beckage, N. M., \& Colunga, E. (2016). Language networks as models of
 cognition: Understanding cognition through language. In \emph{Towards a
@@ -985,10 +1119,10 @@ Borovsky, A., Ellis, E. M., Evans, J. L., \& Elman, J. L. (2016).
 Lexical leverage: Category knowledge boosts real-time novel word
 recognition in 2-year-olds. \emph{Developmental Science}, \emph{19}(6).
 
-\hypertarget{ref-braginsky}{}
-Braginsky, M., Yurovsky, D., Marchman, V. A., \& Frank, M. C. (in
-revision). Consistency and variability in word learning across
-languages.
+\hypertarget{ref-braginsky2019}{}
+Braginsky, M., Yurovsky, D., Marchman, V. A., \& Frank, M. C. (2019).
+Consistency and variability in children?s word learning across
+languages. \emph{Open Mind}, \emph{3}.
 
 \hypertarget{ref-carlson2014}{}
 Carlson, M. T., Sonderegger, M., \& Bane, M. (2014). How children
@@ -1018,6 +1152,11 @@ Cristia, A., Dupoux, E., Gurven, M., \& Stieglitz, J. (2017).
 Child-directed speech is infrequent in a forager-farmer population: A
 time allocation study. \emph{Child Development}.
 
+\hypertarget{ref-dautriche2015}{}
+Dautriche, I., Swingley, D., \& Christophe, A. (2015). Learning novel
+phonological neighbors: Syntactic category matters. \emph{Cognition},
+\emph{143}.
+
 \hypertarget{ref-dell1993}{}
 Dell, G. S., Juliano, C., \& Govindjee, A. (1993). Structure and content
 in language production: A theory of frame constraints in phonological
@@ -1039,6 +1178,11 @@ research workshop} (pp. 165--171).
 Frank, M. C., Braginsky, M., Yurovsky, D., \& Marchman, V. A. (2017).
 Wordbank: An open repository for developmental vocabulary data.
 \emph{Journal of Child Language}, \emph{44}(3), 677--694.
+
+\hypertarget{ref-gentner1982}{}
+Gentner, D. (1982). Why nouns are learned before verbs: Linguistic
+relativity versus natural partitioning. \emph{Center for the Study of
+Reading Technical Report}.
 
 \hypertarget{ref-gillespie15}{}
 Gillespie, C. S. (2015). Fitting heavy tailed distributions: The
@@ -1093,6 +1237,11 @@ Kachergis, G., Cox, G. E., \& Jones, M. N. (2011). OrBEAGLE: Integrating
 orthography into a holographic model of the lexicon. In
 \emph{International conference on artificial neural networks} (pp.
 307--314). Springer.
+
+\hypertarget{ref-karuza2016}{}
+Karuza, E. A., Thompson-Schill, S. L., \& Bassett, D. S. (2016). Local
+patterns to global architectures: Influences of network topology on
+human learning. \emph{Trends in Cognitive Sciences}, \emph{20}(8).
 
 \hypertarget{ref-kuhl1997}{}
 Kuhl, P. K., Andruski, J. E., Chistovich, I. A., Chistovich, L. A.,
@@ -1152,6 +1301,10 @@ Academy of Sciences}, \emph{112}(41).
 Saffran, J. R., Aslin, R. N., \& Newport, E. L. (1996). Statistical
 learning by 8-month-old infants. \emph{Science}, \emph{274}(5294),
 1926--1928.
+
+\hypertarget{ref-siew2013}{}
+Siew, C. S. (2013). Community structure in the phonological network.
+\emph{Frontiers in Psychology}, \emph{4}.
 
 \hypertarget{ref-slobin2014}{}
 Slobin, D. I. (2014). \emph{The crosslinguistic study of language
