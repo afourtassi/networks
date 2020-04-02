@@ -43,4 +43,10 @@ IPA_continuous<- function(IPA_list){
   return(IPA_list)
 }
 
+IPA_continuous_norm<- function(IPA_list){
+  IPA_list<- IPA_list %>%
+    mutate(link=as.numeric(1-dist_norm))
+  return(IPA_list)
+}
+
 ######################################################################################################

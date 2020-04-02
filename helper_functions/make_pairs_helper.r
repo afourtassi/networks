@@ -169,6 +169,7 @@ make_IPA_pairs<- function(def_list, lang){
   only_IPA <- IPA_items %>% select(IPA)
   
   # make word pairs with phonological distance
+  
   IPA_pairs <- expand.grid(only_IPA$IPA, only_IPA$IPA) %>%
     left_join(item_IPA_join, by = c("Var1" = "IPA"))  %>%
     rename(pair = item, pair.definition = Var1) %>%
@@ -179,7 +180,22 @@ make_IPA_pairs<- function(def_list, lang){
     select(item, item.definition, pair, pair.definition, dist) %>%
     filter(item!=pair) %>%
     ungroup()
+  
+  #Here I add the normalized edit distance
+  IPA_pairs_norm <- expand.grid(only_IPA$IPA, only_IPA$IPA) %>%
+    left_join(item_IPA_join, by = c("Var1" = "IPA"))  %>%
+    rename(pair = item, pair.definition = Var1) %>%
+    left_join(item_IPA_join, by = c("Var2" = "IPA")) %>%
+    rename(item.definition = Var2) %>%
+    rowwise() %>%
+    mutate(dist = adist(item.definition, pair.definition)) %>%
+    mutate(len_max = max(str_length(item.definition), str_length(pair.definition))) %>%
+    mutate(dist_norm = dist/len_max) %>%
+    select(item, item.definition, pair, pair.definition, dist, dist_norm) %>%
+    filter(item!=pair) %>%
+    ungroup()
+  
     
-  IPA_pairs
-  return(IPA_pairs)
+  IPA_pairs_norm
+  return(IPA_pairs_norm)
 }

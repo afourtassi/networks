@@ -87,7 +87,7 @@ library(knitr)
 library(boot)
 library(dplyr)
 library(gridExtra)
-library(langcog)
+#library(langcog)
 library(ggthemes)
 library(broom)
 library(HDInterval)
@@ -219,7 +219,7 @@ plot_correlation_prod_1 <- ggplot(subset(data_long, measure == "produces" & data
                                   aes(x=value, y=aoa))+
   facet_grid(language~ predictor)+#, scales = "free") +
   geom_jitter(#aes(colour = lexical_class),
-    colour = solarized_palette(1),
+    #colour = solarized_palette(1),
     size = 0.5, alpha = 0.5) +
   geom_abline(slope = -1)+
   coord_cartesian(xlim=c(-1,5))+
@@ -238,7 +238,7 @@ plot_correlation_prod_1 <- ggplot(subset(data_long, measure == "produces" & data
 plot_correlation_prod_2 <- ggplot(subset(data_long, measure == "produces" & data_long$language %in% c('Norwegian', 'Russian', 'Spanish', 'Swedish','Turkish')), aes(x=value, y=aoa))+
   facet_grid(language~ predictor)+#, scales = "free") +
   geom_jitter(#aes(colour = lexical_class),
-    colour = solarized_palette(1),
+    #colour = solarized_palette(1),
     size = 0.5, alpha = 0.5) +
   geom_abline(slope = -1)+
   coord_cartesian(xlim=c(-1,5))+
@@ -272,7 +272,7 @@ corr_prod <- cowplot::plot_grid(
 plot_correlation_comp_1 <- ggplot(subset(data_long, measure == "understands" & aoa < 35 & data_long$language %in% c('Croatian', 'Danish', 'English', 'French','Italian')), aes(x=value, y=aoa))+
   facet_grid(language~ predictor)+#, scales = "free") +
   geom_jitter(#aes(colour = lexical_class),
-    colour = solarized_palette(1),
+    #colour = solarized_palette(1),
     size = 0.5, alpha = 0.5) +
   geom_abline(slope = -1)+
   coord_cartesian(xlim=c(-1,5))+
@@ -291,7 +291,7 @@ plot_correlation_comp_1 <- ggplot(subset(data_long, measure == "understands" & a
 plot_correlation_comp_2 <- ggplot(subset(data_long, measure == "understands" & aoa < 35 & data_long$language %in% c('Norwegian', 'Russian', 'Spanish', 'Swedish','Turkish')), aes(x=value, y=aoa))+
   facet_grid(language~ predictor)+#, scales = "free") +
   geom_jitter(#aes(colour = lexical_class),
-    colour = solarized_palette(1),
+    #colour = solarized_palette(1),
     size = 0.5, alpha = 0.5) +
   geom_abline(slope = -1)+
   coord_cartesian(xlim=c(-1,5))+
@@ -428,16 +428,17 @@ powerProd <- powerL %>%
   select(-measure) %>%
   group_by(language, domain) %>%
   nest() %>%
-  spread(domain, data) %>%
-  unnest(.sep = "_") 
+  pivot_wider(names_from = domain, values_from = data) %>%
+  #spread(domain, data) %>%
+  unnest(names_sep = "_", cols = c(Phono, Sem)) 
   
 powerComp <- powerL %>%
   dplyr::filter(measure == 'understands') %>%
   select(-measure) %>%
   group_by(language, domain) %>%
   nest() %>%
-  spread(domain, data) %>%
-  unnest(.sep = "_") 
+  pivot_wider(names_from = domain, values_from = data) %>%
+  unnest(names_sep = "_", cols = c(Phono, Sem)) 
 
 #rownames(statistics) <- NULL 
 ```
@@ -810,7 +811,7 @@ plot_correlation_1 <- ggplot(subset(data_long, data_long$language %in% c('Croati
                                   aes(x=value, y=aoa))+
   facet_grid(language~ measure)+#, scales = "free") +
   geom_jitter(#aes(colour = lexical_class),
-    colour = solarized_palette(1),
+    #colour = solarized_palette(1),
     size = 0.5, alpha = 0.5) +
   geom_abline(slope = -1)+
   coord_cartesian(xlim=c(-1,5))+
@@ -829,7 +830,7 @@ plot_correlation_1 <- ggplot(subset(data_long, data_long$language %in% c('Croati
 plot_correlation_2 <- ggplot(subset(data_long,  data_long$language %in% c('Norwegian', 'Russian', 'Spanish', 'Swedish','Turkish')), aes(x=value, y=aoa))+
   facet_grid(language~ measure)+#, scales = "free") +
   geom_jitter(#aes(colour = lexical_class),
-    colour = solarized_palette(1),
+    #colour = solarized_palette(1),
     size = 0.5, alpha = 0.5) +
   geom_abline(slope = -1)+
   coord_cartesian(xlim=c(-1,5))+
@@ -988,7 +989,7 @@ plot_correlation_1 <- ggplot(subset(data_long, data_long$language %in% c('Croati
                                   aes(x=value, y=aoa))+
   facet_grid(language~ measure)+#, scales = "free") +
   geom_jitter(#aes(colour = lexical_class),
-    colour = solarized_palette(1),
+    #colour = solarized_palette(1),
     size = 0.5, alpha = 0.5) +
   geom_abline(slope = -1)+
   #coord_cartesian(xlim=c(-1,5))+
@@ -1007,7 +1008,7 @@ plot_correlation_1 <- ggplot(subset(data_long, data_long$language %in% c('Croati
 plot_correlation_2 <- ggplot(subset(data_long,  data_long$language %in% c('Norwegian', 'Russian', 'Spanish', 'Swedish','Turkish')), aes(x=value, y=aoa))+
   facet_grid(language~ measure)+#, scales = "free") +
   geom_jitter(#aes(colour = lexical_class),
-    colour = solarized_palette(1),
+    #colour = solarized_palette(1),
     size = 0.5, alpha = 0.5) +
   geom_abline(slope = -1)+
   #coord_cartesian(xlim=c(-1,5))+
