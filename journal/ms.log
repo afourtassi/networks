@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.4)  2 APR 2020 17:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.4)  3 APR 2020 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1086,17 +1086,17 @@ File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 Underfull \vbox (badness 4752) has occurred while \output is active []
 
 [4]
-<figs/growth3.png, id=100, 1003.75pt x 518.93875pt>
+<figs/growth3.png, id=114, 1003.75pt x 518.93875pt>
 File: figs/growth3.png Graphic file (type png)
 <use figs/growth3.png>
-Package pdftex.def Info: figs/growth3.png  used on input line 149.
+Package pdftex.def Info: figs/growth3.png  used on input line 150.
 (pdftex.def)             Requested size: 301.12732pt x 155.68282pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 156.
+(Font)              <10> on input line 157.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 156.
+(Font)              <7> on input line 157.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 156.
+(Font)              <5> on input line 157.
 [5 <./figs/growth3.png>]
 Underfull \vbox (badness 2828) has occurred while \output is active []
 
@@ -1113,47 +1113,50 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [11]
-<ms_files/figure-latex/corrProd-1.pdf, id=155, 455.7025pt x 356.33125pt>
+<ms_files/figure-latex/corrProd-1.pdf, id=169, 455.7025pt x 356.33125pt>
 File: ms_files/figure-latex/corrProd-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/corrProd-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/corrProd-1.pdf  used on input li
-ne 228.
+ne 229.
 (pdftex.def)             Requested size: 455.72223pt x 356.34666pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ms_files/figure-latex/corrComp-1.pdf, id=156, 455.7025pt x 356.33125pt>
+<ms_files/figure-latex/corrComp-1.pdf, id=170, 455.7025pt x 356.33125pt>
 File: ms_files/figure-latex/corrComp-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/corrComp-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/corrComp-1.pdf  used on input li
-ne 232.
+ne 233.
 (pdftex.def)             Requested size: 455.72223pt x 356.34666pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[13 <./ms_files/figure-latex/corrProd-1.pdf>]
-<ms_files/figure-latex/degreeDist-1.pdf, id=185, 449.68pt x 304.13625pt>
+<ms_files/figure-latex/degreeDist-1.pdf, id=182, 449.68pt x 304.13625pt>
 File: ms_files/figure-latex/degreeDist-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/degreeDist-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/degreeDist-1.pdf  used on input 
-line 242.
+line 244.
 (pdftex.def)             Requested size: 449.69261pt x 304.14478pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[13 <./ms_files/figure-latex/corrProd-1.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [14 <./ms_files/figure-latex/corrComp-1.pdf>] [15 <./ms_files/figure-latex/degr
 eeDist-1.pdf>]
-Underfull \vbox (badness 1527) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [16]
-<ms_files/figure-latex/growthPred-1.pdf, id=231, 676.5275pt x 264.99pt>
+<ms_files/figure-latex/growthPred-1.pdf, id=246, 676.5275pt x 264.99pt>
 File: ms_files/figure-latex/growthPred-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/growthPred-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/growthPred-1.pdf  used on input 
-line 304.
+line 307.
 (pdftex.def)             Requested size: 469.76717pt x 184.00375pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1162,101 +1165,101 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [17] [18 <./ms_files/figure-latex/growthPred-1.pdf>]
-<ms_files/figure-latex/staticPred-1.pdf, id=254, 676.5275pt x 264.99pt>
+<ms_files/figure-latex/staticPred-1.pdf, id=269, 676.5275pt x 264.99pt>
 File: ms_files/figure-latex/staticPred-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/staticPred-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/staticPred-1.pdf  used on input 
-line 320.
+line 323.
 (pdftex.def)             Requested size: 469.76717pt x 184.00375pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ms_files/figure-latex/staticAll-1.pdf, id=255, 416.55624pt x 130.4875pt>
+<ms_files/figure-latex/staticAll-1.pdf, id=270, 416.55624pt x 130.4875pt>
 File: ms_files/figure-latex/staticAll-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/staticAll-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/staticAll-1.pdf  used on input l
-ine 324.
+ine 327.
 (pdftex.def)             Requested size: 416.56157pt x 130.48915pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19]
+[19] [20 <./ms_files/figure-latex/staticPred-1.pdf> <./ms_files/figure-latex/st
+aticAll-1.pdf>] [21] [22] [23]
+Underfull \vbox (badness 4752) has occurred while \output is active []
+
+[24]
+Underfull \vbox (badness 4752) has occurred while \output is active []
+
+[25]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[20 <./ms_files/figure-latex/staticPred-1.pdf> <./ms_files/figure-latex/staticA
-ll-1.pdf>] [21] [22] [23] [24] [25] [26] [27]
-<ms_files/figure-latex/corrPlot-1.pdf, id=323, 455.7025pt x 356.33125pt>
+[26] [27]
+<ms_files/figure-latex/corrPlot-1.pdf, id=338, 455.7025pt x 356.33125pt>
 File: ms_files/figure-latex/corrPlot-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/corrPlot-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/corrPlot-1.pdf  used on input li
-ne 398.
+ne 401.
 (pdftex.def)             Requested size: 455.72223pt x 356.34666pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ms_files/figure-latex/staticPredEdit1-1.pdf, id=324, 676.5275pt x 264.99pt>
+<ms_files/figure-latex/staticPredEdit1-1.pdf, id=339, 676.5275pt x 264.99pt>
 File: ms_files/figure-latex/staticPredEdit1-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/staticPredEdit1-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/staticPredEdit1-1.pdf  used on i
-nput line 402.
+nput line 405.
 (pdftex.def)             Requested size: 469.76717pt x 184.00375pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ms_files/figure-latex/staticAllEdit-1.pdf, id=325, 416.55624pt x 130.4875pt>
+<ms_files/figure-latex/staticAllEdit-1.pdf, id=340, 416.55624pt x 130.4875pt>
 File: ms_files/figure-latex/staticAllEdit-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/staticAllEdit-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/staticAllEdit-1.pdf  used on inp
-ut line 406.
+ut line 409.
 (pdftex.def)             Requested size: 416.56157pt x 130.48915pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [28
 
 ]
-Underfull \vbox (badness 1221) has occurred while \output is active []
-
-[29 <./ms_files/figure-latex/corrPlot-1.pdf>] [30 <./ms_files/figure-latex/stat
-icPredEdit1-1.pdf> <./ms_files/figure-latex/staticAllEdit-1.pdf>]
-<ms_files/figure-latex/corrPlotnt-1.pdf, id=377, 455.7025pt x 356.33125pt>
+<ms_files/figure-latex/corrPlotnt-1.pdf, id=354, 455.7025pt x 356.33125pt>
 File: ms_files/figure-latex/corrPlotnt-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/corrPlotnt-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/corrPlotnt-1.pdf  used on input 
-line 417.
+line 420.
 (pdftex.def)             Requested size: 455.72223pt x 356.34666pt.
-<ms_files/figure-latex/staticPrednt-1.pdf, id=378, 676.5275pt x 264.99pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<ms_files/figure-latex/staticPrednt-1.pdf, id=355, 676.5275pt x 264.99pt>
 File: ms_files/figure-latex/staticPrednt-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/staticPrednt-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/staticPrednt-1.pdf  used on inpu
-t line 421.
+t line 424.
 (pdftex.def)             Requested size: 469.76717pt x 184.00375pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<ms_files/figure-latex/staticAllnt-1.pdf, id=379, 416.55624pt x 130.4875pt>
+<ms_files/figure-latex/staticAllnt-1.pdf, id=356, 416.55624pt x 130.4875pt>
 File: ms_files/figure-latex/staticAllnt-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/staticAllnt-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/staticAllnt-1.pdf  used on input
- line 425.
+ line 428.
 (pdftex.def)             Requested size: 416.56157pt x 130.48915pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31 <./ms_files/figure-latex/corrPlotnt-1.pdf>]
-
-LaTeX Warning: Text page 32 contains only floats.
-
-[32 <./ms_files/figure-latex/staticPrednt-1.pdf> <./ms_files/figure-latex/stati
-cAllnt-1.pdf>]
-<ms_files/figure-latex/corrPair-1.pdf, id=416, 462.72874pt x 137.51375pt>
+[29 <./ms_files/figure-latex/corrPlot-1.pdf>] [30 <./ms_files/figure-latex/stat
+icPredEdit1-1.pdf> <./ms_files/figure-latex/staticAllEdit-1.pdf>] [31 <./ms_fil
+es/figure-latex/corrPlotnt-1.pdf>] [32 <./ms_files/figure-latex/staticPrednt-1.
+pdf> <./ms_files/figure-latex/staticAllnt-1.pdf>]
+<ms_files/figure-latex/corrPair-1.pdf, id=431, 462.72874pt x 137.51375pt>
 File: ms_files/figure-latex/corrPair-1.pdf Graphic file (type pdf)
 <use ms_files/figure-latex/corrPair-1.pdf>
 Package pdftex.def Info: ms_files/figure-latex/corrPair-1.pdf  used on input li
-ne 440.
+ne 443.
 (pdftex.def)             Requested size: 462.76997pt x 137.526pt.
 [33
 
@@ -1265,408 +1268,413 @@ warning (ext4): destination with the same identifier (name{ref-altvater2013}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.635 \leavevmode\hypertarget{ref-altvater2013}{}
+l.641 \leavevmode\hypertarget{ref-altvater2013}{}
                                                  %pdfTeX warning (ext4): destin
 ation with the same identifier (name{ref-arbesman2010}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.638 \leavevmode\hypertarget{ref-arbesman2010}{}
+l.644 \leavevmode\hypertarget{ref-arbesman2010}{}
                                                  %pdfTeX warning (ext4): destin
 ation with the same identifier (name{ref-aslin2012}) has been already used, dup
 licate ignored
 <to be read again> 
                    \relax 
-l.641 \leavevmode\hypertarget{ref-aslin2012}{}
+l.647 \leavevmode\hypertarget{ref-aslin2012}{}
                                               %pdfTeX warning (ext4): destinati
 on with the same identifier (name{ref-barabasi99}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.644 \leavevmode\hypertarget{ref-barabasi99}{}
+l.650 \leavevmode\hypertarget{ref-barabasi99}{}
                                                %pdfTeX warning (ext4): destinat
 ion with the same identifier (name{ref-bates1995}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.647 \leavevmode\hypertarget{ref-bates1995}{}
-                                              %pdfTeX warning (ext4): destinati
-on with the same identifier (name{ref-bates1987}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.650 \leavevmode\hypertarget{ref-bates1987}{}
+l.653 \leavevmode\hypertarget{ref-bates1995}{}
                                               % [40]pdfTeX warning (ext4): dest
-ination with the same identifier (name{ref-bates1994}) has been already used, d
+ination with the same identifier (name{ref-bates1987}) has been already used, d
 uplicate ignored
 <to be read again> 
                    \relax 
-l.653 \leavevmode\hypertarget{ref-bates1994}{}
+l.656 \leavevmode\hypertarget{ref-bates1987}{}
+                                              %pdfTeX warning (ext4): destinati
+on with the same identifier (name{ref-bates1994}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.659 \leavevmode\hypertarget{ref-bates1994}{}
                                               %pdfTeX warning (ext4): destinati
 on with the same identifier (name{ref-beckage2016}) has been already used, dupl
 icate ignored
 <to be read again> 
                    \relax 
-l.656 \leavevmode\hypertarget{ref-beckage2016}{}
+l.662 \leavevmode\hypertarget{ref-beckage2016}{}
                                                 %pdfTeX warning (ext4): destina
-tion with the same identifier (name{ref-beckage}) has been already used, duplic
-ate ignored
+tion with the same identifier (name{ref-beckage2019}) has been already used, du
+plicate ignored
 <to be read again> 
                    \relax 
-l.659 \leavevmode\hypertarget{ref-beckage}{}
-                                            %pdfTeX warning (ext4): destination
- with the same identifier (name{ref-benedict1979}) has been already used, dupli
-cate ignored
+l.665 \leavevmode\hypertarget{ref-beckage2019}{}
+                                                %pdfTeX warning (ext4): destina
+tion with the same identifier (name{ref-benedict1979}) has been already used, d
+uplicate ignored
 <to be read again> 
                    \relax 
-l.662 \leavevmode\hypertarget{ref-benedict1979}{}
+l.668 \leavevmode\hypertarget{ref-benedict1979}{}
                                                  %pdfTeX warning (ext4): destin
 ation with the same identifier (name{ref-borovsky2016}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.665 \leavevmode\hypertarget{ref-borovsky2016}{}
+l.671 \leavevmode\hypertarget{ref-borovsky2016}{}
                                                  %pdfTeX warning (ext4): destin
 ation with the same identifier (name{ref-braginsky2019}) has been already used,
  duplicate ignored
 <to be read again> 
                    \relax 
-l.668 \leavevmode\hypertarget{ref-braginsky2019}{}
+l.674 \leavevmode\hypertarget{ref-braginsky2019}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-carlson2014}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.671 \leavevmode\hypertarget{ref-carlson2014}{}
+l.677 \leavevmode\hypertarget{ref-carlson2014}{}
                                                 %pdfTeX warning (ext4): destina
 tion with the same identifier (name{ref-chi1983}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.674 \leavevmode\hypertarget{ref-chi1983}{}
-                                            %pdfTeX warning (ext4): destination
- with the same identifier (name{ref-clark2007}) has been already used, duplicat
-e ignored
+l.680 \leavevmode\hypertarget{ref-chi1983}{}
+                                            % [41]pdfTeX warning (ext4): destin
+ation with the same identifier (name{ref-clark2007}) has been already used, dup
+licate ignored
 <to be read again> 
                    \relax 
-l.677 \leavevmode\hypertarget{ref-clark2007}{}
+l.683 \leavevmode\hypertarget{ref-clark2007}{}
                                               %pdfTeX warning (ext4): destinati
 on with the same identifier (name{ref-clauset09}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.680 \leavevmode\hypertarget{ref-clauset09}{}
-                                              % [41]pdfTeX warning (ext4): dest
-ination with the same identifier (name{ref-collins1975}) has been already used,
- duplicate ignored
+l.686 \leavevmode\hypertarget{ref-clauset09}{}
+                                              %pdfTeX warning (ext4): destinati
+on with the same identifier (name{ref-collins1975}) has been already used, dupl
+icate ignored
 <to be read again> 
                    \relax 
-l.683 \leavevmode\hypertarget{ref-collins1975}{}
+l.689 \leavevmode\hypertarget{ref-collins1975}{}
                                                 %pdfTeX warning (ext4): destina
 tion with the same identifier (name{ref-cristia2017}) has been already used, du
 plicate ignored
 <to be read again> 
                    \relax 
-l.686 \leavevmode\hypertarget{ref-cristia2017}{}
+l.692 \leavevmode\hypertarget{ref-cristia2017}{}
                                                 %pdfTeX warning (ext4): destina
 tion with the same identifier (name{ref-dell1993}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.689 \leavevmode\hypertarget{ref-dell1993}{}
+l.695 \leavevmode\hypertarget{ref-dell1993}{}
                                              %pdfTeX warning (ext4): destinatio
 n with the same identifier (name{ref-fenson94}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.692 \leavevmode\hypertarget{ref-fenson94}{}
+l.698 \leavevmode\hypertarget{ref-fenson94}{}
                                              %pdfTeX warning (ext4): destinatio
-n with the same identifier (name{ref-fourtassi2013}) has been already used, dup
+n with the same identifier (name{ref-fourtassi2014}) has been already used, dup
 licate ignored
 <to be read again> 
                    \relax 
-l.695 \leavevmode\hypertarget{ref-fourtassi2013}{}
+l.701 \leavevmode\hypertarget{ref-fourtassi2014}{}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{ref-fourtassi2013}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.704 \leavevmode\hypertarget{ref-fourtassi2013}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-frank2017}) has been already used, du
 plicate ignored
 <to be read again> 
                    \relax 
-l.698 \leavevmode\hypertarget{ref-frank2017}{}
-                                              %pdfTeX warning (ext4): destinati
-on with the same identifier (name{ref-gentner1982}) has been already used, dupl
-icate ignored
+l.707 \leavevmode\hypertarget{ref-frank2017}{}
+                                              % [42]pdfTeX warning (ext4): dest
+ination with the same identifier (name{ref-gentner1982}) has been already used,
+ duplicate ignored
 <to be read again> 
                    \relax 
-l.701 \leavevmode\hypertarget{ref-gentner1982}{}
+l.710 \leavevmode\hypertarget{ref-gentner1982}{}
                                                 %pdfTeX warning (ext4): destina
 tion with the same identifier (name{ref-gillespie15}) has been already used, du
 plicate ignored
 <to be read again> 
                    \relax 
-l.704 \leavevmode\hypertarget{ref-gillespie15}{}
+l.713 \leavevmode\hypertarget{ref-gillespie15}{}
                                                 %pdfTeX warning (ext4): destina
 tion with the same identifier (name{ref-goodman2008}) has been already used, du
 plicate ignored
 <to be read again> 
                    \relax 
-l.707 \leavevmode\hypertarget{ref-goodman2008}{}
-                                                % [42]pdfTeX warning (ext4): de
-stination with the same identifier (name{ref-dippl}) has been already used, dup
-licate ignored
+l.716 \leavevmode\hypertarget{ref-goodman2008}{}
+                                                %pdfTeX warning (ext4): destina
+tion with the same identifier (name{ref-dippl}) has been already used, duplicat
+e ignored
 <to be read again> 
                    \relax 
-l.710 \leavevmode\hypertarget{ref-dippl}{}
+l.719 \leavevmode\hypertarget{ref-dippl}{}
                                           %pdfTeX warning (ext4): destination w
 ith the same identifier (name{ref-griffiths07}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.713 \leavevmode\hypertarget{ref-griffiths07}{}
+l.722 \leavevmode\hypertarget{ref-griffiths07}{}
                                                 %pdfTeX warning (ext4): destina
 tion with the same identifier (name{ref-hills2010}) has been already used, dupl
 icate ignored
 <to be read again> 
                    \relax 
-l.716 \leavevmode\hypertarget{ref-hills2010}{}
+l.725 \leavevmode\hypertarget{ref-hills2010}{}
                                               %pdfTeX warning (ext4): destinati
 on with the same identifier (name{ref-hills2009}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.719 \leavevmode\hypertarget{ref-hills2009}{}
+l.728 \leavevmode\hypertarget{ref-hills2009}{}
                                               %pdfTeX warning (ext4): destinati
 on with the same identifier (name{ref-hills2018}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.722 \leavevmode\hypertarget{ref-hills2018}{}
+l.731 \leavevmode\hypertarget{ref-hills2018}{}
                                               %pdfTeX warning (ext4): destinati
 on with the same identifier (name{ref-hoff2002}) has been already used, duplica
 te ignored
 <to be read again> 
                    \relax 
-l.725 \leavevmode\hypertarget{ref-hoff2002}{}
+l.734 \leavevmode\hypertarget{ref-hoff2002}{}
                                              %pdfTeX warning (ext4): destinatio
 n with the same identifier (name{ref-huttenlocher1991}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.728 ...vmode\hypertarget{ref-huttenlocher1991}{}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{ref-jusczyk1994}) has been already used, 
-duplicate ignored
+l.737 ...vmode\hypertarget{ref-huttenlocher1991}{}
+                                                  % [43]pdfTeX warning (ext4): 
+destination with the same identifier (name{ref-jusczyk1994}) has been already u
+sed, duplicate ignored
 <to be read again> 
                    \relax 
-l.731 \leavevmode\hypertarget{ref-jusczyk1994}{}
+l.740 \leavevmode\hypertarget{ref-jusczyk1994}{}
                                                 %pdfTeX warning (ext4): destina
 tion with the same identifier (name{ref-kachergis2011}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.734 \leavevmode\hypertarget{ref-kachergis2011}{}
+l.743 \leavevmode\hypertarget{ref-kachergis2011}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-karuza2016}) has been already used, d
 uplicate ignored
 <to be read again> 
                    \relax 
-l.737 \leavevmode\hypertarget{ref-karuza2016}{}
-                                               % [43]pdfTeX warning (ext4): des
-tination with the same identifier (name{ref-kuhl1997}) has been already used, d
-uplicate ignored
+l.746 \leavevmode\hypertarget{ref-karuza2016}{}
+                                               %pdfTeX warning (ext4): destinat
+ion with the same identifier (name{ref-kuhl1997}) has been already used, duplic
+ate ignored
 <to be read again> 
                    \relax 
-l.740 \leavevmode\hypertarget{ref-kuhl1997}{}
+l.749 \leavevmode\hypertarget{ref-kuhl1997}{}
                                              %pdfTeX warning (ext4): destinatio
 n with the same identifier (name{ref-luce1998}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.743 \leavevmode\hypertarget{ref-luce1998}{}
+l.752 \leavevmode\hypertarget{ref-luce1998}{}
                                              %pdfTeX warning (ext4): destinatio
 n with the same identifier (name{ref-lupyan2017}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.746 \leavevmode\hypertarget{ref-lupyan2017}{}
+l.755 \leavevmode\hypertarget{ref-lupyan2017}{}
                                                %pdfTeX warning (ext4): destinat
 ion with the same identifier (name{ref-macwhinney2014}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.749 ...vevmode\hypertarget{ref-macwhinney2014}{}
+l.758 ...vevmode\hypertarget{ref-macwhinney2014}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-markman90}) has been already used, du
 plicate ignored
 <to be read again> 
                    \relax 
-l.752 \leavevmode\hypertarget{ref-markman90}{}
+l.761 \leavevmode\hypertarget{ref-markman90}{}
                                               %pdfTeX warning (ext4): destinati
 on with the same identifier (name{ref-matusevych2018}) has been already used, d
 uplicate ignored
 <to be read again> 
                    \relax 
-l.755 ...vevmode\hypertarget{ref-matusevych2018}{}
+l.764 ...vevmode\hypertarget{ref-matusevych2018}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-mcmurray2012}) has been already used,
  duplicate ignored
 <to be read again> 
                    \relax 
-l.758 \leavevmode\hypertarget{ref-mcmurray2012}{}
-                                                 %pdfTeX warning (ext4): destin
-ation with the same identifier (name{ref-mcrae2005}) has been already used, dup
-licate ignored
+l.767 \leavevmode\hypertarget{ref-mcmurray2012}{}
+                                                 % [44]pdfTeX warning (ext4): d
+estination with the same identifier (name{ref-mcrae2005}) has been already used
+, duplicate ignored
 <to be read again> 
                    \relax 
-l.761 \leavevmode\hypertarget{ref-mcrae2005}{}
+l.770 \leavevmode\hypertarget{ref-mcrae2005}{}
                                               %pdfTeX warning (ext4): destinati
 on with the same identifier (name{ref-nelson1998}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.764 \leavevmode\hypertarget{ref-nelson1998}{}
-                                               % [44]pdfTeX warning (ext4): des
-tination with the same identifier (name{ref-pisoni1985}) has been already used,
- duplicate ignored
+l.773 \leavevmode\hypertarget{ref-nelson1998}{}
+                                               %pdfTeX warning (ext4): destinat
+ion with the same identifier (name{ref-pisoni1985}) has been already used, dupl
+icate ignored
 <to be read again> 
                    \relax 
-l.767 \leavevmode\hypertarget{ref-pisoni1985}{}
+l.776 \leavevmode\hypertarget{ref-pisoni1985}{}
                                                %pdfTeX warning (ext4): destinat
 ion with the same identifier (name{ref-roy2015}) has been already used, duplica
 te ignored
 <to be read again> 
                    \relax 
-l.770 \leavevmode\hypertarget{ref-roy2015}{}
+l.779 \leavevmode\hypertarget{ref-roy2015}{}
                                             %pdfTeX warning (ext4): destination
  with the same identifier (name{ref-saffran1996}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.773 \leavevmode\hypertarget{ref-saffran1996}{}
+l.782 \leavevmode\hypertarget{ref-saffran1996}{}
                                                 %pdfTeX warning (ext4): destina
 tion with the same identifier (name{ref-siew2013}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.776 \leavevmode\hypertarget{ref-siew2013}{}
+l.785 \leavevmode\hypertarget{ref-siew2013}{}
                                              %pdfTeX warning (ext4): destinatio
 n with the same identifier (name{ref-slobin2014}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.779 \leavevmode\hypertarget{ref-slobin2014}{}
+l.788 \leavevmode\hypertarget{ref-slobin2014}{}
                                                %pdfTeX warning (ext4): destinat
 ion with the same identifier (name{ref-smith2008}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.782 \leavevmode\hypertarget{ref-smith2008}{}
+l.791 \leavevmode\hypertarget{ref-smith2008}{}
                                               %pdfTeX warning (ext4): destinati
 on with the same identifier (name{ref-stella2017}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.785 \leavevmode\hypertarget{ref-stella2017}{}
-                                               %pdfTeX warning (ext4): destinat
-ion with the same identifier (name{ref-steyvers2005}) has been already used, du
-plicate ignored
+l.794 \leavevmode\hypertarget{ref-stella2017}{}
+                                               % [45]pdfTeX warning (ext4): des
+tination with the same identifier (name{ref-steyvers2005}) has been already use
+d, duplicate ignored
 <to be read again> 
                    \relax 
-l.788 \leavevmode\hypertarget{ref-steyvers2005}{}
+l.797 \leavevmode\hypertarget{ref-steyvers2005}{}
                                                  %pdfTeX warning (ext4): destin
 ation with the same identifier (name{ref-storkel2001}) has been already used, d
 uplicate ignored
 <to be read again> 
                    \relax 
-l.791 \leavevmode\hypertarget{ref-storkel2001}{}
+l.800 \leavevmode\hypertarget{ref-storkel2001}{}
                                                 %pdfTeX warning (ext4): destina
 tion with the same identifier (name{ref-storkel2009}) has been already used, du
 plicate ignored
 <to be read again> 
                    \relax 
-l.794 \leavevmode\hypertarget{ref-storkel2009}{}
-                                                % [45]pdfTeX warning (ext4): de
-stination with the same identifier (name{ref-swingley2018}) has been already us
-ed, duplicate ignored
+l.803 \leavevmode\hypertarget{ref-storkel2009}{}
+                                                %pdfTeX warning (ext4): destina
+tion with the same identifier (name{ref-swingley2018}) has been already used, d
+uplicate ignored
 <to be read again> 
                    \relax 
-l.797 \leavevmode\hypertarget{ref-swingley2018}{}
+l.806 \leavevmode\hypertarget{ref-swingley2018}{}
                                                  %pdfTeX warning (ext4): destin
 ation with the same identifier (name{ref-takac2017}) has been already used, dup
 licate ignored
 <to be read again> 
                    \relax 
-l.800 \leavevmode\hypertarget{ref-takac2017}{}
+l.809 \leavevmode\hypertarget{ref-takac2017}{}
                                               %pdfTeX warning (ext4): destinati
 on with the same identifier (name{ref-vitevitch2008}) has been already used, du
 plicate ignored
 <to be read again> 
                    \relax 
-l.803 \leavevmode\hypertarget{ref-vitevitch2008}{}
+l.812 \leavevmode\hypertarget{ref-vitevitch2008}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-vitevitch1999}) has been already used
 , duplicate ignored
 <to be read again> 
                    \relax 
-l.806 \leavevmode\hypertarget{ref-vitevitch1999}{}
+l.815 \leavevmode\hypertarget{ref-vitevitch1999}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-vitevitch2005}) has been already used
 , duplicate ignored
 <to be read again> 
                    \relax 
-l.809 \leavevmode\hypertarget{ref-vitevitch2005}{}
+l.818 \leavevmode\hypertarget{ref-vitevitch2005}{}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{ref-youn2016}) has been already used, dup
 licate ignored
 <to be read again> 
                    \relax 
-l.812 \leavevmode\hypertarget{ref-youn2016}{}
+l.821 \leavevmode\hypertarget{ref-youn2016}{}
                                              %pdfTeX warning (ext4): destinatio
 n with the same identifier (name{ref-yurovsky2015}) has been already used, dupl
 icate ignored
 <to be read again> 
                    \relax 
-l.815 \leavevmode\hypertarget{ref-yurovsky2015}{}
-                                                 % AED endfloat: Processing end
- Figures and Tables [46]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 819.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 819.
+l.824 \leavevmode\hypertarget{ref-yurovsky2015}{}
+                                                 % [46] AED endfloat: Processin
+g end Figures and Tables [47]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 828.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 828.
 (./ms.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 819.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 819.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 828.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 828.
 Package rerunfilecheck Info: File `ms.out' has not changed.
-(rerunfilecheck)             Checksum: 4B6AE1547C9863983F90F1D69A31539E;4007.
+(rerunfilecheck)             Checksum: 7EA2E85D09FEF2821332705C5EA5FD9B;4608.
 Package logreq Info: Writing requests to 'ms.run.xml'.
 \openout1 = `ms.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 22355 strings out of 492616
- 359910 string characters out of 6129482
- 850708 words of memory out of 5000000
- 25667 multiletter control sequences out of 15000+600000
- 82655 words of font info for 134 fonts, out of 8000000 for 9000
+ 22369 strings out of 492616
+ 360184 string characters out of 6129482
+ 851868 words of memory out of 5000000
+ 25673 multiletter control sequences out of 15000+600000
+ 82705 words of font info for 134 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,11n,47p,2241b,1615s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/
-texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/20
-19/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2019/texmf-d
-ist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/texmf-dist/fonts/
-enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/l
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/lo
+cal/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texliv
+e/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2019/tex
+mf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2019/texmf-dist/fonts/
+enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/l
 m/lmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmex10.p
 fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texliv
 e/2019/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2019/texm
 f-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2019/texmf-dist/font
 s/type1/public/lm/lmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pub
-lic/lm/lmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr7.
-pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/lo
-cal/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2019/texm
-f-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on ms.pdf (46 pages, 1420118 bytes).
+lic/lm/lmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.
+pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
+Output written on ms.pdf (47 pages, 1409953 bytes).
 PDF statistics:
- 646 PDF objects out of 1000 (max. 8388607)
- 538 compressed objects within 6 object streams
- 168 named destinations out of 1000 (max. 500000)
- 10455 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 664 PDF objects out of 1000 (max. 8388607)
+ 556 compressed objects within 6 object streams
+ 176 named destinations out of 1000 (max. 500000)
+ 10479 words of extra memory for PDF output out of 12000 (max. 10000000)
 
